@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - research.qmd
+      - Research.qmd
 
 format:
   html:
