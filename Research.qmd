@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "research"
 ---
 
-this is about me and my research
+# This is about my research
