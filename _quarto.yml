@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "jadenorli_website"
+  title: "jadenorli"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - research.qmd
 
 format:
   html:
