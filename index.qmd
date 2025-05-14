@@ -1,11 +1,5 @@
 ---
-title: "jadenorli.github.io"
+title: "Jaden Orli"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1 
-```
+Hi there! My name is Jaden Orli and 
