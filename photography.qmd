@@ -1,3 +1,25 @@
 ---
 title: "photography"
 ---
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+library(here)
+
+source(here("scripts", "render_gallery.R"))
+```
+
+
+# Marine
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+render_gallery("marine")
+
+```
+
+# Terrestrial
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+render_gallery("terrestrial")
+
+```
