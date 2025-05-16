@@ -2,6 +2,7 @@
 title: "Photography"
 format:
   html:
+    page-layout: full
     css:
       - styles.css
       - fancybox/css/fancybox.css
@@ -37,6 +38,10 @@ source(here("scripts", "generate_metadata.R"))
 ```
 
 
+```{r}
+generate_metadata(category = "terrestrial")
+```
+
 
 # Marine Photography
 
@@ -47,3 +52,10 @@ render_gallery(
 )
 ```
 
+
+```{r, echo=FALSE, results='asis'}
+render_gallery(
+  category = "terrestrial",
+  metadata_file = here("data", "terrestrial_metadata.csv")
+)
+```

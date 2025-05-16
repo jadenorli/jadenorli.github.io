@@ -141,21 +141,3 @@ h2.section-header {
   color: var(--marine-coral);
 }
 
-/* Make all Quarto layout containers full-width */
-body > .container,
-.quarto-container,
-.page-columns,
-.main,
-.content,
-.content page-layout-main,
-.page-layout-default .content,
-.page-layout-article .content,
-.page-layout-full .content {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}

@@ -18,7 +18,7 @@
     "href": "photography.html",
     "title": "Photography",
     "section": "",
-    "text": "Marine Photography"
+    "text": "generate_metadata(category = \"terrestrial\")\n\nMetadata saved to: data/terrestrial_metadata.csv\n\n\n\nMarine Photography"
   },
   {
     "objectID": "index.html",
