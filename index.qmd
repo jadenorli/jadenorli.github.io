@@ -1,5 +1,26 @@
 ---
-title: "Jaden Orli"
+title: "Index"
+format:
+  html:
+    css:
+      - styles.css
+      - fancybox/css/fancybox.css
+    includes:
+      in-header: |
+        <script src="fancybox/js/fancybox.umd.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            if (window.Fancybox) {
+              Fancybox.bind("[data-fancybox]", {
+                Thumbs: false,
+                Toolbar: true
+              });
+              console.log("✅ Fancybox bound.");
+            } else {
+              console.error("❌ Fancybox failed to load.");
+            }
+          });
+        </script>
 ---
 
 Hi there! My name is Jaden Orli and 

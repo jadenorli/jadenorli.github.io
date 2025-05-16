@@ -2,22 +2,43 @@
   {
     "objectID": "research.html",
     "href": "research.html",
-    "title": "research",
+    "title": "Research",
     "section": "",
     "text": "This is about my research"
   },
   {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nYou can reach me at email@example.com or find me on GitHub."
+  },
+  {
     "objectID": "photography.html",
     "href": "photography.html",
-    "title": "photography",
+    "title": "Photography",
     "section": "",
-    "text": "Marine\n\n\n\n\n\nTerrestrial"
+    "text": "Marine Photography"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jaden Orli",
+    "title": "Index",
     "section": "",
     "text": "Hi there! My name is Jaden Orli and"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me\nThis page tells my story — academically, creatively, and personally."
+  },
+  {
+    "objectID": "art.html",
+    "href": "art.html",
+    "title": "Art",
+    "section": "",
+    "text": "Art\nMy non-photographic creative work."
   }
 ]

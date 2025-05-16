@@ -1,13 +1,9 @@
 
 
-render_gallery <- function(category, shuffle = TRUE, path_prefix = "images") {
-  # Load glue
+render_gallery <- function(category, metadata_file = NULL, path_prefix = "images") {
   if (!requireNamespace("glue", quietly = TRUE)) stop("Please install the 'glue' package")
   
-  # Build the full image directory path
   img_dir <- file.path(path_prefix, category)
-  
-  # List all image files
   images <- list.files(img_dir, pattern = "\\.(jpg|jpeg|png|webp)$", ignore.case = TRUE)
   
   if (length(images) == 0) {
@@ -15,15 +11,22 @@ render_gallery <- function(category, shuffle = TRUE, path_prefix = "images") {
     return(invisible(NULL))
   }
   
-  # Optionally shuffle the images
-  if (shuffle) images <- sample(images)
+  metadata <- NULL
+  if (!is.null(metadata_file) && file.exists(metadata_file)) {
+    metadata <- readr::read_csv(metadata_file, show_col_types = FALSE)
+  }
   
-  # Output the HTML
   cat("<div class='masonry'>\n")
   for (img in images) {
-    # Alt text from filename (optional improvement: clean this up)
-    alt <- tools::file_path_sans_ext(basename(img))
-    cat(glue::glue("![{alt}]({file.path(path_prefix, category, img)})\n"))
+    row <- metadata[metadata$file == img, ]
+    desc <- glue::glue("<strong>{row$title}</strong><br>{row$location} — {row$date}<br><em>{row$caption}</em>")
+    full_path <- file.path(path_prefix, category, img)
+    
+    cat(glue::glue(
+      "<a href='{full_path}' data-fancybox='{category}' data-caption=\"{desc}\">
+         <img src='{full_path}' alt='{row$title}' />
+       </a>\n"
+    ))
   }
   cat("</div>\n")
 }

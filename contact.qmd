@@ -1,5 +1,5 @@
 ---
-title: "Photography"
+title: "Contact"
 format:
   html:
     css:
@@ -23,27 +23,6 @@ format:
         </script>
 ---
 
+# Contact
 
-
-
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
-library(here)
-library(tidyverse)
-
-source(here("scripts", "render_gallery.R"))
-source(here("scripts", "generate_metadata.R"))
-
-```
-
-
-
-# Marine Photography
-
-```{r, echo=FALSE, results='asis'}
-render_gallery(
-  category = "marine",
-  metadata_file = here("data", "marine_metadata.csv")
-)
-```
-
+You can reach me at [email@example.com](mailto:email@example.com) or find me on [GitHub](https://github.com/).

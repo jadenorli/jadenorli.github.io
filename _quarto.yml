@@ -2,20 +2,42 @@ project:
   type: website
   output-dir: docs
 
+resources:
+  - fancybox
+  - images
+  - styles.css
+
 website:
   title: "jadenorli"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - about.qmd
       - research.qmd
       - photography.qmd
+      - art.qmd
+      - contact.qmd
 
 format:
   html:
     theme: minty
-    css: styles.css
-    toc: false
-
-editor: visual
-
+    css:
+      - styles.css
+      - fancybox/css/fancybox.css
+    includes:
+      in-header: |
+        <script src="fancybox/js/fancybox.umd.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            if (window.Fancybox) {
+              Fancybox.bind("[data-fancybox]", {
+                Thumbs: false,
+                Toolbar: true
+              });
+              console.log("✅ Fancybox bound.");
+            } else {
+              console.error("❌ Fancybox failed to load.");
+            }
+          });
+        </script>
