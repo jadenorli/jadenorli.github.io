@@ -153,8 +153,8 @@ h2.section-header {
 
 
 .profile-photo {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #98A08D; /* subtle green border */

@@ -141,3 +141,37 @@ h2.section-header {
   color: var(--marine-coral);
 }
 
+/* Homepage bio header */
+.homepage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #98A08D; /* subtle green border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bio-text {
+  max-width: 700px;
+}
+
+.homepage-links a {
+  color: #BD6E53; /* coral */
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.75rem;
+}
+
+.homepage-links a:hover {
+  text-decoration: underline;
+}

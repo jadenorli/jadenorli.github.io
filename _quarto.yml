@@ -11,8 +11,6 @@ website:
   title: "jadenorli"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - about.qmd
       - research.qmd
       - photography.qmd
@@ -33,11 +31,14 @@ format:
             if (window.Fancybox) {
               Fancybox.bind("[data-fancybox]", {
                 Thumbs: false,
-                Toolbar: true
+                Toolbar: true,
+                animated: true,
+                showClass: "fancybox-fadeIn",
+                hideClass: "fancybox-fadeOut"
               });
               console.log("✅ Fancybox bound.");
             } else {
-              console.error("❌ Fancybox failed to load.");
+              console.error("❌ Fancybox not loaded.");
             }
           });
         </script>

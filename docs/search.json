@@ -18,14 +18,14 @@
     "href": "photography.html",
     "title": "Photography",
     "section": "",
-    "text": "generate_metadata(category = \"terrestrial\")\n\nMetadata saved to: data/terrestrial_metadata.csv\n\n\n\nMarine Photography"
+    "text": "Marine Photography"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Index",
+    "title": "jadenorli",
     "section": "",
-    "text": "Hi there! My name is Jaden Orli and"
+    "text": "Hi there! I’m Jaden Orli, a marine biologist and ecological modeler currently finishing my undergraduate degree at the University of California, Santa Barbara. I’m passionate about connecting science, policy, and storytelling through fieldwork, systems modeling, and visual media.\n\n\nLinkedIn | GitHub | Email"
   },
   {
     "objectID": "about.html",

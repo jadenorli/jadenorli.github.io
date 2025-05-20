@@ -6,56 +6,50 @@ format:
     css:
       - styles.css
       - fancybox/css/fancybox.css
-    includes:
-      in-header: |
-        <script src="fancybox/js/fancybox.umd.js"></script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            if (window.Fancybox) {
-              Fancybox.bind("[data-fancybox]", {
-                Thumbs: false,
-                Toolbar: true
-              });
-              console.log("✅ Fancybox bound.");
-            } else {
-              console.error("❌ Fancybox failed to load.");
-            }
-          });
-        </script>
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
 
-
-
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r, results='asis'}
+#load the necessary libraries
 library(here)
 library(tidyverse)
+library(fs)
+library(glue)
 
+#load the necessary functions 
 source(here("scripts", "render_gallery.R"))
 source(here("scripts", "generate_metadata.R"))
 
 ```
 
 
-```{r}
-generate_metadata(category = "terrestrial")
+```{r, results='asis'}
+#generate metadata fro the terrestrial category of images
+#generate_metadata(category = "terrestrial")
+
+#generate metadata fro the marine category of images
+#generate_metadata(category = "marine")
+
 ```
 
 
 # Marine Photography
 
-```{r, echo=FALSE, results='asis'}
-render_gallery(
-  category = "marine",
-  metadata_file = here("data", "marine_metadata.csv")
-)
+```{r, results='asis'}
+#create a gallery of marine images
+render_gallery(category = "marine",
+               metadata_file = here("data", "marine_metadata.csv"))
+
 ```
 
 
-```{r, echo=FALSE, results='asis'}
-render_gallery(
-  category = "terrestrial",
-  metadata_file = here("data", "terrestrial_metadata.csv")
-)
+```{r, results='asis'}
+#create a gallery of terrestrial images
+render_gallery(category = "terrestrial",
+               metadata_file = here("data", "terrestrial_metadata.csv"))
+
 ```
