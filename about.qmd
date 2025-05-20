@@ -1,7 +1,9 @@
 ---
 title: "About"
+toc: false
 format:
   html:
+    page-layout: full
     css:
       - styles.css
       - fancybox/css/fancybox.css

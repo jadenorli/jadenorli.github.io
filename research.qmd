@@ -1,6 +1,12 @@
 ---
 title: "Research"
-
+toc: false
+format:
+  html:
+    page-layout: full
+    css:
+      - styles.css
+      - fancybox/css/fancybox.css
 ---
 
 # This is about my research 

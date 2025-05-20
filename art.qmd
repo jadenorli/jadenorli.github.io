@@ -1,26 +1,12 @@
 ---
 title: "Art"
+toc: false
 format:
   html:
+    page-layout: full
     css:
       - styles.css
       - fancybox/css/fancybox.css
-    includes:
-      in-header: |
-        <script src="fancybox/js/fancybox.umd.js"></script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            if (window.Fancybox) {
-              Fancybox.bind("[data-fancybox]", {
-                Thumbs: false,
-                Toolbar: true
-              });
-              console.log("✅ Fancybox bound.");
-            } else {
-              console.error("❌ Fancybox failed to load.");
-            }
-          });
-        </script>
 ---
 
 # Art
