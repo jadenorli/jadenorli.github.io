@@ -1,0 +1,561 @@
+/* =========================================================
+   Fonts
+========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Playfair+Display:wght@500;700&display=swap');
+
+/* =========================================================
+   Design tokens
+========================================================= */
+:root{
+  --marine-bg:#E6F1F5;
+  --marine-ink:#2E3C43;
+  --marine-ink-soft:#43535B;
+  --marine-teal-1:#A3C3BD;   /* navbar bg */
+  --marine-teal-2:#688D8D;   /* accents, hover */
+  --marine-teal-3:#4D6C77;   /* buttons */
+  --marine-link:#537188;     /* default link color */
+  --marine-sand:#F5F7F9;     /* code/blockquote bg */
+  --marine-coral:#D1796B;
+  --marine-border:#e5e7eb;
+  --marine-shadow:rgba(0,0,0,.06);
+
+  --toc-accent:var(--marine-coral);
+  --toc-hover:var(--marine-teal-2);
+  --toc-text:var(--marine-ink);
+
+  /* shared content width */
+  --panel-max: 1200px;
+
+  /* mini-card bg inside details */
+  --detail-bg: #EEF3F6;
+  --detail-border: #DBE4EA;
+}
+@media (min-width:1400px){ :root{ --panel-max: 1280px; } }
+
+/* =========================================================
+   Global
+========================================================= */
+html{ scroll-behavior:smooth; }
+*,*::before,*::after{ box-sizing:border-box; }
+
+body{
+  font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif !important;
+  background:var(--marine-bg);
+  color:var(--marine-ink);
+  font-size:18px; line-height:1.6;
+  padding:0 1rem;
+}
+@media (min-width:1100px){ body{ font-size:19px; } }
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Playfair Display',Georgia,serif !important;
+  font-weight:700; letter-spacing:.5px;
+  color:var(--marine-ink);
+}
+
+/* Links & a11y */
+a{ color:var(--marine-link); text-decoration:none; }
+a:hover{ color:var(--marine-teal-2); text-decoration:underline; }
+a:focus-visible,.btn:focus-visible,button:focus-visible,.read-more:focus-visible{
+  outline:3px solid var(--marine-coral); outline-offset:2px;
+}
+
+/* =========================================================
+   Navbar / Title banner
+========================================================= */
+.navbar,.quarto-title-banner{ background:var(--marine-teal-1) !important; color:var(--marine-ink); }
+.navbar a,.dropdown-item{ color:var(--marine-ink) !important; background:var(--marine-teal-1); font-weight:500; }
+.navbar a:hover,.dropdown-item:hover{ color:var(--marine-link) !important; background:var(--marine-teal-1); }
+
+/* (legacy small brand image rule; overridden below by "Bigger navbar logo") */
+.navbar-brand img{ height:28px; width:auto; display:inline-block; vertical-align:middle; margin-right:.4rem; }
+
+/* =========================================================
+   Code, blockquotes
+========================================================= */
+code{ background:var(--marine-sand); color:var(--marine-ink); }
+pre code{
+  display:block; background:var(--marine-sand);
+  border-left:3px solid var(--marine-teal-1);
+  padding:.75rem; border-radius:.25rem; overflow-x:auto;
+}
+blockquote{
+  border-left:4px solid var(--marine-teal-2);
+  margin:1.5rem 0; padding:.5rem 1rem;
+  color:var(--marine-teal-3); background:var(--marine-sand); border-radius:.25rem;
+}
+.figure-caption{ font-style:italic; color:var(--marine-link); }
+
+/* =========================================================
+   Buttons
+========================================================= */
+.btn{ background:var(--marine-teal-3); color:var(--marine-sand); border:1px solid var(--marine-ink); }
+.btn:hover{ background:var(--marine-teal-2); color:#fff; }
+.btn-primary{ background:var(--marine-coral); color:#fff; border:none; }
+.btn-primary:hover{ background:#b95f56; }
+
+/* =========================================================
+   Width normalization (panels & banners)
+========================================================= */
+.section-band, .page-banner, .coral-banner{
+  width:100%;
+  max-width:var(--panel-max);
+  margin-left:auto; margin-right:auto;
+}
+
+/* Remove Quarto gutters when page-classes: hide-title */
+body.hide-title .page-columns{ --bs-gutter-x:0 !important; column-gap:0 !important; }
+body.hide-title .page-columns .content{ padding-left:0 !important; padding-right:0 !important; }
+
+/* =========================================================
+   Section Panels
+========================================================= */
+.section-band{
+  position:relative; margin:2rem auto; padding:1.25rem 1.25rem;
+  border:1px solid var(--marine-border);
+  border-radius:1rem; background:#f6eae7; /* coral tint */
+  box-shadow:0 6px 24px var(--marine-shadow);
+  background-clip:padding-box;
+}
+.section-band .band-inner{ max-width:none; margin:0; padding:0; }
+.section-band h2{
+  margin:0; padding:0 0 .75rem;
+  border-bottom:1px solid var(--marine-border);
+  font-size:clamp(1.75rem,3vw,2.25rem); line-height:1.2;
+}
+
+.stacked-cards{ display:flex; flex-direction:column; align-items:center; gap:1rem; padding-top:.5rem; }
+.section-band .band-inner > .grid,
+.section-band .band-inner > .stacked-cards{ margin-top:.75rem; }
+
+/* Slim coral title box (for single headings like gallery sections) */
+.section-title-box{
+  width:100%; max-width:var(--panel-max);
+  margin:1.25rem auto .75rem; padding:.75rem 1rem;
+  background:#f6eae7; border:1px solid var(--marine-border);
+  border-radius:.75rem; box-shadow:0 4px 12px var(--marine-shadow);
+}
+.section-title-box h2{ margin:0; font-size:clamp(1.35rem,2.5vw,1.75rem); line-height:1.5; color:var(--marine-ink); }
+
+/* =========================================================
+   Grid (research cards etc.)
+========================================================= */
+.grid{ display:grid; gap:1rem; grid-template-columns:1fr; }
+@media (min-width:900px){ .grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* =========================================================
+   Card layout (bottom links pinned)
+========================================================= */
+.card{
+  background:#fff; border:1px solid var(--marine-border); border-radius:.75rem;
+  box-shadow:0 4px 16px var(--marine-shadow);
+  display:flex; flex-direction:column;
+  row-gap:.6rem;
+  padding:1.1rem 1.25rem; height:100%;
+}
+
+/* Normalize inner margins */
+.section-band .card > *{ margin:0 !important; }
+.section-band .card .level3,
+.section-band .card section,
+.section-band .card .quarto-figure,
+.section-band .card .callout{ margin:0 !important; padding:0 !important; }
+
+/* Title + meta */
+.card h3{ font-size:1.35rem; line-height:1.25; margin:0 0 .4rem 0 !important; }
+.card h4{ font-size:1.2rem; line-height:1.3; margin:.8rem 0 .3rem 0 !important; padding-top:.35rem; border-top:1px solid var(--marine-border); }
+.card .meta{ color:var(--marine-ink-soft); font-size:.98rem; }
+
+/* Text rhythm */
+.card p{ margin:.35rem 0 !important; }
+.card ul{ margin:.3rem 0 .25rem !important; padding-left:1.1rem; }
+.card li + li{ margin-top:.2rem; }
+
+/* Media */
+.card img{ width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:.5rem; display:block; }
+.card .video-thumb{ position:relative; display:block; }
+.card .play-badge{
+  position:absolute; right:.5rem; bottom:.5rem; background:rgba(0,0,0,.55);
+  color:#fff; font-weight:700; line-height:1; border-radius:.5rem; padding:.35rem .5rem; font-size:.9rem;
+}
+
+/* Links block pinned to bottom and stacked vertically */
+.section-band .card p.links{
+  margin-top:auto !important;
+  display:flex; flex-direction:column;
+  align-items:flex-start; gap:.4rem;
+}
+.section-band .card p.links a{
+  margin:0 !important; display:inline-flex;
+}
+
+/* “Read more” chip */
+.read-more{
+  display:inline-flex; align-items:center; gap:.35rem; padding:.35rem .6rem;
+  border-radius:.5rem; border:1px solid currentColor; background:transparent; color:inherit;
+  font-weight:600; text-decoration:none; width:fit-content;
+  transition:background .15s ease, transform .05s ease, box-shadow .15s ease;
+}
+.read-more:hover{ background:rgba(0,0,0,.05); transform:translateY(-1px); }
+
+/* Left-align links row when it's placed under a stacked card group */
+.stacked-cards > .links{ align-self:flex-start; text-align:left; width:100%; margin-top:.25rem; }
+.stacked-cards > .links .read-more{ margin-right:.5rem; margin-bottom:.4rem; }
+
+/* =========================================================
+   Pills
+========================================================= */
+.metrics{ display:flex; flex-wrap:wrap; gap:.5rem; row-gap:.4rem; margin:0 0 .4rem !important; }
+.pill{
+  background:#fff; border:1px solid var(--marine-border);
+  padding:.25rem .6rem; border-radius:999px; font-weight:600;
+  color:var(--marine-ink-soft); box-shadow:0 1px 4px var(--marine-shadow);
+  white-space:nowrap;
+}
+
+/* =========================================================
+   Details panels + mini-cards
+========================================================= */
+.details-panel{ margin:.25rem 0 0; }
+.details-panel summary{
+  list-style:none; cursor:pointer; display:flex; align-items:center; gap:.5rem;
+  color:var(--marine-link); font-weight:700; margin:.25rem 0 .5rem !important;
+}
+.details-panel summary::-webkit-details-marker{ display:none; }
+.details-panel summary::before{ content:"▸"; font-size:1rem; line-height:1; transform:translateY(-1px); transition:transform .2s ease; }
+.details-panel[open] summary::before{ transform:rotate(90deg) translateY(0); }
+
+.details-panel .detail-stack{ display:grid; gap:.9rem; }
+
+.detail-block{
+  background:var(--detail-bg);
+  border:1px solid var(--detail-border);
+  border-radius:.75rem;
+  padding:.85rem 1rem;
+  box-shadow:0 1px 6px var(--marine-shadow);
+}
+.detail-block.detail-accent{ padding-left:calc(1rem - 3px); }
+.detail-block h4{
+  margin:0 0 .35rem 0 !important; padding:0 !important; border:0 !important;
+  font-size:1.05rem; line-height:1.25; color:var(--marine-ink);
+}
+.detail-block p{ margin:.28rem 0 !important; }
+.detail-block ul{ margin:.3rem 0 .2rem !important; padding-left:1.1rem; }
+.detail-block li+li{ margin-top:.18rem; }
+
+/* =========================================================
+   Masonry (Photography & Art)
+========================================================= */
+.masonry{ column-count:2; column-gap:1rem; }
+@media (min-width:900px){ .masonry{ column-count:3; } }
+.masonry a,.masonry figure{ break-inside:avoid; display:block; margin-bottom:1rem; }
+.masonry img{
+  width:100%; display:block; border-radius:6px;
+  transition:transform .3s ease-in-out, box-shadow .2s ease;
+  box-shadow:0 2px 12px var(--marine-shadow);
+}
+.masonry img:hover{ transform:scale(1.03); }
+
+/* Full-width action row under masonry galleries */
+.gallery-footer{
+  column-span: all;
+  display:flex; gap:.75rem; align-items:center;
+  margin-top:2rem; padding-top:1rem;
+  border-top:1px solid var(--marine-border);
+}
+@media (min-width:900px){ .gallery-footer{ margin-top:2.5rem; } }
+
+/* =========================================================
+   Coral banner
+========================================================= */
+.coral-banner{
+  width:100%; max-width:var(--panel-max);
+  margin:2rem auto; padding:1rem 1.25rem;
+  background:#fff; border:1px solid var(--marine-border);
+  border-left:4px solid var(--marine-coral);
+  border-radius:.75rem; box-shadow:0 4px 16px var(--marine-shadow);
+}
+h2.section-header{ color:var(--marine-coral); }
+
+/* =========================================================
+   Homepage header
+========================================================= */
+.homepage-header{
+  display:flex; flex-direction:column; align-items:center; gap:1.5rem;
+  margin-bottom:2rem; text-align:center;
+  background:linear-gradient(135deg,#fff,var(--marine-bg));
+  padding:1.25rem; border-radius:1rem; box-shadow:0 2px 12px var(--marine-shadow);
+}
+.homepage-header, .homepage-header *{
+  font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif !important;
+  color:var(--marine-ink);
+}
+.profile-photo{
+  width:250px; height:250px; object-fit:cover; border-radius:50%;
+  border:3px solid #98A08D; box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+.bio-text{ max-width:700px; }
+.homepage-links a{ color:var(--marine-coral); text-decoration:none; font-weight:500; margin-right:.75rem; }
+.homepage-links a:hover{ text-decoration:underline; }
+
+/* =========================================================
+   Project pages: narrow content + sticky side TOC (RESTORED)
+========================================================= */
+.project-narrow .page-columns .content{ max-width:880px; margin-left:auto; margin-right:auto; }
+
+@media (min-width:992px){
+  .project-narrow #quarto-margin-sidebar{
+    display:block !important;
+    position:sticky; top:5.5rem;
+    max-height:calc(100vh - 6.5rem);
+    overflow:auto; padding-left:.25rem;
+  }
+  .project-narrow nav#TOC,
+  .project-narrow nav#TOC.toc-active{
+    display:block !important;
+  }
+}
+@media (max-width:991.98px){
+  .project-narrow #quarto-margin-sidebar{ position:static; max-height:none; }
+}
+
+/* TOC theming */
+nav#TOC .nav-link,
+nav[role="doc-toc"] .nav-link,
+#quarto-margin-sidebar nav#TOC .nav-link{ color:var(--toc-text); }
+nav#TOC .nav-link:hover,
+nav[role="doc-toc"] .nav-link:hover,
+#quarto-margin-sidebar nav#TOC .nav-link:hover{ color:var(--toc-hover); text-decoration:none; }
+nav[role="doc-toc"] .nav-link.active,
+nav[role="doc-toc"] .nav-link[aria-current="true"],
+#quarto-margin-sidebar nav#TOC .nav-link.active,
+#quarto-margin-sidebar nav#TOC .nav-link[aria-current="true"]{
+  color:var(--toc-accent) !important;
+  font-weight:700;
+  background:color-mix(in srgb, var(--toc-accent) 14%, transparent);
+  border-left:3px solid var(--toc-accent);
+  padding-left:.5rem; border-radius:.25rem;
+}
+nav[role="doc-toc"] .nav-link:focus-visible,
+#quarto-margin-sidebar nav#TOC .nav-link:focus-visible{
+  outline:3px solid var(--toc-accent); outline-offset:2px;
+}
+
+/* =========================================================
+   Tables / minor code polish
+========================================================= */
+table{ background:#fff; border-radius:.5rem; overflow:hidden; }
+th,td{ border-color:var(--marine-border) !important; }
+pre,code{ border-radius:.5rem; }
+
+/* =========================================================
+   Footer tweaks
+========================================================= */
+.quarto-title-block .quarto-title-banner{ background:transparent; }
+footer{ color:var(--marine-ink-soft); }
+
+/* Compact rounded footnotes box */
+section.footnotes,
+div.footnotes{
+  background:#fff;
+  padding:.5rem .75rem;
+  margin-top:1rem;
+}
+section.footnotes ol,
+div.footnotes ol{ margin:0; padding-left:1.1rem; }
+section.footnotes li,
+div.footnotes li{ margin:.25rem 0; }
+section.footnotes li p,
+div.footnotes li p{ margin:0; }
+section.footnotes h2,
+div.footnotes h2{ margin:.25rem 0 .5rem; font-size:1rem; }
+
+/* =========================================================
+   Page Hero / Video/Img Banner
+========================================================= */
+.page-banner{
+  position:relative; margin:0 auto 2rem; width:100%;
+  height:360px; border-radius:1rem; overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,.25); background:#000;
+  max-width:var(--panel-max);
+}
+@media (min-width:1100px){ .page-banner{ height:420px; } }
+@media (max-width:520px){ .page-banner{ height:260px; } }
+.page-banner video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
+.page-banner-overlay{ position:absolute; inset:0; background:rgba(0,0,0,.35); }
+.page-banner-inner{
+  position:relative; z-index:1; height:100%;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:2rem 1rem;
+}
+.page-banner-title{
+  color:#fff; font-size:clamp(2rem,5vw,3rem); font-weight:800; letter-spacing:.3px;
+  text-shadow:0 2px 8px rgba(0,0,0,.45); margin:0;
+}
+.page-banner-subtitle{
+  color:#fff;
+  font-size:clamp(1rem,2.5vw,1.25rem);
+  font-weight:700;
+  opacity:.95;
+  margin-top:.5rem;
+  text-shadow:0 1px 6px rgba(0,0,0,.35);
+}
+.page-banner img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;
+}
+
+/* =========================================================
+   Hero Slideshow
+========================================================= */
+.hero-slideshow{
+  position:relative; width:100%; aspect-ratio:16/9;
+  overflow:hidden; border-radius:.5rem; margin:0 0 1rem 0;
+}
+.hero-slideshow a{ position:absolute; inset:0; opacity:0; transition:opacity .6s ease; }
+.hero-slideshow a.active{ opacity:1; }
+.hero-slideshow img{ width:100%; height:100%; object-fit:cover; display:block; }
+.page-banner .hero-slideshow{
+  position:absolute; inset:0; width:100%; height:100%;
+  aspect-ratio:auto; border-radius:0; margin:0;
+}
+.page-banner .hero-slideshow img{ object-position:center; }
+
+/* =========================================================
+   Page-wide overrides for Contact (full-width)
+========================================================= */
+.page-full .content{
+  max-width:none !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.stacked-cards{ align-items:stretch !important; }
+.stacked-cards > *{ width:100% !important; max-width:none !important; margin:0 !important; }
+
+/* =========================================================
+   Mobile URL wrapping & no-overflow fixes
+========================================================= */
+:where(p, li, blockquote, .figure-caption, .detail-block p, .card p, .card .meta, section.footnotes, div.footnotes) a,
+:where(p, li, blockquote, .figure-caption, .detail-block p, .card p, .card .meta, section.footnotes, div.footnotes) code a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+:where(p, li, blockquote, .figure-caption, .detail-block p, .card p, .card .meta) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+@media (max-width: 600px) {
+  .section-band .card p.links { flex-wrap: wrap; row-gap: .35rem; }
+  .section-band .card p.links a { max-width: 100%; }
+}
+.content, main, body { overflow-wrap: anywhere; word-break: break-word; }
+@media (max-width: 600px) {
+  table { table-layout: fixed; width: 100%; }
+  th, td { word-break: break-word; overflow-wrap: anywhere; }
+}
+code, kbd, samp { white-space: pre-wrap; word-break: break-word; }
+
+.photo-gallery .art-card figcaption { display: none; }
+.fancybox__caption { white-space: normal; line-height: 1.5; }
+.cap-line + .cap-line { margin-top: .25rem; }
+.cap-caption { font-weight: 600; }
+.cap-location strong, .cap-date strong { font-weight: 600; }
+
+/* ===============================
+   NAVBAR RESET / HARDENING
+=================================*/
+.navbar ul,
+.navbar .navbar-nav,
+.navbar .quarto-navbar-tools { list-style: none; padding-left: 0; margin: 0; }
+.navbar .navbar-nav { display: flex; align-items: center; gap: 1rem; }
+.navbar .quarto-navbar-tools { display: flex; align-items: center; gap: .6rem; }
+.navbar .navbar-nav .nav-item { margin: 0; }
+.navbar .navbar-nav .nav-link,
+.navbar .quarto-navbar-tools a,
+.navbar a {
+  display: inline-block;
+  padding: .5rem .75rem;
+  text-decoration: none;
+  color: var(--marine-ink) !important;
+  background: var(--marine-teal-1);
+  font-weight: 500;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .quarto-navbar-tools a:hover {
+  color: var(--marine-link) !important;
+  background: var(--marine-teal-1);
+  text-decoration: underline;
+}
+.navbar .navbar-brand,
+.navbar-brand {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: var(--marine-ink) !important;
+}
+.navbar-collapse { padding: .25rem 0; }
+.navbar, .quarto-title-banner { background: var(--marine-teal-1) !important; color: var(--marine-ink); }
+
+/* ===============================
+   NAVBAR — MOBILE (<992px)
+=================================*/
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav { flex-direction: column; align-items: flex-start; gap: .25rem; }
+  .navbar .navbar-nav .nav-link, .navbar .quarto-navbar-tools a {
+    width: 100%; padding: .65rem .75rem; border-radius: .5rem;
+  }
+  .navbar .quarto-navbar-tools { flex-direction: row; gap: .75rem; margin-top: .5rem; }
+  .navbar-collapse {
+    padding: .35rem 0 .6rem; border-top: 1px solid var(--marine-border);
+  }
+}
+.navbar .navbar-toggler { border: 1px solid rgba(0,0,0,.25); padding: .35rem .5rem; border-radius: .5rem; }
+.navbar .navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(0,0,0,.08); }
+.navbar .navbar-toggler-icon {
+  background-image:
+    linear-gradient(var(--marine-ink), var(--marine-ink)),
+    linear-gradient(var(--marine-ink), var(--marine-ink)),
+    linear-gradient(var(--marine-ink), var(--marine-ink));
+  background-size: 100% 2px, 100% 2px, 100% 2px;
+  background-position: center 6px, center 12px, center 18px;
+  background-repeat: no-repeat;
+  width: 1.5rem; height: 1.5rem;
+}
+.navbar .dropdown-menu { border-radius: .5rem; border: 1px solid var(--marine-border); }
+.navbar .dropdown-item { padding: .55rem .75rem; }
+.navbar .dropdown-item:hover { background: rgba(0,0,0,.04); }
+
+/* === Bigger-looking logo, same navbar height === */
+.navbar {
+  min-height: 56px;          /* keep your current bar height */
+  overflow: visible;         /* let the scaled logo spill outside if needed */
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* Base size equals bar height, then scale up visually */
+.navbar .navbar-brand img,
+img.navbar-logo,
+.navbar .navbar-brand > img {
+  height: 40px;              /* stays within the bar’s height */
+  width: auto;
+  transform: scale(1.75);    /* ← make it look ~75% larger */
+  transform-origin: left center;
+  margin-right: .5rem;       /* space before site title */
+}
+
+/* Desktop: a touch larger (still same bar height) */
+@media (min-width: 992px) {
+  .navbar .navbar-brand img,
+  img.navbar-logo,
+  .navbar .navbar-brand > img {
+    height: 44px;
+    transform: scale(2.3);
+  }
+}
