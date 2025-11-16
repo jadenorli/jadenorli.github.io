@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: docs 
+
+resources:
+  - images/**
+  - artwork/**
+  - videos/**
+  - files/**
+  - fancybox/**
+  - lightbox/**
+
+website:
+  title: "jadenorli"
+  description: "Marine ecology • fisheries • spatial modeling • photography"
+  site-url: "https://jadenorli.github.io/"
+  favicon: images/jaden_icon_light.png
+  navbar:
+    background: light
+    logo: images/jaden_icon_dark.png
+    title: false
+    left:
+      - text: "About"
+        href: about.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Photography"
+        href: photography.qmd
+      - text: "Art"
+        href: art.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jadenorli
+      - icon: github
+        href: https://github.com/jadenorli
+      - icon: instagram
+        href: https://instagram.com/jadenorli
+  page-footer:
+    left: "© 2025 Jaden Orli"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+    toc-location: right
+    smooth-scroll: true
+    link-external-newwindow: true
+    page-layout: full
+    code-copy: true
+    anchor-sections: true
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    include-after-body:
+      text: |
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
+          });
+        </script>

@@ -1,0 +1,50 @@
+---
+title: "Microbial Hydrocarbon Cycling — Coal Oil Point"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<!-- Header image (uses .hero-slideshow styles from styles.css, but no rotation) -->
+<div class="hero-slideshow" id="microbes-hero" aria-label="Coal Oil Point header image">
+  <a href="../../images/research/valentine_oil.jpg" data-fancybox="microbes-hero" class="active">
+    <img src="../../images/research/valentine_oil.jpg" alt="Coal Oil Point — field context for hydrocarbon cycling study">
+  </a>
+</div>
+
+## Overview
+This project tests the link between **biogenic** hydrocarbon cycling and the microbial response to **petroleum** at Coal Oil Point. We incubate coastal seawater with **liposome+alkane** (to mimic phytoplankton production), **liposome+petroleum**, and substrate-only treatments, then track community shifts with archaeal-inclusive **16S amplicons** and **MGII-targeted qPCR**.[^overview] Fieldwork and analyses are led in the Valentine Lab (UCSB).[^slides]
+
+## Quick Facts
+- **Role:** Researcher, Valentine Lab (UCSB)  
+- **When:** Jan 2023 – Aug 2025  
+- **Skills:** small-boat sampling, incubations, DNA extraction, **16S rRNA** (archaea-inclusive), **qPCR** (MGII), bioinformatics (DADA2/QIIME-style), figure design  
+- **Motivation:** Do MGII archaea consume **biogenic alkanes** and are they inhibited by **petroleum** exposure?[^overview]
+
+## Background and Questions
+- Does the short-term, **phytoplankton-derived alkane** cycle help “prime” microbial communities that can act as **biofilters** when oil enters the system?  
+- Which treatments (liposome+alkane vs. liposome+petroleum) increase **MGII abundance** and shift overall community composition?[^overview]
+
+## Methods
+- **Step 1 — Sample collection:** coastal seawater near **Coal Oil Point**; summer emphasis when MGII often increase in the SBC.  
+- **Step 2 — Incubations (~72 h):** liposome+alkane, liposome+petroleum, alkane-only, petroleum-only; in-situ temp/light.  
+- **Step 3 — Analysis:** DNA extraction → **16S rRNA amplicons** (archaea-inclusive primers) → community profiles; **qPCR** with MGII-specific primers → absolute/relative abundance. Sequencing via **AVITI** at UC Davis Core; bioinformatics with **DADA2** and related tools.[^overview]
+
+## Results (preview)
+Data collection and analysis are ongoing. Early goals focus on quality-controlled 16S profiles, MGII qPCR calibration, and treatment comparisons; figures will be added here as they finalize.
+
+## Outputs
+- Poster / slides (coming soon)  
+- Manuscript (planned)
+
+## Acknowledgements
+Valentine Lab (UCSB), Dr. David Valentine, Dr. Eleanor Arrington; thanks to campus small-boat program and Coastal Fund.
+
+---
+
+[^overview]: Project summary, methods, and motivation from the Coastal Fund proposal (liposome treatments; 16S with archaeal-inclusive primers; MGII qPCR; AVITI sequencing).  
+[^slides]: Project overview slides: *Microbial Hydrocarbon Cycling at Coal Oil Point* (Valentine Lab).

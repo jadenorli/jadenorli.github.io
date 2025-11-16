@@ -1,0 +1,305 @@
+---
+title: ""
+pagetitle: "About"
+page-classes: hide-title
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+<div class="page-banner" role="img" aria-label="Underwater banner video">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="images/banners/about.mp4" type="video/mp4">
+  </video>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-inner" markdown="1">
+# About Me {.page-banner-title}
+<p class="page-banner-subtitle">marine science • painting • scientific videography</p>
+  </div>
+</div>
+
+I’m **Jaden Orli**, a marine ecologist from **UCSB’s College of Creative Studies (Biology)**. I work at the seam of **field programs**, **population models**, and **public-facing communication** so decisions land with both **policymakers and communities**.
+
+<div class="section-band section-professional" id="professional">
+  <div class="band-inner">
+
+## Professional
+
+::: {.stacked-cards}
+
+::: {.card}
+### Fieldwork
+<div class="metrics">
+  <span class="pill">~350 dives</span>
+  <span class="pill">≥75 scientific</span>
+  <span class="pill">AAUS 60 ft</span>
+  <span class="pill">Seine surveys</span>
+  <span class="pill">Small-boat ops</span>
+</div>
+
+AAUS scientific diver in **kelp forests**; in **salt marsh** I lead/assist **seining and trap-based surveys**. Comfortable with tide windows, low-viz, and team logistics.
+
+<details class="details-panel" markdown="1">
+<summary>More Field Details</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block detail-accent" markdown="1">
+#### Current Program
+**SONGS Mitigation Monitoring Program** *(Lab Technician, 2025 – present)*  
+Intensive salt-marsh surveys for **fish and invertebrates** using **seines/traps**; careful **QA/QC** in the lab; gear maintenance and field safety; coordination with project scientists on long-term restoration monitoring.
+</div>
+
+<div class="detail-block" markdown="1">
+#### Rocky Intertidal
+**Kuris Lab and National Park Service (NPS):** transect surveys; species ID; tide-window planning; data entry and QA.
+</div>
+
+<div class="detail-block" markdown="1">
+#### Kelp and Coastal Programs
+- **PISCO / Caselle Lab:** underwater benthic and fish surveys (Northern Channel Islands)  
+- **CCFRP:** hook-and-line surveys with volunteer anglers  
+- **SB Coastal LTER:** kelp deployments/retrievals and site monitoring
+</div>
+
+<div class="detail-block" markdown="1">
+#### Diving and Safety
+Rescue, Nitrox, **AAUS (60 ft)**, Reef Check certification; night/low-viz/strong-current experience; task-loaded work (slates, cameras, etc).
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+::: {.card}
+### Modeling and Code
+<div class="metrics">
+  <span class="pill">Stage-structured</span>
+  <span class="pill">Slot limits × MPAs</span>
+  <span class="pill">Sobol + GLUE</span>
+  <span class="pill">R + Quarto</span>
+  <span class="pill">GIS / leaflet</span>
+</div>
+
+Two-sex, **stage-structured** lobster model; **VBGF** growth; size–fecundity; fishing applied **after projection** and only **outside MPAs**; scenario sweeps over **slot width × MPA coverage**.
+
+<details class="details-panel" markdown="1">
+<summary>More Modeling Details</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block detail-accent" markdown="1">
+#### Framework
+Female-first stage matrix; optional male coupling; **exponential natural mortality**; quarterly `dt = 0.25`. Clean harvest accounting via post-projection survival in non-MPA cells → harvest = raw − fished trajectories.
+</div>
+
+<div class="detail-block" markdown="1">
+#### Uncertainty and Robustness
+- **Sobol (Salt)** global sensitivity to rank leverage parameters  
+- **GLUE** ensembles to show plausible ranges, not just single fits  
+- Reproducible **Quarto** reports; tidy pipelines; consistent figure styling
+</div>
+
+<div class="detail-block" markdown="1">
+#### Geospatial and Other Projects
+- **ArcGIS Pro / sf / terra / leaflet/tmap** for decision-ready maps  
+- Spatial analyses: **IMTA aquaculture suitability** (U.S. West Coast EEZ); **Houston blackout** recovery patterns (equity lens)  
+- Prior research: **Valentine Lab** (microbial hydrocarbon cycling; Bash + Bridges-2 PSC); **Novex Innovations** (sterile cell culture, SOP training)
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+::: {.card}
+### Policy and Community Engagement
+<div class="metrics">
+  <span class="pill">Science Communication</span>
+  <span class="pill">Interactive Maps</span>
+  <span class="pill">Citizen Science</span>
+</div>
+
+Outputs for **agencies, fishers, educators, and the public** — short explainers, interactive layers, and figures that surface uncertainty honestly.
+
+<details class="details-panel" markdown="1">
+<summary>More Engagement Details</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block detail-accent" markdown="1">
+#### Policy-Ready Outputs
+Metrics aligned with decisions: biomass, spawning output, size structure, yield, stability; transparent assumptions. Plain-language scenarios—what changing **slot width** or **MPA coverage** means for effort and outcome.
+</div>
+
+<div class="detail-block" markdown="1">
+#### Community-Facing Communication
+- **Science videography** (60–120s): method explainers, field segments, and transparent communication with the public  
+- **Pacific Manta Research Group:** citizen-science **photo-ID submission** site and diver education materials
+</div>
+
+<div class="detail-block" markdown="1">
+#### Leadership and Media
+- **Kuris Lab** project lead: fieldwork, student mentorship, conference talks (ESA, EEMB URS), **first-author manuscript in review**  
+- **Environmental Media Production** (Assoc. Producer): filmed/edited a nonprofit climate program promo; on-location directing with a **Canon EOS C70**  
+- Aquarium **Docent** experience translating conservation for the public
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+
+:::
+
+<div class="links">
+[Research](research.html){.read-more}[GitHub](https://github.com/jadenorli){.read-more}[Resume (PDF)](files/jaden_2025_resume.pdf){.read-more}
+</div>
+
+:::
+
+  </div>
+</div>
+
+<!-- ========= PERSONAL ========= -->
+<div class="section-band section-personal" id="personal">
+  <div class="band-inner">
+
+## Personal
+
+::: {.stacked-cards}
+
+::: {.card}
+### Photography
+<div class="metrics">
+  <span class="pill">Texture and Pattern</span>
+  <span class="pill">Motion and Mood</span>
+  <span class="pill">Wildlife and Coastlines</span>
+</div>
+
+My photography lingers on details most people walk past — a kelp frond twisting in surge, coral polyps half-open, an alley washed in morning light. I look for **textures, moods, and small dramas** rather than single “perfect” shots. Marine photography becomes an exercise in noticing: subtle gradients in light, shadow, and texture that later make their way into my figures and color palettes.
+
+<details class="details-panel" markdown="1">
+<summary>More on Photography</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Themes** — kelp forest canopies, coral lattices, sand ripples, tidepool reflections, wreckage, and the geometry of fish schools.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Style** — high-contrast natural light, low-viz dives, and compositions that suggest movement or story — a shark’s turn, a crab emerging, a harbor just after rain.  
+</div>
+
+<div class="detail-block" markdown="1">
+[See Photography →](photography.html)
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+::: {.card}
+### Painting 
+<div class="metrics">
+  <span class="pill">Wildlife Portraits</span>
+  <span class="pill">Coastal Landscapes</span>
+  <span class="pill">Mixed Media</span>
+</div>
+
+I paint to capture **place, memory, and personality** — a bay I swam in, a dog who wouldn’t sit still, a fish frozen mid-leap. Some works are observational; others are imagined worlds built from layers of field impressions.
+
+<details class="details-panel" markdown="1">
+<summary>More on Painting</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Mediums** — oil paint and mixed media  
+</div>
+
+<div class="detail-block" markdown="1">
+**Subjects** — coastal bays, trout streams, personal places, and animals with a story to tell — sometimes literal, sometimes metaphorical.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Why it matters** — painting slows me down and lets me notice how light, pattern, and atmosphere really work. Those habits feed directly back into my figure design and scientific visualization.  
+</div>
+
+<div class="detail-block" markdown="1">
+[See art →](art.html)
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+
+::: {.card}
+### Trails, Diving, and  Travel
+<div class="metrics">
+  <span class="pill">Coastal Hikes</span>
+  <span class="pill">Night / Low-viz</span>
+  <span class="pill">Working Harbors</span>
+</div>
+
+Most weekends I’m on a coastal trail or underwater; travel tends to follow coastlines and working harbors.
+
+<details class="details-panel" markdown="1">
+<summary>More on Trails and Travel</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Hiking** — coastal bluffs, estuary loops, and any trail that ends at a tidepool (with a pocket notebook for quick sketches).
+</div>
+
+<div class="detail-block" markdown="1">
+**Diving** — kelp holdfasts, night dives, and low-viz marsh entries teach repeatable habits — useful in both field and code.
+</div>
+
+<div class="detail-block" markdown="1">
+**Travel** — I gravitate to places where ecology, fisheries, and community sit close together — great training for policy conversations later.
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+::: {.card}
+### What I Value
+<div class="metrics">
+  <span class="pill">Clarity</span>
+  <span class="pill">Reproducibility</span>
+  <span class="pill">Field Reality</span>
+</div>
+
+Clarity over cleverness; field reality over assumptions; teams that surface uncertainty rather than hide it.
+
+<details class="details-panel" markdown="1">
+<summary>More on Values</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+- **Make it legible:** for managers, fishers, and the public  
+- **Respect the process:** document assumptions, keep pipelines reproducible  
+- **Stay curious:** bring field notes, photos, and sketches back into the model
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+:::
+
+  </div>
+</div>
+
+<div class="coral-banner" markdown="1">
+Regent Scholar • **Coastal Fund** major grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Manuscripts in review
+</div>
+
+<div class="gallery-footer">
+  <a class="btn btn-primary" href="contact.html">Contact</a>
+  <a class="read-more" href="#">Back to top</a>
+</div>

@@ -1,0 +1,203 @@
+---
+title: ""
+pagetitle: "Research"
+page-classes: hide-title
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+<div class="page-banner" role="img" aria-label="Underwater research banner video">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="images/banners/research.mp4" type="video/mp4">
+  </video>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-inner" markdown="1">
+# Research {.page-banner-title}
+<p class="page-banner-subtitle">fieldwork • models • communication</p>
+  </div>
+</div>
+
+<!-- ======= Current Projects (boxed panel) ======= -->
+<div class="section-band" id="current-projects">
+  <div class="band-inner">
+
+## Current Projects
+
+<div class="grid">
+
+<div class="card" role="article" aria-labelledby="card-songs-title">
+  <a data-fancybox="songs" href="images/research/songs_1.jpg">
+    <img src="images/research/songs_1.jpg"
+         alt="Salt-marsh monitoring (SONGS)" loading="lazy" decoding="async">
+  </a>
+  <h4 id="card-songs-title">SONGS Mitigation Monitoring Program</h4>
+  <div class="meta">SONGS, UCSB · Aug 2025 – present</div>
+  <p>Salt-marsh fish and invertebrate monitoring at Carpinteria Salt Marsh Reserve and Point Mugu Lagoon. Field surveys, species ID, lab processing, and data QA/QC supporting long-term restoration reporting.</p>
+
+  <p class="links">
+    <a class="btn" href="#" aria-disabled="true">Report (soon)</a>
+    <a class="btn btn-primary" href="/songs.html" aria-label="Read more about SONGS">Read Me</a>
+  </p>
+</div>
+
+<div class="card" role="article" aria-labelledby="card-lobster-title">
+  <a data-fancybox="lobster"
+     href="images/research/stier_lobster.jpg"
+     data-caption="Slot limits × MPAs — California spiny lobster modeling (Stier Lab, UCSB)">
+    <img src="images/research/stier_lobster.jpg"
+         alt="California spiny lobster modeling — slot limits × MPA coverage (Stier Lab)"
+         loading="lazy" decoding="async">
+  </a>
+  <h4 id="card-lobster-title">Slot Limits and MPAs — California Spiny Lobster</h4>
+  <div class="meta">Stier Lab, UCSB · Sep 2024 – present</div>
+  <p>Stage-structured population model testing slot-limit harvest rules and MPA coverage for
+    <em>Panulirus interruptus</em> in Southern California.</p>
+  <p class="links">
+    <a class="btn" href="https://github.com/jadenorli" target="_blank" rel="noopener">Code</a>
+    <a class="btn btn-primary" href="/stier_lab.html" aria-label="Read more about the Stier Lab lobster modeling project">Read Me</a>
+  </p>
+</div>
+
+<div class="card" role="article" aria-labelledby="card-microbes-title">
+  <a data-fancybox="valentine" href="images/research/valentine_oil.jpg">
+    <img src="images/research/valentine_oil.jpg"
+         alt="Coal Oil Point: microbial hydrocarbon cycling (Valentine Lab)"
+         loading="lazy" decoding="async">
+  </a>
+  <h4 id="card-microbes-title">Microbial Hydrocarbon Cycling — Coal Oil Point</h4>
+  <div class="meta">Valentine Lab, UCSB · Jan 2023 – present</div>
+  <p>Incubation experiments at Coal Oil Point testing whether Marine Group II (MGII) archaea
+     consume biogenic alkanes and how petroleum exposure alters communities—using
+     liposome+alkane/oil treatments, archaeal-inclusive 16S amplicons, and MGII-targeted qPCR.</p>
+  <p class="links">
+    <a class="btn btn-primary" href="/valentine_lab.html" aria-label="Read more about microbial hydrocarbon cycling at Coal Oil Point">Read Me</a>
+  </p>
+</div>
+
+</div>
+  </div>
+</div>
+
+<!-- ======= Selected Research and Fieldwork (boxed panel) ======= -->
+<div class="section-band" id="selected-research">
+  <div class="band-inner">
+
+## Selected Research and Fieldwork
+
+<div class="grid">
+
+<div class="card">
+  <a data-fancybox="kuris" href="images/research/kuris_crab.jpg">
+    <img src="images/research/kuris_crab.jpg" alt="Nicothoid copepod egg predator on cancrid crabs" loading="lazy" decoding="async">
+  </a>
+  <h4>Nicothoid Copepod Parasite — Cancrid Crabs</h4>
+  <div class="meta">Kuris Lab, UCSB · Sep 2021 – present</div>
+  <p>First description of a nicothoid copepod egg predator in Pacific rock crabs; brood-stage intensity modeling; manuscript in review.</p>
+  <p class="links">
+    <a class="btn" href="#" aria-disabled="true">Manuscript (in review)</a>
+    <a class="btn btn-primary" href="/kuris_lab.html">Read Me</a>
+  </p>
+</div>
+
+<div class="card">
+  <a data-fancybox="pisco" href="images/research/caselle_pisco.jpg">
+    <img src="images/research/caselle_pisco.jpg" alt="Kelp forest surveys (PISCO) and CCFRP" loading="lazy" decoding="async">
+  </a>
+  <h4>Kelp Forest and Nearshore Fisheries Surveys</h4>
+  <div class="meta">Caselle Lab (PISCO), UCSB · Jun – Oct 2024</div>
+  <p>Benthic and fish surveys across Northern Channel Islands MPAs and nearshore stock assessments with CCFRP; included small-boat and data QA/QC training.</p>
+  <p class="links">
+    <a class="btn btn-primary" href="/caselle_lab.html">Read Me</a>
+  </p>
+</div>
+
+<div class="card">
+  <a data-fancybox="pmrg" href="images/research/pmrg_1.jpg">
+    <img src="images/research/pmrg_1.jpg" alt="Pacific Manta Research Group — oceanic manta underside for photo-ID" loading="lazy" decoding="async">
+  </a>
+  <h4>Pacific Manta Research Group — Outreach</h4>
+  <div class="meta">PMRG · Dec 2021 - Jan 2024 </div>
+  <p>Helped design the PMRG site and photo-ID submission workflow; built diver-facing guidance and catalog support for Revillagigedo mantas.</p>
+  <p class="links">
+    <a class="btn" href="https://pacificmantaresearchgroup.org/submit-photos/" target="_blank" rel="noopener">Submit Photos</a>
+    <a class="btn btn-primary" href="/pmrg.html">Read Me</a>
+  </p>
+</div>
+
+</div>
+  </div>
+</div>
+
+<!-- ======= Publications (boxed panel) ======= -->
+<div class="section-band" id="publications">
+  <div class="band-inner">
+
+## Publications
+
+- <strong>In review:</strong> Orli, J. E. et&nbsp;al. “Discovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California.”  
+- <strong>In review:</strong> Zilz, Z. et&nbsp;al. “A parasite-inclusive food web for the California rocky intertidal zone.”
+  </div>
+</div>
+
+<!-- ======= Open-source & analyses (boxed panel) ======= -->
+<div class="section-band" id="open-source">
+  <div class="band-inner">
+
+## Open-source and Analyses
+
+- **Marine-Aquaculture (IMTA siting • U.S. West Coast EEZ)** — R geospatial workflow combining **NOAA Coral Reef Watch SST (2008–2012)**, **GEBCO bathymetry**, and **VLIZ EEZ** with **FishBase** thermal/depth tolerances to map candidate IMTA areas; includes interactive species-by-region maps and a suitability heatmap.
+
+  **Live analysis:** <https://jadenorli.github.io/marine-aquaculture/code/marine_aquaculture.html>  
+  **Repo:** <https://github.com/jadenorli/marine-aquaculture>
+
+- **Houston-Storms (Texas Freeze 2021)** — Uses **VIIRS night-lights** to detect blackout timing/extent, **OSM** buildings/roads to reduce traffic-light bias, and **ACS 2019** tract-level data to quantify socioeconomic disparities; outputs animated night-light change, tract vs. home-level comparisons, interactive maps, and summary tables.
+
+  **Live analysis:** <https://jadenorli.github.io/houston-storms/code/houston_extreme_storms.html>  
+  **Repo:** <https://github.com/jadenorli/houston-storms>
+  </div>
+</div>
+
+<!-- ======= Videos (boxed panel) ======= -->
+<div class="section-band" id="videos">
+  <div class="band-inner">
+
+## Videos
+
+<div class="grid">
+
+<div class="card">
+  <a data-fancybox="media" data-type="iframe" href="https://vimeo.com/1109216150" class="video-thumb">
+    <img src="images/research/blüedot_promo.jpg" alt="Environmental Media Production Promo" loading="lazy" decoding="async">
+    <span class="play-badge" aria-hidden="true">▶</span>
+  </a>
+  <h4>Environmental Media Production — Promo</h4>
+  <div class="meta">Associate Producer · Mar – Apr 2025</div>
+  <p>Short promotional film for Blüedot Institute Climate Leadership Program (Bren School collaboration).</p>
+  <p class="links">
+    <a class="btn" href="https://vimeo.com/1109216150" target="_blank" rel="noopener">Watch on Vimeo</a>
+  </p>
+</div>
+
+<div class="card">
+  <a data-fancybox="media" href="artwork/winogradsky_column.mp4" data-type="html5video" class="video-thumb" data-caption="Winogradsky Column — 2025">
+    <img src="artwork/winogradsky_column.jpg" alt="Winogradsky Column (video)" loading="lazy" decoding="async">
+    <span class="play-badge" aria-hidden="true">▶</span>
+  </a>
+  <h4>Winogradsky Column</h4>
+  <div class="meta">Valentine Lab · 2025</div>
+  <p>A stop motion video of my Winogradsky column approximately one year after inception.</p>
+  <p class="links">
+    <a class="btn" href="artwork/winogradsky_column.mp4" target="_blank" rel="noopener">Open MP4</a>
+  </p>
+</div>
+
+</div>
+  </div>
+</div>
+
+<div class="gallery-footer">
+  <a class="btn btn-primary" href="/contact.html">Contact</a>
+  <a class="read-more" href="#">Back to top</a>
+</div>

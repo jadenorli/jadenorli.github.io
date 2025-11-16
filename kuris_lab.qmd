@@ -1,0 +1,88 @@
+---
+title: "Nicothoid Copepod Parasite — Cancrid Rock Crabs"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<!-- Hero slideshow (sitewide styles in styles.css) -->
+<div class="hero-slideshow" id="kuris-hero" aria-label="Kuris Lab parasite slideshow">
+  <!-- Replace with your best 3–5 images -->
+  <a href="../../images/research/kuris_crab.jpg" data-fancybox="kuris-hero" class="active">
+    <img src="../../images/research/kuris_crab.jpg" alt="cancer crab">
+  </a>
+  <a href="../../images/research/kuris_nicothoid_1.jpg" data-fancybox="kuris-hero">
+    <img src="../../images/research/kuris_nicothoid_1.jpg" alt="nicothoid">
+  </a>
+  <a href="../../images/research/kuris_nicothoid_2.jpg" data-fancybox="kuris-hero">
+    <img src="../../images/research/kuris_nicothoid_2.jpg" alt="nicothoid">
+  </a>
+  <a href="../../images/research/kuris_nicothoid_3.jpg" data-fancybox="kuris-hero">
+    <img src="../../images/research/kuris_nicothoid_3.jpg" alt="nicothoid">
+  </a>
+  <a href="../../images/research/kuris_nicothoid_4.jpg" data-fancybox="kuris-hero">
+    <img src="../../images/research/kuris_nicothoid_4.jpg" alt="nicothoid">
+  </a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('kuris-hero');
+  if (!el) return;
+
+  const slides = Array.from(el.querySelectorAll('a'));
+  let i = 0;
+  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
+  function next(){ i = (i + 1) % slides.length; show(i); }
+
+  show(0); // start on first slide
+
+  // Respect reduced motion
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+
+  const delay = 3000; // ms per slide
+  let timer = setInterval(next, delay);
+  el.addEventListener('mouseenter', () => clearInterval(timer));
+  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
+});
+</script>
+
+## Overview
+We document a previously undescribed **nicothoid copepod** that consumes eggs of **Pacific rock crabs (Cancridae)**. The study pairs **field collections** with **brood-stage–specific intensity estimates**, establishing parasite impact during development and highlighting a potential missing piece in crab reproductive ecology.
+
+## Quick Facts
+- **Role:** Researcher, Kuris Lab (UCSB)  
+- **When:** Sep 2021 – present  
+- **Skills:** crab identification, dissections, brood-stage scoring, intensity modeling, figure design  
+- **Links:** Manuscript: *(in review)*
+
+## Background and Questions
+- How frequently do broods show **nicothoid infestation**, and does **intensity** vary by **brood stage**?  
+- What are the implications for **fecundity loss** and **year-class strength** in fished cancrids?
+
+## Methods
+- **Collections & ID:** targeted sampling of brooding cancrids; species confirmation and morphometrics.  
+- **Dissections & Scoring:** egg mass inspection; **stage-specific** scoring of parasitism and egg condition.  
+- **Analysis:** intensity/frequency summaries by stage; simple models to approximate **egg loss** and potential **reproductive costs**.
+
+## Results (preview)
+- **Consistent presence** of a nicothoid copepod in brooding cancrids across sites.  
+- **Higher apparent intensity** at later brood stages, consistent with cumulative brood exposure.  
+- Visual evidence supports **egg predation**, not just commensal presence.  
+*(Full figures and estimates will be added upon acceptance.)*
+
+## Outputs
+- **Manuscript:** *in review*  
+- Figure Set *(upon publication)*
+
+## Acknowledgements
+Kuris Lab (UCSB), field partners, and collaborators for logistics, access, and taxonomic feedback.
+
+---
+
+[^notes]: Summarized from ongoing Kuris Lab field and lab notes; figures shown here are representative placeholders until the manuscript posts a preprint.

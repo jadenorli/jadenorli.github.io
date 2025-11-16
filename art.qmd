@@ -1,0 +1,167 @@
+---
+title: ""
+pagetitle: "Artwork"
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+<!-- Page banner with a single still image -->
+<div class="page-banner has-image" role="img" aria-label="Artwork banner image">
+  <img src="images/banners/art.jpg" alt="Oil paint palette and brushes">
+  <div class="page-banner-overlay"></div>
+<div class="page-banner-inner">
+  <h1 class="page-banner-title">Artwork</h1>
+  <p class="page-banner-subtitle">oil paint • mixed media • nature</p>
+</div>
+</div>
+
+
+<style>
+/* Page-specific tweaks for the masonry gallery */
+.art-gallery .art-item { break-inside: avoid; margin: 0 0 1rem; }
+.art-gallery a { display:block; margin:0; } /* override site .masonry a margin */
+.art-gallery img { width:100%; display:block; border-radius:8px; }
+.art-caption { margin-top:.5rem; color:#6b7280; font-size:.95rem; line-height:1.35; }
+.art-caption strong { color:inherit; }
+</style>
+
+<div class="masonry art-gallery">
+
+  <figure class="art-item" role="group" aria-labelledby="art-1-title">
+    <a data-fancybox="art" href="artwork/juniper.jpg">
+      <img src="artwork/juniper.jpg" alt="Juniper">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-1-title">Juniper</strong><br>
+      2025 · Oil on canvas
+    </figcaption>
+  </figure>
+  
+  <figure class="art-item" role="group" aria-labelledby="art-2-title">
+    <a data-fancybox="art" href="artwork/haulover_bay.jpg">
+      <img src="artwork/haulover_bay.jpg" alt="Haulover Bay">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-2-title">Haulover Bay</strong><br>
+      2024 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-3-title">
+    <a data-fancybox="art" href="artwork/water_world.jpg">
+      <img src="artwork/water_world.jpg" alt="Water World">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-3-title">Water World</strong><br>
+      2019 · Mixed media
+    </figcaption>
+  </figure>
+  
+  <figure class="art-item" role="group" aria-labelledby="art-4-title">
+    <a data-fancybox="art" href="artwork/fall_memories.jpg">
+      <img src="artwork/fall_memories.jpg" alt="Fall Memories">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-4-title">Fall Memories</strong><br>
+      2019 · Colored pencil on paper
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-5-title">
+    <a data-fancybox="art" href="artwork/virgin_gorda.jpg">
+      <img src="artwork/virgin_gorda.jpg" alt="Virgin Gorda, BVI">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-5-title">Virgin Gorda, BVI</strong><br>
+      2017 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-6-title">
+    <a data-fancybox="art" href="artwork/lady.jpg">
+      <img src="artwork/lady.jpg" alt="Lady">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-6-title">Lady</strong><br>
+      2015 · Oil on canvas
+    </figcaption>
+  </figure>
+  
+  <figure class="art-item" role="group" aria-labelledby="art-7-title">
+    <a data-fancybox="art" href="artwork/busy.jpg">
+      <img src="artwork/busy.jpg" alt="Busy">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-7-title">Busy</strong><br>
+      2015 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-8-title">
+    <a data-fancybox="art" href="artwork/tulips.jpg">
+      <img src="artwork/tulips.jpg" alt="Tulips for Mom">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-8-title">Tulips for Mom</strong><br>
+      2015 · Oil on canvas
+    </figcaption>
+  </figure>
+  
+  <figure class="art-item" role="group" aria-labelledby="art-9-title">
+    <a data-fancybox="art" href="artwork/rainbow_trout.jpg">
+      <img src="artwork/rainbow_trout.jpg" alt="Rainbow Trout">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-9-title">Rainbow Trout</strong><br>
+      2014 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-10-title">
+    <a data-fancybox="art" href="artwork/tulip_fields.jpg">
+      <img src="artwork/tulip_fields.jpg" alt="Tulip Fields">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-10-title">Tulip Fields</strong><br>
+      2014 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-11-title">
+    <a data-fancybox="art" href="artwork/swimming_trout.jpg">
+      <img src="artwork/swimming_trout.jpg" alt="Swimming Trout">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-11-title">Swimming Trout</strong><br>
+      2014 · Oil on canvas
+    </figcaption>
+  </figure>
+  
+  <figure class="art-item" role="group" aria-labelledby="art-12-title">
+    <a data-fancybox="art" href="artwork/breakfast_morning.jpg">
+      <img src="artwork/breakfast_morning.jpg" alt="Breakfast Morning">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-12-title">Breakfast Morning</strong><br>
+      2013 · Oil on canvas
+    </figcaption>
+  </figure>
+
+  <figure class="art-item" role="group" aria-labelledby="art-13-title">
+    <a data-fancybox="art" href="artwork/waterfall_oasis.jpg">
+      <img src="artwork/waterfall_oasis.jpg" alt="Waterfall Oasis">
+    </a>
+    <figcaption class="art-caption">
+      <strong id="art-13-title">Waterfall Oasis</strong><br>
+      2012 · Oil on canvas
+    </figcaption>
+  </figure>
+
+</div> <!-- end .masonry.art-gallery -->
+
+<div class="gallery-footer">
+  <a class="btn btn-primary" href="contact.html">Contact</a>
+  <a class="read-more" href="#">Back to top</a>
+</div>

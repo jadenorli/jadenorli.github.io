@@ -1,0 +1,66 @@
+---
+title: "Modeling Slot Limits and MPA's - California Spiny Lobster"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<div class="hero-slideshow" id="lobster-hero" aria-label="California spiny lobster — header image">
+  <a href="../../images/research/stier_lobster.jpg" data-fancybox="lobster-hero" class="active">
+    <img src="../../images/research/stier_lobster.jpg" alt="California spiny lobster — model & field context">
+  </a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('lobster-hero');
+  if (!el) return;
+  const slides = Array.from(el.querySelectorAll('a'));
+  let i = 0;
+  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
+  show(0);
+  const delay = 3000;                // ms per slide
+  let timer = setInterval(next, delay);
+  function next(){ i = (i + 1) % slides.length; show(i); }
+  el.addEventListener('mouseenter', () => clearInterval(timer));
+  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
+});
+</script>
+
+## Overview
+I’m building a **stage-structured population model** for California spiny lobster (*Panulirus interruptus*) to test how **slot-limit harvest rules** interact with **MPA coverage** and spatial structure. The emphasis is on conserving large spawners while maintaining viable yields across commercial and recreational sectors. The framework borrows from two-sex/spatial lobster matrices (growth via VBGF, size-based fecundity, exponential natural mortality) and implements **stage-selective fishing applied after projection** and only **outside MPAs**, so harvest is computed as the difference between raw and fished projections.[^framework]
+
+## Quick Facts
+- **Role:** Research Intern, Stier Lab (UCSB)  
+- **When:** Sep 2024 – present  
+- **Skills:** R (matrix models, tidyverse), stage-structured dynamics, scenario sweeps, sensitivity analysis, figure design  
+- **Links:** Code (selected snippets): <https://github.com/jadenorli>  
+
+## Background and Questions
+- How do **slot widths** (min–max carapace) and **MPA coverage** jointly shape biomass, size structure, and reproductive output?  
+- What are the trade-offs for **yield** and **stability** under differing slot rules and fishing pressure?  
+- How sensitive are outcomes to **growth, fecundity, and mortality** assumptions?
+
+## Methods
+- **Model:** female-first stage matrix with size-based growth (VBGF), fecundity from size–weight, natural mortality (exponential), and scenario-applied fishing survival.  
+- **Management scenarios:** grid over **slot width** × **MPA coverage** ± effort patterns; optional external recruitment.  
+- **Time step:** quarterly (dt = 0.25) to capture seasonal reproduction, larval duration, and fishing activity.  
+- **Sensitivity:** global variance-based (Sobol-Salt) on key biological parameters; stability and performance metrics.  
+- **Outputs:** trajectories of abundance/biomass, size distribution, reproductive output, and harvest.
+
+## Results (preview)
+- Scenario grid & baseline calibration are in progress; early checks focus on stable size distributions and realistic biomass ranges.  
+- Sensitivity screens identify high-leverage parameters to prioritize for data collection and uncertainty reduction.  
+*(I’ll add figures and summary tables as the analysis solidifies.)*
+
+
+## Acknowledgements
+Stier Lab (UCSB) and collaborators.
+
+---
+
+[^framework]: Modeling approach inspired by published two-sex/stage-structured lobster frameworks (e.g., Gnanalingam et al., 2020, *Panulirus argus*) and adapted to *P. interruptus* and Southern California management questions.

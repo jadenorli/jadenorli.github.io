@@ -1,0 +1,69 @@
+---
+title: "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<!-- Hero slideshow (sitewide styles in style.css) -->
+<div class="hero-slideshow" id="caselle-hero" aria-label="Caselle Lab PISCO/CCFRP slideshow">
+  <!-- Use the filenames that exist in your repo; add more <a> blocks as you like -->
+  <a href="../../images/research/caselle_pisco.jpg" data-fancybox="caselle-hero" class="active">
+    <img src="../../images/research/caselle_pisco.jpg" alt="PISCO kelp forest survey transect">
+  </a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('caselle-hero');
+  if (!el) return;
+
+  const slides = Array.from(el.querySelectorAll('a'));
+  let i = 0;
+  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
+  function next(){ i = (i + 1) % slides.length; show(i); }
+
+  show(0); // start on first slide
+
+  // Respect reduced motion
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || slides.length < 2) return;
+
+  const delay = 3000; // ms per slide
+  let timer = setInterval(next, delay);
+  el.addEventListener('mouseenter', () => clearInterval(timer));
+  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
+});
+</script>
+
+## Overview
+In the Caselle Lab I worked on **PISCO kelp-forest** monitoring across the Northern Channel Islands and helped with **CCFRP nearshore stock assessments**. The work combines **standardized transects** (benthic & fish), **hook-and-line surveys** with volunteer anglers, and careful **QA/QC** to produce long-term datasets used for **MPA evaluation** and **fisheries management**.
+
+## Quick Facts
+- **Role:** Field Research Assistant, Caselle Lab (UCSB)  
+- **When:** Jun – Oct 2024  
+- **Skills:** underwater transects (benthic & fish), data entry & QA/QC, small-craft operations, gear logistics, volunteer coordination
+
+## Background and Questions
+- How are **kelp-forest communities** changing within and outside **MPAs**?  
+- What do **catch-per-unit-effort** and size-structure from CCFRP say about **nearshore fish populations** and local protection benefits?
+
+## Methods
+- **PISCO (subtidal):** standardized belt and point-count transects for fish; quadrats & swathes for invertebrates and macroalgae; site metadata (depth, viz, surge).  
+- **CCFRP (nearshore):** spatially replicated hook-and-line sampling, onboard lengths/ID, release handling, and effort tracking.  
+- **Data & QA/QC:** immediate log reconciliation, species code checks, range validation, and tidy exports for lab databases.
+
+## Results (preview)
+- Completed island circuits with full transect suites; preliminary summaries feed into annual **MPA status** reviews.  
+- CCFRP trips contributed **length-frequency** and **CPUE** updates for priority species; figures pending program release.
+
+## Outputs
+- Cruise logs and data submissions (PISCO/CCFRP databases)  
+- Figures for internal updates and program briefings *(to be added when public)*
+
+## Acknowledgements
+Caselle Lab (UCSB), PISCO partners, CCFRP volunteer anglers and captains, and Channel Islands staff for logistics and access.
