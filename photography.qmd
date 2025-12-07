@@ -96,14 +96,17 @@ source("scripts/generate_metadata.R")
 
 
 ```{r, results='asis'}
-#generate metadata fro the terrestrial category of images
+#generate metadata for the terrestrial category of images
 #generate_metadata(category = "terrestrial")
 
-#generate metadata fro the marine category of images
+#generate metadata for the marine category of images
 #generate_metadata(category = "marine")
 
-#generate metadata fro the portraits category of images
+#generate metadata for the portraits category of images
 #generate_metadata(category = "portraits")
+
+#generate metadata for the microscope category of images
+#generate_metadata(category = "microscope")
 
 ```
 
@@ -131,6 +134,20 @@ render_gallery(category = "marine",
 #create a gallery of terrestrial images
 render_gallery(category = "terrestrial",
                metadata_file  = "data/terrestrial_metadata.csv",
+               path_prefix = "images")
+
+```
+
+
+::: {.section-title-box}
+# Microscopy
+:::
+<div class="section-spacer"></div>
+
+```{r, results='asis'}
+#create a gallery of microscope images
+render_gallery(category = "microscope",
+               metadata_file  = "data/microscope_metadata.csv",
                path_prefix = "images")
 
 ```
