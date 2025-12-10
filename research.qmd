@@ -135,8 +135,6 @@ format:
   <div class="band-inner">
 
 ## Publications
- 
-## Publications
 
 - <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” <em>Ecology</em> 106(12): e70263. <a href="https://doi.org/10.1002/ecy.70263">https://doi.org/10.1002/ecy.70263</a>
 
