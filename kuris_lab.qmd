@@ -8,81 +8,362 @@ format:
     toc-depth: 2
     page-layout: article
 ---
-
 <!-- Hero slideshow (sitewide styles in styles.css) -->
 <div class="hero-slideshow" id="kuris-hero" aria-label="Kuris Lab parasite slideshow">
-  <!-- Replace with your best 3–5 images -->
   <a href="../../images/research/kuris_crab.jpg" data-fancybox="kuris-hero" class="active">
-    <img src="../../images/research/kuris_crab.jpg" alt="cancer crab">
+    <img src="../../images/research/kuris_crab.jpg" alt="Rock crab with brooded egg mass">
   </a>
   <a href="../../images/research/kuris_nicothoid_1.jpg" data-fancybox="kuris-hero">
-    <img src="../../images/research/kuris_nicothoid_1.jpg" alt="nicothoid">
+    <img src="../../images/research/kuris_nicothoid_1.jpg" alt="Adult nicothoid egg predator on crab egg mass">
   </a>
   <a href="../../images/research/kuris_nicothoid_2.jpg" data-fancybox="kuris-hero">
-    <img src="../../images/research/kuris_nicothoid_2.jpg" alt="nicothoid">
+    <img src="../../images/research/kuris_nicothoid_2.jpg" alt="Close-up of nicothoid among host eggs">
   </a>
   <a href="../../images/research/kuris_nicothoid_3.jpg" data-fancybox="kuris-hero">
-    <img src="../../images/research/kuris_nicothoid_3.jpg" alt="nicothoid">
+    <img src="../../images/research/kuris_nicothoid_3.jpg" alt="Heavily infested egg mass">
   </a>
   <a href="../../images/research/kuris_nicothoid_4.jpg" data-fancybox="kuris-hero">
-    <img src="../../images/research/kuris_nicothoid_4.jpg" alt="nicothoid">
+    <img src="../../images/research/kuris_nicothoid_4.jpg" alt="Nicothoid copepods under dissecting microscope">
   </a>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('kuris-hero');
-  if (!el) return;
+  function makeSlideshow(elId, delay) {
+    const el = document.getElementById(elId);
+    if (!el) return;
 
-  const slides = Array.from(el.querySelectorAll('a'));
-  let i = 0;
-  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
-  function next(){ i = (i + 1) % slides.length; show(i); }
+    const slides = Array.from(el.querySelectorAll('a'));
+    if (slides.length === 0) return;
 
-  show(0); // start on first slide
+    let i = 0;
+    function show(n) {
+      slides.forEach((s, idx) => s.classList.toggle('active', idx === n));
+    }
+    function next() {
+      i = (i + 1) % slides.length;
+      show(i);
+    }
 
-  // Respect reduced motion
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;
+    show(0); // start on first slide
 
-  const delay = 3000; // ms per slide
-  let timer = setInterval(next, delay);
-  el.addEventListener('mouseenter', () => clearInterval(timer));
-  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
+    // Respect reduced motion
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+
+    let timer = setInterval(next, delay);
+    el.addEventListener('mouseenter', () => clearInterval(timer));
+    el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
+  }
+
+  // Hero slideshow (top of page)
+  makeSlideshow('kuris-hero', 3000);
+
+  // Figure 1a slideshow (adult sequence)
+  makeSlideshow('fig1a-sequence', 2500);
+
+  // Figure 1e–f slideshow (heavy vs. light)
+  makeSlideshow('fig1ef-sequence', 2500);
+
+  // Figure 2a–d slideshow (larval / gill series)
+  makeSlideshow('fig2-sequence', 2500);
 });
 </script>
 
+<style>
+  /* Stack figures in each figure-grid one above the other */
+  .figure-grid {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .figure-grid figure {
+    margin: 0 0 1.5rem 0;  /* space between stacked figures */
+  }
+
+  /* ===== Override HERO slideshow behavior for in-text figure slideshows =====
+     These rules target the divs with class="hero-slideshow figure-slideshow"
+     (Fig 1a and Fig 1e/f) so they show full vertical images, not cropped. */
+
+  /* Let the figure slideshows size themselves to their images */
+  .figure-slideshow {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 0 1rem 0;
+    border-radius: .5rem;
+    overflow: hidden;
+    aspect-ratio: auto !important;   /* remove forced 16:9 */
+    height: auto !important;
+  }
+
+  /* Don’t use absolute positioning like the hero; just hide non-active slides */
+  .figure-slideshow a {
+    position: relative !important;
+    inset: auto !important;
+    opacity: 0;
+    display: none;
+    transition: opacity .4s ease;
+  }
+
+  .figure-slideshow a.active {
+    opacity: 1;
+    display: block;
+  }
+
+  /* Critical part: show the FULL image, no cropping */
+  .figure-slideshow img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+    border-radius: .5rem;
+  }
+
+  /* Static images in figure-grid also responsive & rounded */
+  .figure-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: .5rem;
+  }
+</style>
+
+
 ## Overview
-We document a previously undescribed **nicothoid copepod** that consumes eggs of **Pacific rock crabs (Cancridae)**. The study pairs **field collections** with **brood-stage–specific intensity estimates**, establishing parasite impact during development and highlighting a potential missing piece in crab reproductive ecology.
+
+During a classroom lab at UCSB in October 2021, we unexpectedly found a **nicothoid copepod egg predator** (Nicothoidae, cf. *Choniosphaera* sp.) infesting brooding **Pacific rock crabs** along the Gaviota Coast (Santa Barbara, CA). Follow-up collections revealed that this parasite occurs on three commercially important cancrids and can reach very high intensities on egg masses, with adults closely mimicking crab eggs in size and color.  
+
+This work documents the **first record of a nicothoid egg predator on cancrid crabs in the Eastern Pacific**, describes its life cycle across egg and gill microhabitats, and highlights implications for **fecundity and fishery sustainability**.
+
+## Citation and Links
+
+> **Orli, J.E.**, Lecuona, S.M., Plewe, G.O., Gadler, C.N., Kuris, A.M., Tang, D., & Zilz, Z.L. 2025.  
+> *Discovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California.*  
+> **Ecology** 106(12): e70263. [https://doi.org/10.1002/ecy.70263](https://doi.org/10.1002/ecy.70263)
+
+- **Article (open access):**  
+  - Ecology — [10.1002/ecy.70263](https://doi.org/10.1002/ecy.70263)
+- **Data & code:**  
+  - Dryad — [10.5061/dryad.rv15dv4fw](https://doi.org/10.5061/dryad.rv15dv4fw)
+- **Video archive:**  
+  - Zenodo — [10.5281/zenodo.10699477](https://doi.org/10.5281/zenodo.10699477)
 
 ## Quick Facts
-- **Role:** Researcher, Kuris Lab (UCSB)  
-- **When:** Sep 2021 – present  
-- **Skills:** crab identification, dissections, brood-stage scoring, intensity modeling, figure design  
-- **Links:** Manuscript: *(in review)*
+
+- **Role:** Lead author, Kuris Lab (UCSB)  
+- **When:** 2021–2025  
+- **Hosts:** *Metacarcinus anthonyi*, *Romaleon antennarium*, *Cancer productus*  
+- **Depth / region:** 66–100 m traps along the Gaviota Coast, plus additional Southern California sites
+- **Project type:** Scientific Naturalist — discovery, natural history, and fishery context  
+- **Skills:** field collections, crab ID, dissections, brood-stage scoring, parasite life-history description, figure & media design, open data curation  
 
 ## Background and Questions
-- How frequently do broods show **nicothoid infestation**, and does **intensity** vary by **brood stage**?  
-- What are the implications for **fecundity loss** and **year-class strength** in fished cancrids?
+
+Externally brooding crustaceans host a long list of **egg predators** (nemerteans, copepods, other symbionts) that can cause large brood losses and even contribute to fishery collapses. Nicothoid copepods are specialized crustacean associates that often **mimic host eggs** and feed on yolk through the egg shell.   
+
+We focus on:
+
+- How common is this nicothoid on **California rock crabs**, and which host stages are most affected?  
+- How does its **life cycle** use egg masses and gills as microhabitats?  
+- What does near-ubiquitous infestation mean for **fecundity and management** of a data-poor rock crab fishery?
 
 ## Methods
-- **Collections & ID:** targeted sampling of brooding cancrids; species confirmation and morphometrics.  
-- **Dissections & Scoring:** egg mass inspection; **stage-specific** scoring of parasitism and egg condition.  
-- **Analysis:** intensity/frequency summaries by stage; simple models to approximate **egg loss** and potential **reproductive costs**.
 
-## Results (preview)
-- **Consistent presence** of a nicothoid copepod in brooding cancrids across sites.  
-- **Higher apparent intensity** at later brood stages, consistent with cumulative brood exposure.  
-- Visual evidence supports **egg predation**, not just commensal presence.  
-*(Full figures and estimates will be added upon acceptance.)*
+### Discovery and Collections
+
+- Initial discovery in a **UCSB invertebrate biology lab**, during a teaching demo of crab egg predators.  
+- Targeted collections of ovigerous cancrids by local fishers using **baited pots at 66–100 m** along the Gaviota Coast; crabs held in flow-through seawater for detailed inspection. 
+
+### Host and Parasite Observations
+
+- Identified host species and recorded **sex, size, reproductive status**.  
+- Scored egg masses by **egg developmental stage** (EDS), presence of:
+  - Adult female nicothoids  
+  - Nicothoid egg sacs and embryos  
+  - Nauplii and copepodids  
+  - Co-occurring egg predators (e.g., *Carcinonemertes* spp.).  
+- Inspected **gill lamellae** in both sexes for copepodids and other stages.
+
+### Life-Cycle Synthesis
+
+- Tracked **color and size changes** in adult females (from yellow/orange to maroon as they grow and become heavily gravid).  
+- Documented **egg sac structure** (1–4 embryos per sac) and development from embryo → nauplius → copepodid.  
+- Recorded timing of **copepodid peaks** in egg masses and their presence in gills before and after hatching, to infer how the parasite bridges between host broods. 
+
+## Key Results
+
+### 1. Novel Nicothoid Outbreak on Eastern Pacific Cancrids
+
+- The parasite matches key adult female traits of **Choniosphaera** (globular body, ventral mouthparts, leg and antennule morphology), but differs enough to remain **unidentified at the species level**.  
+- This is the **first report** of a nicothoid egg predator on cancrid crabs in the Eastern Pacific, despite decades of prior egg-mass inspections for nemertean predators.
+
+### 2. Near-ubiquitous Infestation of Breeding Hosts
+
+- Across *M. anthonyi*, *R. antennarium*, and *C. productus*, **nearly all adults** examined had at least one nicothoid life stage either on the egg mass, in the gills, or both.  
+- Ovigerous females often carried **reproductive adult females** on their egg masses; only a few juveniles and long-held males were completely free of infection.
+
+### 3. Egg Predation and Brood Impacts
+
+- Adults sit among eggs, **pierce the egg shell**, and consume yolk, leaving empty or degraded eggs and often facilitating microbial invasion.  
+- Heavily infested broods appear **maroon** due to dense clusters of pink nicothoid eggs overlaying the crab eggs.  
+- Copepodid densities peak late in host egg development, consistent with **cumulative brood exposure** and ongoing recruitment over the ~45-day brooding period (for *M. anthonyi*). 
+
+### 4. Gills as a Reservoir and Bridge Between Clutches
+
+- Copepodids occur on **gill lamellae** of both male and female crabs, and were seen on females that later extruded new egg clutches.  
+- In some females, copepodids appeared in newly laid egg masses within a day, and adults were present within nine days, suggesting **gill-to-egg transfer** at oviposition and a role for gills as a reservoir between broods. 
+
+### 5. Fishery Context and Hypotheses
+
+- The sudden appearance of a conspicuous nicothoid on a well-studied crab assemblage suggests either:
+  - A **native but episodic** parasite that becomes abundant in decadal pulses (as reported for *Choniosphaera* spp. in the Atlantic), or  
+  - A recent **host shift** onto cancrids from another host.  
+- Given that rock crabs in California are **under-managed and data-limited**, a near-universal egg predator could substantially erode **reproductive output and year-class strength** and warrants continued monitoring and quantification of egg mortality.
+
+## Figures
+
+### Figure 1 — Adult Nicothoids on Egg Masses (Orli et al. 2025, Fig. 1)
+
+<div class="figure-grid">
+  <!-- Figure 1a: slideshow sequence -->
+<figure>
+<div class="hero-slideshow figure-slideshow" id="fig1a-sequence" aria-label="Adult nicothoid sequence">
+  <a href="../../images/research/nicothoid_fig1a_seq1.jpg" data-fancybox="fig1a-seq" class="active">
+    <img src="../../images/research/nicothoid_fig1a_seq1.jpg" alt="Small yellow adult nicothoid on crab eggs">
+  </a>
+  <a href="../../images/research/nicothoid_fig1a_seq2.jpg" data-fancybox="fig1a-seq">
+    <img src="../../images/research/nicothoid_fig1a_seq2.jpg" alt="Slightly larger orange adult nicothoid">
+  </a>
+  <a href="../../images/research/nicothoid_fig1a_seq3.jpg" data-fancybox="fig1a-seq">
+    <img src="../../images/research/nicothoid_fig1a_seq3.jpg" alt="Intermediate adult nicothoid with more eggs">
+  </a>
+  <a href="../../images/research/nicothoid_fig1a_seq4.jpg" data-fancybox="fig1a-seq">
+    <img src="../../images/research/nicothoid_fig1a_seq4.jpg" alt="Large maroon adult nicothoid">
+  </a>
+  <a href="../../images/research/nicothoid_fig1a_seq5.jpg" data-fancybox="fig1a-seq">
+    <img src="../../images/research/nicothoid_fig1a_seq5.jpg" alt="Very large, heavily gravid maroon adult nicothoid">
+  </a>
+</div>
+<figcaption>
+      Sequence of adult female nicothoids from <em>Metacarcinus anthonyi</em> showing growth and color change from yellow/orange to maroon as they enlarge and become heavily gravid.
+</figcaption>
+</figure>
+
+  <figure>
+    <a href="../../images/research/nicothoid_fig1b.jpg" data-fancybox="kuris-figs">
+      <img src="../../images/research/nicothoid_fig1b.jpg" alt="Adult nicothoids and their eggs among crab eggs">
+    </a>
+    <figcaption>
+      Adult nicothoids with their pink egg sacs nestled among crab eggs; empty crab egg capsules mark where embryos have been consumed.
+    </figcaption>
+  </figure>
+</div>
+
+<div class="figure-grid">
+  <figure>
+    <a href="../../images/research/nicothoid_fig1c.jpg" data-fancybox="kuris-figs">
+      <img src="../../images/research/nicothoid_fig1c.jpg" alt="Gravid adult nicothoid with multiple egg sacs">
+    </a>
+    <figcaption>
+      Gravid adult female carrying multiple egg sacs that tangle among the host's egg fascicles.
+    </figcaption>
+  </figure>
+
+<!-- Figure 1e–f: slideshow comparing heavy vs light infestation -->
+<figure>
+<div class="hero-slideshow figure-slideshow" id="fig1ef-sequence" aria-label="Heavily versus lightly infested egg masses">
+  <a href="../../images/research/nicothoid_fig1e.jpg" data-fancybox="fig1ef-seq" class="active">
+    <img src="../../images/research/nicothoid_fig1e.jpg" alt="Heavily infested egg mass with dense nicothoid coverage">
+  </a>
+  <a href="../../images/research/nicothoid_fig1f.jpg" data-fancybox="fig1ef-seq">
+    <img src="../../images/research/nicothoid_fig1f.jpg" alt="Lightly infested egg mass at similar developmental stage">
+  </a>
+</div>
+<figcaption>
+      Comparison of a heavily infested egg mass (deep maroon due to dense nicothoid eggs) and a similarly staged brood with relatively few parasites. Hover to pause the slideshow; click to open images in a lightbox.
+</figcaption>
+</figure>
+</div>
+
+### Figure 2 — Larval Nicothoids and Gill Infestations (Orli et al. 2025, Fig. 2)
+
+<!-- Figure 2a–d: slideshow -->
+<figure>
+<div class="hero-slideshow figure-slideshow" id="fig2-sequence" aria-label="Larval series and gill infestations">
+  <!-- 2a: embryos in egg sacs -->
+  <a href="../../images/research/nicothoid_fig2a.jpg" data-fancybox="fig2-seq" class="active">
+    <img src="../../images/research/nicothoid_fig2a.jpg" alt="Nicothoid embryos in egg sacs attached to adult female">
+  </a>
+  <!-- 2b: nauplii -->
+  <a href="../../images/research/nicothoid_fig2b.jpg" data-fancybox="fig2-seq">
+    <img src="../../images/research/nicothoid_fig2b.jpg" alt="Nicothoid nauplii stages among crab eggs">
+  </a>
+  <!-- 2c: copepodids on egg mass -->
+  <a href="../../images/research/nicothoid_fig2c.jpg" data-fancybox="fig2-seq">
+    <img src="../../images/research/nicothoid_fig2c.jpg" alt="Copepodid stages in situ on crab egg mass">
+  </a>
+  <!-- 2d: copepodids on excised gills -->
+  <a href="../../images/research/nicothoid_fig2d.jpg" data-fancybox="fig2-seq">
+    <img src="../../images/research/nicothoid_fig2d.jpg" alt="Nicothoid copepodids attached to excised gills of Metacarcinus anthonyi">
+  </a>
+</div>
+<figcaption>
+    Larval and juvenile stages of the nicothoid: embryos in egg sacs, nauplii, copepodids on egg masses, and copepodids attached to excised gills of <em>Metacarcinus anthonyi</em>.
+    Hover to pause the slideshow; click to open any panel in a lightbox.
+</figcaption>
+</figure>
+
+## Videos
+
+### Adult Nicothoid Behavior
+
+<figure>
+  <video controls preload="metadata" width="100%">
+    <source src="../../videos/Adult_Nicothoid_Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>
+    Adult nicothoid moving among host eggs and feeding, showing egg-mimicry and attachment behavior (from the Zenodo video archive).
+  </figcaption>
+</figure>
+
+### Copepodids on Gills
+
+<figure>
+  <video controls preload="metadata" width="100%">
+    <source src="../../videos/Nicothoid_Gills_Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>
+    Copepodid stages on crab gill lamellae, highlighting the gill microhabitat as a reservoir between broods.
+  </figcaption>
+</figure>
+
+### Infested Egg Masses
+
+<figure>
+  <video controls preload="metadata" width="100%">
+    <source src="../../videos/Nicothoid_EggMass_Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>
+    Heavily infested egg mass with dense clusters of nicothoid adults and egg sacs interspersed among crab eggs.
+  </figcaption>
+</figure>
+
+*Additional videos and raw files are archived in Zenodo: [10.5281/zenodo.10699477](https://doi.org/10.5281/zenodo.10699477).*
 
 ## Outputs
-- **Manuscript:** *in review*  
-- Figure Set *(upon publication)*
- 
+
+- **Peer-reviewed article:**  
+  - Orli et al. 2025. *Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.* Ecology 106(12): e70263.  
+
+- **Open data & code:**  
+  - Dryad dataset and analysis code: [10.5061/dryad.rv15dv4fw](https://doi.org/10.5061/dryad.rv15dv4fw).  
+
+- **Multimedia:**  
+  - High-resolution videos and supplementary media: [10.5281/zenodo.10699477](https://doi.org/10.5281/zenodo.10699477).  
+
 ## Acknowledgements
-Kuris Lab (UCSB), field partners, and collaborators for logistics, access, and taxonomic feedback.
 
----
-
-[^notes]: Summarized from ongoing Kuris Lab field and lab notes; figures shown here are representative placeholders until the manuscript posts a preprint.
+This project builds on work with the Kuris Lab at UCSB, collaborators who helped collect crabs and identify copepods, and the UCSB Coastal Fund (CF-202204-02367), which supported field and lab work. :contentReference[oaicite:11]{index=11}  

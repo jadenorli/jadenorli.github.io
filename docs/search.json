@@ -25,7 +25,14 @@
     "href": "research.html#publications",
     "title": "jadenorli",
     "section": "Publications",
-    "text": "Publications\n\nIn review: Orli, J. E. et al. “Discovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California.”\n\nIn review: Zilz, Z. et al. “A parasite-inclusive food web for the California rocky intertidal zone.”"
+    "text": "Publications"
+  },
+  {
+    "objectID": "research.html#publications-1",
+    "href": "research.html#publications-1",
+    "title": "jadenorli",
+    "section": "Publications",
+    "text": "Publications\n\nOrli, Jaden E., Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” Ecology 106(12): e70263. https://doi.org/10.1002/ecy.70263\nIn review: Zilz, Zoe L., Hascall, E., DiBartolo, A., Flores, D., Cameron, S., Orli, Jaden E., and Kuris, A. M. “A Parasite-inclusive Food Web for the California Rocky Intertidal Zone.”"
   },
   {
     "objectID": "research.html#open-source-and-analyses",
@@ -67,49 +74,70 @@
     "href": "kuris_lab.html#overview",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Overview",
-    "text": "Overview\nWe document a previously undescribed nicothoid copepod that consumes eggs of Pacific rock crabs (Cancridae). The study pairs field collections with brood-stage–specific intensity estimates, establishing parasite impact during development and highlighting a potential missing piece in crab reproductive ecology."
+    "text": "Overview\nDuring a classroom lab at UCSB in October 2021, we unexpectedly found a nicothoid copepod egg predator (Nicothoidae, cf. Choniosphaera sp.) infesting brooding Pacific rock crabs along the Gaviota Coast (Santa Barbara, CA). Follow-up collections revealed that this parasite occurs on three commercially important cancrids and can reach very high intensities on egg masses, with adults closely mimicking crab eggs in size and color.\nThis work documents the first record of a nicothoid egg predator on cancrid crabs in the Eastern Pacific, describes its life cycle across egg and gill microhabitats, and highlights implications for fecundity and fishery sustainability."
+  },
+  {
+    "objectID": "kuris_lab.html#citation-and-links",
+    "href": "kuris_lab.html#citation-and-links",
+    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "section": "Citation and Links",
+    "text": "Citation and Links\n\nOrli, J.E., Lecuona, S.M., Plewe, G.O., Gadler, C.N., Kuris, A.M., Tang, D., & Zilz, Z.L. 2025.\nDiscovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California.\nEcology 106(12): e70263. https://doi.org/10.1002/ecy.70263\n\n\nArticle (open access):\n\nEcology — 10.1002/ecy.70263\n\nData & code:\n\nDryad — 10.5061/dryad.rv15dv4fw\n\nVideo archive:\n\nZenodo — 10.5281/zenodo.10699477"
   },
   {
     "objectID": "kuris_lab.html#quick-facts",
     "href": "kuris_lab.html#quick-facts",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Researcher, Kuris Lab (UCSB)\n\nWhen: Sep 2021 – present\n\nSkills: crab identification, dissections, brood-stage scoring, intensity modeling, figure design\n\nLinks: Manuscript: (in review)"
+    "text": "Quick Facts\n\nRole: Lead author, Kuris Lab (UCSB)\n\nWhen: 2021–2025\n\nHosts: Metacarcinus anthonyi, Romaleon antennarium, Cancer productus\n\nDepth / region: 66–100 m traps along the Gaviota Coast, plus additional Southern California sites\nProject type: Scientific Naturalist — discovery, natural history, and fishery context\n\nSkills: field collections, crab ID, dissections, brood-stage scoring, parasite life-history description, figure & media design, open data curation"
   },
   {
     "objectID": "kuris_lab.html#background-and-questions",
     "href": "kuris_lab.html#background-and-questions",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Background and Questions",
-    "text": "Background and Questions\n\nHow frequently do broods show nicothoid infestation, and does intensity vary by brood stage?\n\nWhat are the implications for fecundity loss and year-class strength in fished cancrids?"
+    "text": "Background and Questions\nExternally brooding crustaceans host a long list of egg predators (nemerteans, copepods, other symbionts) that can cause large brood losses and even contribute to fishery collapses. Nicothoid copepods are specialized crustacean associates that often mimic host eggs and feed on yolk through the egg shell.\nWe focus on:\n\nHow common is this nicothoid on California rock crabs, and which host stages are most affected?\n\nHow does its life cycle use egg masses and gills as microhabitats?\n\nWhat does near-ubiquitous infestation mean for fecundity and management of a data-poor rock crab fishery?"
   },
   {
     "objectID": "kuris_lab.html#methods",
     "href": "kuris_lab.html#methods",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Methods",
-    "text": "Methods\n\nCollections & ID: targeted sampling of brooding cancrids; species confirmation and morphometrics.\n\nDissections & Scoring: egg mass inspection; stage-specific scoring of parasitism and egg condition.\n\nAnalysis: intensity/frequency summaries by stage; simple models to approximate egg loss and potential reproductive costs."
+    "text": "Methods\n\nDiscovery and Collections\n\nInitial discovery in a UCSB invertebrate biology lab, during a teaching demo of crab egg predators.\n\nTargeted collections of ovigerous cancrids by local fishers using baited pots at 66–100 m along the Gaviota Coast; crabs held in flow-through seawater for detailed inspection.\n\n\n\nHost and Parasite Observations\n\nIdentified host species and recorded sex, size, reproductive status.\n\nScored egg masses by egg developmental stage (EDS), presence of:\n\nAdult female nicothoids\n\nNicothoid egg sacs and embryos\n\nNauplii and copepodids\n\nCo-occurring egg predators (e.g., Carcinonemertes spp.).\n\n\nInspected gill lamellae in both sexes for copepodids and other stages.\n\n\n\nLife-Cycle Synthesis\n\nTracked color and size changes in adult females (from yellow/orange to maroon as they grow and become heavily gravid).\n\nDocumented egg sac structure (1–4 embryos per sac) and development from embryo → nauplius → copepodid.\n\nRecorded timing of copepodid peaks in egg masses and their presence in gills before and after hatching, to infer how the parasite bridges between host broods."
   },
   {
-    "objectID": "kuris_lab.html#results-preview",
-    "href": "kuris_lab.html#results-preview",
+    "objectID": "kuris_lab.html#key-results",
+    "href": "kuris_lab.html#key-results",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Results (preview)",
-    "text": "Results (preview)\n\nConsistent presence of a nicothoid copepod in brooding cancrids across sites.\n\nHigher apparent intensity at later brood stages, consistent with cumulative brood exposure.\n\nVisual evidence supports egg predation, not just commensal presence.\n(Full figures and estimates will be added upon acceptance.)"
+    "section": "Key Results",
+    "text": "Key Results\n\n1. Novel Nicothoid Outbreak on Eastern Pacific Cancrids\n\nThe parasite matches key adult female traits of Choniosphaera (globular body, ventral mouthparts, leg and antennule morphology), but differs enough to remain unidentified at the species level.\n\nThis is the first report of a nicothoid egg predator on cancrid crabs in the Eastern Pacific, despite decades of prior egg-mass inspections for nemertean predators.\n\n\n\n2. Near-ubiquitous Infestation of Breeding Hosts\n\nAcross M. anthonyi, R. antennarium, and C. productus, nearly all adults examined had at least one nicothoid life stage either on the egg mass, in the gills, or both.\n\nOvigerous females often carried reproductive adult females on their egg masses; only a few juveniles and long-held males were completely free of infection.\n\n\n\n3. Egg Predation and Brood Impacts\n\nAdults sit among eggs, pierce the egg shell, and consume yolk, leaving empty or degraded eggs and often facilitating microbial invasion.\n\nHeavily infested broods appear maroon due to dense clusters of pink nicothoid eggs overlaying the crab eggs.\n\nCopepodid densities peak late in host egg development, consistent with cumulative brood exposure and ongoing recruitment over the ~45-day brooding period (for M. anthonyi).\n\n\n\n4. Gills as a Reservoir and Bridge Between Clutches\n\nCopepodids occur on gill lamellae of both male and female crabs, and were seen on females that later extruded new egg clutches.\n\nIn some females, copepodids appeared in newly laid egg masses within a day, and adults were present within nine days, suggesting gill-to-egg transfer at oviposition and a role for gills as a reservoir between broods.\n\n\n\n5. Fishery Context and Hypotheses\n\nThe sudden appearance of a conspicuous nicothoid on a well-studied crab assemblage suggests either:\n\nA native but episodic parasite that becomes abundant in decadal pulses (as reported for Choniosphaera spp. in the Atlantic), or\n\nA recent host shift onto cancrids from another host.\n\n\nGiven that rock crabs in California are under-managed and data-limited, a near-universal egg predator could substantially erode reproductive output and year-class strength and warrants continued monitoring and quantification of egg mortality."
+  },
+  {
+    "objectID": "kuris_lab.html#figures",
+    "href": "kuris_lab.html#figures",
+    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "section": "Figures",
+    "text": "Figures\n\nFigure 1 — Adult Nicothoids on Egg Masses (Orli et al. 2025, Fig. 1)\n\n\n\n\n              \n\n\nSequence of adult female nicothoids from Metacarcinus anthonyi showing growth and color change from yellow/orange to maroon as they enlarge and become heavily gravid.\n\n\n\n  \n\nAdult nicothoids with their pink egg sacs nestled among crab eggs; empty crab egg capsules mark where embryos have been consumed.\n\n\n\n\n\n  \n\nGravid adult female carrying multiple egg sacs that tangle among the host’s egg fascicles.\n\n\n\n\n\n     \n\n\nComparison of a heavily infested egg mass (deep maroon due to dense nicothoid eggs) and a similarly staged brood with relatively few parasites. Hover to pause the slideshow; click to open images in a lightbox.\n\n\n\n\n\nFigure 2 — Larval Nicothoids and Gill Infestations (Orli et al. 2025, Fig. 2)\n\n\n\n               \n\n\nLarval and juvenile stages of the nicothoid: embryos in egg sacs, nauplii, copepodids on egg masses, and copepodids attached to excised gills of Metacarcinus anthonyi. Hover to pause the slideshow; click to open any panel in a lightbox."
+  },
+  {
+    "objectID": "kuris_lab.html#videos",
+    "href": "kuris_lab.html#videos",
+    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "section": "Videos",
+    "text": "Videos\n\nAdult Nicothoid Behavior\n\n\n\nYour browser does not support the video tag. \n\nAdult nicothoid moving among host eggs and feeding, showing egg-mimicry and attachment behavior (from the Zenodo video archive).\n\n\n\n\nCopepodids on Gills\n\n\n\nYour browser does not support the video tag. \n\nCopepodid stages on crab gill lamellae, highlighting the gill microhabitat as a reservoir between broods.\n\n\n\n\nInfested Egg Masses\n\n\n\nYour browser does not support the video tag. \n\nHeavily infested egg mass with dense clusters of nicothoid adults and egg sacs interspersed among crab eggs.\n\n\nAdditional videos and raw files are archived in Zenodo: 10.5281/zenodo.10699477."
   },
   {
     "objectID": "kuris_lab.html#outputs",
     "href": "kuris_lab.html#outputs",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Outputs",
-    "text": "Outputs\n\nManuscript: in review\n\nFigure Set (upon publication)"
+    "text": "Outputs\n\nPeer-reviewed article:\n\nOrli et al. 2025. Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California. Ecology 106(12): e70263.\n\nOpen data & code:\n\nDryad dataset and analysis code: 10.5061/dryad.rv15dv4fw.\n\nMultimedia:\n\nHigh-resolution videos and supplementary media: 10.5281/zenodo.10699477."
   },
   {
     "objectID": "kuris_lab.html#acknowledgements",
     "href": "kuris_lab.html#acknowledgements",
     "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nKuris Lab (UCSB), field partners, and collaborators for logistics, access, and taxonomic feedback."
+    "text": "Acknowledgements\nThis project builds on work with the Kuris Lab at UCSB, collaborators who helped collect crabs and identify copepods, and the UCSB Coastal Fund (CF-202204-02367), which supported field and lab work. :contentReferenceoaicite:11"
   },
   {
     "objectID": "index.html",
