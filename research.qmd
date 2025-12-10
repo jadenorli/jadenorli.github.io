@@ -96,7 +96,7 @@ format:
   <div class="meta">Kuris Lab, UCSB · Sep 2021 – present</div>
   <p>First description of a nicothoid copepod egg predator in Pacific rock crabs; brood-stage intensity modeling; manuscript in review.</p>
   <p class="links">
-    <a class="btn" href="#" aria-disabled="true">Manuscript (in review)</a>
+    <a class="btn" href="http://dx.doi.org/10.1002/ecy.70263">Manuscript (in review)</a>
     <a class="btn btn-primary" href="/kuris_lab.html">Read Me</a>
   </p>
 </div>
