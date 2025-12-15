@@ -1,0 +1,63 @@
+---
+title: ""
+pagetitle: "Marine Photography"
+format:
+  html:
+    page-layout: full
+    toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+<div class="page-banner" role="img" aria-label="Marine Photography banner">
+<video
+autoplay muted loop playsinline
+class="page-banner-video">
+<source src="videos/marine.mp4" type="video/mp4">
+</video>
+
+<div class="page-banner-overlay"></div>
+
+<div class="page-banner-inner" markdown="1">
+  
+# Marine Photography {.page-banner-title}
+<p class="page-banner-subtitle">reef atmospheres • pelagic motion • geometry</p>
+
+  </div>
+</div>
+
+
+```{r setup-utf8, include=FALSE}
+try(Sys.setlocale("LC_CTYPE", "en_US.UTF-8"), silent = TRUE)
+options(encoding = "UTF-8")
+
+knitr::knit_hooks$set(output = function(x, options) {
+  Encoding(x) <- "UTF-8"
+  enc2utf8(x)
+})
+```
+
+```{r, results='asis'}
+library(here)
+library(tidyverse)
+library(fs)
+library(glue)
+
+source("scripts/render_gallery.R")
+```
+
+
+```{r, results='asis'}
+render_gallery(
+  category      = "marine",
+  metadata_file = "data/marine_metadata.csv",
+  path_prefix   = "images"
+)
+```
+
+<div class="gallery-footer">
+  <a class="btn btn-primary" href="photography.html">Back to Photography</a>
+  <a class="read-more" href="#">Back to top</a>
+</div>

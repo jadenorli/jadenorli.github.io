@@ -1,0 +1,62 @@
+---
+title: ""
+pagetitle: "Terrestrial Photography"
+format:
+  html:
+    page-layout: full
+    toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+<div class="page-banner" role="img" aria-label="Terrestrial Photography banner">
+<video
+autoplay muted loop playsinline
+class="page-banner-video">
+<source src="videos/terrestrial.mp4" type="video/mp4">
+</video>
+
+<div class="page-banner-overlay"></div>
+
+<div class="page-banner-inner" markdown="1">
+  
+# Terrestrial Photography {.page-banner-title}
+<p class="page-banner-subtitle">desert light • coastline edges • quiet transitions</p>
+
+  </div>
+</div>
+
+```{r setup-utf8, include=FALSE}
+try(Sys.setlocale("LC_CTYPE", "en_US.UTF-8"), silent = TRUE)
+options(encoding = "UTF-8")
+
+knitr::knit_hooks$set(output = function(x, options) {
+  Encoding(x) <- "UTF-8"
+  enc2utf8(x)
+})
+```
+
+```{r, results='asis'}
+library(here)
+library(tidyverse)
+library(fs)
+library(glue)
+
+source("scripts/render_gallery.R")
+```
+
+
+```{r, results='asis'}
+render_gallery(
+  category      = "terrestrial",
+  metadata_file = "data/terrestrial_metadata.csv",
+  path_prefix   = "images"
+)
+```
+
+<div class="gallery-footer">
+  <a class="btn btn-primary" href="photography.html">Back to Photography</a>
+  <a class="read-more" href="#">Back to top</a>
+</div>
