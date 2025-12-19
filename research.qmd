@@ -92,13 +92,14 @@ format:
   <a data-fancybox="kuris" href="images/research/kuris_crab.jpg">
     <img src="images/research/kuris_crab.jpg" alt="Nicothoid copepod egg predator on cancrid crabs" loading="lazy" decoding="async">
   </a>
-  <h4>Nicothoid Copepod Parasite — Cancrid Crabs</h4>
-  <div class="meta">Kuris Lab, UCSB · Sep 2021 – present</div>
-  <p>First description of a nicothoid copepod egg predator in Pacific rock crabs; brood-stage intensity modeling; manuscript in review.</p>
-  <p class="links">
-    <a class="btn" href="http://dx.doi.org/10.1002/ecy.70263">Manuscript</a>
-    <a class="btn btn-primary" href="/kuris_lab.html">Read Me</a>
-  </p>
+<h4>Nicothoid Copepod Parasite — Cancrid Crabs</h4>
+<div class="meta">Kuris Lab, UCSB · Sep 2021 – present</div>
+<p>First description of a nicothoid copepod egg predator in Pacific rock crabs; brood-stage intensity modeling; manuscript in review.</p>
+
+<p class="links">
+  <a class="btn" href="https://doi.org/10.1002/ecy.70263">Manuscript</a>
+  <a class="btn btn-primary" href="/kuris_lab.html">Read Me</a>
+</p>
 </div>
 
 <div class="card">
@@ -137,6 +138,12 @@ format:
 ## Publications
 
 - <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” <em>Ecology</em> 106(12): e70263. <a href="https://doi.org/10.1002/ecy.70263">https://doi.org/10.1002/ecy.70263</a>
+
+- <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025.
+  “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.”
+  <em>Ecology</em> 106(12): e70263.
+  <a href="https://doi.org/10.1002/ecy.70263">https://doi.org/10.1002/ecy.70263</a>
+  <span class="pub-note">— Cover image featured on the January 2026 issue.</span>
 
 - <strong>In review:</strong> Zilz, Zoe L., Hascall, E., DiBartolo, A., Flores, D., Cameron, S., <strong>Orli, Jaden E.</strong>, and Kuris, A. M. “A Parasite-inclusive Food Web for the California Rocky Intertidal Zone.”
 </div>
