@@ -289,11 +289,445 @@ Clarity over cleverness; field reality over assumptions; teams that surface unce
 </div><!-- /.detail-stack -->
 </details>
 :::
-
 :::
 
   </div>
 </div>
+
+<!-- ========= DIVING ========= -->
+<div class="section-band section-diving" id="diving">
+  <div class="band-inner">
+
+## Diving
+
+::: {.stacked-cards}
+
+::: {.card}
+### Dive Map
+<div class="metrics">
+  <span class="pill">All Dives</span>
+  <span class="pill">Scientific • Recreational • Training</span>
+</div>
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, eval = FALSE}
+library(readr)
+library(dplyr)
+library(lubridate)
+library(leaflet)
+library(htmltools)
+
+photo_dir <- "images/dives"
+
+dives <- read_csv("data/dive_log.csv", show_col_types = FALSE) %>%
+  rename(lat = latitude, lon = longitude) %>%
+  mutate(
+    category = tolower(trimws(category)),
+    date_parsed  = suppressWarnings(mdy(date)),
+    date_display = ifelse(!is.na(date_parsed), format(date_parsed, "%b %d, %Y"), ""),
+    image_path = ifelse(!is.na(file) & nzchar(file), file.path(photo_dir, file), NA_character_)
+  ) %>%
+  # Keep ONLY these categories (no "other")
+  filter(category %in% c("scientific","recreational","training")) %>%
+  filter(!is.na(lat), !is.na(lon))
+
+cat_cols <- c(
+  scientific   = "#4D6C77",
+  recreational = "#D1796B",
+  training     = "#A3C3BD"
+)
+
+# Add explicit columns (avoids formula scoping weirdness)
+dives <- dives %>%
+  mutate(
+    group = tools::toTitleCase(category),
+    col   = unname(cat_cols[category])
+  )
+
+chip <- function(x) tags$span(class="dive-chip", x)
+
+popup_card <- function(r){
+  depth_m <- if (!is.na(r$max_depth_m)) round(r$max_depth_m, 1) else NA_real_
+  depth_ft <- if (!is.na(depth_m)) round(depth_m * 3.28084, 0) else NA_real_
+
+  chips <- list(
+    if (nzchar(r$date_display)) chip(r$date_display) else NULL,
+    chip(r$group),
+    if (!is.na(depth_m)) chip(paste0("Max ", depth_m, " m (", depth_ft, " ft)")) else NULL,
+    if (!is.na(r$bottom_time_min)) chip(paste0(r$bottom_time_min, " min")) else NULL
+  )
+
+  img_block <- if (!is.na(r$image_path) && nzchar(r$image_path)) {
+    tags$a(href = r$image_path, `data-fancybox` = "dives",
+           tags$img(src = r$image_path, class="dive-card__img"))
+  } else NULL
+
+  cap <- if ("caption" %in% names(r) && !is.na(r$caption) && nzchar(r$caption)) {
+    tags$p(class="dive-card__caption", r$caption)
+  } else NULL
+
+  as.character(
+    tags$div(class="dive-card",
+      tags$h4(class="dive-card__title", r$site),
+      tags$p(class="dive-card__sub", paste0(r$region, " • ", r$country)),
+      tags$div(class="dive-card__meta", chips),
+      cap,
+      img_block
+    )
+  )
+}
+
+# ---- Custom cluster icons (THIS removes the default yellow/green) ----
+cluster_icon_js <- JS("
+function(cluster) {
+  var count = cluster.getChildCount();
+
+  // One unified cluster color (your soft coral tint)
+  var c = '#688D8D';
+
+  // size scales with count
+  var size = (count < 10) ? 34 : (count < 50) ? 40 : 46;
+
+  return new L.DivIcon({
+    html:
+      '<div class=\"dive-cluster\" style=\"' +
+      'background:' + c + '; width:' + size + 'px; height:' + size + 'px;\">' +
+      '<span>' + count + '</span></div>',
+    className: 'dive-cluster-wrap',
+    iconSize: [size, size]
+  });
+}
+")
+
+
+cluster_opts <- function(){
+  markerClusterOptions(
+    spiderfyOnMaxZoom = TRUE,
+    showCoverageOnHover = FALSE,
+    zoomToBoundsOnClick = TRUE,
+    disableClusteringAtZoom = 7,
+    iconCreateFunction = cluster_icon_js
+  )
+}
+
+
+
+tiles <- providers$Esri.OceanBasemap
+
+div(class="dive-map",
+  {
+    m <- leaflet(options = leafletOptions(scrollWheelZoom = FALSE)) %>%
+      addProviderTiles(tiles)
+
+    # 3 layers with separate cluster styling + overlay toggles (no "Other")
+    for (cat in c("scientific","recreational","training")) {
+      dat <- dives %>% filter(category == cat)
+      if (nrow(dat) == 0) next
+
+      m <- m %>%
+        addCircleMarkers(
+          data = dat,
+          lng = ~lon, lat = ~lat,
+          radius = 5.5,
+          stroke = TRUE, weight = 1,
+          color = ~col, fillColor = ~col,
+          fillOpacity = 0.85,
+          popup = lapply(seq_len(nrow(dat)), function(i) popup_card(dat[i, ])),
+          group = tools::toTitleCase(cat),
+          clusterOptions = cluster_opts()
+        )
+    }
+
+    m %>%
+      addLayersControl(
+        overlayGroups = c("Scientific", "Recreational", "Training"),
+        options = layersControlOptions(collapsed = FALSE)
+      ) %>%
+      addLegend(
+        position = "bottomright",
+        colors = unname(cat_cols),
+        labels = tools::toTitleCase(names(cat_cols)),
+        title = "Dive Type",
+        opacity = 0.9
+      ) %>%
+      fitBounds(
+        lng1 = min(dives$lon, na.rm = TRUE),
+        lat1 = min(dives$lat, na.rm = TRUE),
+        lng2 = max(dives$lon, na.rm = TRUE),
+        lat2 = max(dives$lat, na.rm = TRUE)
+      )
+  }
+)
+```
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+# ── Packages ───────────────────────────────────────────────────────────────────
+library(readr)
+library(dplyr)
+library(leaflet)
+library(htmltools)
+library(htmlwidgets)
+library(lubridate)
+library(jsonlite)
+
+# ── Data ───────────────────────────────────────────────────────────────────────
+photo_dir <- "images/dives"
+
+dives <- read_csv("data/dive_log.csv", show_col_types = FALSE) %>%
+  rename(lat = latitude, lon = longitude) %>%
+  mutate(
+    date_parsed  = mdy(date),
+    year         = year(date_parsed),
+    date_display = format(date_parsed, "%d %b %Y"),
+    category     = tolower(trimws(category)),
+    image_path   = ifelse(!is.na(file) & nzchar(file),
+                          file.path(photo_dir, file), NA_character_)
+  ) %>%
+  filter(!is.na(lat), !is.na(lon)) %>%
+  filter(category %in% c("scientific", "recreational", "training"))
+
+# ── Palette — exact site CSS variables ────────────────────────────────────────
+cat_colors <- c(
+  scientific   = "#4D6C77",   # --marine-teal-3
+  recreational = "#D1796B",   # --marine-coral
+  training     = "#A3C3BD"    # --marine-teal-1
+)
+pal <- colorFactor(unname(cat_colors), levels = names(cat_colors))
+
+# ── Popup builder ──────────────────────────────────────────────────────────────
+make_popup <- function(r) {
+  img_tag <- if (!is.na(r$image_path) && nzchar(r$image_path))
+    sprintf('<img src="%s" class="dp-photo" alt="Dive photo at %s">',
+            r$image_path, htmlEscape(r$site))
+  else
+    sprintf('<div class="dp-no-photo"><span>%s</span></div>',
+            toupper(substr(r$site, 1, 2)))
+
+  cap_tag <- if (!is.na(r$caption) && nzchar(r$caption))
+    sprintf('<p class="dp-caption">%s</p>', htmlEscape(r$caption))
+  else ""
+
+  depth_tag <- if (!is.na(r$max_depth_m))
+    sprintf('<span class="dp-chip">&#8595;&thinsp;%.0f m</span>', r$max_depth_m)
+  else ""
+
+  time_tag <- if (!is.na(r$bottom_time_min))
+    sprintf('<span class="dp-chip">&#8986;&thinsp;%d min</span>',
+            as.integer(r$bottom_time_min))
+  else ""
+
+  sprintf('
+<div class="dive-popup">
+  %s
+  <div class="dp-body">
+    <p class="dp-site">%s</p>
+    <p class="dp-loc">%s &middot; %s</p>
+    <p class="dp-date">%s</p>
+    <div class="dp-chips">
+      <span class="dp-chip dp-cat-%s">%s</span>
+      <span class="dp-chip dp-yr">%d</span>
+      %s %s
+    </div>
+    %s
+  </div>
+</div>',
+    img_tag,
+    htmlEscape(r$site),
+    htmlEscape(r$region), htmlEscape(r$country),
+    r$date_display,
+    r$category, tools::toTitleCase(r$category),
+    r$year,
+    depth_tag, time_tag,
+    cap_tag
+  )
+}
+
+popups <- lapply(seq_len(nrow(dives)), function(i) make_popup(dives[i, ]))
+
+# ── Summary statistics ─────────────────────────────────────────────────────────
+n_total   <- nrow(dives)
+n_ctry    <- n_distinct(dives$country)
+n_sites   <- n_distinct(dives$site)
+deepest   <- max(dives$max_depth_m, na.rm = TRUE)
+hrs_total <- round(sum(dives$bottom_time_min, na.rm = TRUE) / 60)
+yr_min    <- min(dives$year, na.rm = TRUE)
+yr_max    <- max(dives$year, na.rm = TRUE)   # still needed for the year slider
+
+# ── Custom cluster icon ────────────────────────────────────────────────────────
+cluster_fn <- JS("function(cluster) {
+  var n  = cluster.getChildCount();
+  var sz = n < 10 ? 32 : n < 50 ? 40 : 50;
+  return L.divIcon({
+    html: '<div class=\"dm-cluster-bubble\" style=\"width:' + sz + 'px;height:' + sz + 'px\">' + n + '</div>',
+    className: 'dm-cluster-wrap',
+    iconSize: L.point(sz, sz)
+  });
+}")
+
+cluster_opts <- markerClusterOptions(
+  iconCreateFunction  = cluster_fn,
+  showCoverageOnHover = FALSE,
+  spiderfyOnMaxZoom   = TRUE,
+  zoomToBoundsOnClick = TRUE,
+  maxClusterRadius    = 50
+)
+
+# ── Build map (no addControl — panels live outside) ───────────────────────────
+years <- sort(unique(dives$year))
+
+m <- leaflet(options = leafletOptions(scrollWheelZoom = FALSE)) %>%
+  addProviderTiles("Esri.OceanBasemap",
+                   options = providerTileOptions(opacity = 1)) %>%
+  addProviderTiles("CartoDB.PositronOnlyLabels",
+                   options = providerTileOptions(opacity = 0.45))
+
+for (yr in years) {
+  yr_dives  <- dives %>% filter(year == yr)
+  yr_popups <- popups[dives$year == yr]
+
+  m <- m %>% addCircleMarkers(
+    data           = yr_dives,
+    lng            = ~lon, lat = ~lat,
+    radius         = 7,
+    color          = ~pal(category),
+    fillColor      = ~pal(category),
+    fillOpacity    = 0.88,
+    weight         = 2, opacity = 1,
+    popup          = yr_popups,
+    label          = ~site,
+    labelOptions   = labelOptions(
+      style     = list("font-family" = "inherit", "font-size" = "0.78rem",
+                       "border-color" = "transparent", "padding" = "4px 8px"),
+      direction = "auto"
+    ),
+    group          = as.character(yr),
+    clusterOptions = cluster_opts
+  )
+}
+
+m <- m %>%
+  addLayersControl(
+    overlayGroups = as.character(years),
+    options       = layersControlOptions(collapsed = FALSE)
+  ) %>%
+  fitBounds(
+    lng1 = min(dives$lon, na.rm = TRUE) - 4,
+    lat1 = min(dives$lat, na.rm = TRUE) - 4,
+    lng2 = max(dives$lon, na.rm = TRUE) + 4,
+    lat2 = max(dives$lat, na.rm = TRUE) + 4
+  )
+
+# ── Inject popup CSS + year-filter JS via onRender ────────────────────────────
+years_json <- toJSON(years, auto_unbox = FALSE)
+
+m <- m %>% onRender(sprintf("
+function(el, x) {
+  var years = %s;
+
+  /* hide the default layers control — JS slider drives visibility */
+  var lc = document.querySelector('.leaflet-control-layers');
+  if (lc) lc.style.display = 'none';
+
+  var slider  = document.getElementById('dm-yr-slider');
+  var display = document.getElementById('dm-yr-val');
+  if (!slider || !display) return;
+
+  function getLayerCheckboxes() {
+    var out = {};
+    document.querySelectorAll('.leaflet-control-layers-overlays label')
+      .forEach(function(lbl) {
+        var inp  = lbl.querySelector('input[type=checkbox]');
+        var span = lbl.querySelector('span');
+        var text = (span ? span.textContent : lbl.textContent).trim();
+        if (inp) out[text] = inp;
+      });
+    return out;
+  }
+
+  function filterToYear(targetYr) {
+    var cbs = getLayerCheckboxes();
+    years.forEach(function(y) {
+      var show = (targetYr === null || y === targetYr);
+      var inp  = cbs[String(y)];
+      if (inp && inp.checked !== show) inp.click();
+    });
+  }
+
+  slider.addEventListener('input', function() {
+    var yr = parseInt(this.value);
+    display.textContent = yr;
+    filterToYear(yr);
+  });
+
+  window.dmYrReset = function() {
+    slider.value = slider.max;
+    display.innerHTML = 'All years';
+    filterToYear(null);
+  };
+}
+", years_json))
+
+# ── Assemble layout: sidebar (stats + filter) beside the map ──────────────────
+stats_panel <- tags$div(class = "dm-stats-panel",
+  tags$p(class = "dm-panel-head", "Dive Log"),
+  tags$div(class = "dm-stat-grid",
+    tags$div(class = "dm-stat",
+      tags$span(class = "dm-num", n_total),
+      tags$span(class = "dm-lbl", "dives")),
+    tags$div(class = "dm-stat",
+      tags$span(class = "dm-num", n_ctry),
+      tags$span(class = "dm-lbl", "countries")),
+    tags$div(class = "dm-stat",
+      tags$span(class = "dm-num", n_sites),
+      tags$span(class = "dm-lbl", "sites")),
+    tags$div(class = "dm-stat",
+      tags$span(class = "dm-num", HTML(sprintf("%.0f&thinsp;m", deepest))),
+      tags$span(class = "dm-lbl", "deepest")),
+    tags$div(class = "dm-stat",
+      tags$span(class = "dm-num", HTML(sprintf("%d&thinsp;hr", hrs_total))),
+      tags$span(class = "dm-lbl", "bottom time"))
+  ),
+  tags$div(class = "dm-legend",
+    tags$span(class = "dm-dot", style = "background:#4D6C77"),
+    "Scientific",
+    tags$span(class = "dm-dot", style = "background:#D1796B"),
+    "Recreational",
+    tags$span(class = "dm-dot", style = "background:#A3C3BD"),
+    "Training"
+  )
+)
+
+filter_panel <- tags$div(class = "dm-filter-panel",
+  tags$p(class = "dm-panel-head", "Filter by Year"),
+  tags$p(class = "dm-yr-display", id = "dm-yr-val", HTML("All years")),
+  tags$input(
+    type  = "range", id = "dm-yr-slider",
+    min   = yr_min, max = yr_max,
+    step  = "1",    value = yr_max
+  ),
+  tags$button(id = "dm-yr-reset", onclick = "dmYrReset()", "Show All")
+)
+
+browsable(
+  tags$div(class = "dive-map-layout",
+    tags$div(class = "dive-map-sidebar",
+      stats_panel,
+      filter_panel
+    ),
+    tags$div(class = "dive-map-main",
+      m
+    )
+  )
+)
+```
+
+:::
+
+:::
+
+</div> </div>
+
 
 <div class="coral-banner" markdown="1">
 Regent Scholar • **Coastal Fund** major grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Manuscripts in review
