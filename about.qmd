@@ -577,10 +577,10 @@ cluster_opts <- markerClusterOptions(
 years <- sort(unique(dives$year))
 
 m <- leaflet(options = leafletOptions(scrollWheelZoom = FALSE)) %>%
-  addProviderTiles("Esri.OceanBasemap",
-                   options = providerTileOptions(opacity = 1)) %>%
+  addProviderTiles("Esri.WorldImagery",
+                 options = providerTileOptions(opacity = 1)) %>%
   addProviderTiles("CartoDB.PositronOnlyLabels",
-                   options = providerTileOptions(opacity = 0.45))
+                 options = providerTileOptions(opacity = 0.65))
 
 for (yr in years) {
   yr_dives  <- dives %>% filter(year == yr)
