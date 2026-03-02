@@ -473,11 +473,19 @@ years_json <- toJSON(years, auto_unbox = FALSE)
 
 m <- m %>% onRender(sprintf("
 function(el, x) {
+  var map   = this;
   var years = %s;
 
   /* hide the default layers control — JS slider drives visibility */
   var lc = document.querySelector('.leaflet-control-layers');
   if (lc) lc.style.display = 'none';
+
+  /* ── Mobile fix: force size recalc after layout settles ── */
+  function fixSize() { map.invalidateSize({ animate: false }); }
+  setTimeout(fixSize, 100);
+  setTimeout(fixSize, 400);
+  setTimeout(fixSize, 1000);
+  window.addEventListener('resize', function() { setTimeout(fixSize, 150); });
 
   var slider  = document.getElementById('dm-yr-slider');
   var display = document.getElementById('dm-yr-val');

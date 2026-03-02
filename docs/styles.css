@@ -1001,6 +1001,13 @@ code, kbd, samp{ white-space:pre-wrap; word-break:break-word; }
   .dm-filter-panel{
     flex:1 1 200px;
   }
+  .dive-map-main{
+    width:100%;
+    min-height:380px;
+  }
+  .dive-map-main .leaflet-container{
+    height:380px !important;
+  }
 }
 
 /* ── Stats panel card ─────────────────────────────────── */
