@@ -306,159 +306,8 @@ Clarity over cleverness; field reality over assumptions; teams that surface unce
 ### Dive Map
 <div class="metrics">
   <span class="pill">All Dives</span>
-  <span class="pill">Scientific • Recreational • Training</span>
+  <span class="pill">Scientific • Recreational </span>
 </div>
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE, eval = FALSE}
-library(readr)
-library(dplyr)
-library(lubridate)
-library(leaflet)
-library(htmltools)
-
-photo_dir <- "images/dives"
-
-dives <- read_csv("data/dive_log.csv", show_col_types = FALSE) %>%
-  rename(lat = latitude, lon = longitude) %>%
-  mutate(
-    category = tolower(trimws(category)),
-    date_parsed  = suppressWarnings(mdy(date)),
-    date_display = ifelse(!is.na(date_parsed), format(date_parsed, "%b %d, %Y"), ""),
-    image_path = ifelse(!is.na(file) & nzchar(file), file.path(photo_dir, file), NA_character_)
-  ) %>%
-  # Keep ONLY these categories (no "other")
-  filter(category %in% c("scientific","recreational","training")) %>%
-  filter(!is.na(lat), !is.na(lon))
-
-cat_cols <- c(
-  scientific   = "#4D6C77",
-  recreational = "#D1796B",
-  training     = "#A3C3BD"
-)
-
-# Add explicit columns (avoids formula scoping weirdness)
-dives <- dives %>%
-  mutate(
-    group = tools::toTitleCase(category),
-    col   = unname(cat_cols[category])
-  )
-
-chip <- function(x) tags$span(class="dive-chip", x)
-
-popup_card <- function(r){
-  depth_m <- if (!is.na(r$max_depth_m)) round(r$max_depth_m, 1) else NA_real_
-  depth_ft <- if (!is.na(depth_m)) round(depth_m * 3.28084, 0) else NA_real_
-
-  chips <- list(
-    if (nzchar(r$date_display)) chip(r$date_display) else NULL,
-    chip(r$group),
-    if (!is.na(depth_m)) chip(paste0("Max ", depth_m, " m (", depth_ft, " ft)")) else NULL,
-    if (!is.na(r$bottom_time_min)) chip(paste0(r$bottom_time_min, " min")) else NULL
-  )
-
-  img_block <- if (!is.na(r$image_path) && nzchar(r$image_path)) {
-    tags$a(href = r$image_path, `data-fancybox` = "dives",
-           tags$img(src = r$image_path, class="dive-card__img"))
-  } else NULL
-
-  cap <- if ("caption" %in% names(r) && !is.na(r$caption) && nzchar(r$caption)) {
-    tags$p(class="dive-card__caption", r$caption)
-  } else NULL
-
-  as.character(
-    tags$div(class="dive-card",
-      tags$h4(class="dive-card__title", r$site),
-      tags$p(class="dive-card__sub", paste0(r$region, " • ", r$country)),
-      tags$div(class="dive-card__meta", chips),
-      cap,
-      img_block
-    )
-  )
-}
-
-# ---- Custom cluster icons (THIS removes the default yellow/green) ----
-cluster_icon_js <- JS("
-function(cluster) {
-  var count = cluster.getChildCount();
-
-  // One unified cluster color (your soft coral tint)
-  var c = '#688D8D';
-
-  // size scales with count
-  var size = (count < 10) ? 34 : (count < 50) ? 40 : 46;
-
-  return new L.DivIcon({
-    html:
-      '<div class=\"dive-cluster\" style=\"' +
-      'background:' + c + '; width:' + size + 'px; height:' + size + 'px;\">' +
-      '<span>' + count + '</span></div>',
-    className: 'dive-cluster-wrap',
-    iconSize: [size, size]
-  });
-}
-")
-
-
-cluster_opts <- function(){
-  markerClusterOptions(
-    spiderfyOnMaxZoom = TRUE,
-    showCoverageOnHover = FALSE,
-    zoomToBoundsOnClick = TRUE,
-    disableClusteringAtZoom = 7,
-    iconCreateFunction = cluster_icon_js
-  )
-}
-
-
-
-tiles <- providers$Esri.OceanBasemap
-
-div(class="dive-map",
-  {
-    m <- leaflet(options = leafletOptions(scrollWheelZoom = FALSE)) %>%
-      addProviderTiles(tiles)
-
-    # 3 layers with separate cluster styling + overlay toggles (no "Other")
-    for (cat in c("scientific","recreational","training")) {
-      dat <- dives %>% filter(category == cat)
-      if (nrow(dat) == 0) next
-
-      m <- m %>%
-        addCircleMarkers(
-          data = dat,
-          lng = ~lon, lat = ~lat,
-          radius = 5.5,
-          stroke = TRUE, weight = 1,
-          color = ~col, fillColor = ~col,
-          fillOpacity = 0.85,
-          popup = lapply(seq_len(nrow(dat)), function(i) popup_card(dat[i, ])),
-          group = tools::toTitleCase(cat),
-          clusterOptions = cluster_opts()
-        )
-    }
-
-    m %>%
-      addLayersControl(
-        overlayGroups = c("Scientific", "Recreational", "Training"),
-        options = layersControlOptions(collapsed = FALSE)
-      ) %>%
-      addLegend(
-        position = "bottomright",
-        colors = unname(cat_cols),
-        labels = tools::toTitleCase(names(cat_cols)),
-        title = "Dive Type",
-        opacity = 0.9
-      ) %>%
-      fitBounds(
-        lng1 = min(dives$lon, na.rm = TRUE),
-        lat1 = min(dives$lat, na.rm = TRUE),
-        lng2 = max(dives$lon, na.rm = TRUE),
-        lat2 = max(dives$lat, na.rm = TRUE)
-      )
-  }
-)
-```
-
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 
@@ -576,7 +425,8 @@ cluster_opts <- markerClusterOptions(
 # ── Build map (no addControl — panels live outside) ───────────────────────────
 years <- sort(unique(dives$year))
 
-m <- leaflet(options = leafletOptions(scrollWheelZoom = FALSE)) %>%
+m <- leaflet(width = "100%", height = "460px",
+             options = leafletOptions(scrollWheelZoom = FALSE)) %>%
   addProviderTiles("Esri.WorldImagery",
                  options = providerTileOptions(opacity = 1)) %>%
   addProviderTiles("CartoDB.PositronOnlyLabels",
