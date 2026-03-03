@@ -31,10 +31,10 @@ I’m **Jaden Orli**, a marine ecologist from **UCSB’s College of Creative Stu
 ::: {.card}
 ### Fieldwork
 <div class="metrics">
-  <span class="pill">~350 dives</span>
-  <span class="pill">≥75 scientific</span>
+  <span class="pill">~400 dives</span>
+  <span class="pill">~100 scientific</span>
   <span class="pill">AAUS 60 ft</span>
-  <span class="pill">Seine surveys</span>
+  <span class="pill">Seine Surveys</span>
   <span class="pill">Small-boat ops</span>
 </div>
 
@@ -151,7 +151,7 @@ Metrics aligned with decisions: biomass, spawning output, size structure, yield,
 :::
 
 <div class="links">
-[Research](research.html){.read-more}[GitHub](https://github.com/jadenorli){.read-more}[Resume (PDF)](files/jaden_2025_resume.pdf){.read-more}
+[Research](research.html){.read-more}[GitHub](https://github.com/jadenorli){.read-more}[Resume (PDF)](files/jaden_2026_resume.pdf){.read-more}
 </div>
 
 :::
@@ -306,7 +306,8 @@ Clarity over cleverness; field reality over assumptions; teams that surface unce
 ### Dive Map
 <div class="metrics">
   <span class="pill">All Dives</span>
-  <span class="pill">Scientific • Recreational </span>
+  <span class="pill">Scientific</span>
+  <span class="pill">Recreational</span>
 </div>
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
@@ -336,11 +337,11 @@ dives <- read_csv("data/dive_log.csv", show_col_types = FALSE) %>%
   filter(!is.na(lat), !is.na(lon)) %>%
   filter(category %in% c("scientific", "recreational", "training"))
 
-# ── Palette — exact site CSS variables ────────────────────────────────────────
+# ── Palette ────────────────────────────────────────────────────────────────────
 cat_colors <- c(
-  scientific   = "#4D6C77",   # --marine-teal-3
-  recreational = "#D1796B",   # --marine-coral
-  training     = "#A3C3BD"    # --marine-teal-1
+  scientific   = "#4D6C77",
+  recreational = "#D1796B",
+  training     = "#A3C3BD"
 )
 pal <- colorFactor(unname(cat_colors), levels = names(cat_colors))
 
@@ -401,64 +402,88 @@ n_sites   <- n_distinct(dives$site)
 deepest   <- max(dives$max_depth_m, na.rm = TRUE)
 hrs_total <- round(sum(dives$bottom_time_min, na.rm = TRUE) / 60)
 yr_min    <- min(dives$year, na.rm = TRUE)
-yr_max    <- max(dives$year, na.rm = TRUE)   # still needed for the year slider
+yr_max    <- max(dives$year, na.rm = TRUE)
 
-# ── Custom cluster icon ────────────────────────────────────────────────────────
-cluster_fn <- JS("function(cluster) {
-  var n  = cluster.getChildCount();
-  var sz = n < 10 ? 32 : n < 50 ? 40 : 50;
-  return L.divIcon({
-    html: '<div class=\"dm-cluster-bubble\" style=\"width:' + sz + 'px;height:' + sz + 'px\">' + n + '</div>',
-    className: 'dm-cluster-wrap',
-    iconSize: L.point(sz, sz)
-  });
-}")
+# ── Per-category counts for button labels ──────────────────────────────────────
+n_sci <- sum(dives$category == "scientific")
+n_rec <- sum(dives$category == "recreational")
+n_tra <- sum(dives$category == "training")
 
-cluster_opts <- markerClusterOptions(
-  iconCreateFunction  = cluster_fn,
-  showCoverageOnHover = FALSE,
-  spiderfyOnMaxZoom   = TRUE,
-  zoomToBoundsOnClick = TRUE,
-  maxClusterRadius    = 50
+# ── Custom cluster icons — one per category color ──────────────────────────────
+make_cluster_fn <- function(hex) {
+  JS(sprintf("function(cluster) {
+    var n   = cluster.getChildCount();
+    var sz  = n < 10 ? 32 : n < 50 ? 40 : 50;
+    var col = '%s';
+    return L.divIcon({
+      html: '<div class=\"dm-cluster-bubble\" style=\"width:' + sz + 'px;height:' + sz + 'px;background:' + col + '\">' + n + '</div>',
+      className: 'dm-cluster-wrap',
+      iconSize: L.point(sz, sz)
+    });
+  }", hex))
+}
+
+# maxClusterRadius = 60 (up from 50) reduces visual collision between
+# overlapping clusters from different categories at the same location
+cluster_opts_by_cat <- list(
+  scientific   = markerClusterOptions(iconCreateFunction = make_cluster_fn("#4D6C77"),
+                                      showCoverageOnHover = FALSE, spiderfyOnMaxZoom = TRUE,
+                                      zoomToBoundsOnClick = TRUE, maxClusterRadius = 60),
+  recreational = markerClusterOptions(iconCreateFunction = make_cluster_fn("#D1796B"),
+                                      showCoverageOnHover = FALSE, spiderfyOnMaxZoom = TRUE,
+                                      zoomToBoundsOnClick = TRUE, maxClusterRadius = 60),
+  training     = markerClusterOptions(iconCreateFunction = make_cluster_fn("#A3C3BD"),
+                                      showCoverageOnHover = FALSE, spiderfyOnMaxZoom = TRUE,
+                                      zoomToBoundsOnClick = TRUE, maxClusterRadius = 60)
 )
 
-# ── Build map (no addControl — panels live outside) ───────────────────────────
-years <- sort(unique(dives$year))
+# ── Build map ──────────────────────────────────────────────────────────────────
+years      <- sort(unique(dives$year))
+categories <- c("scientific", "recreational", "training")
 
+all_groups <- as.vector(outer(as.character(years), categories,
+                               FUN = function(y, c) paste0(y, "_", c)))
+
+# scrollWheelZoom = "center" enables scroll-zoom only when the cursor is near
+# the map center — prevents the map hijacking normal page scrolling
 m <- leaflet(width = "100%", height = "460px",
-             options = leafletOptions(scrollWheelZoom = FALSE)) %>%
+             options = leafletOptions(scrollWheelZoom = "center")) %>%
   addProviderTiles("Esri.WorldImagery",
-                 options = providerTileOptions(opacity = 1)) %>%
+                   options = providerTileOptions(opacity = 1)) %>%
   addProviderTiles("CartoDB.PositronOnlyLabels",
-                 options = providerTileOptions(opacity = 0.65))
+                   options = providerTileOptions(opacity = 0.65))
 
 for (yr in years) {
-  yr_dives  <- dives %>% filter(year == yr)
-  yr_popups <- popups[dives$year == yr]
+  for (cat in categories) {
+    sub     <- dives %>% filter(year == yr, category == cat)
+    if (nrow(sub) == 0) next
+    sub_pop <- popups[dives$year == yr & dives$category == cat]
+    grp     <- paste0(yr, "_", cat)
 
-  m <- m %>% addCircleMarkers(
-    data           = yr_dives,
-    lng            = ~lon, lat = ~lat,
-    radius         = 7,
-    color          = ~pal(category),
-    fillColor      = ~pal(category),
-    fillOpacity    = 0.88,
-    weight         = 2, opacity = 1,
-    popup          = yr_popups,
-    label          = ~site,
-    labelOptions   = labelOptions(
-      style     = list("font-family" = "inherit", "font-size" = "0.78rem",
-                       "border-color" = "transparent", "padding" = "4px 8px"),
-      direction = "auto"
-    ),
-    group          = as.character(yr),
-    clusterOptions = cluster_opts
-  )
+    m <- m %>% addCircleMarkers(
+      data           = sub,
+      lng            = ~lon, lat = ~lat,
+      radius         = 7,
+      color          = ~pal(category),
+      fillColor      = ~pal(category),
+      fillOpacity    = 0.88,
+      weight         = 2, opacity = 1,
+      popup          = sub_pop,
+      label          = ~site,
+      labelOptions   = labelOptions(
+        style     = list("font-family" = "inherit", "font-size" = "0.78rem",
+                         "border-color" = "transparent", "padding" = "4px 8px"),
+        direction = "auto"
+      ),
+      group          = grp,
+      clusterOptions = cluster_opts_by_cat[[cat]]
+    )
+  }
 }
 
 m <- m %>%
   addLayersControl(
-    overlayGroups = as.character(years),
+    overlayGroups = all_groups,
     options       = layersControlOptions(collapsed = FALSE)
   ) %>%
   fitBounds(
@@ -468,30 +493,33 @@ m <- m %>%
     lat2 = max(dives$lat, na.rm = TRUE) + 4
   )
 
-# ── Inject popup CSS + year-filter JS via onRender ────────────────────────────
-years_json <- toJSON(years, auto_unbox = FALSE)
+# ── JS: year slider + category buttons ────────────────────────────────────────
+years_json <- toJSON(years,      auto_unbox = FALSE)
+cats_json  <- toJSON(categories, auto_unbox = FALSE)
 
 m <- m %>% onRender(sprintf("
 function(el, x) {
-  var map   = this;
-  var years = %s;
+  var map        = this;
+  var years      = %s;
+  var categories = %s;
 
-  /* hide the default layers control — JS slider drives visibility */
+  /* ── Hide native layers control ── */
   var lc = document.querySelector('.leaflet-control-layers');
   if (lc) lc.style.display = 'none';
 
-  /* ── Mobile fix: force size recalc after layout settles ── */
+  /* ── Mobile: force size recalc ── */
   function fixSize() { map.invalidateSize({ animate: false }); }
   setTimeout(fixSize, 100);
   setTimeout(fixSize, 400);
   setTimeout(fixSize, 1000);
   window.addEventListener('resize', function() { setTimeout(fixSize, 150); });
 
-  var slider  = document.getElementById('dm-yr-slider');
-  var display = document.getElementById('dm-yr-val');
-  if (!slider || !display) return;
+  /* ── State: which years/cats are active ── */
+  var activeYear = null;
+  var activeCats = { scientific: true, recreational: true, training: true };
 
-  function getLayerCheckboxes() {
+  /* ── Get the hidden checkbox for a group name ── */
+  function getCheckboxes() {
     var out = {};
     document.querySelectorAll('.leaflet-control-layers-overlays label')
       .forEach(function(lbl) {
@@ -503,30 +531,54 @@ function(el, x) {
     return out;
   }
 
-  function filterToYear(targetYr) {
-    var cbs = getLayerCheckboxes();
+  /* ── Apply both filters together ── */
+  function applyFilters() {
+    var cbs = getCheckboxes();
     years.forEach(function(y) {
-      var show = (targetYr === null || y === targetYr);
-      var inp  = cbs[String(y)];
-      if (inp && inp.checked !== show) inp.click();
+      categories.forEach(function(c) {
+        var grp       = y + '_' + c;
+        var yearMatch = (activeYear === null || y === activeYear);
+        var catMatch  = activeCats[c];
+        var show      = yearMatch && catMatch;
+        var inp       = cbs[grp];
+        if (inp && inp.checked !== show) inp.click();
+      });
     });
   }
 
-  slider.addEventListener('input', function() {
-    var yr = parseInt(this.value);
-    display.textContent = yr;
-    filterToYear(yr);
+  /* ── Year slider ── */
+  var slider  = document.getElementById('dm-yr-slider');
+  var display = document.getElementById('dm-yr-val');
+
+  if (slider && display) {
+    slider.addEventListener('input', function() {
+      activeYear = parseInt(this.value);
+      display.textContent = activeYear;
+      applyFilters();
+    });
+
+    window.dmYrReset = function() {
+      activeYear = null;
+      slider.value = slider.max;
+      display.innerHTML = 'All years';
+      applyFilters();
+    };
+  }
+
+  /* ── Category buttons ── */
+  var catBtns = document.querySelectorAll('.dm-cat-btn');
+  catBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cat = this.dataset.cat;
+      activeCats[cat] = !activeCats[cat];
+      this.classList.toggle('dm-cat-btn--off', !activeCats[cat]);
+      applyFilters();
+    });
   });
-
-  window.dmYrReset = function() {
-    slider.value = slider.max;
-    display.innerHTML = 'All years';
-    filterToYear(null);
-  };
 }
-", years_json))
+", years_json, cats_json))
 
-# ── Assemble layout: sidebar (stats + filter) beside the map ──────────────────
+# ── Sidebar panels ─────────────────────────────────────────────────────────────
 stats_panel <- tags$div(class = "dm-stats-panel",
   tags$p(class = "dm-panel-head", "Dive Log"),
   tags$div(class = "dm-stat-grid",
@@ -545,14 +597,22 @@ stats_panel <- tags$div(class = "dm-stats-panel",
     tags$div(class = "dm-stat",
       tags$span(class = "dm-num", HTML(sprintf("%d&thinsp;hr", hrs_total))),
       tags$span(class = "dm-lbl", "bottom time"))
-  ),
-  tags$div(class = "dm-legend",
-    tags$span(class = "dm-dot", style = "background:#4D6C77"),
-    "Scientific",
-    tags$span(class = "dm-dot", style = "background:#D1796B"),
-    "Recreational",
-    tags$span(class = "dm-dot", style = "background:#A3C3BD"),
-    "Training"
+  )
+)
+
+# Category filter panel — counts shown on each button
+cat_panel <- tags$div(class = "dm-filter-panel",
+  tags$p(class = "dm-panel-head", "Filter by Type"),
+  tags$div(class = "dm-cat-btns",
+    tags$button(class = "dm-cat-btn", `data-cat` = "scientific",
+      tags$span(class = "dm-cat-dot", style = "background:#4D6C77"),
+      sprintf("Scientific (%d)", n_sci)),
+    tags$button(class = "dm-cat-btn", `data-cat` = "recreational",
+      tags$span(class = "dm-cat-dot", style = "background:#D1796B"),
+      sprintf("Recreational (%d)", n_rec)),
+    tags$button(class = "dm-cat-btn", `data-cat` = "training",
+      tags$span(class = "dm-cat-dot", style = "background:#A3C3BD"),
+      sprintf("Training (%d)", n_tra))
   )
 )
 
@@ -571,6 +631,7 @@ browsable(
   tags$div(class = "dive-map-layout",
     tags$div(class = "dive-map-sidebar",
       stats_panel,
+      cat_panel,
       filter_panel
     ),
     tags$div(class = "dive-map-main",
@@ -588,7 +649,7 @@ browsable(
 
 
 <div class="coral-banner" markdown="1">
-Regent Scholar • **Coastal Fund** major grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Manuscripts in review
+Regent Scholar • **Coastal Fund** Major Grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Published Manuscripts
 </div>
 
 <div class="gallery-footer">

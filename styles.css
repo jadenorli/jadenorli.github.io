@@ -1001,13 +1001,6 @@ code, kbd, samp{ white-space:pre-wrap; word-break:break-word; }
   .dm-filter-panel{
     flex:1 1 200px;
   }
-  .dive-map-main{
-    width:100%;
-    min-height:380px;
-  }
-  .dive-map-main .leaflet-container{
-    height:380px !important;
-  }
 }
 
 /* ── Stats panel card ─────────────────────────────────── */
@@ -1030,6 +1023,66 @@ code, kbd, samp{ white-space:pre-wrap; word-break:break-word; }
   padding:.85rem 1rem;
   box-shadow:0 3px 12px var(--marine-shadow);
   font-family:'Inter',system-ui,sans-serif;
+}
+
+/* ── Legend dots ──────────────────────────────────────── */
+.dm-legend{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:4px 5px;
+  font-size:.63rem;
+  color:var(--marine-ink-soft);
+  padding-top:.6rem;
+  border-top:1px solid var(--marine-border);
+  line-height:1.4;
+}
+.dm-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  display:inline-block;
+  flex-shrink:0;
+}
+
+/* ── Category toggle buttons ──────────────────────────── */
+.dm-cat-btns{
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+}
+.dm-cat-btn{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  width:100%;
+  padding:.4rem .65rem;
+  border:1.5px solid var(--marine-border);
+  border-radius:.5rem;
+  background:#fff;
+  color:var(--marine-ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:.75rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:background .15s, opacity .15s, border-color .15s;
+  text-align:left;
+}
+.dm-cat-btn:hover{
+  background:var(--marine-bg);
+  border-color:var(--marine-teal-2);
+}
+/* dimmed state when toggled OFF */
+.dm-cat-btn--off{
+  opacity:.4;
+  background:#f8f8f8;
+}
+.dm-cat-dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  display:inline-block;
+  flex-shrink:0;
 }
 
 /* ── Shared panel typography ──────────────────────────── */
@@ -1066,25 +1119,7 @@ code, kbd, samp{ white-space:pre-wrap; word-break:break-word; }
   text-align:center;
 }
 
-/* ── Legend dots ──────────────────────────────────────── */
-.dm-legend{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:4px 5px;
-  font-size:.63rem;
-  color:var(--marine-ink-soft);
-  padding-top:.6rem;
-  border-top:1px solid var(--marine-border);
-  line-height:1.4;
-}
-.dm-dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  display:inline-block;
-  flex-shrink:0;
-}
+
 
 /* ── Year filter controls ─────────────────────────────── */
 .dm-yr-display{
