@@ -137,16 +137,11 @@ format:
 
 ## Publications
 
-- <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” <em>Ecology</em> 106(12): e70263. <a href="https://doi.org/10.1002/ecy.70263">https://doi.org/10.1002/ecy.70263</a>
+- <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. "Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California." <em>Ecology</em> 106(12): e70263. <a href="https://doi.org/10.1002/ecy.70263">https://doi.org/10.1002/ecy.70263</a> <span class="pub-note">· Cover image: <a href="https://doi.org/10.1002/ecy.70285">https://doi.org/10.1002/ecy.70285</a></span>
 
-- <strong>Cover Image:</strong> <strong>Orli, Jaden E.</strong>, Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025.
-  “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.”
-  <em>Ecology</em> 106(12): e70263.
-  <a href="https://doi.org/10.1002/ecy.70285">https://doi.org/10.1002/ecy.70285</a>
-  <span class="pub-note">
+- <strong>In Review</strong> (<em>Nature</em>): Zilz, Zoe L., Hascall, E., DiBartolo, A., Flores, D., Cameron, S., <strong>Orli, Jaden E.</strong>, and Kuris, A. M. "A Parasite-inclusive Food Web for the California Rocky Intertidal Zone."
 
-- <strong>In Review:</strong> Zilz, Zoe L., Hascall, E., DiBartolo, A., Flores, D., Cameron, S., <strong>Orli, Jaden E.</strong>, and Kuris, A. M. “A Parasite-inclusive Food Web for the California Rocky Intertidal Zone.”
-</div>
+  </div>
 </div>
 
 

@@ -764,11 +764,16 @@ browsable(
 
 :::
 
-</div> </div>
+</div> 
+</div>
 
 
+<!-- ========= HONORS & AWARDS ========= -->
 <div class="coral-banner" markdown="1">
-Regent Scholar • **Coastal Fund** Major Grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Published Manuscripts
+
+## Honors and Awards
+
+Regent Scholar • **Coastal Fund** Major Grants • Best Student Presentation (Int'l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Published Manuscripts
 </div>
 
 <div class="gallery-footer">

@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- Banner with slideshow background -->
 <div class="page-banner" role="img" aria-label="Contact banner slideshow">
 <div id="contact-hero" class="hero-slideshow">
-<p><a href="images/banners/contact_1.jpg" data-fancybox="contact-hero" class="active"> <img src="images/banners/contact_1.jpg" alt="Safari"> </a> <a href="images/banners/contact_2.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_2.jpg" alt="Wilmington"> </a> <a href="images/banners/contact_3.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_3.jpg" alt="Graduation"> </a> <a href="images/banners/contact_4.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_4.jpg" alt="Videography"> </a> <a href="images/banners/contact_5.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_5.jpg" alt="Boat time"> </a></p>
+<a href="images/banners/contact_1.jpg" data-fancybox="contact-hero" class="active"> <img src="images/banners/contact_1.jpg" alt="Safari"> </a> <a href="images/banners/contact_2.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_2.jpg" alt="Wilmington"> </a> <a href="images/banners/contact_3.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_3.jpg" alt="Graduation"> </a> <a href="images/banners/contact_4.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_4.jpg" alt="Videography"> </a> <a href="images/banners/contact_5.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_5.jpg" alt="Boat time"> </a>
 </div>
 <div class="page-banner-overlay">
 
@@ -156,22 +156,21 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!el) return;
   const slides = Array.from(el.querySelectorAll('a'));
   let i = 0;
-
   function show(n) {
     slides.forEach((s, idx) => s.classList.toggle('active', idx === n));
   }
-
-  show(0);                             // start on first slide
-  const delay = 3500;                  // ms per slide
+  show(0);
+  const delay = 3500;
   let timer = setInterval(next, delay);
-
   function next() { i = (i + 1) % slides.length; show(i); }
-
-  // Pause on hover so visitors can click/inspect
   el.addEventListener('mouseenter', () => clearInterval(timer));
   el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
 });
 </script>
+<!-- Intro line -->
+<p class="contact-intro">
+I’m always happy to talk science, collaboration, photography, or fieldwork — don’t hesitate to reach out.
+</p>
 <!-- Contact panel -->
 <div id="contact" class="section-band">
 <section id="reach-me" class="level2 band-inner">
@@ -210,17 +209,16 @@ UCSB · College of Creative Studies (Biology) · Marine Science Institute
 Links
 </h3>
 <p class="links">
-<a class="read-more" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener">LinkedIn</a> <a class="read-more" href="https://github.com/jadenorli" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a> <a class="read-more" href="files/jaden_2025_resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">Resume (PDF)</a>
+<a class="read-more" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener">LinkedIn</a> <a class="read-more" href="https://github.com/jadenorli" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a> <a class="read-more" href="files/jaden_2026_resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">Resume (PDF)</a>
 </p>
 </div>
 </div>
-<p><!-- /.stacked-cards --></p>
+<!-- /.stacked-cards -->
 </section>
 </div>
 <!-- CTA coral banner -->
 <div class="coral-banner" role="region" aria-label="Quick actions">
-<p>Prefer email? Click to start a message:</p>
-<p><a class="btn btn-primary" href="mailto:jadenorli@gmail.com" style="margin-left:.5rem">Email Me</a></p>
+<p>Prefer email? Click to start a message: <a class="btn btn-primary" href="mailto:jadenorli@gmail.com" style="margin-left:.5rem">Email Me</a></p>
 </div>
 
 
@@ -376,7 +374,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© 2025 Jaden Orli</div>   
+    <div class="nav-footer-left">© 2026 Jaden Orli</div>   
     <div class="nav-footer-right">Built with Quarto</div>
   </div>
 </footer>

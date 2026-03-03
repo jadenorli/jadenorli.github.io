@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs 
-
 resources:
   - images/**
   - artwork/**
@@ -9,10 +8,9 @@ resources:
   - files/**
   - fancybox/**
   - lightbox/**
-
 website:
   title: "jadenorli"
-  description: "Marine ecology • fisheries • spatial modeling • photography"
+  description: "marine ecology • fisheries • spatial modeling • photography"
   site-url: "https://jadenorli.github.io/"
   favicon: images/jaden_icon_light.png
   navbar:
@@ -38,9 +36,8 @@ website:
       - icon: instagram
         href: https://instagram.com/jadenorli
   page-footer:
-    left: "© 2025 Jaden Orli"
+    left: "© 2026 Jaden Orli"
     right: "Built with Quarto"
-
 format:
   html:
     theme: default
@@ -52,6 +49,10 @@ format:
     page-layout: full
     code-copy: true
     anchor-sections: true
+    grid:
+      body-width: 1000px
+      sidebar-width: 0px
+      margin-width: 0px
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">

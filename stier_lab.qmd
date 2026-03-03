@@ -1,5 +1,5 @@
 ---
-title: "Modeling Slot Limits and MPA's - California Spiny Lobster"
+title: "Modeling Slot Limits and MPAs - California Spiny Lobster"
 page-classes: project-narrow
 format:
   html:

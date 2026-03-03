@@ -84,6 +84,8 @@ button:focus-visible,
 body.hide-title .page-columns{ --bs-gutter-x:0 !important; column-gap:0 !important; }
 body.hide-title .page-columns .content{ padding-left:0 !important; padding-right:0 !important; }
 
+
+
 /* =========================================================
    4) Navbar
 ========================================================= */
@@ -225,10 +227,32 @@ img.navbar-logo,
   background:var(--marine-teal-3);
   color:var(--marine-sand);
   border:1px solid var(--marine-ink);
+  padding:.4rem .9rem;
+  border-radius:.5rem;
+  font-weight:600;
+  font-size:.95rem;
+  text-decoration:none;
+  display:inline-block;
+  transition:background .15s ease, color .15s ease, box-shadow .15s ease;
 }
-.btn:hover{ background:var(--marine-teal-2); color:#fff; }
+.btn:hover{
+  background:var(--marine-teal-2);
+  color:#fff;
+  text-decoration:none;
+}
 .btn-primary{ background:var(--marine-coral); color:#fff; border:none; }
 .btn-primary:hover{ background:#b95f56; }
+
+/* Outline variant — used on homepage links */
+.btn-outline{
+  background:transparent;
+  color:var(--marine-teal-3);
+  border:1.5px solid var(--marine-teal-3);
+}
+.btn-outline:hover{
+  background:var(--marine-teal-3);
+  color:#fff;
+}
 
 /* =========================================================
    6) Typography helpers: code, quotes, captions
@@ -523,20 +547,154 @@ blockquote{
 }
 h2.section-header{ color:var(--marine-coral); }
 
+/* ── Contact page intro sentence ─────────────────────────────────────────── */
+.contact-intro{
+  max-width:var(--panel-max);
+  margin:1.25rem auto .25rem;
+  padding:0 1rem;
+  font-size:1.05rem;
+  color:var(--marine-ink-soft);
+  font-style:italic;
+}
+
+/* ── Contact links: side by side on desktop, stacked on mobile ───────────── */
+#contact .card p.links{
+  flex-direction:row !important;
+  flex-wrap:wrap;
+  gap:.5rem;
+}
+@media (max-width:600px){
+  #contact .card p.links{
+    flex-direction:column !important;
+  }
+}
+
 /* =========================================================
-   12) Homepage Header
+   12) Homepage
 ========================================================= */
+
+/* ── Suppress Quarto's on-page H1 title on the homepage only ── */
+/* Scoped via :has(.homepage-header) so lab/detail pages with   */
+/* real YAML titles are not affected.                           */
+.homepage-header ~ * + h1{
+  display:none;
+}
+body:has(.homepage-header) .quarto-title h1.title,
+body:has(.homepage-header) > main > .title{
+  display:none;
+}
+
+/* ── Banner image at the top of the homepage ─────────────  */
+.homepage-banner{
+  width:100%;
+  max-width:var(--panel-max);
+  max-height:340px;
+  margin:0 auto 2rem;
+  overflow:hidden;
+  border-radius:1rem;
+  box-shadow:0 4px 20px rgba(0,0,0,.18);
+}
+.homepage-banner .banner-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+@media (max-width:600px){
+  .homepage-banner{ max-height:220px; border-radius:.6rem; }
+}
+
+/* ── About page: intro row with optional field photo ────────────────────── */
+.about-intro{
+  display:flex;
+  align-items:center;
+  gap:1.5rem;
+  max-width:var(--panel-max);
+  margin:1.25rem auto 1.5rem;
+  padding:.75rem 1rem;
+  font-size:1.05rem;
+  line-height:1.7;
+}
+.about-field-photo{
+  width:130px;
+  height:130px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid var(--marine-teal-1);
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  flex-shrink:0;
+}
+@media (max-width:600px){
+  .about-intro{ flex-direction:column; text-align:center; }
+  .about-field-photo{ width:100px; height:100px; }
+}
+
+/* ── "What I Value" styled block ─────────────────────────────────────────── */
+.values-block{
+  display:flex;
+  flex-direction:column;
+  gap:.65rem;
+  margin-top:.5rem;
+}
+.value-item{
+  display:flex;
+  flex-direction:column;
+  padding:.6rem .85rem;
+  background:var(--detail-bg);
+  border-left:3px solid var(--marine-coral);
+  border-radius:0 .5rem .5rem 0;
+}
+.value-label{
+  font-weight:700;
+  color:var(--marine-ink);
+  font-size:1rem;
+}
+.value-desc{
+  font-size:.9rem;
+  color:var(--marine-ink-soft);
+  margin-top:.15rem;
+}
+
+/* ── Honors & Awards header inside coral-banner ──────────────────────────── */
+.coral-banner h2{
+  margin:0 0 .5rem;
+  font-size:1.15rem;
+  color:var(--marine-coral);
+  border-bottom:1px solid var(--marine-border);
+  padding-bottom:.4rem;
+}
+
+/* ── Teal accent strip at top of page (lightweight banner alternative) ── */
+.homepage-accent-bar{
+  width:100%;
+  max-width:var(--panel-max);
+  height:6px;
+  margin:0 auto 1.5rem;
+  border-radius:999px;
+  background:linear-gradient(
+    to right,
+    var(--marine-teal-1),
+    var(--marine-teal-2),
+    var(--marine-coral),
+    var(--marine-teal-2),
+    var(--marine-teal-1)
+  );
+  opacity:.85;
+}
+
+/* ── Profile card ────────────────────────────────────────── */
 .homepage-header{
   display:flex;
   flex-direction:column;
   align-items:center;
   gap:1.5rem;
-  margin-bottom:2rem;
+  margin:0 auto 1rem;
   text-align:center;
-  background:linear-gradient(135deg,#fff,var(--marine-bg));
-  padding:1.25rem;
+  background:#fff;
+  padding:2rem 2.5rem 1.75rem;
   border-radius:1rem;
-  box-shadow:0 2px 12px var(--marine-shadow);
+  border-top:4px solid var(--marine-teal-2);
+  box-shadow:0 4px 20px var(--marine-shadow);
 }
 .homepage-header,
 .homepage-header *{
@@ -544,21 +702,86 @@ h2.section-header{ color:var(--marine-coral); }
   color:var(--marine-ink);
 }
 .profile-photo{
-  width:250px;
-  height:250px;
+  width:220px;
+  height:220px;
   object-fit:cover;
   border-radius:50%;
-  border:3px solid #98A08D;
-  box-shadow:0 4px 10px rgba(0,0,0,.1);
+  border:4px solid var(--marine-teal-1);
+  box-shadow:0 4px 14px rgba(0,0,0,.12);
 }
-.bio-text{ max-width:700px; }
+.bio-text{
+  max-width:700px;
+  text-align:center;
+}
+@media (max-width:600px){
+  .homepage-header{ padding:1.5rem 1.25rem; }
+}
+
+/* ── Social / contact link buttons ──────────────────────── */
+.homepage-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.65rem;
+  margin-top:.25rem;
+}
 .homepage-links a{
-  color:var(--marine-coral);
+  color:var(--marine-teal-3);
+  font-weight:600;
   text-decoration:none;
-  font-weight:500;
-  margin-right:.75rem;
 }
-.homepage-links a:hover{ text-decoration:underline; }
+.homepage-links a:hover{
+  color:#fff;
+  text-decoration:none;
+}
+
+/* ── "Explore my work" CTA section ──────────────────────── */
+.homepage-cta{
+  margin:0 auto 2rem;
+}
+.homepage-cta h3{
+  font-size:clamp(1.2rem, 2.5vw, 1.5rem);
+  color:var(--marine-coral);  /* coral heading to match rest of site */
+  margin-bottom:1rem;
+  letter-spacing:.3px;
+}
+
+/* Four-up card grid */
+.cta-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+  gap:1.1rem;
+}
+.cta-card{
+  padding:1.15rem 1.3rem;
+  background:#fff;
+  border:1px solid var(--marine-border);
+  border-left:4px solid var(--marine-coral);   /* coral left accent */
+  border-radius:.75rem;
+  box-shadow:0 2px 10px var(--marine-shadow);
+  transition:box-shadow .2s ease, transform .15s ease, border-left-color .2s ease;
+}
+.cta-card:hover{
+  box-shadow:0 6px 18px rgba(0,0,0,.1);
+  transform:translateY(-2px);
+  border-left-color:var(--marine-teal-2);      /* teal on hover */
+}
+.cta-card a{
+  font-weight:700;
+  color:var(--marine-teal-3);
+  text-decoration:none;
+  font-size:1.05rem;
+}
+.cta-card a:hover{ color:var(--marine-teal-2); text-decoration:none; }
+.cta-card p{
+  font-size:.88rem;
+  color:var(--marine-ink-soft);
+  margin:.35rem 0 0 !important;
+  line-height:1.5;
+}
+@media (max-width:520px){
+  .cta-grid{ grid-template-columns:1fr 1fr; }
+}
 
 /* =========================================================
    13) Project Pages: narrow content + sticky TOC
@@ -1118,8 +1341,6 @@ code, kbd, samp{ white-space:pre-wrap; word-break:break-word; }
   color:#9ca3af;
   text-align:center;
 }
-
-
 
 /* ── Year filter controls ─────────────────────────────── */
 .dm-yr-display{

@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 ## Overview
-The UCSB-led SONGS Mitigation Monitoring Program provides independent scientific oversight for **two** California Coastal Commission required mitigation projects: the **Wheeler North Artificial Reef** (kelp-forest habitat) and the **San Dieguito Lagoon Restoration** (coastal wetland).[^overview] The reef’s permit standards require sustaining **≥150 acres** of medium-to-high density giant kelp and **≥28 tons** of reef fish standing stock,[^reef-standards] while the wetland permit (**Condition A**) requires creation or substantial restoration of **≥150 acres** of tidal wetlands in Southern California—implemented at San Dieguito as ~**115 acres** of new tidal wetlands plus **~35 acres** of enhancement credit for maintaining an open tidal inlet.[^wetland-standards]
+The [UCSB-led SONGS Mitigation Monitoring Program](https://marinemitigation.msi.ucsb.edu/) provides independent scientific oversight for **two** California Coastal Commission required mitigation projects: the **Wheeler North Artificial Reef** (kelp-forest habitat) and the **San Dieguito Lagoon Restoration** (coastal wetland).[^overview] The [reef's permit standards](https://marinemitigation.msi.ucsb.edu/artificial-reef) require sustaining **≥150 acres** of medium-to-high density giant kelp and **≥28 tons** of reef fish standing stock,[^reef-standards] while the [wetland permit](https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning) (**Condition A**) requires creation or substantial restoration of **≥150 acres** of tidal wetlands in Southern California—implemented at San Dieguito as ~**115 acres** of new tidal wetlands plus **~35 acres** of enhancement credit for maintaining an open tidal inlet.[^wetland-standards]
 
 Within the wetland program, the restored San Dieguito site is evaluated **relative to natural reference marshes**. My role focuses on two of those **reference sites** (**Carpinteria Salt Marsh Reserve** and **Point Mugu Lagoon**) where I help run standardized fish and invertebrate community surveys, identify and process samples in the lab, and support QA/QC. I do not sample at the San Dieguito restoration directly, but our reference-site data provide the benchmarks used to assess restoration performance over time.[^ref-sites]
 
 ## Quick Facts
 - **Role:** Lab Technician (UCSB)  
-- **When:** Aug 2025 – present  
+- **When:** Aug 2025 – Jan 2026  
 - **Skills:** community sampling, species ID, sample processing, data QA/QC, field & lab equipment  
 - **Links:** Program site: <https://marinemitigation.msi.ucsb.edu/>
 

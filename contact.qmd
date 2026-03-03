@@ -11,7 +11,6 @@ format:
 <!-- Banner with slideshow background -->
 <div class="page-banner" role="img" aria-label="Contact banner slideshow">
   <div class="hero-slideshow" id="contact-hero">
-
   <a href="images/banners/contact_1.jpg" data-fancybox="contact-hero" class="active">
     <img src="images/banners/contact_1.jpg" alt="Safari">
   </a>
@@ -27,7 +26,6 @@ format:
   <a href="images/banners/contact_5.jpg" data-fancybox="contact-hero">
     <img src="images/banners/contact_5.jpg" alt="Boat time">
   </a>
-
   </div>
   <div class="page-banner-overlay"></div>
   <div class="page-banner-inner" markdown="1">
@@ -42,27 +40,24 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!el) return;
   const slides = Array.from(el.querySelectorAll('a'));
   let i = 0;
-
   function show(n) {
     slides.forEach((s, idx) => s.classList.toggle('active', idx === n));
   }
-
-  show(0);                             // start on first slide
-  const delay = 3500;                  // ms per slide
+  show(0);
+  const delay = 3500;
   let timer = setInterval(next, delay);
-
   function next() { i = (i + 1) % slides.length; show(i); }
-
-  // Pause on hover so visitors can click/inspect
   el.addEventListener('mouseenter', () => clearInterval(timer));
   el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
 });
 </script>
 
+<!-- Intro line -->
+<p class="contact-intro">I'm always happy to talk science, collaboration, photography, or fieldwork — don't hesitate to reach out.</p>
+
 <!-- Contact panel -->
 <div class="section-band" id="contact">
   <div class="band-inner">
-
 
 ## Reach Me
 
@@ -70,43 +65,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="card" role="region" aria-labelledby="contact-direct-title">
   <h3 id="contact-direct-title">Direct</h3>
- <ul class="contact-list">
-      <li><strong>Email:</strong> <a href="mailto:jadenorli@gmail.com">jadenorli@gmail.com</a></li>
-      <li><strong>Phone:</strong> <a href="tel:+3368290234">(336) 829-0234</a></li>
+  <ul class="contact-list">
+    <li><strong>Email:</strong> <a href="mailto:jadenorli@gmail.com">jadenorli@gmail.com</a></li>
+    <li><strong>Phone:</strong> <a href="tel:+3368290234">(336) 829-0234</a></li>
   </ul>
-
   <details class="details-panel" markdown="1">
   <summary>Mailing</summary>
   <div class="detail-stack">
   <div class="detail-block" markdown="1">
 **Location**  
-    Santa Barbara, CA (often traveling along the California coast)
+Santa Barbara, CA (often traveling along the California coast)
   </div>
   <div class="detail-block" markdown="1">
 **Affiliation**  
-    UCSB · College of Creative Studies (Biology) · Marine Science Institute 
+UCSB · College of Creative Studies (Biology) · Marine Science Institute
   </div>
-</div>
-</details>
+  </div>
+  </details>
 </div>
 
 <div class="card" role="region" aria-labelledby="contact-links-title">
   <h3 id="contact-links-title">Links</h3>
   <p class="links">
-    <a class="read-more" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener">LinkedIn</a> 
+    <a class="read-more" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener">LinkedIn</a>
     <a class="read-more" href="https://github.com/jadenorli" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
-    <a class="read-more" href="files/jaden_2025_resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">Resume (PDF)</a>
+    <a class="read-more" href="files/jaden_2026_resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">Resume (PDF)</a>
   </p>
 </div>
 
-</div> <!-- /.stacked-cards -->
-
+</div><!-- /.stacked-cards -->
   </div>
 </div>
 
 <!-- CTA coral banner -->
 <div class="coral-banner" role="region" aria-label="Quick actions">
   Prefer email? Click to start a message:
-  
   <a class="btn btn-primary" href="mailto:jadenorli@gmail.com" style="margin-left:.5rem">Email Me</a>
 </div>
