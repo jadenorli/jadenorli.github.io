@@ -627,15 +627,134 @@ filter_panel <- tags$div(class = "dm-filter-panel",
   tags$button(id = "dm-yr-reset", onclick = "dmYrReset()", "Show All")
 )
 
+# ── Inline CSS — needed because browsable() renders inside an iframe ───────────
+# The page's styles.css is not loaded inside the widget iframe, so all
+# dive-map styles must travel with the widget as a <style> tag.
+inline_css <- tags$style(HTML("
+  *,*::before,*::after{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',system-ui,sans-serif;}
+
+  .dive-map-layout{display:flex;gap:1rem;align-items:flex-start;width:100%;}
+  .dive-map-sidebar{display:flex;flex-direction:column;gap:.75rem;flex:0 0 190px;min-width:0;}
+  .dive-map-main{flex:1 1 0;min-width:0;}
+
+  .dm-stats-panel,.dm-filter-panel{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:.75rem;
+    padding:.85rem 1rem;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+    font-family:'Inter',system-ui,sans-serif;
+  }
+  .dm-stats-panel{border-top:3px solid #4D6C77;}
+  .dm-filter-panel{border-top:3px solid #A3C3BD;}
+
+  .dm-panel-head{
+    margin:0 0 .6rem;font-size:.62rem;font-weight:700;
+    letter-spacing:.10em;text-transform:uppercase;color:#2E3C43;
+  }
+  .dm-stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem .25rem;margin-bottom:.7rem;}
+  .dm-stat{display:flex;flex-direction:column;align-items:center;line-height:1.2;}
+  .dm-num{font-size:.92rem;font-weight:700;color:#4D6C77;}
+  .dm-lbl{font-size:.58rem;color:#9ca3af;text-align:center;}
+
+  .dm-cat-btns{display:flex;flex-direction:column;gap:.4rem;}
+  .dm-cat-btn{
+    display:flex;align-items:center;gap:.5rem;width:100%;
+    padding:.4rem .65rem;border:1.5px solid #e5e7eb;border-radius:.5rem;
+    background:#fff;color:#2E3C43;font-family:'Inter',system-ui,sans-serif;
+    font-size:.75rem;font-weight:600;cursor:pointer;text-align:left;
+    transition:background .15s,opacity .15s,border-color .15s;
+  }
+  .dm-cat-btn:hover{background:#E6F1F5;border-color:#688D8D;}
+  .dm-cat-btn--off{opacity:.4;background:#f8f8f8;}
+  .dm-cat-dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex-shrink:0;}
+
+  .dm-yr-display{font-size:1.1rem;font-weight:700;color:#4D6C77;margin:0 0 .55rem;line-height:1;}
+  #dm-yr-slider{
+    -webkit-appearance:none;appearance:none;width:100%;height:4px;
+    border-radius:4px;background:#E6F1F5;outline:none;display:block;
+    margin-bottom:.6rem;accent-color:#4D6C77;
+  }
+  #dm-yr-slider::-webkit-slider-thumb{
+    -webkit-appearance:none;width:15px;height:15px;border-radius:50%;
+    background:#4D6C77;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.20);border:2px solid #fff;
+  }
+  #dm-yr-reset{
+    font-size:.66rem;padding:4px 0;width:100%;
+    border:1.5px solid #4D6C77;border-radius:6px;background:transparent;
+    color:#4D6C77;cursor:pointer;font-family:inherit;letter-spacing:.04em;
+    transition:background .15s,color .15s;
+  }
+  #dm-yr-reset:hover{background:#4D6C77;color:#fff;}
+
+  .dive-map-main .leaflet-container{
+    height:540px;border-radius:14px;
+    border:1px solid #e5e7eb;box-shadow:0 6px 22px rgba(0,0,0,.06);overflow:hidden;
+  }
+  @media (max-width:900px){.dive-map-main .leaflet-container{height:440px;}}
+  @media (max-width:760px){
+    .dive-map-layout{flex-direction:column;}
+    .dive-map-sidebar{flex:none;width:100%;flex-direction:row;flex-wrap:wrap;}
+    .dm-stats-panel,.dm-filter-panel{flex:1 1 200px;}
+    .dive-map-main{width:100%;min-height:380px;}
+    .dive-map-main .leaflet-container{height:380px !important;}
+  }
+  @media (max-width:600px){.dive-map-main .leaflet-container{height:360px;}}
+
+  .dive-map-main .leaflet-popup-content-wrapper{
+    padding:0 !important;border-radius:12px !important;overflow:hidden;
+    box-shadow:0 6px 22px rgba(0,0,0,.16) !important;border:1px solid #e5e7eb;
+  }
+  .dive-map-main .leaflet-popup-tip-container{display:none;}
+  .dive-map-main .leaflet-popup-content{margin:0 !important;width:auto !important;}
+  .dive-map-main .leaflet-popup-close-button{
+    top:6px !important;right:8px !important;color:rgba(255,255,255,.85) !important;
+    font-size:1.1rem !important;text-shadow:0 1px 3px rgba(0,0,0,.4);z-index:10;
+  }
+  .dive-popup{font-family:'Inter',system-ui,sans-serif;width:240px;}
+  .dp-photo{width:100%;height:145px;object-fit:cover;display:block;}
+  .dp-no-photo{
+    width:100%;height:72px;
+    background:linear-gradient(135deg,#4D6C77 0%,#2E3C43 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .dp-no-photo span{font-size:1.5rem;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:.05em;}
+  .dp-body{padding:10px 13px 13px;}
+  .dp-site{margin:0 0 2px;font-size:.96rem;font-weight:700;color:#2E3C43;}
+  .dp-loc{margin:0 0 1px;font-size:.73rem;color:#43535B;}
+  .dp-date{margin:0 0 7px;font-size:.68rem;color:#9ca3af;}
+  .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:5px;}
+  .dp-chip{
+    font-size:.67rem;padding:2px 8px;border-radius:20px;
+    background:#F5F7F9;color:#43535B;border:1px solid #e5e7eb;
+  }
+  .dp-yr{background:#E6F1F5;color:#4D6C77;}
+  .dp-cat-scientific{background:#dde8ec;color:#4D6C77;}
+  .dp-cat-recreational{background:#f5e4e2;color:#D1796B;}
+  .dp-cat-training{background:#e4efed;color:#688D8D;}
+  .dp-caption{margin:4px 0 0;font-size:.73rem;color:#43535B;font-style:italic;}
+  .dm-cluster-wrap{background:transparent !important;border:none !important;}
+  .dm-cluster-bubble{
+    border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:.8rem;letter-spacing:-.02em;
+    box-shadow:0 2px 8px rgba(0,0,0,.22);border:2px solid rgba(255,255,255,.75);
+    font-family:'Inter',system-ui,sans-serif;
+  }
+"))
+
 browsable(
-  tags$div(class = "dive-map-layout",
-    tags$div(class = "dive-map-sidebar",
-      stats_panel,
-      cat_panel,
-      filter_panel
-    ),
-    tags$div(class = "dive-map-main",
-      m
+  tagList(
+    inline_css,
+    tags$div(class = "dive-map-layout",
+      tags$div(class = "dive-map-sidebar",
+        stats_panel,
+        cat_panel,
+        filter_panel
+      ),
+      tags$div(class = "dive-map-main",
+        m
+      )
     )
   )
 )
