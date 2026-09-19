@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Spiny Lobster Model</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/jaden_icon_light.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Spiny Lobster Model">
+<meta property="og:description" content="California’s spiny lobster fishery is managed through a harvest control rule built on three reference points, one of which is the spawning potential ratio: the eggs a female produces over her…">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="Spiny Lobster Model">
+<meta name="twitter:description" content="California’s spiny lobster fishery is managed through a harvest control rule built on three reference points, one of which is the spawning potential ratio: the eggs a female produces over her…">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/jaden_icon_dark.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./photography.html">
+ <span class="menu-text">Photography</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./art.html">
+ <span class="menu-text">Art</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jadenorli"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jadenorli"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://instagram.com/jadenorli"><i class="bi bi-instagram" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link" data-scroll-target="#quick-facts">Quick Facts</a></li>
+  <li><a href="#background-and-questions" id="toc-background-and-questions" class="nav-link" data-scroll-target="#background-and-questions">Background and Questions</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Large Females and the Stock Assessment, California Spiny Lobster</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div id="lobster-hero" class="hero-slideshow" aria-label="California spiny lobster header image">
+<p><a href="images/research/stier_lobster.jpg" data-fancybox="lobster-hero" class="active"> <img src="images/research/stier_lobster.jpg" alt="California spiny lobster, model and field context"> </a></p>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>California’s spiny lobster fishery is managed through a harvest control rule built on three reference points, one of which is the spawning potential ratio: the eggs a female produces over her lifetime in a fished population, set against the eggs she would produce if the population were unfished.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>That ratio is not measured. It is inferred, once a season, from a single quantity. The average weight of a commercially landed lobster is run backwards through an equilibrium cohort model, and the fishing mortality that reproduces that weight is the fishing mortality the spawning potential ratio is then calculated from.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>So a reference point that can compel management action rests on one number, and that number is an average. This project asks what an average can and cannot see. Large females carry a disproportionate share of the eggs, because fecundity rises with length faster than weight does, which makes them the animals a size regulation would be designed to protect. They are also the animals an average is least equipped to track. How many of them does the fishery land, and would the assessment register it if that changed?</p>
+</section>
+<section id="quick-facts" class="level2">
+<h2 class="anchored" data-anchor-id="quick-facts">Quick Facts</h2>
+<ul>
+<li><strong>Role:</strong> Staff Research Associate, Stier Ocean Recoveries Lab, University of California, Santa Barbara</li>
+<li><strong>When:</strong> September 2024 to present</li>
+<li><strong>Where:</strong> the Southern California Bight, modeled over California Department of Fish and Wildlife fishing blocks</li>
+<li><strong>Skills:</strong> R, size-structured population modeling, replication and validation of a published model, Quarto, GitHub</li>
+<li><strong>Code:</strong> repositories are not public yet. <a href="https://github.com/jadenorli" class="uri">https://github.com/jadenorli</a></li>
+</ul>
+</section>
+<section id="background-and-questions" class="level2">
+<h2 class="anchored" data-anchor-id="background-and-questions">Background and Questions</h2>
+<ul>
+<li>What share of the landed catch is made up of large females, under the assessment’s own assumptions about growth, fecundity and mortality?</li>
+<li>How far does that share move when those assumptions move, or when the question is asked of one region rather than of the whole Bight?</li>
+<li>A published at-sea sampling program reported regional discrepancies between catch characteristics measured aboard commercial vessels and those derived from landing data, with consequences its authors tie directly to the spawning potential ratio.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> What would a model resolved in space make of that?</li>
+</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>The work is in two parts, and the order matters. Nothing can be said about what the assessment can see until the assessment itself runs.</p>
+<p><strong>Part one: replication.</strong> An exact reimplementation, in R, of the model documented by the Department of Fish and Wildlife, with nothing added to it. It lives in its own repository and is gated behind a validation document that will not pass unless it reproduces the published tables and figures. Where the printed documentation was ambiguous or could not be used as written, each case is recorded in an ambiguity log alongside the evidence used to resolve it, so that every departure from the page stays visible rather than buried in the code. A replication that reproduces published values is worth more than a model that only agrees with me.</p>
+<p><strong>Part two: the spatial model.</strong> A size-structured model of female lobsters, resolved across state fishing blocks, with California’s existing marine protected areas held fixed rather than redrawn. Its target is the size composition of the landed females rather than their average weight, since composition is exactly what a single number cannot carry. The replication supplies the calibration the spatial model is held to.</p>
+<p><strong>Female only, and said plainly.</strong> The landings the assessment calibrates to include both sexes, and the replication carries that. The spatial model does not, which is a limitation of it rather than a simplification of the question, so any claim that depends on both sexes is made from the replication instead.</p>
+</section>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p>The replication is complete and passes its validation checks against the published values. The spatial model is under active development. Results, figures and code are not public yet, and this page will be updated when they are.</p>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>Stier Ocean Recoveries Lab at the University of California, Santa Barbara, and colleagues at the California Department of Fish and Wildlife and California Sea Grant Extension whose published work this is built on.</p>
+<div class="gallery-footer">
+<p><a class="read-more" href="research.html">Back to Research</a> <a class="btn btn-primary" href="contact.html">Contact</a></p>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>California Department of Fish and Wildlife. <em>California Spiny Lobster Fishery Management Plan</em> and harvest control rule. The three reference points are catch, catch per unit effort, and the spawning potential ratio. <a href="https://wildlife.ca.gov/Conservation/Marine/Lobster-FMP" class="uri">https://wildlife.ca.gov/Conservation/Marine/Lobster-FMP</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Coates, J., C. Mireles and A. Shiao. 2016. <em>The Cable-CDFW Model and Calculation of Spawning Potential Ratio</em>. California Department of Fish and Wildlife, 21 January 2016. The model follows a single cohort of one thousand recruits across a twenty-five year lifespan and uses average weight derived from landing receipts and daily logs to infer fishing pressure. <a href="https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=115569" class="uri">https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=115569</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Yaeger et al.&nbsp;2017. Utility of a collaborative at-sea sampling program for the California spiny lobster commercial fishery: catch characteristics and implications for management. <em>Marine and Coastal Fisheries</em> 9(1): 190. <a href="https://academic.oup.com/mcf/article/9/1/190/7827073" class="uri">https://academic.oup.com/mcf/article/9/1/190/7827073</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/jadenorli\.github\.io\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© 2026 Jaden Orli</div>   
+    <div class="nav-footer-right">Built with Quarto</div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="scripts/site.js"></script>
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

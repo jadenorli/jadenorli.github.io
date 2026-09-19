@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jadenorli - SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring</title>
+<title>SONGS Monitoring</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -60,10 +59,17 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="SONGS Monitoring">
+<meta property="og:description" content="When the San Onofre Nuclear Generating Station was permitted, the California Coastal Commission required it to offset the damage it did to coastal habitat.">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="SONGS Monitoring">
+<meta name="twitter:description" content="When the San Onofre Nuclear Generating Station was permitted, the California Coastal Commission required it to offset the damage it did to coastal habitat.">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -138,9 +144,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link" data-scroll-target="#quick-facts">Quick Facts</a></li>
   <li><a href="#background-and-questions" id="toc-background-and-questions" class="nav-link" data-scroll-target="#background-and-questions">Background and Questions</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#results-preview" id="toc-results-preview" class="nav-link" data-scroll-target="#results-preview">Results (preview)</a></li>
-  <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs">Outputs</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#songs-stickers" id="toc-songs-stickers" class="nav-link" data-scroll-target="#songs-stickers">SONGS Stickers</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
   </ul>
 </nav>
     </div>
@@ -149,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring</h1>
+<h1 class="title">SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring</h1>
 </div>
 
 
@@ -164,86 +170,155 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- Hero slideshow (styles come from global style.css) -->
-<div id="songs-hero" class="hero-slideshow" aria-label="SONGS photo slideshow">
-<p><a href="images/research/songs_1.jpg" data-fancybox="songs-hero" class="active"> <img src="images/research/songs_1.jpg" alt="Field work at Carpinteria Salt Marsh"> </a> <a href="images/research/songs_2.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_2.jpg" alt="Seining in the channel"> </a> <a href="images/research/songs_3.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_3.jpg" alt="Sorting catch for ID and measurements"> </a> <a href="images/research/songs_4.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_4.jpg" alt="Gear prep and QA/QC in the field"> </a> <a href="images/research/songs_5.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_5.jpg" alt="Point Mugu Lagoon survey site"> </a></p>
+<!-- Hero slideshow. Styles from section 17 of styles.css, timer from
+     scripts/site.js, which initialises every .hero-slideshow on the site. -->
+<div id="songs-hero" class="hero-slideshow" aria-label="Salt marsh monitoring slideshow">
+<p><a href="images/research/songs_1.jpg" data-fancybox="songs-hero" class="active"> <img src="images/research/songs_1.jpg" alt="Field work at Carpinteria Salt Marsh"> </a> <a href="images/research/songs_2.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_2.jpg" alt="Seining in the channel"> </a> <a href="images/research/songs_3.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_3.jpg" alt="Sorting catch for identification and measurement"> </a> <a href="images/research/songs_4.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_4.jpg" alt="Gear preparation and data checking in the field"> </a> <a href="images/research/songs_5.jpg" data-fancybox="songs-hero"> <img src="images/research/songs_5.jpg" alt="Point Mugu Lagoon survey site"> </a></p>
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('songs-hero');
-  if (!el) return;
-
-  const slides = Array.from(el.querySelectorAll('a'));
-  let i = 0;
-
-  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
-  function next(){ i = (i + 1) % slides.length; show(i); }
-
-  // Start on first slide
-  show(0);
-
-  // Respect reduced motion
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;
-
-  // Auto-rotate
-  const delay = 3000; // ms per slide
-  let timer = setInterval(next, delay);
-
-  // Pause on hover so visitors can click/inspect
-  el.addEventListener('mouseenter', () => clearInterval(timer));
-  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
-});
-</script>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>The <a href="https://marinemitigation.msi.ucsb.edu/">UCSB-led SONGS Mitigation Monitoring Program</a> provides independent scientific oversight for <strong>two</strong> California Coastal Commission required mitigation projects: the <strong>Wheeler North Artificial Reef</strong> (kelp-forest habitat) and the <strong>San Dieguito Lagoon Restoration</strong> (coastal wetland).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The <a href="https://marinemitigation.msi.ucsb.edu/artificial-reef">reef’s permit standards</a> require sustaining <strong>≥150 acres</strong> of medium-to-high density giant kelp and <strong>≥28 tons</strong> of reef fish standing stock,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> while the <a href="https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning">wetland permit</a> (<strong>Condition A</strong>) requires creation or substantial restoration of <strong>≥150 acres</strong> of tidal wetlands in Southern California—implemented at San Dieguito as ~<strong>115 acres</strong> of new tidal wetlands plus <strong>~35 acres</strong> of enhancement credit for maintaining an open tidal inlet.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>Within the wetland program, the restored San Dieguito site is evaluated <strong>relative to natural reference marshes</strong>. My role focuses on two of those <strong>reference sites</strong> (<strong>Carpinteria Salt Marsh Reserve</strong> and <strong>Point Mugu Lagoon</strong>) where I help run standardized fish and invertebrate community surveys, identify and process samples in the lab, and support QA/QC. I do not sample at the San Dieguito restoration directly, but our reference-site data provide the benchmarks used to assess restoration performance over time.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>When the San Onofre Nuclear Generating Station was permitted, the California Coastal Commission required it to offset the damage it did to coastal habitat. Two mitigation projects came out of that requirement, and both carry numerical standards written into the permit. The <a href="https://marinemitigation.msi.ucsb.edu/">SONGS Mitigation Monitoring Program</a>, led by the University of California, Santa Barbara, is the independent scientific oversight that decides whether those standards are being met.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="table-card">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Mitigation project</th>
+<th>Habitat</th>
+<th>What the permit requires</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://marinemitigation.msi.ucsb.edu/artificial-reef">Wheeler North Artificial Reef</a></td>
+<td>Kelp forest</td>
+<td>At least 150 acres of medium to high density giant kelp, and at least 28 tons of reef fish standing stock<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning">San Dieguito Lagoon Restoration</a></td>
+<td>Coastal wetland</td>
+<td>At least 150 acres of tidal wetland created or substantially restored, met as roughly 115 acres of new wetland plus about 35 acres of credit for keeping the tidal inlet open<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A standard like that is only meaningful against something. Alongside the acreage targets, the wetland project is held to fifteen relative performance standards, judged against natural reference marshes rather than against fixed numbers, because a marsh in a wet year and a marsh in a dry one are not the same marsh. The rule is comparative all the way down: to earn mitigation credit, the share of standards the restoration meets has to match or beat the share met by the weakest reference wetland.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>My work was on the reference side of that comparison, at Carpinteria Salt Marsh Reserve and Point Mugu Lagoon: running standardized fish and invertebrate surveys, identifying and processing the catch in the laboratory, and checking the data that came out. I never sampled at the restoration itself. The numbers I helped collect are the baseline the restoration gets measured against, which is the less visible half of a mitigation program and the half that decides what the other half means.</p>
+<div class="cite-card">
+<p class="cite-label">
+Where this monitoring lands
+</p>
+<div class="cite-entry">
+<p class="cite-kind">
+Annual report to the California Coastal Commission
+</p>
+<p class="cite-body">
+Beheshti, K. M., R. S. Smith, H. M. Page and D. C. Reed. 2026. <em>2025 Wetland Annual Report</em>. SONGS Mitigation Monitoring Program, Marine Science Institute, University of California, Santa Barbara. Submitted to the California Coastal Commission, August 2026.
+</p>
+<p class="cite-links">
+<a class="cite-chip" href="files/songs_report_2025.pdf" download=""><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Read the 2025 Report</a> <a class="cite-chip" href="https://marinemitigation.msi.ucsb.edu/data" target="_blank" rel="noopener"><i class="bi bi-database" aria-hidden="true"></i>Program Data Portal</a>
+</p>
+</div>
+</div>
 </section>
 <section id="quick-facts" class="level2">
 <h2 class="anchored" data-anchor-id="quick-facts">Quick Facts</h2>
 <ul>
-<li><strong>Role:</strong> Lab Technician (UCSB)<br>
-</li>
-<li><strong>When:</strong> Aug 2025 – Jan 2026<br>
-</li>
-<li><strong>Skills:</strong> community sampling, species ID, sample processing, data QA/QC, field &amp; lab equipment<br>
-</li>
-<li><strong>Links:</strong> Program site: <a href="https://marinemitigation.msi.ucsb.edu/" class="uri">https://marinemitigation.msi.ucsb.edu/</a></li>
+<li><strong>Role:</strong> Laboratory Technician, Marine Science Institute, University of California, Santa Barbara</li>
+<li><strong>When:</strong> August 2025 to January 2026</li>
+<li><strong>Where:</strong> Carpinteria Salt Marsh Reserve and Point Mugu Lagoon, and the laboratory at the Marine Science Institute</li>
+<li><strong>Skills:</strong> standardized community sampling, fish and invertebrate identification, sample processing and measurement, data entry and quality control</li>
+<li><strong>Program:</strong> <a href="https://marinemitigation.msi.ucsb.edu/" class="uri">https://marinemitigation.msi.ucsb.edu/</a></li>
 </ul>
 </section>
 <section id="background-and-questions" class="level2">
 <h2 class="anchored" data-anchor-id="background-and-questions">Background and Questions</h2>
-<p>This work tracks community composition and ecological recovery in restored and reference salt marshes. We ask: How do fish and invertebrate assemblages change over time? Are restoration targets being met? Which environmental factors co-vary with community structure, and where might remediation improve performance?</p>
+<p>Long-term monitoring of this kind asks a small number of questions over and over, which is what makes the answers worth anything:</p>
+<ul>
+<li>How do fish and invertebrate assemblages in these marshes change from season to season and year to year?</li>
+<li>Are the restoration targets in the permit being met, judged against reference conditions rather than against a fixed number?</li>
+<li>Which environmental conditions move with community structure, and where would remediation actually help?</li>
+</ul>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<ul>
-<li>Standardized community surveys (e.g., gear deployment, timed/count protocols)<br>
-</li>
-<li>Lab processing of collected samples (ID, measurements)<br>
-</li>
-<li>Data management and QA/QC workflows to support long-term reporting</li>
-</ul>
+<p>The program’s wetland monitoring plan sets out how every one of these measurements is taken, so that a number from one marsh in one year is comparable with a number from another marsh a decade earlier.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p><strong>Fish, by two methods.</strong> Fish are sampled in two habitat types, tidal creeks and main channel, at six locations of each type per wetland, by two methods that catch different animals. Circular enclosure traps, 0.4 square meters and 0.9 meters tall, are dropped in water no more than 0.7 meters deep and worked with a hand net until three hauls come up empty. They exist for the gobies: small, abundant, bottom-sitting fish that other gear passes straight over. Beach seines with blocking nets take the larger and more mobile fish. Blocking nets are rolled out 7.6 meters apart, perpendicular to shore, out to about 1.5 meters depth or 12.2 meters from shore, whichever comes first, and then closed. A beach seine two meters high and 7.6 meters wide is hauled through the blocked area five times, and the blocking nets themselves are pulled in and sampled afterwards, because fish end up in them too. Everything is identified and counted in the field and returned alive, with voucher specimens kept only where an identification is uncertain.</p>
+<p><strong>Timing, which is not incidental.</strong> Fish sampling happens on three separate dates in early fall, with the sampled area offset each time so that one visit does not degrade the habitat the next visit measures. Early fall is chosen to stay clear of Ridgway’s rail nesting. Sampling is daytime only and restricted to comparable tides across all the wetlands, since a marsh at one tide is not the same marsh at another.</p>
+<p><strong>Invertebrates, by three.</strong> Macroinvertebrates are sampled alongside the enclosure stations. Epifauna, such as the California horn snail, are counted in quadrats down the unvegetated bank from the vegetation line to the thalweg. Larger infauna, jackknife clams and ghost shrimp, come from a ten centimeter core pushed up to fifty centimeters into the sediment and sieved through three millimeter mesh in the field. The smallest animals, most annelids and the amphipods, come from a narrow three and a half centimeter core taken only six centimeters deep, preserved on site and worked through half millimeter mesh under a microscope back in the laboratory. Three sizes of animal, three ways of catching them, because no single method sees them all.</p>
+<div class="figure-grid photo-grid">
+<figure class="figure">
+<a href="images/research/songs_blocking_nets.jpg" data-fancybox="songs-figs"> <img src="images/research/songs_blocking_nets.jpg" alt="Setting a block net across a tidal creek" class="figure-img"> </a>
+<figcaption class="figure-caption">
+<span class="fig-label">Block nets.</span> Two nets close off a reach before any seining starts, so the same water is fished each time.
+</figcaption>
+</figure>
+<figure class="figure">
+<a href="images/research/songs_seine_pull.jpg" data-fancybox="songs-figs"> <img src="images/research/songs_seine_pull.jpg" alt="Two people pulling a seine net through a blocked reach of a marsh channel" class="figure-img"> </a>
+<figcaption class="figure-caption">
+<span class="fig-label">The haul.</span> A 25 meter seine pulled through the enclosure, weighted below and floated above so it works the bottom.
+</figcaption>
+</figure>
+<figure class="figure">
+<a href="images/research/songs_sorting_cart.jpg" data-fancybox="songs-figs"> <img src="images/research/songs_sorting_cart.jpg" alt="Crew sorting the catch out of the seine net into a cart on the bank" class="figure-img"> </a>
+<figcaption class="figure-caption">
+<span class="fig-label">Sorting.</span> The net comes up into the cart and everything in it is counted and identified on the bank.
+</figcaption>
+</figure>
+<figure class="figure">
+<a href="images/research/songs_goby_enclosure.jpg" data-fancybox="songs-figs"> <img src="images/research/songs_goby_enclosure.jpg" alt="Crew working a small enclosure trap in shallow water for gobies" class="figure-img"> </a>
+<figcaption class="figure-caption">
+<span class="fig-label">Goby enclosure.</span> A smaller trap dropped and then netted around the perimeter, for the benthic species a seine passes over.
+</figcaption>
+</figure>
+<figure class="figure">
+<a href="images/research/songs_core_sieve.jpg" data-fancybox="songs-figs"> <img src="images/research/songs_core_sieve.jpg" alt="Sieving a sediment core for invertebrates" class="figure-img"> </a>
+<figcaption class="figure-caption">
+<span class="fig-label">Cores.</span> A large core sieved on the bank, for the clams, shrimp and worms a net never sees.
+</figcaption>
+</figure>
+<!-- ROOM FOR MORE, and the grid stays even at six. Drop files into
+     images/research/ and uncomment. Best candidate by far is the sorting
+     tray with worms and amphipods picked out of the sieve: the smallest
+     animals are a third of the method and nobody ever photographs them.
+
+<figure>
+  <a href="images/research/songs_sorting_worms.jpg" data-fancybox="songs-figs">
+    <img src="images/research/songs_sorting_worms.jpg" alt="Sorting invertebrates out of a sieved sediment sample">
+  </a>
+  <figcaption><span class="fig-label">Sorting the sieve.</span> CAPTION</figcaption>
+</figure>
+-->
+</div>
+<p><strong>In the laboratory and after.</strong> Catch is identified to the lowest practical taxonomic level, measured and processed, which is where a survey stops being a bucket of animals and becomes data. Then data entry and the checking that follows, reconciling sheets against samples before anything reaches the program’s long-term record. A reference dataset is only useful if a value from 2025 can be trusted next to one from 2005.</p>
 </section>
-<section id="results-preview" class="level2">
-<h2 class="anchored" data-anchor-id="results-preview">Results (preview)</h2>
-<ul>
-<li>Field season progress notes and initial summaries (coming soon).<br>
-</li>
-<li>Annual report excerpts will be linked here when available.</li>
-</ul>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p>The appointment ran from August 2025 to January 2026 and has ended. The data went into the program’s long-term record rather than into anything of mine, and the reporting is the program’s to publish. The 2025 season is covered by the annual report above, which reports that in the fourteenth year of monitoring the restoration again did not earn mitigation credit, and attributes that to unplanned habitat conversion and to a lack of similarity to the reference wetlands on some biological attributes. All of the underlying data are public.</p>
 </section>
-<section id="outputs" class="level2">
-<h2 class="anchored" data-anchor-id="outputs">Outputs</h2>
-<ul>
-<li>Report (coming soon)</li>
-</ul>
+<section id="songs-stickers" class="level2">
+<h2 class="anchored" data-anchor-id="songs-stickers">SONGS Stickers</h2>
+<p>Long-term monitoring is a small crew going back to the same four marshes, season after season, for years. Traditions accumulate. So do stickers.</p>
+<div class="sticker-row">
+<figure class="figure">
+<img src="images/research/i_heart_mugu_sticker.jpg" alt="Sticker reading I love Mugu, it's better than Cabo" class="figure-img">
+<figcaption class="figure-caption">
+Point Mugu is a working naval installation and the lagoon sits inside it, so a day of fish sampling starts at a gate with a badge and an escort.
+</figcaption>
+</figure>
+<figure class="figure">
+<img src="images/research/government_spy_sticker.jpg" alt="Sticker of a mallard labeled government spy" class="figure-img">
+<figcaption class="figure-caption">
+The mallards on the base are, as far as anyone has been able to establish, entirely ordinary mallards with no security clearance whatsoever.
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>SONGS Mitigation Monitoring Program team, Marine Science Institute (UCSB), collaborators and partners.</p>
-<hr>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>The SONGS Mitigation Monitoring Program team, the Marine Science Institute at the University of California, Santa Barbara, and the reserve and lagoon staff who make access to those sites possible.</p>
+<div class="gallery-footer">
+<p><a class="read-more" href="research.html">Back to Research</a> <a class="btn btn-primary" href="contact.html">Contact</a></p>
+</div>
 
 
 </section>
@@ -252,10 +327,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>UCSB Marine Science Institute — <em>SONGS Mitigation Monitoring Program</em> (program overview and components). <a href="https://marinemitigation.msi.ucsb.edu/" class="uri">https://marinemitigation.msi.ucsb.edu/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><em>Artificial Reef</em> page and reef monitoring/permit materials describing standards for ≥150 acres kelp and ≥28 tons reef fish standing stock. See: <a href="https://marinemitigation.msi.ucsb.edu/artificial-reef" class="uri">https://marinemitigation.msi.ucsb.edu/artificial-reef</a> and Monitoring Plan PDF.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><em>Wetland</em> pages describing Condition A (≥150 acres tidal wetlands) and the San Dieguito implementation (~115 acres creation + ~35 acres enhancement credit for inlet maintenance). See: <a href="https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning" class="uri">https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Wetland monitoring uses natural reference sites to benchmark San Dieguito’s performance; the program identifies Tijuana Estuary, Point Mugu Lagoon, and Carpinteria Salt Marsh Reserve as reference wetlands. See the wetland monitoring/plan materials on the SONGS site.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Marine Science Institute, University of California, Santa Barbara. <em>SONGS Mitigation Monitoring Program</em>, program overview and components. <a href="https://marinemitigation.msi.ucsb.edu/" class="uri">https://marinemitigation.msi.ucsb.edu/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Artificial reef monitoring and permit materials describing the kelp and reef fish standing stock standards. <a href="https://marinemitigation.msi.ucsb.edu/artificial-reef" class="uri">https://marinemitigation.msi.ucsb.edu/artificial-reef</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Wetland pages describing Condition A and how it is met at San Dieguito. <a href="https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning" class="uri">https://marinemitigation.msi.ucsb.edu/wetland/restoration-planning-construction/restoration-planning</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The permit requires reference wetlands to be relatively undisturbed, tidal and within the Southern California Bight. Forty six candidates were evaluated; Tijuana River Estuary, Mugu Lagoon and Carpinteria Salt Marsh were chosen originally, and in 2024 Los Peñasquitos Lagoon replaced Tijuana River Estuary, which sewage flows had made unsuitable. Beheshti et al.&nbsp;2026, section 2.3.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>SONGS Mitigation Monitoring Program. <em>Monitoring Plan for the SONGS Wetland Restoration Project</em>, updated May 2022. Gear dimensions, station spacing, habitat definitions, timing windows and the standardization of densities all come from this document.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -413,11 +489,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
-  });
-</script>
+<script src="scripts/site.js"></script>
 
 
 

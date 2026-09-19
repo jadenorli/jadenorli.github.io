@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -60,10 +59,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Artwork">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="Artwork">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -135,13 +139,31 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<!-- Page banner with a single still image -->
+<!-- ===================================================================== -->
+<!-- PAGE BANNER                                                           -->
+<!--                                                                       -->
+<!-- A still image rather than the looping video used on about, research   -->
+<!-- and the photography galleries. styles.css §16 styles .page-banner img -->
+<!-- and .page-banner video identically, so the two are interchangeable.   -->
+<!--                                                                       -->
+<!-- role="img" + aria-label are correct here: the banner holds no          -->
+<!-- interactive children, so collapsing it to "one image with this         -->
+<!-- description" is right. (On photography.qmd the same markup was hiding  -->
+<!-- five clickable slides from screen readers, which is why it was removed -->
+<!-- there but kept here.)                                                  -->
+<!--                                                                       -->
+<!-- FLAG: class="has-image" appears only on this page and has no rule in   -->
+<!-- styles.css. It is inert. Left in place because it is harmless and may  -->
+<!-- be a hook you intended to style later; delete it if not.               -->
+<!-- ===================================================================== -->
 <div class="page-banner has-image" role="img" aria-label="Artwork banner image">
-<img src="images/banners/art.jpg" alt="Oil paint palette and brushes">
+<!-- Absolutely positioned and cropped to fill by styles.css §16. The alt --> <!-- text here duplicates the aria-label above, which is harmless because --> <!-- role="img" on the parent means screen readers announce the label and --> <!-- ignore the children.                                                 --> <img src="images/banners/art.jpg" alt="Oil paint palette and brushes"> <!-- 35% black scrim so the white title stays legible over the image.     -->
 <div class="page-banner-overlay">
 
 </div>
+<!-- /.page-banner-overlay -->
 <div class="page-banner-inner">
+<!-- Raw <h1> rather than a Markdown heading, unlike the other pages.     --> <!-- It works, but it means this title does not join Quarto's search      --> <!-- index or the document outline. Worth making consistent eventually.   -->
 <h1 class="page-banner-title">
 Artwork
 </h1>
@@ -149,16 +171,42 @@ Artwork
 oil paint • mixed media • nature
 </p>
 </div>
+<!-- /.page-banner-inner -->
 </div>
-<style>
-/* Page-specific tweaks for the masonry gallery */
-.art-gallery .art-item { break-inside: avoid; margin: 0 0 1rem; }
-.art-gallery a { display:block; margin:0; } /* override site .masonry a margin */
-.art-gallery img { width:100%; display:block; border-radius:8px; }
-.art-caption { margin-top:.5rem; color:#6b7280; font-size:.95rem; line-height:1.35; }
-.art-caption strong { color:inherit; }
-</style>
+<!-- /.page-banner -->
+<!-- ===================================================================== -->
+<!-- PAGE SPECIFIC STYLES                                                  -->
+<!--                                                                       -->
+<!-- These live here rather than in styles.css because they apply only to   -->
+<!-- this one gallery. Anything reused elsewhere belongs in the stylesheet. -->
+<!-- ===================================================================== -->
+<!-- MOVED: the gallery's style block now lives in section 30 of styles.css.
+     It was 50 lines of stylesheet inside a page, which meant a change to
+     gallery styling had to be made in a different file from every other
+     gallery rule on the site. Nothing about the rules changed. -->
+<!-- ===================================================================== -->
+<!-- THE GALLERY                                                           -->
+<!--                                                                       -->
+<!-- Two classes: .masonry supplies the column layout from styles.css §10   -->
+<!-- (two columns, three above 900px), and .art-gallery scopes the tweaks   -->
+<!-- above to this page only.                                              -->
+<!--                                                                       -->
+<!-- NOTE: no data-randomize attribute, unlike the photography galleries.   -->
+<!-- scripts/site.js only shuffles a .masonry that asks to be shuffled, so  -->
+<!-- this grid keeps its order. That is deliberate: the works are arranged  -->
+<!-- newest to oldest, which is information a shuffle would destroy.        -->
+<!--                                                                       -->
+<!-- LIGHTBOX GROUP. data-fancybox groups anchors sharing the same value    -->
+<!-- into one swipeable album. Every piece on this page uses "art", so       -->
+<!-- clicking any one of them opens the lightbox and lets you page through   -->
+<!-- the entire collection in page order, newest to oldest.                  -->
+<!--                                                                         -->
+<!-- One album rather than several is deliberate. A visitor who opens a      -->
+<!-- painting is browsing, and breaking the set into sub albums would strand -->
+<!-- them at the end of a three piece series with no way forward.            -->
+<!-- ===================================================================== -->
 <div class="masonry art-gallery">
+<!-- Each piece follows the same shape: a <figure> wrapping a lightbox    --> <!-- link, the image, and a <figcaption>.                                 --> <!-- role="group" + aria-labelledby name the figure for screen readers,   --> <!-- pointing at the id on its own title. Those ids must stay unique      --> <!-- across the page.                                                     -->
 <figure class="art-item figure" role="group" aria-labelledby="art-1-title">
 <a data-fancybox="art" href="artwork/kelp_rockfish.jpg"> <img src="artwork/kelp_rockfish.jpg" alt="Kelp Rockfish" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
@@ -207,65 +255,91 @@ oil paint • mixed media • nature
 <strong id="art-8-title">Fall Memories</strong><br> 2019 · Colored pencil on paper
 </figcaption>
 </figure>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> <!-- WINOGRADSKY SERIES, three acrylic canvases from 2018.               --> <!-- CHANGED: these three use data-fancybox="art" rather than    --> <!-- "art", so the lightbox treats them as their own album. They are     --> <!-- also the tallest works on the page and the reason for the           --> <!-- max-height rule in the style block above.                           --> <!-- Kept in page order III, II, I to match the newest first ordering of --> <!-- the rest of the grid.                                               --> <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <figure class="art-item figure" role="group" aria-labelledby="art-9-title">
-<a data-fancybox="art" href="artwork/virgin_gorda.jpg"> <img src="artwork/virgin_gorda.jpg" alt="Virgin Gorda, BVI" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/winogradsky_3.jpg"> <img src="artwork/winogradsky_3.jpg" alt="Winogradsky III" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-9-title">Virgin Gorda, BVI</strong><br> 2017 · Oil on canvas
+<strong id="art-9-title">Winogradsky III</strong><br> 2018 · Acrylic on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-10-title">
-<a data-fancybox="art" href="artwork/lady.jpg"> <img src="artwork/lady.jpg" alt="Lady" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/winogradsky_2.jpg"> <img src="artwork/winogradsky_2.jpg" alt="Winogradsky II" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-10-title">Lady</strong><br> 2015 · Oil on canvas
+<strong id="art-10-title">Winogradsky II</strong><br> 2018 · Acrylic on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-11-title">
-<a data-fancybox="art" href="artwork/busy.jpg"> <img src="artwork/busy.jpg" alt="Busy" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/winogradsky_1.jpg"> <img src="artwork/winogradsky_1.jpg" alt="Winogradsky I" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-11-title">Busy</strong><br> 2015 · Oil on canvas
+<strong id="art-11-title">Winogradsky I</strong><br> 2018 · Acrylic on canvas
 </figcaption>
 </figure>
+<p><!-- ~~~~~~~~~~~~~~~~~~~~ end Winogradsky series ~~~~~~~~~~~~~~~~~~~~~~ --></p>
 <figure class="art-item figure" role="group" aria-labelledby="art-12-title">
-<a data-fancybox="art" href="artwork/tulips.jpg"> <img src="artwork/tulips.jpg" alt="Tulips for Mom" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/virgin_gorda.jpg"> <img src="artwork/virgin_gorda.jpg" alt="Virgin Gorda, BVI" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-12-title">Tulips for Mom</strong><br> 2015 · Oil on canvas
+<strong id="art-12-title">Virgin Gorda, BVI</strong><br> 2017 · Oil on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-13-title">
-<a data-fancybox="art" href="artwork/rainbow_trout.jpg"> <img src="artwork/rainbow_trout.jpg" alt="Rainbow Trout" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/lady.jpg"> <img src="artwork/lady.jpg" alt="Lady" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-13-title">Rainbow Trout</strong><br> 2014 · Oil on canvas
+<strong id="art-13-title">Lady</strong><br> 2015 · Oil on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-14-title">
-<a data-fancybox="art" href="artwork/tulip_fields.jpg"> <img src="artwork/tulip_fields.jpg" alt="Tulip Fields" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/busy.jpg"> <img src="artwork/busy.jpg" alt="Busy" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-14-title">Tulip Fields</strong><br> 2014 · Oil on canvas
+<strong id="art-14-title">Busy</strong><br> 2015 · Oil on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-15-title">
-<a data-fancybox="art" href="artwork/swimming_trout.jpg"> <img src="artwork/swimming_trout.jpg" alt="Swimming Trout" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/tulips.jpg"> <img src="artwork/tulips.jpg" alt="Tulips for Mom" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-15-title">Swimming Trout</strong><br> 2014 · Oil on canvas
+<strong id="art-15-title">Tulips for Mom</strong><br> 2015 · Oil on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-16-title">
-<a data-fancybox="art" href="artwork/breakfast_morning.jpg"> <img src="artwork/breakfast_morning.jpg" alt="Breakfast Morning" class="figure-img"> </a>
+<a data-fancybox="art" href="artwork/rainbow_trout.jpg"> <img src="artwork/rainbow_trout.jpg" alt="Rainbow Trout" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-16-title">Breakfast Morning</strong><br> 2013 · Oil on canvas
+<strong id="art-16-title">Rainbow Trout</strong><br> 2014 · Oil on canvas
 </figcaption>
 </figure>
 <figure class="art-item figure" role="group" aria-labelledby="art-17-title">
+<a data-fancybox="art" href="artwork/tulip_fields.jpg"> <img src="artwork/tulip_fields.jpg" alt="Tulip Fields" class="figure-img"> </a>
+<figcaption class="art-caption figure-caption">
+<strong id="art-17-title">Tulip Fields</strong><br> 2014 · Oil on canvas
+</figcaption>
+</figure>
+<figure class="art-item figure" role="group" aria-labelledby="art-18-title">
+<a data-fancybox="art" href="artwork/swimming_trout.jpg"> <img src="artwork/swimming_trout.jpg" alt="Swimming Trout" class="figure-img"> </a>
+<figcaption class="art-caption figure-caption">
+<strong id="art-18-title">Swimming Trout</strong><br> 2014 · Oil on canvas
+</figcaption>
+</figure>
+<figure class="art-item figure" role="group" aria-labelledby="art-19-title">
+<a data-fancybox="art" href="artwork/breakfast_morning.jpg"> <img src="artwork/breakfast_morning.jpg" alt="Breakfast Morning" class="figure-img"> </a>
+<figcaption class="art-caption figure-caption">
+<strong id="art-19-title">Breakfast Morning</strong><br> 2013 · Oil on canvas
+</figcaption>
+</figure>
+<figure class="art-item figure" role="group" aria-labelledby="art-20-title">
 <a data-fancybox="art" href="artwork/waterfall_oasis.jpg"> <img src="artwork/waterfall_oasis.jpg" alt="Waterfall Oasis" class="figure-img"> </a>
 <figcaption class="art-caption figure-caption">
-<strong id="art-17-title">Waterfall Oasis</strong><br> 2012 · Oil on canvas
+<strong id="art-20-title">Waterfall Oasis</strong><br> 2012 · Oil on canvas
 </figcaption>
 </figure>
 </div>
-<p><!-- end .masonry.art-gallery --></p>
+<!-- /.masonry.art-gallery -->
+<!-- ===================================================================== -->
+<!-- PAGE FOOTER: the action row that closes every content page.           -->
+<!-- column-span:all in styles.css §10 makes it break out of the masonry   -->
+<!-- columns rather than being poured into one like another artwork.       -->
+<!-- ===================================================================== -->
 <div class="gallery-footer">
-<p><a class="btn btn-primary" href="contact.html">Contact</a> <a class="read-more" href="#">Back to top</a></p>
+<p><a class="btn btn-primary" href="contact.html">Contact</a> <!-- href="#" scrolls to the top; smooth-scroll: true in _quarto.yml     --> <!-- animates the jump.                                                  --> <a class="read-more" href="#">Back to top</a></p>
 </div>
+<!-- /.gallery-footer -->
 
 
 
@@ -425,11 +499,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
-  });
-</script>
+<script src="scripts/site.js"></script>
 
 
 

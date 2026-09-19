@@ -4,42 +4,42 @@
     "href": "research.html",
     "title": "jadenorli",
     "section": "",
-    "text": "fieldwork • models • communication"
+    "text": "fieldwork • models • communication\nI’m a marine ecologist working on the population dynamics of harvested species and the habitats that support them. My work spans stage-structured modeling of California spiny lobster under Marine Protected Area and slot-limit scenarios, fishery-independent surveys across long-term California monitoring programs, and experimental coral biology. I’m most interested in making monitoring data more useful for stock assessment and spatial management.\nPublications ORCID Google Scholar"
   },
   {
-    "objectID": "research.html#current-projects",
-    "href": "research.html#current-projects",
+    "objectID": "research.html#research-projects",
+    "href": "research.html#research-projects",
     "title": "jadenorli",
-    "section": "Current Projects",
-    "text": "Current Projects\n\n\n  \n\nSlot Limits and MPAs — California Spiny Lobster\n\n\nStier Lab, UCSB · Sep 2024 – present\n\n\nStage-structured population model testing slot-limit harvest rules and MPA coverage for Panulirus interruptus in Southern California.\n\n\nCode Read Me\n\n\n\n  \n\nNicothoid Copepod Parasite — Cancrid Crabs\n\n\nKuris Lab, UCSB · Sep 2021 – present\n\n\nFirst description of a nicothoid copepod egg predator in Pacific rock crabs; brood-stage intensity modeling; manuscript in review.\n\n\nManuscript Read Me\n\n\n\n  \n\nSONGS Mitigation Monitoring Program\n\n\nSONGS, UCSB · Aug 2025 – Jan 2026\n\n\nSalt-marsh fish and invertebrate monitoring at Carpinteria Salt Marsh Reserve and Point Mugu Lagoon. Field surveys, species ID, lab processing, and data QA/QC supporting long-term restoration reporting.\n\n\nReport (soon) Read Me"
+    "section": "Research Projects",
+    "text": "Research Projects\n\n\n\n  \n\nSlot Limits and MPAs: California Spiny Lobster (Panulirus interruptus)\n\n\nStier Lab, UCSB · Sep 2024 – present\n\n\nSpatially explicit, female-only stage-structured model across CDFW fishing blocks, asking how many large females the fishery actually lands and whether current assessment methods could detect them. Groundwork for quantifying the ecological value of protecting large individuals.\n\n\nCode Read Me\n\n\n\n\n  \n\nCoral Wound Regeneration: Mo’orea (French Polynesia) Porites\n\n\nStier Lab, UCSB · May 2026 – present\n\n\nIsland-wide Porites genotyping survey assigning colonies to mitochondrial lineages, plus a 2×2 factorial experiment testing whether secondary wounding (microwounding) and algae removal reactivate stalled tissue regeneration in corals whose recovery has stalled mid-healing.\n\n\nCode Read Me\n\n\n\n\n  \n\nNicothoid (Choniosphaera sp.) Copepod Parasite: Cancrid Crabs\n\n\nKuris Lab, UCSB · Sep 2021 – Mar 2026\n\n\nFirst record of a nicothoid egg predator (Choniosphaera sp.) infesting cancrid crabs anywhere in the Eastern Pacific, combining aquarium rearing of ovigerous hosts with brood stage intensity modeling to estimate its threat to a data poor rock crab fishery. Published in Ecology (2025). PDF\n\n\nRead Me\n\n\n\n\n  \n\nSediment and Seeps: San Pedro Basin and Coal Oil Point (Southern California)\n\n\nValentine Lab, UCSB · Jan 2023 – Aug 2025\n\n\nTwo strands on what reaches the floor of the Southern California Bight: sediment coring over the San Pedro Basin DDT disposal site, feeding a published waste inventory in Environmental Science and Technology (2025), and a Coastal Fund project on whether the ocean’s own alkane cycle primes microbes to absorb petroleum. PDF\n\n\nRead Me"
   },
   {
-    "objectID": "research.html#selected-research-and-fieldwork",
-    "href": "research.html#selected-research-and-fieldwork",
+    "objectID": "research.html#field-and-monitoring-programs",
+    "href": "research.html#field-and-monitoring-programs",
     "title": "jadenorli",
-    "section": "Selected Research and Fieldwork",
-    "text": "Selected Research and Fieldwork\n\n\n  \n\nMicrobial Hydrocarbon Cycling — Coal Oil Point\n\n\nValentine Lab, UCSB · Jan 2023 – Aug 2025\n\n\nIncubation experiments at Coal Oil Point testing whether Marine Group II (MGII) archaea consume biogenic alkanes and how petroleum exposure alters communities—using liposome+alkane/oil treatments, archaeal-inclusive 16S amplicons, and MGII-targeted qPCR.\n\n\nRead Me\n\n\n\n  \n\nKelp Forest and Nearshore Fisheries Surveys\n\n\nCaselle Lab (PISCO), UCSB · Jun – Oct 2024\n\n\nBenthic and fish surveys across Northern Channel Islands MPAs and nearshore stock assessments with CCFRP; included small-boat and data QA/QC training.\n\n\nRead Me\n\n\n\n  \n\nPacific Manta Research Group — Outreach\n\n\nPMRG · Dec 2021 - Jan 2024\n\n\nHelped design the PMRG site and photo-ID submission workflow; built diver-facing guidance and catalog support for Revillagigedo mantas.\n\n\nSubmit Photos Read Me"
+    "section": "Field and Monitoring Programs",
+    "text": "Field and Monitoring Programs\n\n\n\n  \n\nSONGS: Salt Marsh Mitigation Monitoring\n\n\nMSI, UCSB · Aug 2025 – Jan 2026\n\n\nSalt marsh fish and invertebrate monitoring at Carpinteria Salt Marsh Reserve and Point Mugu Lagoon, using seine and trap surveys, species identification to lowest practical taxon, and laboratory processing supporting long term restoration reporting.\n\n\nReport Read Me\n\n\n\n\n  \n\nPISCO: Kelp Forest Monitoring\n\n\nCaselle Lab, UCSB · Jun – Oct 2024\n\n\nStandardized underwater benthic and fish visual surveys across Northern Channel Islands marine protected areas for the Partnership for Interdisciplinary Studies of Coastal Oceans, tracking how protected reefs differ from fished ones.\n\n\nRead Me\n\n\n\n\n  \n\nCCFRP: Collaborative Fisheries Research\n\n\nCaselle Lab, UCSB · 2024\n\n\nFishery independent hook and line surveys with volunteer anglers through the California Collaborative Fisheries Research Program, evaluating nearshore fish stocks inside marine protected areas and at paired sites open to fishing.\n\n\nRead Me"
+  },
+  {
+    "objectID": "research.html#open-source-analyses",
+    "href": "research.html#open-source-analyses",
+    "title": "jadenorli",
+    "section": "Open-Source Analyses",
+    "text": "Open-Source Analyses\n\n\n\n  \n\nEcosystem Stability: Sardine Harvest Regimes\n\n\n\nMethods and Summary\n\n\nEDS 230: Environmental Modeling · R · Lotka-Volterra · Sobol · LHS\n\n\nPacific sardine and predator dynamics under three harvest rules: proportional harvest, biomass closure threshold, and adaptive management, with a Sobol analysis separating ecological from management drivers.\n\n\n\nRepo Live Analysis\n\n\n\n\n  \n\nMarine Aquaculture: Integrative Multi-Trophic Aquaculture\n\n\n\nMethods and Summary\n\n\nR · NOAA Coral Reef Watch SST · GEBCO · VLIZ EEZ · FishBase\n\n\nMapping candidate integrated multi trophic aquaculture areas across the U.S. West Coast Exclusive Economic Zone from sea surface temperature, bathymetry, and species thermal and depth tolerances.\n\n\n\nRepo Live Analysis\n\n\n\n\n  \n\nPalmetto Species: Binary Classification\n\n\n\nMethods and Summary\n\n\nIndependent analysis · R · tidymodels · elastic net · 10-fold CV\n\n\nBinary logistic regression distinguishing two Florida palmetto species from morphology, comparing standard and regularised models on accuracy, ROC AUC, and calibration across ten fold cross validation.\n\n\n\nRepo Live Analysis\n\n\n\n\n  \n\nForest Carbon: Parameter Uncertainty\n\n\n\nMethods and Summary\n\n\nEDS 230: Environmental Modeling · R · deSolve · Sobol\n\n\nThreshold based forest growth as a piecewise ordinary differential equation, with variance based sensitivity analysis identifying which parameters drive maximum carbon stock under uncertainty.\n\n\n\nRepo Live Analysis\n\n\n\n\n  \n\nExtreme Houston Winter Storms: Texas Freeze 2021\n\n\n\nMethods and Summary\n\n\nR · VIIRS night-lights · OpenStreetMap · ACS 2019\n\n\nDetecting blackout extent from night lights imagery and joining tract level census data to quantify socioeconomic disparities in how quickly different Houston neighbourhoods regained power.\n\n\n\nRepo Live Analysis\n\n\n\n\n  \n\nAlmond Profit: Informal Sensitivity Analysis and Climate Variation\n\n\n\nMethods and Summary\n\n\nEDS 230: Environmental Modeling · R · informal sensitivity analysis\n\n\nA published yield transfer function wrapped in a profit model, then tested for parameter uncertainty to identify which assumptions drive the outcome across plausible climate scenarios.\n\n\n\nRepo Live Analysis"
+  },
+  {
+    "objectID": "research.html#outreach-and-media",
+    "href": "research.html#outreach-and-media",
+    "title": "jadenorli",
+    "section": "Outreach and Media",
+    "text": "Outreach and Media\n\n\n\n  \n\nPacific Manta: Citizen Science Photo ID\n\n\nWeb Designer / Research Intern · Dec 2021 – Jan 2024\n\n\nDesigned the group’s website around a citizen scientist photo identification workflow, and built diver facing guidance on manta etiquette and catalog support for the Revillagigedo oceanic manta population.\n\n\nSubmit Photos Read Me\n\n\n\n\n  ▶ \n\nEnvironmental Media: Climate Program Film\n\n\nAssociate Producer, UCSB · Mar – Apr 2025\n\n\nShort promotional film for the Blüedot Institute Climate Leadership Program, run with the Bren School. Filmed and directed high school students on location on Santa Cruz Island, then edited the piece.\n\n\nWatch on Vimeo\n\n\n\n\n  ▶ \n\nWinogradsky Column: Microbial Succession\n\n\nEEMB 150A: Microbial Diversity, UCSB · 2025\n\n\nA stop motion video following my Winogradsky column across roughly a year, as sediment microbes sort themselves into colored layers by their oxygen and sulfur requirements.\n\n\nOpen MP4"
   },
   {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "jadenorli",
     "section": "Publications",
-    "text": "Publications\n\nOrli, Jaden E., Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” Ecology 106(12): e70263. https://doi.org/10.1002/ecy.70263 · Cover image: https://doi.org/10.1002/ecy.70285\nIn Review (Nature): Zilz, Zoe L., Hascall, E., DiBartolo, A., Flores, D., Cameron, S., Orli, Jaden E., and Kuris, A. M. “A Parasite-inclusive Food Web for the California Rocky Intertidal Zone.”"
-  },
-  {
-    "objectID": "research.html#open-source-and-analyses",
-    "href": "research.html#open-source-and-analyses",
-    "title": "jadenorli",
-    "section": "Open-source and Analyses",
-    "text": "Open-source and Analyses\n\nMarine-Aquaculture (IMTA siting • U.S. West Coast EEZ) — R geospatial workflow combining NOAA Coral Reef Watch SST (2008–2012), GEBCO bathymetry, and VLIZ EEZ with FishBase thermal/depth tolerances to map candidate IMTA areas; includes interactive species-by-region maps and a suitability heatmap.\nLive analysis: https://jadenorli.github.io/marine-aquaculture/code/marine_aquaculture.html\nRepo: https://github.com/jadenorli/marine-aquaculture\nHouston-Storms (Texas Freeze 2021) — Uses VIIRS night-lights to detect blackout timing/extent, OSM buildings/roads to reduce traffic-light bias, and ACS 2019 tract-level data to quantify socioeconomic disparities; outputs animated night-light change, tract vs. home-level comparisons, interactive maps, and summary tables.\nLive analysis: https://jadenorli.github.io/houston-storms/code/houston_extreme_storms.html\nRepo: https://github.com/jadenorli/houston-storms"
-  },
-  {
-    "objectID": "research.html#videos",
-    "href": "research.html#videos",
-    "title": "jadenorli",
-    "section": "Videos",
-    "text": "Videos\n\n\n  ▶ \n\nEnvironmental Media Production — Promo\n\n\nAssociate Producer · Mar – Apr 2025\n\n\nShort promotional film for Blüedot Institute Climate Leadership Program (Bren School collaboration).\n\n\nWatch on Vimeo\n\n\n\n  ▶ \n\nWinogradsky Column\n\n\nValentine Lab · 2025\n\n\nA stop motion video of my Winogradsky column approximately one year after inception.\n\n\nOpen MP4"
+    "text": "Publications\n\nORCID Google Scholar\n\n\nOrli, Jaden E., Sophia M. Lecuona, Gabrielle O. Plewe, Carson N. Gadler, Armand M. Kuris, Danny Tang, and Zoe L. Zilz. 2025. “Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California.” Ecology 106(12): e70263. https://doi.org/10.1002/ecy.70263 · Cover Image: https://doi.org/10.1002/ecy.70285 PDF\nZilz, Zoe L., Emily Hascall, Athena DiBartolo, Delén Flores, Sophie Cameron, Orli, Jaden E., and Armand M. Kuris. 2026. “A Parasite-inclusive Food Web for the California Rocky Intertidal Zone.” Scientific Data. https://doi.org/10.1038/s41597-026-07259-3 PDF\nWu, Mong Sin Christine, Jacob T. Schmidt, Hailie E. Kittner, Earth 182B Group, and David L. Valentine. 2025. “Geospatial and Temporal Inventory for Industrial DDT Waste Disposal to a Deep Coastal Ocean Environment.” Environmental Science and Technology 59: 20578-20587. https://doi.org/10.1021/acs.est.5c03851 · Group Author (Earth 182B Group); the consortium includes Orli, Jaden E. PDF\n\n\nWhat I Contributed\n\n\n\n\n\n\nA Parasite-inclusive Food Web for the California Rocky Intertidal Zone\n\n\nZilz, Zoe L., Hascall, Emily, DiBartolo, Athena, Flores, Delen, Cameron, Sophie M., Orli, Jaden E., Kuris, Armand M.. 2026. Scientific Data.\n\n\n\n\n\n\n\nAuthor 6 of 7\n\n\n\n\nRocky intertidal surveys and parasite dissections feeding the food web dataset\n\n\nfieldworkspecimenslabDOIPDF\n\n\n\n\n\n\nDiscovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California\n\n\nOrli, Jaden E., Lecuona, Sophia M., Plewe, Gabrielle O., Gadler, Carson N., Kuris, Armand M., Tang, Danny, Zilz, Zoe L.. 2025. Ecology 106(12): e70263.\n\n\n\n\n\n\n\nFirst Author\n\n\n\n\nLed the project from field collection through manuscript, and mentored the undergraduate co-authors on it\n\n\nfieldworkspecimenslabanalysiswritingfiguresDOIPDF\n\n\n\n\n\n\nGeospatial and Temporal Inventory for Industrial DDT Waste Disposal to a Deep Coastal Ocean Environment\n\n\nWu, Mong Sin Christine, Schmidt, Jacob T., Kittner, Hailie E., Earth 182B Group, Valentine, David L.. 2025. Environmental Science and Technology 59: 20578-20587.\n\n\n\n\n\n\n\nAuthor, as part of a named group\n\n\n\n\nNamed in the Earth 182B Group, which the paper lists as an author. Sailed the March 2023 coring cruise aboard the research vessel Yellowfin that collected sediment from the San Pedro Basin disposal site, and worked through the disposal site material with the cohort in Earth 182B\n\n\nfieldworkspecimensDOIPDF\n\n\n\n\n\n\nAnthropogenic Structuring of Microbial Communities in Deep Coastal Sediment\n\n\nKittner, Hailie E.. 2024. Master's thesis, University of California, Santa Barbara.\n\n\n\n\n\n\n\nAcknowledged\n\n\n\n\nSailed the March 2023 coring cruise aboard the research vessel Yellowfin that collected the deep coastal sediment this thesis is based on\n\n\nfieldworkspecimensViewPDF\n\n\n\n\n\n\nConnected by Tides: Missing Links in California's Coastal Ecotone\n\n\nZilz, Zoe Lucille. 2024. Doctoral dissertation, University of California, Santa Barbara.\n\n\n\n\n\n\n\nAcknowledged\n\n\n\n\nField and laboratory support across several of the ecosystems in this dissertation, over several years\n\n\nfieldworkspecimenslabViewPDF\n\n\n\n\nOne circle per author. A filled circle marks my place in the byline; a dashed ring outside the divider means I am credited in the acknowledgments rather than named as an author."
   },
   {
     "objectID": "photography-portraits.html",
@@ -49,409 +49,430 @@
     "text": "Portraits\n\nfriends • fieldwork • in-between moments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
   },
   {
+    "objectID": "nicothoid-copepod.html#overview",
+    "href": "nicothoid-copepod.html#overview",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Overview",
+    "text": "Overview\nIn an invertebrate biology teaching laboratory in October 2021, a demonstration of crab egg predators turned up something that was not supposed to be there. Brooding Pacific rock crabs from the Gaviota Coast carried a nicothoid copepod egg predator (Nicothoidae, cf. Choniosphaera sp.), sitting among the host’s eggs at nearly the same size and color as the eggs themselves.\nFollow-up collections found it on three commercially important cancrid crabs, at intensities high enough to turn an entire brood maroon. This work is the first record of a nicothoid egg predator on cancrid crabs anywhere in the Eastern Pacific. It describes the parasite’s life cycle across two microhabitats, the egg mass and the gills, and asks what a near-universal egg predator means for the reproductive output of a fishery nobody is closely watching.\n\n\nPublished in Ecology\n\n\nOrli, J. E., S. M. Lecuona, G. O. Plewe, C. N. Gadler, A. M. Kuris, D. Tang and Z. L. Zilz. 2025. Discovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California. Ecology 106(12): e70263.\n\n\nRead the paper Data and code on Dryad Videos on Zenodo"
+  },
+  {
+    "objectID": "nicothoid-copepod.html#quick-facts",
+    "href": "nicothoid-copepod.html#quick-facts",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Quick Facts",
+    "text": "Quick Facts\n\nRole: Lead author, Kuris Lab, University of California, Santa Barbara\nWhen: 2021 to 2025\nHosts: Metacarcinus anthonyi, Romaleon antennarium, Cancer productus\nWhere: baited traps at 66 to 100 meters along the Gaviota Coast, plus additional Southern California sites\nProject type: Scientific Naturalist: discovery, natural history and fishery context\nSkills: field collections, crab identification, dissection, brood stage scoring, parasite life history description, figure and media design, open data curation"
+  },
+  {
+    "objectID": "nicothoid-copepod.html#background-and-questions",
+    "href": "nicothoid-copepod.html#background-and-questions",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Background and Questions",
+    "text": "Background and Questions\nExternally brooding crustaceans carry a long list of egg predators, from nemerteans to copepods, and those predators can take large fractions of a brood. Some have been implicated in fishery collapses. Nicothoid copepods are specialized crustacean associates that commonly mimic their host’s eggs and feed on yolk through the egg shell, which is exactly what makes them easy to miss: at a glance, an infested brood looks like a brood.\n\nHow common is this nicothoid on California rock crabs, and which host stages carry it?\nHow does its life cycle use the egg mass and the gills as separate microhabitats?\nWhat does near-universal infestation mean for the fecundity and management of a data-poor fishery?"
+  },
+  {
+    "objectID": "nicothoid-copepod.html#methods",
+    "href": "nicothoid-copepod.html#methods",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Methods",
+    "text": "Methods\nDiscovery and collections. The first specimens came out of a teaching demonstration rather than a survey. Targeted collections followed: ovigerous cancrids taken by local fishers in baited pots at 66 to 100 meters along the Gaviota Coast, then held in flow-through seawater so that broods could be inspected repeatedly rather than once.\nHost and parasite observations. Each crab was identified to species, with sex, size and reproductive status recorded. Egg masses were scored by egg developmental stage and examined for adult female nicothoids, their egg sacs and embryos, nauplii and copepodids, and for co-occurring egg predators such as Carcinonemertes species. Gill lamellae were inspected in both sexes, which is where the second half of the life cycle turned out to be.\nLife cycle synthesis. Adult females were tracked through their color and size change, from yellow and orange when small to maroon when large and heavily gravid, and their egg sacs were characterized from structure through development: one to four embryos per sac, embryo to nauplius to copepodid. Timing of copepodid peaks in the egg mass, and their presence in gills before and after hatching, is what makes it possible to infer how the parasite crosses from one brood to the next."
+  },
+  {
+    "objectID": "nicothoid-copepod.html#key-results",
+    "href": "nicothoid-copepod.html#key-results",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Key Results",
+    "text": "Key Results\n\n\n\n\nA novel nicothoid on Eastern Pacific cancrids\n\n\n\nThe parasite matches Choniosphaera on the traits that matter in an adult female: globular body, ventral mouthparts, leg and antennule morphology. It differs enough to remain unidentified at species level.\n\n\nIt is the first nicothoid egg predator reported on cancrid crabs in the Eastern Pacific, despite decades of egg masses being opened in the search for nemertean predators.\n\n\n\n\n\nNearly every breeding host carried it\n\n\n\nAcross all three host species, almost every adult examined had at least one nicothoid life stage, on the egg mass, in the gills, or both.\n\n\nOvigerous females routinely carried reproductive adult females on their broods. Only a handful of juveniles and long-held males were completely clear.\n\n\n\n\n\nThe eggs are being eaten\n\n\n\nAdults sit among the host’s eggs, pierce the shell and consume the yolk, leaving empty or degraded capsules behind and opening the way for microbial invasion.\n\n\nA heavily infested brood reads as maroon, the color of dense pink nicothoid eggs laid over the crab’s own. Copepodid densities peak late in host egg development, which is what cumulative exposure across a roughly forty five day brooding period looks like.\n\n\n\n\n\nGills bridge one clutch to the next\n\n\n\nCopepodids occur on the gill lamellae of both sexes, including on females that went on to extrude a new clutch.\n\n\nIn some of those females, copepodids appeared in the new egg mass within a day and adults within nine, which points to transfer from gill to egg at oviposition, and to the gills as the reservoir in between.\n\n\n\n\n\nA data-poor fishery, and an open question\n\n\n\nA conspicuous parasite appearing suddenly on a well-studied crab assemblage has two plausible explanations: a native species that becomes abundant in decadal pulses, as reported for Choniosphaera in the Atlantic, or a recent host shift onto cancrids.\n\n\nEither way, California rock crabs are under-managed and data-limited, and an egg predator this common could erode reproductive output and year-class strength without anyone measuring it."
+  },
+  {
+    "objectID": "nicothoid-copepod.html#figures",
+    "href": "nicothoid-copepod.html#figures",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Figures",
+    "text": "Figures\nBoth figures are from the published paper. Click any panel to open it full size; hover over a sequence to pause it.\n\nFigure 1. Adults on the egg mass\n\n\n\n              \n\n\n1a. Adult females from Metacarcinus anthonyi, in sequence: growth and color change from yellow and orange to maroon as they enlarge and become heavily gravid.\n\n\n\n  \n\n1b. Adults with their pink egg sacs nestled among the host’s eggs. Empty capsules mark where embryos have been consumed.\n\n\n\n  \n\n1c. A gravid female carrying multiple egg sacs, tangled among the host’s egg fascicles.\n\n\n\n\n     \n\n\n1e and 1f. Two broods at a similar developmental stage: one deep maroon under dense nicothoid eggs, the other carrying few parasites.\n\n\n\n\n\nFigure 2. Larvae, and the gills\n\n\n\n           \n\n\n2a to 2d. The larval series in order: embryos in egg sacs, nauplii, copepodids on the egg mass, and copepodids attached to excised gills of Metacarcinus anthonyi. The last panel is the one that makes the life cycle close."
+  },
+  {
+    "objectID": "nicothoid-copepod.html#videos",
+    "href": "nicothoid-copepod.html#videos",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Videos",
+    "text": "Videos\n\n\n\n\n\nYour browser does not support the video tag. \n\nAdults on the brood. An adult moving among host eggs and feeding, showing egg mimicry and attachment.\n\n\n\n\n\nYour browser does not support the video tag. \n\nCopepodids on gills. Larval stages on the gill lamellae, the microhabitat that carries the parasite between broods.\n\n\n\n\n\nYour browser does not support the video tag. \n\nA heavy infestation. Dense clusters of adults and egg sacs through a single brood.\n\n\n\n\nHigher resolution versions and the raw files are archived in Zenodo, linked at the top of the page."
+  },
+  {
+    "objectID": "nicothoid-copepod.html#acknowledgments",
+    "href": "nicothoid-copepod.html#acknowledgments",
+    "title": "A Nicothoid Copepod Parasite of Cancrid Rock Crabs",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis project builds on work with the Kuris Lab at the University of California, Santa Barbara, collaborators who helped collect crabs and identify copepods, and the Coastal Fund at the University of California, Santa Barbara (CF-202204-02367), which supported field and laboratory work.\n\nBack to Research Contact"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "jadenorli",
     "section": "",
-    "text": "get in touch • collaborate • say hello\nI’m always happy to talk science, collaboration, photography, or fieldwork — don’t hesitate to reach out."
+    "text": "get in touch • collaborate • say hello\nI am always glad to talk science, collaboration, photography, or fieldwork. If any of it overlaps with what you are working on, send me a note."
   },
   {
     "objectID": "contact.html#reach-me",
     "href": "contact.html#reach-me",
     "title": "jadenorli",
     "section": "Reach Me",
-    "text": "Reach Me\n\n\n\nDirect\n\n\n\nEmail: jadenorli@gmail.com\n\n\nPhone: (336) 829-0234\n\n\n\n\nMailing\n\n\n\nLocation\nSanta Barbara, CA (often traveling along the California coast)\n\n\nAffiliation\nUCSB · College of Creative Studies (Biology) · Marine Science Institute\n\n\n\n\n\n\nLinks\n\n\nLinkedIn GitHub Resume (PDF)"
+    "text": "Reach Me\n\n\n\nEmail\n\njadenorli@gmail.com\n\nStart an email\n\n\n\nStaff Research Associate, Ocean Recoveries Lab\n\n\nMarine Science Institute, University of California, Santa Barbara\n\n\nSanta Barbara, California, and often along the California coast\n\n\n\n\n\nElsewhere\n\n\n\n   LinkedIn Background and current position  \n\n\n   GitHub Code for my analyses and for this site  \n\n\n   Instagram Underwater and field photography  \n\n\n   Resume Full record of positions and publications, PDF"
   },
   {
     "objectID": "photography.html",
     "href": "photography.html",
     "title": "jadenorli",
     "section": "",
-    "text": "Photography\n\ntextures • motion • atmosphere\n\n\n\n\n\n\n\n\n\n\n Marine Photography \n\n\n\n\nI spend as much time as I can behind the lens underwater; it’s where I feel like the world slows down enough to really see the details. Light behaves differently in water: it bends around scales and cliffs, dissolves into plankton clouds, and pulls strong shapes into soft gradients. I try to capture wildlife in moments of motion or character, whether it’s a curious fish leaning into the dome port or a manta ray suspended in blue water. These places are both ecosystems and atmospheres: reefs become sculptures, schools of fish become choreography. Diving is part fieldwork, part art practice for me, and these images document the way ocean life feels when you’re inside it instead of looking at it.\n\n\nView Full Gallery\n\n\n\n\n\n\n\n\n\n Terrestrial Photography \n\n\n\n\nOn land, my camera becomes a tool for noticing transitions. Capturing where wild spaces touch human ones, and where weather remakes a familiar place in minutes. I’m interested in atmosphere more than scenery: the weight of fog in a canyon, reflections in a window, tracks in sand that show where someone or something just was. The desert and coastline especially feel alive with geometry and story, and I love how light strips everything down to form. Many of these photos are from long hikes, research trips, or road-side pauses when the scene demanded to be documented. Rather than big vistas, I look for the textures and quiet arrangements that tell you what it was like to stand there.\n\n\nView Full Gallery\n\n\n\n\n\n\n Portraits \n\n\n\n\nI take portraits mostly of friends, labmates, and people met outdoors, often in the middle of doing something that makes them feel like themselves. I love when a portrait captures a real exchange rather than a pose: laughter between waves, someone thinking through a task, a glance that says more than words. The environment becomes part of the portrait too—cliffs, boats, and labs all showing the context of who they are. These images are memories of shared moments as much as photographs. To me, portraits are tiny stories about connection, and I hope each one keeps a little of the energy from when it was made.\n\n\nView Full Gallery\n\n\n\n\n\n\n\n\n\n Microscopy \n\n\n\n\nMuch of my scientific work involves organisms too small to see with the naked eye, parasites, larvae, and tiny crustaceans with entire worlds of structure hidden in their bodies. Through a microscope, biology becomes sculpture and pattern; a copepod’s limbs look like architecture and microbial textures can feel like distant landscapes. I enjoy capturing the points where science documentation slips into art, where the goal isn’t just to “show” a specimen, but to celebrate how bizarre and beautiful life really is. The microscope lets me explore new ways of seeing the animals I study every day, especially those that shape ecosystems from the shadows. These images blend research with curiosity, turning data into discovery.\n\n\nView Full Gallery\n\n\n\n\nContact Back to top"
+    "text": "Photography\n\nwildlife • portraits • microscopy\n\n\n\n\n\n\n\n\n\n\n Marine Photography \n\n\n\n\nMost of this is from diving in the tropics: the Great Barrier Reef, Komodo, Raja Ampat, the Philippines, Thailand, Revillagigedo, and Protea Banks. I shoot both ends of the scale and not much in between. Wide for the animals that come to you, like grey reef sharks, oceanic mantas, humpbacks, and the occasional sand tiger cruising a wall. Macro for the ones that stay put, like leaf scorpionfish, ghost pipefish, mantis shrimp, and whatever is sitting in the sand pretending to be sand. The reef animals are usually easier subjects than the big ones, because they have already decided you are not worth reacting to, which means you can take your time and get the light right. The big animals give you one pass, maybe two, and you either had the camera ready or you did not.\n\n\nView Full Gallery\n\n\n\n\n\n\n\n\n\n Terrestrial Photography \n\n\n\n\nTwo things dominate this gallery: African wildlife and European cities. The wildlife is mostly from Kenya and Botswana, in the Maasai Mara, Amboseli, and the Okavango Delta, where the work is largely about waiting and about light that only lasts twenty minutes at either end of the day. The cities are Venice, Cinque Terre, Budapest, Paris, and a long stretch of Switzerland, where I am usually photographing shape and weather rather than landmarks, and where the interesting frame is often the one behind you. The rest is Thailand, the Philippines, and a handful of days closer to home in California. Different subjects entirely, but the same instinct behind all of them, which is to photograph something in the moment before it rearranges itself into something ordinary.\n\n\nView Full Gallery\n\n\n\n\n\n\n\n Portraits \n\n\n\n\nA lot of this is graduation photos, taken around UCSB in May 2025 for friends who were finishing at the same time I was. Those are posed, and posed on purpose, because that is what the picture is for. The point was to make something people would actually want, in the places where they had spent four years. The rest of the gallery is looser: days out at Bishop, the Gaviota wind caves, the Douglas Family Preserve, Coal Oil Point, and a handful from Capri, Dubrovnik, Kaua’i, and the Okavango. The same faces turn up over and over across both kinds, which is the honest summary of who I was around. I am not a portrait photographer by training, but I keep taking them, and I am glad to have this many from a year when everyone was still in one place.\n\n\nView Full Gallery\n\n\n\n\n\n\n\n\n\n Microscopy \n\n\n\n\nThis is almost entirely nudibranchs and sea slugs, shot in Santa Barbara and Mo’orea. Opalescent nudibranchs, Dendrodoris, Elysia, blue ring sea hares, and a few things I am still not certain about. There are also fire worms, brooding anemones, Cladonema jellyfish, and the parasitic copepod I ended up describing in a paper. Under a scope these animals stop being specks and turn into something structured and frankly ridiculous. A nudibranch’s cerata look engineered. A copepod that reads as an orange dot by eye has legs, eyespots, and egg sacs, and spends its whole adult life on a crab’s eggs pretending to be one of them. Most of these were shot while I was supposed to be doing something else, which is usually when the good ones happen.\n\n\nView Full Gallery\n\n\n\n\nContact Back to top"
   },
   {
-    "objectID": "kuris_lab.html#overview",
-    "href": "kuris_lab.html#overview",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "objectID": "coral-regeneration.html#overview",
+    "href": "coral-regeneration.html#overview",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
     "section": "Overview",
-    "text": "Overview\nDuring a classroom lab at UCSB in October 2021, we unexpectedly found a nicothoid copepod egg predator (Nicothoidae, cf. Choniosphaera sp.) infesting brooding Pacific rock crabs along the Gaviota Coast (Santa Barbara, CA). Follow-up collections revealed that this parasite occurs on three commercially important cancrids and can reach very high intensities on egg masses, with adults closely mimicking crab eggs in size and color.\nThis work documents the first record of a nicothoid egg predator on cancrid crabs in the Eastern Pacific, describes its life cycle across egg and gill microhabitats, and highlights implications for fecundity and fishery sustainability."
+    "text": "Overview\nCorals that are wounded and then stall part way through healing are a common sight on reefs under stress, and a poorly understood one. A colony that has closed most of a lesion and then stops can hold that state for months, leaving exposed skeleton that algae colonize. What is not clear is whether the regeneration has genuinely halted or is simply suppressed, and if suppressed, what releases it.\nAnswering that took two pieces of field work in Mo’orea, French Polynesia, and they are described here in the order they had to happen. First an island-wide mitotyping and condition survey of massive Porites, because colonies that look alike belong to different mitochondrial lineages and there is no way to tell by looking. Then a two by two factorial experiment on cores drawn from those mitotyped colonies, testing two candidate releases for a stalled margin: a fresh secondary wound beside it, and removal of the algae growing on it.\nThe survey is what lets the experiment treat lineage as a factor rather than as noise. Without it, every between-colony difference would have to be written off as unexplained variation."
   },
   {
-    "objectID": "kuris_lab.html#citation-and-links",
-    "href": "kuris_lab.html#citation-and-links",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Citation and Links",
-    "text": "Citation and Links\n\nOrli, J.E., Lecuona, S.M., Plewe, G.O., Gadler, C.N., Kuris, A.M., Tang, D., & Zilz, Z.L. 2025.\nDiscovery of an unidentified species of nicothoid copepod infesting cancrid crabs in Santa Barbara, California.\nEcology 106(12): e70263. https://doi.org/10.1002/ecy.70263\n\n\nArticle (open access):\n\nEcology — 10.1002/ecy.70263\n\nData and Code:\n\nDryad — 10.5061/dryad.rv15dv4fw\n\nVideo archive:\n\nZenodo — 10.5281/zenodo.10699477"
-  },
-  {
-    "objectID": "kuris_lab.html#quick-facts",
-    "href": "kuris_lab.html#quick-facts",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "objectID": "coral-regeneration.html#quick-facts",
+    "href": "coral-regeneration.html#quick-facts",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
     "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Lead author, Kuris Lab (UCSB)\n\nWhen: 2021–2025\n\nHosts: Metacarcinus anthonyi, Romaleon antennarium, Cancer productus\n\nDepth/Region: 66–100 m traps along the Gaviota Coast, plus additional Southern California sites\nProject type: Scientific Naturalist — discovery, natural history, and fishery context\n\nSkills: field collections, crab ID, dissections, brood-stage scoring, parasite life-history description, figure & media design, open data curation"
+    "text": "Quick Facts\n\nRole: Staff Research Associate, Stier Ocean Recoveries Lab, University of California, Santa Barbara\nWhen: May through August 2026 in the field, in analysis since\nWhere: the Richard B. Gump South Pacific Research Station, Mo’orea, French Polynesia\nScale: an island-wide survey across eight sites, and 36 experimental cores from 9 parent colonies in four treatment groups\nSkills: experimental design, subtidal survey sampling, coral husbandry and cultivation systems, repeat microscopy imaging, image processing pipelines, sample tracking and data documentation, R\nProgram: Keck Coral Regeneration Program\nCode: https://github.com/jadenorli"
   },
   {
-    "objectID": "kuris_lab.html#background-and-questions",
-    "href": "kuris_lab.html#background-and-questions",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
+    "objectID": "coral-regeneration.html#background-and-questions",
+    "href": "coral-regeneration.html#background-and-questions",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
     "section": "Background and Questions",
-    "text": "Background and Questions\nExternally brooding crustaceans host a long list of egg predators (nemerteans, copepods, other symbionts) that can cause large brood losses and even contribute to fishery collapses. Nicothoid copepods are specialized crustacean associates that often mimic host eggs and feed on yolk through the egg shell.\nWe focus on:\n\nHow common is this nicothoid on California rock crabs, and which host stages are most affected?\n\nHow does its life cycle use egg masses and gills as microhabitats?\n\nWhat does near-ubiquitous infestation mean for fecundity and management of a data-poor rock crab fishery?"
+    "text": "Background and Questions\n\nDoes a secondary wound adjacent to a stalled margin restart tissue growth, or add a second lesion that also stalls?\nDoes removing the marginal algae restart it on its own, without any new wounding?\nDo the two together do more than either alone, or is the effect of one conditional on the other?\nDoes mitochondrial lineage predict which colonies stall and which recover?\nAcross the island, how are lineages and colony condition distributed, and does condition track lineage, site environment, or both?"
   },
   {
-    "objectID": "kuris_lab.html#methods",
-    "href": "kuris_lab.html#methods",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Methods",
-    "text": "Methods\n\nDiscovery and Collections\n\nInitial discovery in a UCSB invertebrate biology lab, during a teaching demo of crab egg predators.\n\nTargeted collections of ovigerous cancrids by local fishers using baited pots at 66–100 m along the Gaviota Coast; crabs held in flow-through seawater for detailed inspection.\n\n\n\nHost and Parasite Observations\n\nIdentified host species and recorded sex, size, reproductive status.\n\nScored egg masses by egg developmental stage (EDS), presence of:\n\nAdult female nicothoids\n\nNicothoid egg sacs and embryos\n\nNauplii and copepodids\n\nCo-occurring egg predators (e.g., Carcinonemertes spp.).\n\n\nInspected gill lamellae in both sexes for copepodids and other stages.\n\n\n\nLife-Cycle Synthesis\n\nTracked color and size changes in adult females (from yellow/orange to maroon as they grow and become heavily gravid).\n\nDocumented egg sac structure (1–4 embryos per sac) and development from embryo → nauplius → copepodid.\n\nRecorded timing of copepodid peaks in egg masses and their presence in gills before and after hatching, to infer how the parasite bridges between host broods."
+    "objectID": "coral-regeneration.html#the-island-wide-survey",
+    "href": "coral-regeneration.html#the-island-wide-survey",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
+    "section": "The Island-Wide Survey",
+    "text": "The Island-Wide Survey\nSites and strata. Eight permitted sites around Mo’orea, each sampled across the five habitat strata that span the across-reef gradient: forereef, crest, the lagoon on the crest side of the boat channel, the lagoon on the island side, and the fringing reef. Roughly five colonies per stratum, toward a target of about 140 retained colonies. Most massive Porites sit in the lagoon and back reef, so the forereef stratum is there for the exposure contrast rather than for abundance.\nChoosing a colony. Colonies are selected by a random point method rather than by eye: eyes down, ten kicks, then take the nearest Porites of at least twenty centimeters to wherever you stop. It sounds crude and it is the point. A diver choosing colonies will choose the large, healthy, photogenic ones, and a survey built that way describes the diver rather than the reef. Morphologies are deliberately mixed within each stratum for the same reason.\nWhat each colony gives up. Two samples: a biopsy punch preserved for host genetics, and a small core split in the laboratory for coral traits and fluorescence. Alongside them, depth, height and footprint, a position fix, morphology and colony notes, counts of vermetid gastropods in quadrats on the bommie, and paired photographs, one from above with a scale bar and one from the side with a color card.\nSequencing on the island. Extraction, library preparation and sequencing all happen in the station laboratory rather than being shipped home, because the mititype calls have to be back in hand before donor colonies can be chosen. Sequencing is whole-genome shotgun on nanopore flow cells. Lineage is then assigned from two semi-independent analyses of the same reads: clustering on short sequence patterns against a curated Porites reference, and variant calling across the mitochondrial genome placed on a phylogeny. A call is accepted only when the two agree. Disagreement sends the sample back for reprocessing rather than forward into the experiment.\nWhat holds the calls up. Positive controls of known lineage, extraction and barcode blanks, minimum read depth per colony, a floor on assignment probability, and a required margin between a colony’s call and the next nearest cluster. A sample that fails any of them is rerun or set aside, not rounded to the nearest answer.\nChain of custody. Samples are processed the same day they are collected: tissue into preservative, material into the freezer, datasheets transcribed into the day’s file and spot-checked row by row against the bags before anyone leaves the laboratory. Where a label and a bag get out of step, the discrepancy is written down and carried in the metadata rather than quietly corrected, because a relabeled sample is an untraceable one."
   },
   {
-    "objectID": "kuris_lab.html#key-results",
-    "href": "kuris_lab.html#key-results",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Key Results",
-    "text": "Key Results\n\n1. Novel Nicothoid Outbreak on Eastern Pacific Cancrids\n\nThe parasite matches key adult female traits of Choniosphaera (globular body, ventral mouthparts, leg and antennule morphology), but differs enough to remain unidentified at the species level.\n\nThis is the first report of a nicothoid egg predator on cancrid crabs in the Eastern Pacific, despite decades of prior egg-mass inspections for nemertean predators.\n\n\n\n2. Near-ubiquitous Infestation of Breeding Hosts\n\nAcross M. anthonyi, R. antennarium, and C. productus, nearly all adults examined had at least one nicothoid life stage either on the egg mass, in the gills, or both.\n\nOvigerous females often carried reproductive adult females on their egg masses; only a few juveniles and long-held males were completely free of infection.\n\n\n\n3. Egg Predation and Brood Impacts\n\nAdults sit among eggs, pierce the egg shell, and consume yolk, leaving empty or degraded eggs and often facilitating microbial invasion.\n\nHeavily infested broods appear maroon due to dense clusters of pink nicothoid eggs overlaying the crab eggs.\n\nCopepodid densities peak late in host egg development, consistent with cumulative brood exposure and ongoing recruitment over the ~45-day brooding period (for M. anthonyi).\n\n\n\n4. Gills as a Reservoir and Bridge Between Clutches\n\nCopepodids occur on gill lamellae of both male and female crabs, and were seen on females that later extruded new egg clutches.\n\nIn some females, copepodids appeared in newly laid egg masses within a day, and adults were present within nine days, suggesting gill-to-egg transfer at oviposition and a role for gills as a reservoir between broods.\n\n\n\n5. Fishery Context and Hypotheses\n\nThe sudden appearance of a conspicuous nicothoid on a well-studied crab assemblage suggests either:\n\nA native but episodic parasite that becomes abundant in decadal pulses (as reported for Choniosphaera spp. in the Atlantic), or\n\nA recent host shift onto cancrids from another host.\n\n\nGiven that rock crabs in California are under-managed and data-limited, a near-universal egg predator could substantially erode reproductive output and year-class strength and warrants continued monitoring and quantification of egg mortality."
+    "objectID": "coral-regeneration.html#the-microwounding-experiment",
+    "href": "coral-regeneration.html#the-microwounding-experiment",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
+    "section": "The Microwounding Experiment",
+    "text": "The Microwounding Experiment\nColonies and cores. Thirty six cores drawn from nine parent colonies in the mitotyped pool, so lineage enters the analysis as a known factor. Each colony carries cores in every treatment group, so a lineage effect cannot be mistaken for a treatment effect.\nDesign. A two by two factorial applied to cores whose primary lesion has stalled: secondary wounding present or absent, crossed with algae removal present or absent. Four groups, control, algae removed, wounded, and both. The two treatments are separated because they are confounded in the field, where a stalled lesion nearly always carries algae.\nImaging. Cores were imaged repeatedly against a fixed registration, with a fiducial reference and a calibration image in every session, so the same margin can be found and measured in the same units across a series rather than approximately matched by eye.\nColony condition. CoralWatch color ratings were recorded for each of the nine parent colonies, giving a coarse but standardized measure of condition alongside the core-level imaging.\nPlanned analysis. Margin position and lesion area measured in ImageJ on a fixed scale, so a rate of closure can be compared across cores of different starting sizes, then time to margin closure modeled in R with wounding, algae removal, their interaction, and lineage as terms. Amplicon metabarcoding of the marginal algal community is planned but not yet firm; the intent is to characterize what is actually growing on a stalled margin rather than treating algae as one thing."
   },
   {
-    "objectID": "kuris_lab.html#figures",
-    "href": "kuris_lab.html#figures",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Figures",
-    "text": "Figures\n\nFigure 1 — Adult Nicothoids on Egg Masses (Orli et al. 2025, Fig. 1)\n\n\n\n\n              \n\n\nSequence of adult female nicothoids from Metacarcinus anthonyi showing growth and color change from yellow/orange to maroon as they enlarge and become heavily gravid.\n\n\n\n  \n\nAdult nicothoids with their pink egg sacs nestled among crab eggs; empty crab egg capsules mark where embryos have been consumed.\n\n\n\n\n\n  \n\nGravid adult female carrying multiple egg sacs that tangle among the host’s egg fascicles.\n\n\n\n\n\n     \n\n\nComparison of a heavily infested egg mass (deep maroon due to dense nicothoid eggs) and a similarly staged brood with relatively few parasites. Hover to pause the slideshow; click to open images in a lightbox.\n\n\n\n\n\nFigure 2 — Larval Nicothoids and Gill Infestations (Orli et al. 2025, Fig. 2)\n\n\n\n               \n\n\nLarval and juvenile stages of the nicothoid: embryos in egg sacs, nauplii, copepodids on egg masses, and copepodids attached to excised gills of Metacarcinus anthonyi. Hover to pause the slideshow; click to open any panel in a lightbox."
+    "objectID": "coral-regeneration.html#status",
+    "href": "coral-regeneration.html#status",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
+    "section": "Status",
+    "text": "Status\nField work is complete, on both the survey and the experiment. The image series is in processing, the sequencing work continues, and no results are ready to report. Figures will go here as the analysis firms up."
   },
   {
-    "objectID": "kuris_lab.html#videos",
-    "href": "kuris_lab.html#videos",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Videos",
-    "text": "Videos\n\nAdult Nicothoid Behavior\n\n\n\nYour browser does not support the video tag. \n\nAdult nicothoid moving among host eggs and feeding, showing egg-mimicry and attachment behavior (from the Zenodo video archive).\n\n\n\n\nCopepodids on Gills\n\n\n\nYour browser does not support the video tag. \n\nCopepodid stages on crab gill lamellae, highlighting the gill microhabitat as a reservoir between broods.\n\n\n\n\nInfested Egg Masses\n\n\n\nYour browser does not support the video tag. \n\nHeavily infested egg mass with dense clusters of nicothoid adults and egg sacs interspersed among crab eggs.\n\n\nAdditional videos and raw files are archived in Zenodo: 10.5281/zenodo.10699477."
-  },
-  {
-    "objectID": "kuris_lab.html#outputs",
-    "href": "kuris_lab.html#outputs",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Outputs",
-    "text": "Outputs\n\nPeer-reviewed article:\n\nOrli et al. 2025. Discovery of an Unidentified Species of Nicothoid Copepod Infesting Cancrid Crabs in Santa Barbara, California. Ecology 106(12): e70263.\n\nOpen data & code:\n\nDryad dataset and analysis code: 10.5061/dryad.rv15dv4fw.\n\nMultimedia:\n\nHigh-resolution videos and supplementary media: 10.5281/zenodo.10699477."
-  },
-  {
-    "objectID": "kuris_lab.html#acknowledgements",
-    "href": "kuris_lab.html#acknowledgements",
-    "title": "Nicothoid Copepod Parasite — Cancrid Rock Crabs",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nThis project builds on work with the Kuris Lab at UCSB, collaborators who helped collect crabs and identify copepods, and the UCSB Coastal Fund (CF-202204-02367), which supported field and lab work. :contentReferenceoaicite:11"
+    "objectID": "coral-regeneration.html#acknowledgments",
+    "href": "coral-regeneration.html#acknowledgments",
+    "title": "Mo’orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThe Keck Coral Regeneration Program, the Stier Ocean Recoveries Lab at the University of California, Santa Barbara, and the survey and laboratory teams in Mo’orea. Field work was carried out at the Richard B. Gump South Pacific Research Station under the relevant collection permits.\n\nBack to Research Contact"
   },
   {
     "objectID": "photography-microscopy.html",
     "href": "photography-microscopy.html",
     "title": "jadenorli",
     "section": "",
-    "text": "Microscopy\n\nparasites • textures • invisible architectures\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
+    "text": "Microscopy\n\nparasites • textures • invisible architectures\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jaden Orli — Marine Biologist & Ecological Modeler",
+    "title": "jadenorli",
     "section": "",
-    "text": "Hi there! I’m Jaden Orli, a marine biologist and ecological modeler passionate about linking science, policy, and storytelling. I recently earned my BA in Biology from UC Santa Barbara, where I studied marine ecology, fisheries management, and conservation. My work spans field surveys in salt marshes and kelp forests, modeling California spiny lobster dynamics, and creating visual media to inspire engagement with ocean issues.\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\nExplore my Work\n\n\nResearch\nField programs, population models, and published science\n\n\nPhotography\nMarine, terrestrial, portraits, and microscopy\n\n\nArt\nOil painting and mixed media\n\n\nAbout\nFieldwork, modeling, and what drives the work"
+    "text": "Hi there! I’m Jaden Orli, a marine biologist and ecological modeler passionate about linking science, policy, and storytelling. I recently earned my BA in Biology from UC Santa Barbara, where I studied marine ecology, fisheries management, and conservation. My work spans field surveys in salt marshes and kelp forests, modeling California spiny lobster dynamics, and creating visual media to inspire engagement with ocean issues.\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\nExplore my Work\n\n\nResearch\nField programs, population models, and publications\n\n\nPhotography\nMarine, terrestrial, portraits, and microscopy\n\n\nArt\nOil painting and mixed media artwork\n\n\nAbout\nFieldwork, modeling, diving, and more"
   },
   {
     "objectID": "pmrg.html#overview",
     "href": "pmrg.html#overview",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
     "section": "Overview",
-    "text": "Overview\nThe Pacific Manta Research Group (PMRG) studies oceanic mantas of the Eastern Pacific, with a focus on the Revillagigedo Archipelago and collaborations in the Gulf of California and Bahía de Banderas. The program blends citizen-science photo submissions with researcher-led tagging and field work to track individuals, demography, movement, and injury/scar histories.1\nI contribute on the communication and tooling side—helping design the public website and photo-ID submission pathway so divers can send usable ventral-ID images with consistent metadata (date, site, photographer).2"
+    "text": "Overview\nEvery oceanic manta carries a pattern of spots on its underside, and that pattern does not change over the animal’s life. Photograph it well enough and you have identified an individual, not a species: the same animal can be recognized years later, at another site, by another diver who has never seen it before.\nThat turns every diver with a camera into a potential data point. The Pacific Manta Research Group studies oceanic mantas of the Eastern Pacific, focused on the Revillagigedo Archipelago with collaborations in the Gulf of California and Bahía de Banderas, and it combines images submitted by divers with researcher-led tagging and field work to follow individuals, demography, movement and injury histories.1\nThe catch is that most photographs are not usable. A picture that shows the animal but not its underside, or shows the underside at an angle, or arrives with no date or site attached, cannot enter a catalog. My work was on that gap: the public website and the submission pathway, so that what a diver sends is something the catalog can actually accept.2\n\n\nThe Program\n\n\n\nHave photographs to send?\n\n\nSubmissions from divers are the bulk of what the catalog is built from. The guidance page carries the folder and filename conventions, the contributor agreement and the upload options.\n\n\nSubmit Photos About the Program"
   },
   {
     "objectID": "pmrg.html#quick-facts",
     "href": "pmrg.html#quick-facts",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
     "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Web/UX & photo-ID support (PMRG)\n\nWhen: 2021 – 2024\n\nSkills: content design, contributor guides, photo-ID catalog support, metadata standards, outreach"
+    "text": "Quick Facts\n\nRole: Website and photo identification support, Pacific Manta Research Group\nWhen: 2021 to 2024\nWhere: Revillagigedo Archipelago, with collaborations in the Gulf of California and Bahía de Banderas\nSkills: content design, contributor guides, photo identification catalog support, metadata standards, outreach"
   },
   {
     "objectID": "pmrg.html#background-and-questions",
     "href": "pmrg.html#background-and-questions",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
     "section": "Background and Questions",
-    "text": "Background and Questions\n\nHow can we scale high-quality, diver-submitted images into an ID catalog with reliable individual re-sighting?\n\nWhich regions and seasons yield most re-sightings around Revillagigedo, and what can injury/scar records tell us about threats?"
+    "text": "Background and Questions\n\nHow can high quality, diver-submitted images be scaled into a catalog that supports reliable re-sighting of individual animals?\nWhich regions and seasons yield the most re-sightings around Revillagigedo, and what can injury and scar records say about the threats those animals face?"
   },
   {
-    "objectID": "pmrg.html#methods",
-    "href": "pmrg.html#methods",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
-    "section": "Methods",
-    "text": "Methods\n\nPhoto-ID pipeline: contributor instructions that prioritize ventral markings, pelvic fins (sexing), and high-contrast exposure; support for small-batch forms and bulk transfers with folder/filename conventions.3\n\nData hygiene: enforce date/time/location metadata; avoid on-image timestamps; retain EXIF when possible.4\n\nOutreach materials: boat-friendly Photo-ID guidance, FAQ, and visual examples to reduce unusable submissions.5"
+    "objectID": "pmrg.html#what-makes-a-photograph-usable",
+    "href": "pmrg.html#what-makes-a-photograph-usable",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
+    "section": "What Makes a Photograph Usable",
+    "text": "What Makes a Photograph Usable\nThe whole pipeline rests on one thing: whether an image can be matched against a catalog. Four requirements do most of the work, and each one fails in a predictable way.\n\n\n\n\n\n\n\n\n\nRequirement\nWhy it matters\nHow it usually fails\n\n\n\n\nThe underside, square on\nThe spot pattern is the identity\nShot from the side or above, so the pattern is foreshortened\n\n\nPelvic fins in frame\nThey give the animal’s sex\nCropped out to fill the frame with the body\n\n\nContrast on the pattern\nA matcher has to see spot edges\nBacklit, or a black morph shot without flash\n\n\nDate, site and photographer\nAn image without them is a picture, not a record\nNo metadata, or a timestamp burned into the image itself\n\n\n\n\nWhere the guidance lives. Contributor instructions are written to be read on a boat, not at a desk: the shot to aim for, worked visual examples of good and unusable frames, and a questions page for everything else. Submissions come in by small batch form or bulk transfer, with set folder and filename conventions so an image arrives already labeled.\nData hygiene. Date, time and location are required. Timestamps burned into the image are discouraged, because they sit on top of the animal and cannot be corrected later, while the camera’s embedded metadata is retained wherever possible and carries the same information without damaging the photograph.\nBlack morphs need flash. A dark animal photographed on available light comes back as a silhouette, and a silhouette has no spot pattern. Close range with flash is the difference between a record and a nice picture. Video helps too: a turning animal that never presents its underside squarely in a still can often be reconstructed from a few frames."
   },
   {
-    "objectID": "pmrg.html#results-preview",
-    "href": "pmrg.html#results-preview",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
-    "section": "Results (preview)",
-    "text": "Results (preview)\n\nIncreased intake of ID-quality ventral images and cleaner metadata across recent trips.\n\nBuilding re-sighting threads and injury notes for individuals as catalog grows (summaries forthcoming)."
+    "objectID": "pmrg.html#status",
+    "href": "pmrg.html#status",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
+    "section": "Status",
+    "text": "Status\nThis was contribution to a long-running program rather than a project of mine, and the catalog, the re-sighting histories and anything drawn from them belong to the Pacific Manta Research Group. Both links above go to the live pages."
   },
   {
-    "objectID": "pmrg.html#how-to-contribute",
-    "href": "pmrg.html#how-to-contribute",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
-    "section": "How to Contribute",
-    "text": "How to Contribute\n\nSubmit your Photos: follow the folder/filename pattern and send via the form or transfer service.6\n\nIdeal shots: clear ventral side, include pelvic fins; use flash/close-range for black morphs; video can help stitch turning sequences.7"
+    "objectID": "pmrg.html#acknowledgments",
+    "href": "pmrg.html#acknowledgments",
+    "title": "Pacific Manta Research Group: Citizen Science Photo Identification and Outreach",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThe Pacific Manta Research Group team and its collaborators, and the participating dive boats and photographers whose images the catalog is built from.\n\nBack to Research Contact"
   },
   {
-    "objectID": "pmrg.html#links",
-    "href": "pmrg.html#links",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
-    "section": "Links",
-    "text": "Links\n\nAbout PMRG — mission, regions, and team.8\n\nSubmit Photos — step-by-step instructions, agreement, and upload options.9"
+    "objectID": "sediment-and-seeps.html#overview",
+    "href": "sediment-and-seeps.html#overview",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Overview",
+    "text": "Overview\nTwo strands of work in the Valentine Lab at the University of California, Santa Barbara, joined by a single subject: what reaches the floor of the Southern California Bight, and what the microbial community there does with it.\nThe first is legacy contamination. Industrial DDT waste was discharged into the deep ocean off Southern California for decades, and the record of it sits in the sediment of the San Pedro Basin. I sailed the coring cruise that collected sediment from the disposal site, and the cores feed both a published inventory of the dumping and a thesis on how that contamination has structured the microbial communities living in it.\nThe second is hydrocarbons, and the question is the opposite way round: not what a contaminant does to a community, but whether a community already primed on natural hydrocarbons can absorb one. Coal Oil Point sits on one of the largest natural seep fields in the world, and the ocean’s short-term, phytoplankton-derived alkane cycle runs there alongside the long-term petroleum cycle.1 I wrote the proposal that funds that work and built the substrate delivery method it depends on.\n\n\nPublished from these cores\n\n\n\nJournal article, group author\n\n\nWu, M. S. C., J. T. Schmidt, H. E. Kittner, Earth 182B Group and D. L. Valentine. 2025. Geospatial and temporal inventory for industrial DDT waste disposal to a deep coastal ocean environment. Environmental Science and Technology 59: 20578 to 20587.\n\n\nRead the Paper Download the PDF\n\n\n\n\nMaster’s thesis, acknowledged\n\n\nKittner, H. E. 2024. Anthropogenic Structuring of Microbial Communities in Deep Coastal Sediment. Master’s thesis, University of California, Santa Barbara.\n\n\nRead the Thesis"
   },
   {
-    "objectID": "pmrg.html#acknowledgements",
-    "href": "pmrg.html#acknowledgements",
-    "title": "Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nPMRG team & collaborators; participating dive boats and photographers who contribute critical images."
+    "objectID": "sediment-and-seeps.html#quick-facts",
+    "href": "sediment-and-seeps.html#quick-facts",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Quick Facts",
+    "text": "Quick Facts\n\nRole: Research Intern, Valentine Lab, University of California, Santa Barbara\nWhen: January 2023 to August 2025\nWhere: San Pedro Basin aboard the research vessel Yellowfin; Coal Oil Point; the Valentine Lab; the Bridges-2 system at the Pittsburgh Supercomputing Center\nSkills: sediment coring at sea, liposome preparation for delivering lipophilic substrates, metagenomic sequence processing in Bash\nFunding: Coastal Fund, University of California, Santa Barbara, 8,100 dollars, 2024 to 2026, awarded in my name for Microbial Hydrocarbon Cycling at Coal Oil Point\nCredits: group author on Wu et al. 2025; acknowledged in Kittner 2024\nCode: https://github.com/jadenorli"
+  },
+  {
+    "objectID": "sediment-and-seeps.html#legacy-ddt-in-the-san-pedro-basin",
+    "href": "sediment-and-seeps.html#legacy-ddt-in-the-san-pedro-basin",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Legacy DDT in the San Pedro Basin",
+    "text": "Legacy DDT in the San Pedro Basin\nThe cruise. In March 2023 I sailed a sediment coring cruise aboard the research vessel Yellowfin over the San Pedro Basin disposal site, and collected the core that carries into both outputs below.\nThe inventory. Wu et al. 2025, in Environmental Science and Technology, assembles a geospatial and temporal inventory of industrial DDT waste disposal to the deep coastal ocean. The paper lists the Earth 182B Group as an author, a cohort credit for the course built around the disposal site material, where the projects drawing on those cores were worked through as a group. I am named inside that consortium.\nThe thesis. The same sediment supports Hailie Kittner’s master’s thesis on anthropogenic structuring of microbial communities in deep coastal sediment, which acknowledges the collection work."
+  },
+  {
+    "objectID": "sediment-and-seeps.html#hydrocarbon-cycling-at-coal-oil-point",
+    "href": "sediment-and-seeps.html#hydrocarbon-cycling-at-coal-oil-point",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Hydrocarbon Cycling at Coal Oil Point",
+    "text": "Hydrocarbon Cycling at Coal Oil Point\n\nThe question\nHydrocarbons reach the ocean on two clocks. On the long clock, petroleum forms in the crust and escapes through natural seeps, or arrives through spills. On the short clock, phytoplankton produce alkanes and build them into their membranes, at a scale that dwarfs the seep input. Those biogenic alkanes are not accumulating, so something is eating them, and metagenomic work in the lab points at archaea, Marine Group II in particular. That is a surprise, because oxic petroleum biodegradation studies almost always turn up bacteria instead.\nMarine Group II archaea are the dominant archaeal group in Santa Barbara Channel surface water and are notoriously hard to culture, so their ecological role is largely unresolved. The question the project asks is whether the short-term cycle primes the ocean with consumers that can act as a biofilter when petroleum arrives, and Coal Oil Point is the natural laboratory for asking it: a place where both cycles have run side by side for a very long time.\n\n\nDelivering an alkane the way a cell does\nTesting that question has a methodological problem at its center. If the biogenic treatment is an alkane added as an oil droplet and the petroleum treatment is oil, the two differ in physical form as well as in origin, and the comparison no longer isolates what it is meant to isolate. The alkane has to be presented the way a phytoplankton cell presents it, held in a lipid membrane.\nThat is what the liposome is for, and preparing one that carries an alkane is the part I built. A literature search led me to thin-film hydration, the standard route to a multilamellar vesicle: lipids are dissolved in a chloroform and methanol mixture, the solvent is driven off by rotary evaporation to leave a film on the flask wall, and the film is hydrated above the lipid transition temperature.2 What makes it the right method here is where the cargo goes in. A lipophilic compound is dissolved into the lipid solution before the film is cast, so it ends up held in the bilayer rather than in the aqueous interior, which is exactly the arrangement a phytoplankton membrane presents.3 I adapted that protocol to carry pentadecane for the Marine Group II treatments, with oil for the petroleum comparison. It exists as a written method prepared for the incubations rather than one that has been run.\n\n\nDesign\nSeawater is collected from Coal Oil Point using the campus small craft fleet, timed to summer, when Marine Group II typically increase in the channel. Samples are incubated for roughly 72 hours across four treatments, crossing what the carbon is against how it is presented:\n\n\n\n\n\n\n\n\n\n\nTreatment\nCarbon source\nPresented as\nWhat it isolates\n\n\n\n\nLiposome with alkane\nBiogenic, pentadecane\nHeld in a lipid bilayer\nThe short-clock cycle as a cell offers it\n\n\nLiposome with petroleum\nPetroleum\nHeld in a lipid bilayer\nOrigin, with physical form held constant\n\n\nAlkane alone\nBiogenic, pentadecane\nFree in seawater\nPresentation, with origin held constant\n\n\nPetroleum alone\nPetroleum\nFree in seawater\nConventional oil exposure, as a reference\n\n\n\n\nAfter incubation the samples are filtered, DNA extracted, and preserved for cell counts, with sequencing on the AVITI platform at the DNA Technologies Core at the University of California, Davis. Analysis pairs archaeal-inclusive amplicon profiling of the whole prokaryotic community with quantitative real-time polymerase chain reaction against Marine Group II 16S ribosomal RNA primers, so that a shift in the community and a change in archaeal abundance can be read against each other.\n\n\nTraining for the analysis\nAlongside the proposal I trained in the analysis it calls for, learning metagenomic sequence processing end to end in Bash on the Bridges-2 system at the Pittsburgh Supercomputing Center, under Dr. Eleanor Arrington."
+  },
+  {
+    "objectID": "sediment-and-seeps.html#status",
+    "href": "sediment-and-seeps.html#status",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Status",
+    "text": "Status\nThe two strands sit at different stages. The San Pedro Basin work is finished and published: the cruise sailed, the cores were collected, and both the inventory paper and the thesis are out. The Coal Oil Point work is funded and specified, with the proposal presented to the lab and the liposome method written up, but the incubations have not been run and there are no results to report."
+  },
+  {
+    "objectID": "sediment-and-seeps.html#acknowledgments",
+    "href": "sediment-and-seeps.html#acknowledgments",
+    "title": "Sediment and Seeps: Legacy DDT in the San Pedro Basin and Hydrocarbon Cycling at Coal Oil Point",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nValentine Lab at the University of California, Santa Barbara: Dr. David Valentine and Dr. Eleanor Arrington, who mentored the Coal Oil Point work. The crew of the research vessel Yellowfin. The Earth 182B cohort. Funded in part by the Coastal Fund at the University of California, Santa Barbara.\n\nBack to Research Contact"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "jadenorli",
     "section": "",
-    "text": "marine science • painting • scientific videography\nI’m Jaden Orli, a marine ecologist from UCSB’s College of Creative Studies (Biology). I work at the seam of field programs, population models, and public-facing communication so decisions land with both policymakers and communities."
+    "text": "marine science • painting • scientific videography\nI’m Jaden Orli, a marine ecologist trained in biology at the College of Creative Studies, University of California, Santa Barbara. I work where field programs, population models, and public-facing communication meet, so that decisions land with both policymakers and communities."
   },
   {
     "objectID": "about.html#professional",
     "href": "about.html#professional",
     "title": "jadenorli",
     "section": "Professional",
-    "text": "Professional\n\n\nFieldwork\n\n~400 dives ~100 scientific AAUS 60 ft Seine Surveys Small-boat ops\n\nAAUS scientific diver in kelp forests; in salt marsh I lead/assist seining and trap-based surveys. Comfortable with tide windows, low-viz, and team logistics.\n\n\nMore Field Details\n\n\n\nCurrent Program\nSONGS Mitigation Monitoring Program (Lab Technician, 2025 – present)\nIntensive salt-marsh surveys for fish and invertebrates using seines/traps; careful QA/QC in the lab; gear maintenance and field safety; coordination with project scientists on long-term restoration monitoring.\n\n\nRocky Intertidal\nKuris Lab and National Park Service (NPS): transect surveys; species ID; tide-window planning; data entry and QA.\n\n\nKelp and Coastal Programs\n\nPISCO / Caselle Lab: underwater benthic and fish surveys (Northern Channel Islands)\n\nCCFRP: hook-and-line surveys with volunteer anglers\n\nSB Coastal LTER: kelp deployments/retrievals and site monitoring\n\n\n\nDiving and Safety\nRescue, Nitrox, AAUS (60 ft), Reef Check certification; night/low-viz/strong-current experience; task-loaded work (slates, cameras, etc).\n\n\n\n\n\n\nModeling and Code\n\nStage-structured Slot limits × MPAs Sobol + GLUE R + Quarto GIS / leaflet\n\nTwo-sex, stage-structured lobster model; VBGF growth; size–fecundity; fishing applied after projection and only outside MPAs; scenario sweeps over slot width × MPA coverage.\n\n\nMore Modeling Details\n\n\n\nFramework\nFemale-first stage matrix; optional male coupling; exponential natural mortality; quarterly dt = 0.25. Clean harvest accounting via post-projection survival in non-MPA cells → harvest = raw − fished trajectories.\n\n\nUncertainty and Robustness\n\nSobol (Salt) global sensitivity to rank leverage parameters\n\nGLUE ensembles to show plausible ranges, not just single fits\n\nReproducible Quarto reports; tidy pipelines; consistent figure styling\n\n\n\nGeospatial and Other Projects\n\nArcGIS Pro / sf / terra / leaflet/tmap for decision-ready maps\n\nSpatial analyses: IMTA aquaculture suitability (U.S. West Coast EEZ); Houston blackout recovery patterns (equity lens)\n\nPrior research: Valentine Lab (microbial hydrocarbon cycling; Bash + Bridges-2 PSC); Novex Innovations (sterile cell culture, SOP training)\n\n\n\n\n\n\n\nPolicy and Community Engagement\n\nScience Communication Interactive Maps Citizen Science\n\nOutputs for agencies, fishers, educators, and the public — short explainers, interactive layers, and figures that surface uncertainty honestly.\n\n\nMore Engagement Details\n\n\n\nPolicy-Ready Outputs\nMetrics aligned with decisions: biomass, spawning output, size structure, yield, stability; transparent assumptions. Plain-language scenarios—what changing slot width or MPA coverage means for effort and outcome.\n\n\nCommunity-Facing Communication\n\nScience videography (60–120s): method explainers, field segments, and transparent communication with the public\n\nPacific Manta Research Group: citizen-science photo-ID submission site and diver education materials\n\n\n\nLeadership and Media\n\nKuris Lab project lead: fieldwork, student mentorship, conference talks (ESA, EEMB URS), first-author manuscript in review\n\nEnvironmental Media Production (Assoc. Producer): filmed/edited a nonprofit climate program promo; on-location directing with a Canon EOS C70\n\nAquarium Docent experience translating conservation for the public\n\n\n\n\n\n\n\nResearchGitHubResume (PDF)"
-  },
-  {
-    "objectID": "about.html#personal",
-    "href": "about.html#personal",
-    "title": "jadenorli",
-    "section": "Personal",
-    "text": "Personal\n\n\nPhotography\n\nTexture and Pattern Motion and Mood Wildlife and Coastlines\n\nMy photography lingers on details most people walk past — a kelp frond twisting in surge, coral polyps half-open, an alley washed in morning light. I look for textures, moods, and small dramas rather than single “perfect” shots. Marine photography becomes an exercise in noticing: subtle gradients in light, shadow, and texture that later make their way into my figures and color palettes.\n\n\nMore on Photography\n\n\n\nThemes — kelp forest canopies, coral lattices, sand ripples, tidepool reflections, wreckage, and the geometry of fish schools.\n\n\nStyle — high-contrast natural light, low-viz dives, and compositions that suggest movement or story — a shark’s turn, a crab emerging, a harbor just after rain.\n\n\nSee Photography →\n\n\n\n\n\n\nPainting\n\nWildlife Portraits Coastal Landscapes Mixed Media\n\nI paint to capture place, memory, and personality — a bay I swam in, a dog who wouldn’t sit still, a fish frozen mid-leap. Some works are observational; others are imagined worlds built from layers of field impressions.\n\n\nMore on Painting\n\n\n\nMediums — oil paint and mixed media\n\n\nSubjects — coastal bays, trout streams, personal places, and animals with a story to tell — sometimes literal, sometimes metaphorical.\n\n\nWhy it matters — painting slows me down and lets me notice how light, pattern, and atmosphere really work. Those habits feed directly back into my figure design and scientific visualization.\n\n\nSee art →\n\n\n\n\n\n\nTrails, Diving, and Travel\n\nCoastal Hikes Night / Low-viz Working Harbors\n\nMost weekends I’m on a coastal trail or underwater; travel tends to follow coastlines and working harbors.\n\n\nMore on Trails and Travel\n\n\n\nHiking — coastal bluffs, estuary loops, and any trail that ends at a tidepool (with a pocket notebook for quick sketches).\n\n\nDiving — kelp holdfasts, night dives, and low-viz marsh entries teach repeatable habits — useful in both field and code.\n\n\nTravel — I gravitate to places where ecology, fisheries, and community sit close together — great training for policy conversations later.\n\n\n\n\n\n\nWhat I Value\n\nClarity Reproducibility Field Reality\n\nClarity over cleverness; field reality over assumptions; teams that surface uncertainty rather than hide it.\n\n\nMore on Values\n\n\n\n\nMake it legible: for managers, fishers, and the public\n\nRespect the process: document assumptions, keep pipelines reproducible\n\nStay curious: bring field notes, photos, and sketches back into the model"
+    "text": "Professional\n\n\nFieldwork\n\n~ 450 Dives ~ 100 Scientific Certified to 60 Feet Seine Surveys Small-Boat Operations\n\nI dive kelp forests as a scientific diver certified by the American Academy of Underwater Sciences (AAUS), and in salt marsh I lead and assist seining and trap-based surveys. I’m comfortable with tide windows, low visibility, and team logistics.\n\n\nMore Field Details\n\n\n\nRecent Program\nSan Onofre Nuclear Generating Station Mitigation Monitoring Program (Laboratory Technician, 2025 to 2026)\nIntensive salt-marsh surveys for fish and invertebrates using seines and traps, careful quality assurance and quality control in the laboratory, gear maintenance and field safety, and coordination with project scientists on long-term restoration monitoring.\n\n\nRocky Intertidal\nKuris Lab and the National Park Service: transect surveys, species identification, tide-window planning, and data entry with quality assurance.\n\n\nKelp and Coastal Programs\n\nPartnership for Interdisciplinary Studies of Coastal Oceans (PISCO), Caselle Lab: underwater benthic and fish surveys in the Northern Channel Islands\n\nCalifornia Collaborative Fisheries Research Program (CCFRP): hook-and-line surveys with volunteer anglers\n\nSanta Barbara Coastal Long Term Ecological Research (SBC LTER): kelp deployments and retrievals, and site monitoring\n\n\n\nDiving and Safety\nRescue and Nitrox certifications, American Academy of Underwater Sciences (AAUS) certification to 60 feet, and Reef Check certification. Experience with night dives, low visibility, and strong current, and with task-loaded work carrying slates, cameras, and other equipment.\n\n\n\n\n\nModeling and Code\n\nStage-Structured Slot Limits and MPAs Sensitivity and Uncertainty Geospatial Mapping\n\nA two-sex, stage-structured lobster model with von Bertalanffy growth and a size-to-fecundity relationship. Fishing is applied after projection and only outside marine protected areas (MPAs), with scenario sweeps across slot width and marine protected area coverage.\n\n\nMore Modeling Details\n\n\n\nFramework\nA female-first stage matrix with optional male coupling, exponential natural mortality, and quarterly time steps of dt = 0.25. Harvest is accounted for cleanly through post-projection survival in cells outside marine protected areas, so that harvest is the difference between the raw and the fished trajectories.\n\n\nUncertainty and Robustness\n\nSobol global sensitivity analysis, run with the Salt package, to rank which parameters carry the most leverage\n\nGeneralized Likelihood Uncertainty Estimation ensembles, to show plausible ranges rather than a single fit\n\nReproducible Quarto reports, tidy pipelines, and consistent figure styling\n\n\n\n\n\n\nPolicy and Community Engagement\n\nScience Communication Interactive Maps Citizen Science\n\nOutputs for agencies, fishers, educators, and the public: short explainers, interactive layers, and figures that surface uncertainty honestly.\n\n\nMore Engagement Details\n\n\n\nPolicy-Ready Outputs\nMetrics aligned with decisions: biomass, spawning output, size structure, yield, and stability, with transparent assumptions throughout. Plain-language scenarios showing what changing slot width or marine protected area coverage means for effort and outcome.\n\n\nCommunity-Facing Communication\n\nScience videography, 60 to 120 seconds: method explainers, field segments, and transparent communication with the public\n\nPacific Manta Research Group: a citizen-science photo identification submission site and diver education materials\n\n\n\nLeadership and Media\n\nKuris Lab project lead: fieldwork, student mentorship, conference talks at the Ecological Society of America and at the Ecology, Evolution, and Marine Biology Undergraduate Research Symposium, and a first-author manuscript in review\n\nEnvironmental Media Production, as Associate Producer: filmed and edited a promotional piece for a nonprofit climate program, and directed on location with a Canon EOS C70\n\nAquarium Docent experience translating conservation for the public\n\n\n\n\n\n\nResearchGitHubResume (PDF)"
   },
   {
     "objectID": "about.html#diving",
     "href": "about.html#diving",
     "title": "jadenorli",
     "section": "Diving",
-    "text": "Diving\n\n\nDive Map\n\nAll Dives Scientific Recreational\n\n\n\n\n\n\n\nDive Log\n\n\n407\ndives\n\n\n12\ncountries\n\n\n195\nsites\n\n\n40 m\ndeepest\n\n\n297 hr\nbottom time\n\n\n\n\nFilter by Type\n\n\n\nScientific (93)\n\n\n\nRecreational (295)\n\n\n\nTraining (19)\n\n\n\n\nFilter by Year\nAll years\n\nShow All"
+    "text": "Diving\n\n\nDive Map\n\nAll Dives Scientific Recreational\n\n\n\n\n\n\n\nDive Log\n\n\n448\ndives\n\n\n13\ncountries\n\n\n235\nsites\n\n\n40 m\ndeepest\n\n\n334 hr\nbottom time\n\n\n\n\nFilter by Type\n\n\n\n\nScientific (101)\n\n\nPrograms (5)\n\n\nPISCO\n80\n\n\nKeck Coral Regeneration\n8\n\n\nReef Check\n8\n\n\nSBC LTER / Valentine Lab\n4\n\n\nTurner Lab\n1\n\n\n76 paid, 25 volunteer\n\n\n\n\n\nRecreational (328)\n\n\n\n\n\nTraining (33)\n\n\nPrograms (2)\n\n\nAAUS\n19\n\n\nPISCO\n14\n\n\n\n\n\n\n\nFilter by Year\nAll years\n\nShow All"
+  },
+  {
+    "objectID": "about.html#timeline",
+    "href": "about.html#timeline",
+    "title": "jadenorli",
+    "section": "Timeline",
+    "text": "Timeline\nFrom an aquarium volunteer at fifteen to coral reefs and fisheries models: every role I’ve held, colored by the world it belongs to. Hover any bar for details.\n\n\n\nEach color is a different world I worked in, and they overlap and double back more than you might expect. Click any group on the left to show or hide it."
+  },
+  {
+    "objectID": "about.html#coursework",
+    "href": "about.html#coursework",
+    "title": "jadenorli",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n58 undergraduate courses 190 units, plus 48 accepted from Advanced Placement 9 graduate courses (taken as an undergraduate) 8 quarters of independent research\n\n\n\nmarine and ecology 22\n\n\nindependent research 8\n\n\nquantitative and spatial 8\n\n\nchemistry and molecular 10\n\n\nstudy abroad 4\n\n\ngeneral education 6\n\n\nadvanced placement 10\n\n\nExpand All\n\n\n\n\n\n\n\n\nFall\n\n\nWinter\n\n\nSpring\n\n\nSummer\n\n\n\n\n2018-2019 8 units\n\n\n\n\n\n\n\n\n\n\n AP Year\n\n\nAP BiologyBiologyYear-long class, exam scored 5 AP Calculus ABCalculus ABYear-long class, exam scored 5 AP English LanguageEnglish LanguageYear-long class, exam scored 4 AP Physics 1Physics 1Year-long class, exam scored 4\n\n\n\n\n\n\n 8 units\n\n\nINT 93PPresentation Techniques in Research INT 93RIntroduction to Research Techniques\n\n\n\n\n\n\n2019-2020 8 units\n\n\n\n\n\n\n\n\n\n\n AP Year\n\n\nAP ChemistryChemistryYear-long class, exam scored 4 AP English LiteratureEnglish LiteratureYear-long class, exam scored 4 AP Environmental ScienceEnvironmental ScienceYear-long class, exam scored 5 AP Physics 2Physics 2Year-long class, exam scored 4 AP PsychologyPsychologyYear-long class, exam scored 5 AP StatisticsStatisticsYear-long class, exam scored 5\n\n\n\n\n\n\n\n\n\n2021-2022 61 units\n\n\n\n\n 19 units\n\n\nBIOL CS 10Biology Colloqium BIOL CS 12CCS Introduction to Biology 1 CHEM 1AGeneral Chemistry 1 CHEM 1ALGeneral Chemistry 1 Lab EARTH 4Introduction to Oceanography EEMB 190EEMB Colloqium EEMB 194TParasitology (Kuris Lab Meeting) MCDB 1AIntroduction to Biology 1\n\n\n\n\n\n\n 16 units\n\n\nBIOL CS 20CCS Introduction to Biology 2 CHEM 1BGeneral Chemistry 2 CHEM 1BLGeneral Chemistry 2 Lab EEMB W 146Biometry EEMB 194TParasitology (Kuris Lab Meeting)\n\n\n\n\n\n\n 18 units\n\n\nBIOL CS 30CCS Introduction to Biology 3 CH ST 1BIntroduction to Chicano/a Studies CHEM 1CGeneral Chemistry 3 CHEM 1CLGeneral Chemistry 3 Lab EEMB 199Independent Studies (Kuris Lab)Third quarter in the Kuris Lab EEMB 198Independent Studies (Kuris Lab)\n\n\n\n\n\n\n\n\n\n2022-2023 107 units\n\n\n\n\n 16 units\n\n\nCHEM 109AOrganic Chemistry 1 EEMB 179Ecological Modeling MCDB 101AMolecular Genetics 1 EEMB 199Independent Studies (Kuris Lab)\n\n\n\n\n\n\n 11 units\n\n\nEEMB 142BProecesses in Oceans EEMB 247Quantitative Methods in Biology EEMB 595RR Seminar EEMB 199Independent Studies (Kuris Lab)\n\n\n\n\n\n\n 19 units\n\n\nMATH 3BCalculus 2 MCDB 110Principles of Biochemistry EARTH 182BMarine BiogeochemistryThe course behind the Earth 182B Group authorship on Wu et al. 2025 EARTH 199Independent Studies (Valentine Lab) EEMB 199Independent Studies (Kuris Lab) EEMB 595TParasitology (Kuris Lab Meeting)\n\n\n\n\n\n\n\n\n\n2023-2024 165 units\n\n\n\n\n 21 units\n\n\nANTH EAP 105Culinary History of Italy ARTH EAP 113Genius Renaissance Art COMM EAP 104Made in Italy ITAL EAP 55Exploring Florence\n\n\n\n\n\n\n 20 units\n\n\nBIOL CS 101Model and Experiments (CCS Grad) EEMB 150AMicrobial Diversity 1 EEMB 242Marine Ecology and Conservation MATH 4ALinear Algebra EEMB 194RR Seminar EEMB 183Teaching Assistance (EEMB 179 LA)Taught the course I had taken in Fall 2022 EEMB 199Independent Studies (Kuris Lab)\n\n\n\n\n\n\n 8 units\n\n\nPHIL 4Introduction to Ethics EEMB 192Special Topics (bioinformatics) EARTH 199Independent Studies (Valentine Lab)\n\n\n\n\n\n\n 9 units\n\n\nCOMM W 146Understanding and Detecting Human Deception HIST W 2AWorld History\n\n\n\n\n\n\n2024-2025 190 units\n\n\n\n\n 10 units\n\n\nEEMB 106Biology of Fishes EEMB 194TETheoretical Ecology and Evolution EDS 223Geospatial Analysis and Remote Sensing\n\n\n\n\n\n\n 8 units\n\n\nESM 263Geographic Information Systems ESM 260Applied Marine Ecology\n\n\n\n\n\n\n 7 units\n\n\nESM 232Environmental Modeling ESM 441Environmental Media Production\n\n\n\n\n\n\n\n\n\n\nEach bar is one course, coloured by subject. Hollow bars are Advanced Placement, which transferred in as credit rather than being taken at the university. Click a quarter to open it. A ring on a course marks graduate level."
+  },
+  {
+    "objectID": "about.html#personal",
+    "href": "about.html#personal",
+    "title": "jadenorli",
+    "section": "Personal",
+    "text": "Personal\n\n\nPhotography\n\nUnderwater Microscopy Coast and Portraits\n\nMost of my photography happens either on a dive or down a microscope. The range is wider than it sounds: the same interest in structure that makes a kelp canopy worth shooting is what makes a copepod worth shooting, just at a different working distance.\n\n\nMore on Photography\n\n\n\nUnderwater: kelp forest canopies, reef structure, and the animals that hold still long enough on a low-visibility dive.\n\n\nMicroscopy: copepods, parasites, and the fine anatomy behind the figures in my papers. Several of these started as working images and turned out to be worth printing.\n\n\nAbove water: coastlines, working harbors, and portraits of the people doing the work.\n\n\nSee Photography →\n\n\n\n\n\n\nPainting\n\nWildlife Portraits Coastal Landscapes Mixed Media\n\nI paint in oil and mixed media, mostly places I have been in the water and animals I have spent time around. It is the only part of my practice with no data in it, which is most of the appeal.\n\n\nMore on Painting\n\n\n\nSubjects: coastal bays, trout streams, places I know well, and animals with a story attached, sometimes literal and sometimes not.\n\n\nHow it works: some paintings are observational and some are assembled from field impressions months after the fact. The assembled ones usually turn out better.\n\n\nWhy it matters: painting is slow in a way that fieldwork and code are not, and it is where I actually learned how light, pattern, and atmosphere behave. That reading carries straight into figure design.\n\n\nSee Art →\n\n\n\n\n\nTrails, Diving, and Travel\n\nCoastal Hikes Night and Low Visibility Working Harbors\n\nMost weekends I’m on a coastal trail or underwater, and travel tends to follow coastlines and working harbors rather than cities.\n\n\nMore on Trails and Travel\n\n\n\nHiking: coastal bluffs, estuary loops, and any trail that ends at a tidepool. A pocket notebook usually comes along for sketches.\n\n\nDiving: roughly three quarters of my logged dives are recreational rather than scientific, and the habits transfer in both directions. Kelp holdfasts, night entries, and low-visibility marsh work all reward the same discipline.\n\n\nTravel: I gravitate to places where ecology, fisheries, and community sit close together. It is good preparation for the conversations that fisheries work eventually turns into."
   },
   {
     "objectID": "about.html#honors-and-awards",
     "href": "about.html#honors-and-awards",
     "title": "jadenorli",
     "section": "Honors and Awards",
-    "text": "Honors and Awards\nRegent Scholar • Coastal Fund Major Grants • Best Student Presentation (Int’l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Published Manuscripts"
+    "text": "Honors and Awards\nDegree • Bachelor of Arts in Biology with High Honors, College of Creative Studies, University of California, Santa Barbara\nScholarships and Grants • Regents Scholar, University of California, Santa Barbara • Coastal Fund Major Grants\nConference Awards • Best Student Presentation, International Conference on Copepoda • Best Student Poster, Southern Academy of Parasitologists • Honorable Mention, Western Society of Naturalists"
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#overview",
+    "href": "kelp-forest-monitoring.html#overview",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Overview",
+    "text": "Overview\nFive months in the Caselle Lab at the University of California, Santa Barbara, across two long-running monitoring programs that ask the same question from opposite ends of the water column: is protection working, and how would we know?\nMost of the time went underwater, on standardized subtidal surveys at the Northern Channel Islands. The rest went to nearshore fisheries work from sportfishing vessels. The two programs reach different fish by design, which is why a protected area is judged by both rather than either.\n\n\n\n\n\nKelp forest surveys1\nNearshore fisheries2\n\n\n\n\nGear\nDivers on fixed transects\nHook and line, volunteer anglers\n\n\nCatches\nReef fish, invertebrates, algae\nFish deeper than a transect reaches\n\n\nSites\nNorthern Channel Islands\nProtected areas and fished references\n\n\nHandling Animals\nCounted, left alone\nCaught, measured, tagged, released\n\n\nMy Part\nDiving, identification, boat work, data checks\nOne cruise, tagging, otolith dissections\n\n\n\n\n\n\nWhere this monitoring lands\n\n\n\nOpen dataset, contributed to\n\n\nCarr, M. H., J. E. Caselle, B. N. Tissot, D. J. Pondella, D. P. Malone, K. D. Koehn, J. T. Claisse, J. P. Williams, A. Parsons-Field and S. F. Craig. 2024. Monitoring and Evaluation of Kelp Forest Ecosystems in the Marine Life Protection Act Marine Protected Area Network. California Ocean Protection Council Data Repository, released under a Creative Commons Attribution license.\n\n\nBrowse the Dataset\n\n\n\n\nWhat the record is used for\n\n\nSpiecker, B., M. H. Carr, D. P. Malone, A. Parsons-Field, K. D. Koehn, D. J. Pondella and J. E. Caselle. 2025. Measuring biological effectiveness across a very large, coherent network of coastal marine protected areas. Ecological Applications.\n\n\nRead the Paper"
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#quick-facts",
+    "href": "kelp-forest-monitoring.html#quick-facts",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Quick Facts",
+    "text": "Quick Facts\n\nRole: Scientific Diver and Field Research Assistant, Caselle Lab, University of California, Santa Barbara\nWhen: June 2024 to October 2024\nWhere: Northern Channel Islands, nearshore waters off the Santa Barbara coast, and the Caselle Lab\nSkills: subtidal visual survey methods, fish and invertebrate identification, small boat operations, otolith dissection, data entry and quality control\nFunding: student diver support under California Sea Grant project R/MPA-49A, Monitoring and Evaluation of Kelp Forest Ecosystems in the Marine Life Protection Act Marine Protected Area Network, funded by the California Ocean Protection Council\nCredits: listed among the students involved in the project’s 2024 reporting to California Sea Grant3"
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#kelp-forest-surveys",
+    "href": "kelp-forest-monitoring.html#kelp-forest-surveys",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Kelp Forest Surveys",
+    "text": "Kelp Forest Surveys\nWhat the surveys are. Standardized transects repeated at fixed sites, year after year, by divers using identical methods. Four sampling methods run at each site, all of them visual and all of them on scuba: fish are counted along belt transects, while invertebrates and macroalgae are recorded on transects that overlap those but are laid out separately. Sites are surveyed annually in summer or early fall, typically two to four inside a given protected area and two to four outside it, which is what makes an inside and outside comparison possible at all.4\nThe value is entirely in the repetition. A single year’s numbers say very little, and two decades of them say how a reef is changing and whether a boundary on a map is making a difference.\nMy part. Diving the surveys and recording the data, with the identification work that goes with it, plus small boat operations and gear logistics for island trips. Back on land, data entry and the checking that follows, reconciling dive logs against sheets and validating species codes before anything reached a database.\nThe season, in numbers. Sixty eight scientific dives across twenty days in the water between June and October 2024, at twenty one sites spread over four islands and the Santa Barbara coast: Anacapa and Santa Cruz carried most of it, with shorter trips to Santa Rosa and San Miguel. Three or four dives a day was normal and five was the ceiling, at a median depth of ten meters and a median bottom time of forty four minutes, which comes to about forty nine hours underwater over the season."
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#nearshore-fisheries-monitoring",
+    "href": "kelp-forest-monitoring.html#nearshore-fisheries-monitoring",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Nearshore Fisheries Monitoring",
+    "text": "Nearshore Fisheries Monitoring\nThe California Collaborative Fisheries Research Program samples with hook and line rather than with divers, working from sportfishing vessels with volunteer anglers, and catches, measures and releases nearshore fish inside marine protected areas and at matched reference sites. It reaches fish and depths a diver transect does not, which is why the two programs sit next to each other here.\nMy part was small, and worth saying plainly. One survey cruise, and five to ten otolith dissections in the laboratory from fish collected on program trips. Otoliths are the ear stones that lay down growth rings, so a dissection turns a length measurement into an age, which is what a stock assessment needs and what a catch and release survey cannot get on its own."
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#where-the-data-goes",
+    "href": "kelp-forest-monitoring.html#where-the-data-goes",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Where the Data Goes",
+    "text": "Where the Data Goes\nBoth programs are long-term monitoring rather than discrete projects, and nothing collected on a survey day belongs to the diver who collected it. What happens to it instead is the point.\nSurvey records are checked, standardized across the four institutions that dive this program, and published openly in the California Ocean Protection Council Data Repository, with a mirror in the Ocean Biodiversity Information System. Those records are what network-scale evaluations are built from, including a recent assessment of biological effectiveness across the whole 1,350 kilometer span of California’s marine protected area network. Both are linked at the top of this page. The reason a season of counting fish is worth doing is sitting at the far end of that chain."
+  },
+  {
+    "objectID": "kelp-forest-monitoring.html#acknowledgments",
+    "href": "kelp-forest-monitoring.html#acknowledgments",
+    "title": "Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nCaselle Lab at the University of California, Santa Barbara, the Partnership for Interdisciplinary Studies of Coastal Oceans, the California Collaborative Fisheries Research Program and its volunteer anglers and boat captains, and Channel Islands staff for logistics and access.\n\nBack to Research Contact"
   },
   {
     "objectID": "art.html",
     "href": "art.html",
     "title": "jadenorli",
     "section": "",
-    "text": "Artwork\n\n\noil paint • mixed media • nature\n\n\n\n\n\n\n  \n\nKelp Rockfish 2026 · Oil on canvas\n\n\n\n  \n\nCalifornia Sheephead 2025 · Oil on canvas\n\n\n\n  \n\nPacific Halibut 2025 · Oil on canvas\n\n\n\n  \n\nTreefish 2025 · Oil on canvas\n\n\n\n  \n\nJuniper 2025 · Oil on canvas\n\n\n\n  \n\nHaulover Bay 2024 · Oil on canvas\n\n\n\n  \n\nWater World 2019 · Mixed media\n\n\n\n  \n\nFall Memories 2019 · Colored pencil on paper\n\n\n\n  \n\nVirgin Gorda, BVI 2017 · Oil on canvas\n\n\n\n  \n\nLady 2015 · Oil on canvas\n\n\n\n  \n\nBusy 2015 · Oil on canvas\n\n\n\n  \n\nTulips for Mom 2015 · Oil on canvas\n\n\n\n  \n\nRainbow Trout 2014 · Oil on canvas\n\n\n\n  \n\nTulip Fields 2014 · Oil on canvas\n\n\n\n  \n\nSwimming Trout 2014 · Oil on canvas\n\n\n\n  \n\nBreakfast Morning 2013 · Oil on canvas\n\n\n\n  \n\nWaterfall Oasis 2012 · Oil on canvas\n\n\n\n\n\nContact Back to top"
+    "text": "Artwork\n\n\noil paint • mixed media • nature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n  \n\nKelp Rockfish 2026 · Oil on canvas\n\n\n\n  \n\nCalifornia Sheephead 2025 · Oil on canvas\n\n\n\n  \n\nPacific Halibut 2025 · Oil on canvas\n\n\n\n  \n\nTreefish 2025 · Oil on canvas\n\n\n\n  \n\nJuniper 2025 · Oil on canvas\n\n\n\n  \n\nHaulover Bay 2024 · Oil on canvas\n\n\n\n  \n\nWater World 2019 · Mixed media\n\n\n\n  \n\nFall Memories 2019 · Colored pencil on paper\n\n\n        \n\n  \n\nWinogradsky III 2018 · Acrylic on canvas\n\n\n\n  \n\nWinogradsky II 2018 · Acrylic on canvas\n\n\n\n  \n\nWinogradsky I 2018 · Acrylic on canvas\n\n\n\n\n  \n\nVirgin Gorda, BVI 2017 · Oil on canvas\n\n\n\n  \n\nLady 2015 · Oil on canvas\n\n\n\n  \n\nBusy 2015 · Oil on canvas\n\n\n\n  \n\nTulips for Mom 2015 · Oil on canvas\n\n\n\n  \n\nRainbow Trout 2014 · Oil on canvas\n\n\n\n  \n\nTulip Fields 2014 · Oil on canvas\n\n\n\n  \n\nSwimming Trout 2014 · Oil on canvas\n\n\n\n  \n\nBreakfast Morning 2013 · Oil on canvas\n\n\n\n  \n\nWaterfall Oasis 2012 · Oil on canvas\n\n\n\n\n\n\n\n\n\n\nContact   Back to top"
   },
   {
     "objectID": "songs.html#overview",
     "href": "songs.html#overview",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
     "section": "Overview",
-    "text": "Overview\nThe UCSB-led SONGS Mitigation Monitoring Program provides independent scientific oversight for two California Coastal Commission required mitigation projects: the Wheeler North Artificial Reef (kelp-forest habitat) and the San Dieguito Lagoon Restoration (coastal wetland).1 The reef’s permit standards require sustaining ≥150 acres of medium-to-high density giant kelp and ≥28 tons of reef fish standing stock,2 while the wetland permit (Condition A) requires creation or substantial restoration of ≥150 acres of tidal wetlands in Southern California—implemented at San Dieguito as ~115 acres of new tidal wetlands plus ~35 acres of enhancement credit for maintaining an open tidal inlet.3\nWithin the wetland program, the restored San Dieguito site is evaluated relative to natural reference marshes. My role focuses on two of those reference sites (Carpinteria Salt Marsh Reserve and Point Mugu Lagoon) where I help run standardized fish and invertebrate community surveys, identify and process samples in the lab, and support QA/QC. I do not sample at the San Dieguito restoration directly, but our reference-site data provide the benchmarks used to assess restoration performance over time.4"
+    "text": "Overview\nWhen the San Onofre Nuclear Generating Station was permitted, the California Coastal Commission required it to offset the damage it did to coastal habitat. Two mitigation projects came out of that requirement, and both carry numerical standards written into the permit. The SONGS Mitigation Monitoring Program, led by the University of California, Santa Barbara, is the independent scientific oversight that decides whether those standards are being met.1\n\n\n\n\nMitigation project\nHabitat\nWhat the permit requires\n\n\n\n\nWheeler North Artificial Reef\nKelp forest\nAt least 150 acres of medium to high density giant kelp, and at least 28 tons of reef fish standing stock2\n\n\nSan Dieguito Lagoon Restoration\nCoastal wetland\nAt least 150 acres of tidal wetland created or substantially restored, met as roughly 115 acres of new wetland plus about 35 acres of credit for keeping the tidal inlet open3\n\n\n\n\nA standard like that is only meaningful against something. Alongside the acreage targets, the wetland project is held to fifteen relative performance standards, judged against natural reference marshes rather than against fixed numbers, because a marsh in a wet year and a marsh in a dry one are not the same marsh. The rule is comparative all the way down: to earn mitigation credit, the share of standards the restoration meets has to match or beat the share met by the weakest reference wetland.4\nMy work was on the reference side of that comparison, at Carpinteria Salt Marsh Reserve and Point Mugu Lagoon: running standardized fish and invertebrate surveys, identifying and processing the catch in the laboratory, and checking the data that came out. I never sampled at the restoration itself. The numbers I helped collect are the baseline the restoration gets measured against, which is the less visible half of a mitigation program and the half that decides what the other half means.\n\n\nWhere this monitoring lands\n\n\n\nAnnual report to the California Coastal Commission\n\n\nBeheshti, K. M., R. S. Smith, H. M. Page and D. C. Reed. 2026. 2025 Wetland Annual Report. SONGS Mitigation Monitoring Program, Marine Science Institute, University of California, Santa Barbara. Submitted to the California Coastal Commission, August 2026.\n\n\nRead the 2025 Report Program Data Portal"
   },
   {
     "objectID": "songs.html#quick-facts",
     "href": "songs.html#quick-facts",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
     "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Lab Technician (UCSB)\n\nWhen: Aug 2025 – Jan 2026\n\nSkills: community sampling, species ID, sample processing, data QA/QC, field & lab equipment\n\nLinks: Program site: https://marinemitigation.msi.ucsb.edu/"
+    "text": "Quick Facts\n\nRole: Laboratory Technician, Marine Science Institute, University of California, Santa Barbara\nWhen: August 2025 to January 2026\nWhere: Carpinteria Salt Marsh Reserve and Point Mugu Lagoon, and the laboratory at the Marine Science Institute\nSkills: standardized community sampling, fish and invertebrate identification, sample processing and measurement, data entry and quality control\nProgram: https://marinemitigation.msi.ucsb.edu/"
   },
   {
     "objectID": "songs.html#background-and-questions",
     "href": "songs.html#background-and-questions",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
     "section": "Background and Questions",
-    "text": "Background and Questions\nThis work tracks community composition and ecological recovery in restored and reference salt marshes. We ask: How do fish and invertebrate assemblages change over time? Are restoration targets being met? Which environmental factors co-vary with community structure, and where might remediation improve performance?"
+    "text": "Background and Questions\nLong-term monitoring of this kind asks a small number of questions over and over, which is what makes the answers worth anything:\n\nHow do fish and invertebrate assemblages in these marshes change from season to season and year to year?\nAre the restoration targets in the permit being met, judged against reference conditions rather than against a fixed number?\nWhich environmental conditions move with community structure, and where would remediation actually help?"
   },
   {
     "objectID": "songs.html#methods",
     "href": "songs.html#methods",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
     "section": "Methods",
-    "text": "Methods\n\nStandardized community surveys (e.g., gear deployment, timed/count protocols)\n\nLab processing of collected samples (ID, measurements)\n\nData management and QA/QC workflows to support long-term reporting"
+    "text": "Methods\nThe program’s wetland monitoring plan sets out how every one of these measurements is taken, so that a number from one marsh in one year is comparable with a number from another marsh a decade earlier.5\nFish, by two methods. Fish are sampled in two habitat types, tidal creeks and main channel, at six locations of each type per wetland, by two methods that catch different animals. Circular enclosure traps, 0.4 square meters and 0.9 meters tall, are dropped in water no more than 0.7 meters deep and worked with a hand net until three hauls come up empty. They exist for the gobies: small, abundant, bottom-sitting fish that other gear passes straight over. Beach seines with blocking nets take the larger and more mobile fish. Blocking nets are rolled out 7.6 meters apart, perpendicular to shore, out to about 1.5 meters depth or 12.2 meters from shore, whichever comes first, and then closed. A beach seine two meters high and 7.6 meters wide is hauled through the blocked area five times, and the blocking nets themselves are pulled in and sampled afterwards, because fish end up in them too. Everything is identified and counted in the field and returned alive, with voucher specimens kept only where an identification is uncertain.\nTiming, which is not incidental. Fish sampling happens on three separate dates in early fall, with the sampled area offset each time so that one visit does not degrade the habitat the next visit measures. Early fall is chosen to stay clear of Ridgway’s rail nesting. Sampling is daytime only and restricted to comparable tides across all the wetlands, since a marsh at one tide is not the same marsh at another.\nInvertebrates, by three. Macroinvertebrates are sampled alongside the enclosure stations. Epifauna, such as the California horn snail, are counted in quadrats down the unvegetated bank from the vegetation line to the thalweg. Larger infauna, jackknife clams and ghost shrimp, come from a ten centimeter core pushed up to fifty centimeters into the sediment and sieved through three millimeter mesh in the field. The smallest animals, most annelids and the amphipods, come from a narrow three and a half centimeter core taken only six centimeters deep, preserved on site and worked through half millimeter mesh under a microscope back in the laboratory. Three sizes of animal, three ways of catching them, because no single method sees them all.\n\n\n  \n\nBlock nets. Two nets close off a reach before any seining starts, so the same water is fished each time.\n\n\n\n  \n\nThe haul. A 25 meter seine pulled through the enclosure, weighted below and floated above so it works the bottom.\n\n\n\n  \n\nSorting. The net comes up into the cart and everything in it is counted and identified on the bank.\n\n\n\n  \n\nGoby enclosure. A smaller trap dropped and then netted around the perimeter, for the benthic species a seine passes over.\n\n\n\n  \n\nCores. A large core sieved on the bank, for the clams, shrimp and worms a net never sees.\n\n\n\n\nIn the laboratory and after. Catch is identified to the lowest practical taxonomic level, measured and processed, which is where a survey stops being a bucket of animals and becomes data. Then data entry and the checking that follows, reconciling sheets against samples before anything reaches the program’s long-term record. A reference dataset is only useful if a value from 2025 can be trusted next to one from 2005."
   },
   {
-    "objectID": "songs.html#results-preview",
-    "href": "songs.html#results-preview",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
-    "section": "Results (preview)",
-    "text": "Results (preview)\n\nField season progress notes and initial summaries (coming soon).\n\nAnnual report excerpts will be linked here when available."
+    "objectID": "songs.html#status",
+    "href": "songs.html#status",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
+    "section": "Status",
+    "text": "Status\nThe appointment ran from August 2025 to January 2026 and has ended. The data went into the program’s long-term record rather than into anything of mine, and the reporting is the program’s to publish. The 2025 season is covered by the annual report above, which reports that in the fourteenth year of monitoring the restoration again did not earn mitigation credit, and attributes that to unplanned habitat conversion and to a lack of similarity to the reference wetlands on some biological attributes. All of the underlying data are public."
   },
   {
-    "objectID": "songs.html#outputs",
-    "href": "songs.html#outputs",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
-    "section": "Outputs",
-    "text": "Outputs\n\nReport (coming soon)"
+    "objectID": "songs.html#songs-stickers",
+    "href": "songs.html#songs-stickers",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
+    "section": "SONGS Stickers",
+    "text": "SONGS Stickers\nLong-term monitoring is a small crew going back to the same four marshes, season after season, for years. Traditions accumulate. So do stickers.\n\n\n\n\nPoint Mugu is a working naval installation and the lagoon sits inside it, so a day of fish sampling starts at a gate with a badge and an escort.\n\n\n\n\n\nThe mallards on the base are, as far as anyone has been able to establish, entirely ordinary mallards with no security clearance whatsoever."
   },
   {
-    "objectID": "songs.html#acknowledgements",
-    "href": "songs.html#acknowledgements",
-    "title": "SONGS Mitigation Monitoring Program — Salt Marsh Fish and Invertebrate Monitoring",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nSONGS Mitigation Monitoring Program team, Marine Science Institute (UCSB), collaborators and partners."
+    "objectID": "songs.html#acknowledgments",
+    "href": "songs.html#acknowledgments",
+    "title": "SONGS Mitigation Monitoring Program: Salt Marsh Fish and Invertebrate Monitoring",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThe SONGS Mitigation Monitoring Program team, the Marine Science Institute at the University of California, Santa Barbara, and the reserve and lagoon staff who make access to those sites possible.\n\nBack to Research Contact"
   },
   {
     "objectID": "photography-marine.html",
     "href": "photography-marine.html",
     "title": "jadenorli",
     "section": "",
-    "text": "Marine Photography\n\nreef atmospheres • pelagic motion • geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
+    "text": "Marine Photography\n\nreef atmospheres • pelagic motion • geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
   },
   {
-    "objectID": "caselle_lab.html#overview",
-    "href": "caselle_lab.html#overview",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
+    "objectID": "lobster-model.html#overview",
+    "href": "lobster-model.html#overview",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
     "section": "Overview",
-    "text": "Overview\nIn the Caselle Lab I worked on PISCO kelp-forest monitoring across the Northern Channel Islands and helped with CCFRP nearshore stock assessments. The work combines standardized transects (benthic & fish), hook-and-line surveys with volunteer anglers, and careful QA/QC to produce long-term datasets used for MPA evaluation and fisheries management."
+    "text": "Overview\nCalifornia’s spiny lobster fishery is managed through a harvest control rule built on three reference points, one of which is the spawning potential ratio: the eggs a female produces over her lifetime in a fished population, set against the eggs she would produce if the population were unfished.1\nThat ratio is not measured. It is inferred, once a season, from a single quantity. The average weight of a commercially landed lobster is run backwards through an equilibrium cohort model, and the fishing mortality that reproduces that weight is the fishing mortality the spawning potential ratio is then calculated from.2\nSo a reference point that can compel management action rests on one number, and that number is an average. This project asks what an average can and cannot see. Large females carry a disproportionate share of the eggs, because fecundity rises with length faster than weight does, which makes them the animals a size regulation would be designed to protect. They are also the animals an average is least equipped to track. How many of them does the fishery land, and would the assessment register it if that changed?"
   },
   {
-    "objectID": "caselle_lab.html#quick-facts",
-    "href": "caselle_lab.html#quick-facts",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
+    "objectID": "lobster-model.html#quick-facts",
+    "href": "lobster-model.html#quick-facts",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
     "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Field Research Assistant, Caselle Lab (UCSB)\n\nWhen: Jun – Oct 2024\n\nSkills: underwater transects (benthic & fish), data entry & QA/QC, small-craft operations, gear logistics, volunteer coordination"
+    "text": "Quick Facts\n\nRole: Staff Research Associate, Stier Ocean Recoveries Lab, University of California, Santa Barbara\nWhen: September 2024 to present\nWhere: the Southern California Bight, modeled over California Department of Fish and Wildlife fishing blocks\nSkills: R, size-structured population modeling, replication and validation of a published model, Quarto, GitHub\nCode: repositories are not public yet. https://github.com/jadenorli"
   },
   {
-    "objectID": "caselle_lab.html#background-and-questions",
-    "href": "caselle_lab.html#background-and-questions",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
+    "objectID": "lobster-model.html#background-and-questions",
+    "href": "lobster-model.html#background-and-questions",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
     "section": "Background and Questions",
-    "text": "Background and Questions\n\nHow are kelp-forest communities changing within and outside MPAs?\n\nWhat do catch-per-unit-effort and size-structure from CCFRP say about nearshore fish populations and local protection benefits?"
+    "text": "Background and Questions\n\nWhat share of the landed catch is made up of large females, under the assessment’s own assumptions about growth, fecundity and mortality?\nHow far does that share move when those assumptions move, or when the question is asked of one region rather than of the whole Bight?\nA published at-sea sampling program reported regional discrepancies between catch characteristics measured aboard commercial vessels and those derived from landing data, with consequences its authors tie directly to the spawning potential ratio.3 What would a model resolved in space make of that?"
   },
   {
-    "objectID": "caselle_lab.html#methods",
-    "href": "caselle_lab.html#methods",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
+    "objectID": "lobster-model.html#methods",
+    "href": "lobster-model.html#methods",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
     "section": "Methods",
-    "text": "Methods\n\nPISCO (subtidal): standardized belt and point-count transects for fish; quadrats & swathes for invertebrates and macroalgae; site metadata (depth, viz, surge).\n\nCCFRP (nearshore): spatially replicated hook-and-line sampling, onboard lengths/ID, release handling, and effort tracking.\n\nData & QA/QC: immediate log reconciliation, species code checks, range validation, and tidy exports for lab databases."
+    "text": "Methods\nThe work is in two parts, and the order matters. Nothing can be said about what the assessment can see until the assessment itself runs.\nPart one: replication. An exact reimplementation, in R, of the model documented by the Department of Fish and Wildlife, with nothing added to it. It lives in its own repository and is gated behind a validation document that will not pass unless it reproduces the published tables and figures. Where the printed documentation was ambiguous or could not be used as written, each case is recorded in an ambiguity log alongside the evidence used to resolve it, so that every departure from the page stays visible rather than buried in the code. A replication that reproduces published values is worth more than a model that only agrees with me.\nPart two: the spatial model. A size-structured model of female lobsters, resolved across state fishing blocks, with California’s existing marine protected areas held fixed rather than redrawn. Its target is the size composition of the landed females rather than their average weight, since composition is exactly what a single number cannot carry. The replication supplies the calibration the spatial model is held to.\nFemale only, and said plainly. The landings the assessment calibrates to include both sexes, and the replication carries that. The spatial model does not, which is a limitation of it rather than a simplification of the question, so any claim that depends on both sexes is made from the replication instead."
   },
   {
-    "objectID": "caselle_lab.html#results-preview",
-    "href": "caselle_lab.html#results-preview",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
-    "section": "Results (preview)",
-    "text": "Results (preview)\n\nCompleted island circuits with full transect suites; preliminary summaries feed into annual MPA status reviews.\n\nCCFRP trips contributed length-frequency and CPUE updates for priority species; figures pending program release."
+    "objectID": "lobster-model.html#status",
+    "href": "lobster-model.html#status",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
+    "section": "Status",
+    "text": "Status\nThe replication is complete and passes its validation checks against the published values. The spatial model is under active development. Results, figures and code are not public yet, and this page will be updated when they are."
   },
   {
-    "objectID": "caselle_lab.html#outputs",
-    "href": "caselle_lab.html#outputs",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
-    "section": "Outputs",
-    "text": "Outputs\n\nCruise logs and data submissions (PISCO/CCFRP databases)\n\nFigures for internal updates and program briefings (to be added when public)"
-  },
-  {
-    "objectID": "caselle_lab.html#acknowledgements",
-    "href": "caselle_lab.html#acknowledgements",
-    "title": "Kelp Forest and Nearshore Fisheries — PISCO / CCFRP",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nCaselle Lab (UCSB), PISCO partners, CCFRP volunteer anglers and captains, and Channel Islands staff for logistics and access."
+    "objectID": "lobster-model.html#acknowledgments",
+    "href": "lobster-model.html#acknowledgments",
+    "title": "Large Females and the Stock Assessment, California Spiny Lobster",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nStier Ocean Recoveries Lab at the University of California, Santa Barbara, and colleagues at the California Department of Fish and Wildlife and California Sea Grant Extension whose published work this is built on.\n\nBack to Research Contact"
   },
   {
     "objectID": "photography-terrestrial.html",
     "href": "photography-terrestrial.html",
     "title": "jadenorli",
     "section": "",
-    "text": "Terrestrial Photography\n\ndesert light • coastline edges • quiet transitions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
-  },
-  {
-    "objectID": "stier_lab.html#overview",
-    "href": "stier_lab.html#overview",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Overview",
-    "text": "Overview\nI’m building a stage-structured population model for California spiny lobster (Panulirus interruptus) to test how slot-limit harvest rules interact with MPA coverage and spatial structure. The emphasis is on conserving large spawners while maintaining viable yields across commercial and recreational sectors. The framework borrows from two-sex/spatial lobster matrices (growth via VBGF, size-based fecundity, exponential natural mortality) and implements stage-selective fishing applied after projection and only outside MPAs, so harvest is computed as the difference between raw and fished projections.1"
-  },
-  {
-    "objectID": "stier_lab.html#quick-facts",
-    "href": "stier_lab.html#quick-facts",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Research Intern, Stier Lab (UCSB)\n\nWhen: Sep 2024 – present\n\nSkills: R (matrix models, tidyverse), stage-structured dynamics, scenario sweeps, sensitivity analysis, figure design\n\nLinks: Code (selected snippets): https://github.com/jadenorli"
-  },
-  {
-    "objectID": "stier_lab.html#background-and-questions",
-    "href": "stier_lab.html#background-and-questions",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Background and Questions",
-    "text": "Background and Questions\n\nHow do slot widths (min–max carapace) and MPA coverage jointly shape biomass, size structure, and reproductive output?\n\nWhat are the trade-offs for yield and stability under differing slot rules and fishing pressure?\n\nHow sensitive are outcomes to growth, fecundity, and mortality assumptions?"
-  },
-  {
-    "objectID": "stier_lab.html#methods",
-    "href": "stier_lab.html#methods",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Methods",
-    "text": "Methods\n\nModel: female-first stage matrix with size-based growth (VBGF), fecundity from size–weight, natural mortality (exponential), and scenario-applied fishing survival.\n\nManagement scenarios: grid over slot width × MPA coverage ± effort patterns; optional external recruitment.\n\nTime step: quarterly (dt = 0.25) to capture seasonal reproduction, larval duration, and fishing activity.\n\nSensitivity: global variance-based (Sobol-Salt) on key biological parameters; stability and performance metrics.\n\nOutputs: trajectories of abundance/biomass, size distribution, reproductive output, and harvest."
-  },
-  {
-    "objectID": "stier_lab.html#results-preview",
-    "href": "stier_lab.html#results-preview",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Results (preview)",
-    "text": "Results (preview)\n\nScenario grid & baseline calibration are in progress; early checks focus on stable size distributions and realistic biomass ranges.\n\nSensitivity screens identify high-leverage parameters to prioritize for data collection and uncertainty reduction.\n(I’ll add figures and summary tables as the analysis solidifies.)"
-  },
-  {
-    "objectID": "stier_lab.html#acknowledgements",
-    "href": "stier_lab.html#acknowledgements",
-    "title": "Modeling Slot Limits and MPAs - California Spiny Lobster",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nStier Lab (UCSB) and collaborators."
-  },
-  {
-    "objectID": "valentine_lab.html#overview",
-    "href": "valentine_lab.html#overview",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Overview",
-    "text": "Overview\nThis project tests the link between biogenic hydrocarbon cycling and the microbial response to petroleum at Coal Oil Point. We incubate coastal seawater with liposome+alkane (to mimic phytoplankton production), liposome+petroleum, and substrate-only treatments, then track community shifts with archaeal-inclusive 16S amplicons and MGII-targeted qPCR.1 Fieldwork and analyses are led in the Valentine Lab (UCSB).2"
-  },
-  {
-    "objectID": "valentine_lab.html#quick-facts",
-    "href": "valentine_lab.html#quick-facts",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Quick Facts",
-    "text": "Quick Facts\n\nRole: Researcher, Valentine Lab (UCSB)\n\nWhen: Jan 2023 – Aug 2025\n\nSkills: small-boat sampling, incubations, DNA extraction, 16S rRNA (archaea-inclusive), qPCR (MGII), bioinformatics (DADA2/QIIME-style), figure design\n\nMotivation: Do MGII archaea consume biogenic alkanes and are they inhibited by petroleum exposure?3"
-  },
-  {
-    "objectID": "valentine_lab.html#background-and-questions",
-    "href": "valentine_lab.html#background-and-questions",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Background and Questions",
-    "text": "Background and Questions\n\nDoes the short-term, phytoplankton-derived alkane cycle help “prime” microbial communities that can act as biofilters when oil enters the system?\n\nWhich treatments (liposome+alkane vs. liposome+petroleum) increase MGII abundance and shift overall community composition?4"
-  },
-  {
-    "objectID": "valentine_lab.html#methods",
-    "href": "valentine_lab.html#methods",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Methods",
-    "text": "Methods\n\nStep 1 — Sample collection: coastal seawater near Coal Oil Point; summer emphasis when MGII often increase in the SBC.\n\nStep 2 — Incubations (~72 h): liposome+alkane, liposome+petroleum, alkane-only, petroleum-only; in-situ temp/light.\n\nStep 3 — Analysis: DNA extraction → 16S rRNA amplicons (archaea-inclusive primers) → community profiles; qPCR with MGII-specific primers → absolute/relative abundance. Sequencing via AVITI at UC Davis Core; bioinformatics with DADA2 and related tools.5"
-  },
-  {
-    "objectID": "valentine_lab.html#results-preview",
-    "href": "valentine_lab.html#results-preview",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Results (preview)",
-    "text": "Results (preview)\nData collection and analysis are ongoing. Early goals focus on quality-controlled 16S profiles, MGII qPCR calibration, and treatment comparisons; figures will be added here as they finalize."
-  },
-  {
-    "objectID": "valentine_lab.html#outputs",
-    "href": "valentine_lab.html#outputs",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Outputs",
-    "text": "Outputs\n\nPoster / slides (coming soon)\n\nManuscript (planned)"
-  },
-  {
-    "objectID": "valentine_lab.html#acknowledgements",
-    "href": "valentine_lab.html#acknowledgements",
-    "title": "Microbial Hydrocarbon Cycling — Coal Oil Point",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nValentine Lab (UCSB), Dr. David Valentine, Dr. Eleanor Arrington; thanks to campus small-boat program and Coastal Fund."
+    "text": "Terrestrial Photography\n\ndesert light • coastline edges • quiet transitions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Photography Back to top"
   }
 ]

@@ -1,0 +1,82 @@
+---
+title: "Mo'orea Porites: Island-Wide Mitotyped and Stalled Wound Regeneration"
+pagetitle: "Coral Wound Regeneration"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<div class="hero-slideshow" id="coral-hero" aria-label="Mitotyped Porites cores, Mo'orea">
+<a href="images/research/moorea_coral.jpg" data-fancybox="coral-hero" class="active">
+<img src="images/research/moorea_coral.jpg" alt="Mitotyped Porites coral cores in the Mo'orea regeneration experiment">
+</a>
+</div>
+
+## Overview
+
+Corals that are wounded and then stall part way through healing are a common sight on reefs under stress, and a poorly understood one. A colony that has closed most of a lesion and then stops can hold that state for months, leaving exposed skeleton that algae colonize. What is not clear is whether the regeneration has genuinely halted or is simply suppressed, and if suppressed, what releases it.
+
+Answering that took two pieces of field work in Mo'orea, French Polynesia, and they are described here in the order they had to happen. First an island-wide mitotyping and condition survey of massive *Porites*, because colonies that look alike belong to different mitochondrial lineages and there is no way to tell by looking. Then a two by two factorial experiment on cores drawn from those mitotyped colonies, testing two candidate releases for a stalled margin: a fresh secondary wound beside it, and removal of the algae growing on it.
+
+The survey is what lets the experiment treat lineage as a factor rather than as noise. Without it, every between-colony difference would have to be written off as unexplained variation.
+
+## Quick Facts
+
+- **Role:** Staff Research Associate, Stier Ocean Recoveries Lab, University of California, Santa Barbara
+- **When:** May through August 2026 in the field, in analysis since
+- **Where:** the Richard B. Gump South Pacific Research Station, Mo'orea, French Polynesia
+- **Scale:** an island-wide survey across eight sites, and 36 experimental cores from 9 parent colonies in four treatment groups
+- **Skills:** experimental design, subtidal survey sampling, coral husbandry and cultivation systems, repeat microscopy imaging, image processing pipelines, sample tracking and data documentation, R
+- **Program:** Keck Coral Regeneration Program
+- **Code:** <https://github.com/jadenorli>
+
+## Background and Questions
+
+- Does a **secondary wound** adjacent to a stalled margin restart tissue growth, or add a second lesion that also stalls?
+- Does **removing the marginal algae** restart it on its own, without any new wounding?
+- Do the two together do more than either alone, or is the effect of one conditional on the other?
+- Does **mitochondrial lineage** predict which colonies stall and which recover?
+- Across the island, how are lineages and colony condition distributed, and does condition track lineage, site environment, or both?
+
+## The Island-Wide Survey
+
+**Sites and strata.** Eight permitted sites around Mo'orea, each sampled across the five habitat strata that span the across-reef gradient: forereef, crest, the lagoon on the crest side of the boat channel, the lagoon on the island side, and the fringing reef. Roughly five colonies per stratum, toward a target of about 140 retained colonies. Most massive *Porites* sit in the lagoon and back reef, so the forereef stratum is there for the exposure contrast rather than for abundance.
+
+**Choosing a colony.** Colonies are selected by a random point method rather than by eye: eyes down, ten kicks, then take the nearest *Porites* of at least twenty centimeters to wherever you stop. It sounds crude and it is the point. A diver choosing colonies will choose the large, healthy, photogenic ones, and a survey built that way describes the diver rather than the reef. Morphologies are deliberately mixed within each stratum for the same reason.
+
+**What each colony gives up.** Two samples: a biopsy punch preserved for host genetics, and a small core split in the laboratory for coral traits and fluorescence. Alongside them, depth, height and footprint, a position fix, morphology and colony notes, counts of vermetid gastropods in quadrats on the bommie, and paired photographs, one from above with a scale bar and one from the side with a color card.
+
+**Sequencing on the island.** Extraction, library preparation and sequencing all happen in the station laboratory rather than being shipped home, because the mititype calls have to be back in hand before donor colonies can be chosen. Sequencing is whole-genome shotgun on nanopore flow cells. Lineage is then assigned from two semi-independent analyses of the same reads: clustering on short sequence patterns against a curated *Porites* reference, and variant calling across the mitochondrial genome placed on a phylogeny. A call is accepted only when the two agree. Disagreement sends the sample back for reprocessing rather than forward into the experiment.
+
+**What holds the calls up.** Positive controls of known lineage, extraction and barcode blanks, minimum read depth per colony, a floor on assignment probability, and a required margin between a colony's call and the next nearest cluster. A sample that fails any of them is rerun or set aside, not rounded to the nearest answer.
+
+**Chain of custody.** Samples are processed the same day they are collected: tissue into preservative, material into the freezer, datasheets transcribed into the day's file and spot-checked row by row against the bags before anyone leaves the laboratory. Where a label and a bag get out of step, the discrepancy is written down and carried in the metadata rather than quietly corrected, because a relabeled sample is an untraceable one.
+
+## The Microwounding Experiment
+
+**Colonies and cores.** Thirty six cores drawn from nine parent colonies in the mitotyped pool, so lineage enters the analysis as a known factor. Each colony carries cores in every treatment group, so a lineage effect cannot be mistaken for a treatment effect.
+
+**Design.** A two by two factorial applied to cores whose primary lesion has stalled: secondary wounding present or absent, crossed with algae removal present or absent. Four groups, control, algae removed, wounded, and both. The two treatments are separated because they are confounded in the field, where a stalled lesion nearly always carries algae.
+
+**Imaging.** Cores were imaged repeatedly against a fixed registration, with a fiducial reference and a calibration image in every session, so the same margin can be found and measured in the same units across a series rather than approximately matched by eye.
+
+**Colony condition.** CoralWatch color ratings were recorded for each of the nine parent colonies, giving a coarse but standardized measure of condition alongside the core-level imaging.
+
+**Planned analysis.** Margin position and lesion area measured in ImageJ on a fixed scale, so a rate of closure can be compared across cores of different starting sizes, then time to margin closure modeled in R with wounding, algae removal, their interaction, and lineage as terms. Amplicon metabarcoding of the marginal algal community is planned but not yet firm; the intent is to characterize what is actually growing on a stalled margin rather than treating algae as one thing.
+
+## Status
+
+Field work is complete, on both the survey and the experiment. The image series is in processing, the sequencing work continues, and no results are ready to report. Figures will go here as the analysis firms up.
+
+## Acknowledgments
+
+The Keck Coral Regeneration Program, the Stier Ocean Recoveries Lab at the University of California, Santa Barbara, and the survey and laboratory teams in Mo'orea. Field work was carried out at the Richard B. Gump South Pacific Research Station under the relevant collection permits.
+
+<div class="gallery-footer">
+<a class="read-more" href="research.html">Back to Research</a>
+<a class="btn btn-primary" href="contact.html">Contact</a>
+</div>

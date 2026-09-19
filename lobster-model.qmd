@@ -1,0 +1,68 @@
+---
+title: "Large Females and the Stock Assessment, California Spiny Lobster"
+pagetitle: "Spiny Lobster Model"
+page-classes: project-narrow
+format:
+  html:
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    page-layout: article
+---
+
+<div class="hero-slideshow" id="lobster-hero" aria-label="California spiny lobster header image">
+  <a href="images/research/stier_lobster.jpg" data-fancybox="lobster-hero" class="active">
+    <img src="images/research/stier_lobster.jpg" alt="California spiny lobster, model and field context">
+  </a>
+</div>
+
+## Overview
+
+California's spiny lobster fishery is managed through a harvest control rule built on three reference points, one of which is the spawning potential ratio: the eggs a female produces over her lifetime in a fished population, set against the eggs she would produce if the population were unfished.[^fmp]
+
+That ratio is not measured. It is inferred, once a season, from a single quantity. The average weight of a commercially landed lobster is run backwards through an equilibrium cohort model, and the fishing mortality that reproduces that weight is the fishing mortality the spawning potential ratio is then calculated from.[^cable]
+
+So a reference point that can compel management action rests on one number, and that number is an average. This project asks what an average can and cannot see. Large females carry a disproportionate share of the eggs, because fecundity rises with length faster than weight does, which makes them the animals a size regulation would be designed to protect. They are also the animals an average is least equipped to track. How many of them does the fishery land, and would the assessment register it if that changed?
+
+## Quick Facts
+
+- **Role:** Staff Research Associate, Stier Ocean Recoveries Lab, University of California, Santa Barbara
+- **When:** September 2024 to present
+- **Where:** the Southern California Bight, modeled over California Department of Fish and Wildlife fishing blocks
+- **Skills:** R, size-structured population modeling, replication and validation of a published model, Quarto, GitHub
+- **Code:** repositories are not public yet. <https://github.com/jadenorli>
+
+## Background and Questions
+
+- What share of the landed catch is made up of large females, under the assessment's own assumptions about growth, fecundity and mortality?
+- How far does that share move when those assumptions move, or when the question is asked of one region rather than of the whole Bight?
+- A published at-sea sampling program reported regional discrepancies between catch characteristics measured aboard commercial vessels and those derived from landing data, with consequences its authors tie directly to the spawning potential ratio.[^casp] What would a model resolved in space make of that?
+
+## Methods
+
+The work is in two parts, and the order matters. Nothing can be said about what the assessment can see until the assessment itself runs.
+
+**Part one: replication.** An exact reimplementation, in R, of the model documented by the Department of Fish and Wildlife, with nothing added to it. It lives in its own repository and is gated behind a validation document that will not pass unless it reproduces the published tables and figures. Where the printed documentation was ambiguous or could not be used as written, each case is recorded in an ambiguity log alongside the evidence used to resolve it, so that every departure from the page stays visible rather than buried in the code. A replication that reproduces published values is worth more than a model that only agrees with me.
+
+**Part two: the spatial model.** A size-structured model of female lobsters, resolved across state fishing blocks, with California's existing marine protected areas held fixed rather than redrawn. Its target is the size composition of the landed females rather than their average weight, since composition is exactly what a single number cannot carry. The replication supplies the calibration the spatial model is held to.
+
+**Female only, and said plainly.** The landings the assessment calibrates to include both sexes, and the replication carries that. The spatial model does not, which is a limitation of it rather than a simplification of the question, so any claim that depends on both sexes is made from the replication instead.
+
+## Status
+
+The replication is complete and passes its validation checks against the published values. The spatial model is under active development. Results, figures and code are not public yet, and this page will be updated when they are.
+
+## Acknowledgments
+
+Stier Ocean Recoveries Lab at the University of California, Santa Barbara, and colleagues at the California Department of Fish and Wildlife and California Sea Grant Extension whose published work this is built on.
+
+<div class="gallery-footer">
+<a class="read-more" href="research.html">Back to Research</a>
+<a class="btn btn-primary" href="contact.html">Contact</a>
+</div>
+
+[^fmp]: California Department of Fish and Wildlife. *California Spiny Lobster Fishery Management Plan* and harvest control rule. The three reference points are catch, catch per unit effort, and the spawning potential ratio. <https://wildlife.ca.gov/Conservation/Marine/Lobster-FMP>
+
+[^cable]: Coates, J., C. Mireles and A. Shiao. 2016. *The Cable-CDFW Model and Calculation of Spawning Potential Ratio*. California Department of Fish and Wildlife, 21 January 2016. The model follows a single cohort of one thousand recruits across a twenty-five year lifespan and uses average weight derived from landing receipts and daily logs to infer fishing pressure. <https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=115569>
+
+[^casp]: Yaeger et al. 2017. Utility of a collaborative at-sea sampling program for the California spiny lobster commercial fishery: catch characteristics and implications for management. *Marine and Coastal Fisheries* 9(1): 190. <https://academic.oup.com/mcf/article/9/1/190/7827073>

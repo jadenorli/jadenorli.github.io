@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Kelp Forest Monitoring</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/jaden_icon_light.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Kelp Forest Monitoring">
+<meta property="og:description" content="Five months in the Caselle Lab at the University of California, Santa Barbara, across two long-running monitoring programs that ask the same question from opposite ends of the water column: is…">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="Kelp Forest Monitoring">
+<meta name="twitter:description" content="Five months in the Caselle Lab at the University of California, Santa Barbara, across two long-running monitoring programs that ask the same question from opposite ends of the water column: is…">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/jaden_icon_dark.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./photography.html">
+ <span class="menu-text">Photography</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./art.html">
+ <span class="menu-text">Art</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jadenorli"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jadenorli"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://instagram.com/jadenorli"><i class="bi bi-instagram" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link" data-scroll-target="#quick-facts">Quick Facts</a></li>
+  <li><a href="#kelp-forest-surveys" id="toc-kelp-forest-surveys" class="nav-link" data-scroll-target="#kelp-forest-surveys">Kelp Forest Surveys</a></li>
+  <li><a href="#nearshore-fisheries-monitoring" id="toc-nearshore-fisheries-monitoring" class="nav-link" data-scroll-target="#nearshore-fisheries-monitoring">Nearshore Fisheries Monitoring</a></li>
+  <li><a href="#where-the-data-goes" id="toc-where-the-data-goes" class="nav-link" data-scroll-target="#where-the-data-goes">Where the Data Goes</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Kelp Forest Surveys and Nearshore Fisheries Monitoring, Northern Channel Islands</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div id="caselle-hero" class="hero-slideshow" aria-label="Kelp forest and nearshore fisheries slideshow">
+<p><a href="images/research/caselle_pisco.jpg" data-fancybox="caselle-hero" class="active"> <img src="images/research/caselle_pisco.jpg" alt="Kelp forest survey transect, Northern Channel Islands"> </a> <a href="images/research/ccfrp.jpg" data-fancybox="caselle-hero"> <img src="images/research/ccfrp.jpg" alt="Hook and line survey with volunteer anglers aboard a sportfishing vessel"> </a></p>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Five months in the Caselle Lab at the University of California, Santa Barbara, across two long-running monitoring programs that ask the same question from opposite ends of the water column: is protection working, and how would we know?</p>
+<p>Most of the time went underwater, on standardized subtidal surveys at the Northern Channel Islands. The rest went to nearshore fisheries work from sportfishing vessels. The two programs reach different fish by design, which is why a protected area is judged by both rather than either.</p>
+<div class="table-card">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Kelp forest surveys<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></th>
+<th>Nearshore fisheries<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gear</td>
+<td>Divers on fixed transects</td>
+<td>Hook and line, volunteer anglers</td>
+</tr>
+<tr class="even">
+<td>Catches</td>
+<td>Reef fish, invertebrates, algae</td>
+<td>Fish deeper than a transect reaches</td>
+</tr>
+<tr class="odd">
+<td>Sites</td>
+<td>Northern Channel Islands</td>
+<td>Protected areas and fished references</td>
+</tr>
+<tr class="even">
+<td>Handling Animals</td>
+<td>Counted, left alone</td>
+<td>Caught, measured, tagged, released</td>
+</tr>
+<tr class="odd">
+<td>My Part</td>
+<td>Diving, identification, boat work, data checks</td>
+<td>One cruise, tagging, otolith dissections</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cite-card">
+<p class="cite-label">
+Where this monitoring lands
+</p>
+<div class="cite-entry">
+<p class="cite-kind">
+Open dataset, contributed to
+</p>
+<p class="cite-body">
+Carr, M. H., J. E. Caselle, B. N. Tissot, D. J. Pondella, D. P. Malone, K. D. Koehn, J. T. Claisse, J. P. Williams, A. Parsons-Field and S. F. Craig. 2024. <em>Monitoring and Evaluation of Kelp Forest Ecosystems in the Marine Life Protection Act Marine Protected Area Network</em>. California Ocean Protection Council Data Repository, released under a Creative Commons Attribution license.
+</p>
+<p class="cite-links">
+<a class="cite-chip" href="https://obis.org/dataset/a6155d3d-48b8-4778-83aa-776b459a75d1" target="_blank" rel="noopener"><i class="bi bi-database" aria-hidden="true"></i>Browse the Dataset</a>
+</p>
+</div>
+<div class="cite-entry">
+<p class="cite-kind">
+What the record is used for
+</p>
+<p class="cite-body">
+Spiecker, B., M. H. Carr, D. P. Malone, A. Parsons-Field, K. D. Koehn, D. J. Pondella and J. E. Caselle. 2025. Measuring biological effectiveness across a very large, coherent network of coastal marine protected areas. <em>Ecological Applications</em>.
+</p>
+<p class="cite-links">
+<a class="cite-chip" href="https://doi.org/10.1002/eap.70074" target="_blank" rel="noopener"><i class="bi bi-journal-text" aria-hidden="true"></i>Read the Paper</a>
+</p>
+</div>
+</div>
+</section>
+<section id="quick-facts" class="level2">
+<h2 class="anchored" data-anchor-id="quick-facts">Quick Facts</h2>
+<ul>
+<li><strong>Role:</strong> Scientific Diver and Field Research Assistant, Caselle Lab, University of California, Santa Barbara</li>
+<li><strong>When:</strong> June 2024 to October 2024</li>
+<li><strong>Where:</strong> Northern Channel Islands, nearshore waters off the Santa Barbara coast, and the Caselle Lab</li>
+<li><strong>Skills:</strong> subtidal visual survey methods, fish and invertebrate identification, small boat operations, otolith dissection, data entry and quality control</li>
+<li><strong>Funding:</strong> student diver support under California Sea Grant project R/MPA-49A, <em>Monitoring and Evaluation of Kelp Forest Ecosystems in the Marine Life Protection Act Marine Protected Area Network</em>, funded by the California Ocean Protection Council<!-- CONFIRM: the project's 2024 reporting lists you under leveraged funds rather than direct Sea Grant dollars. If you know which leveraged source paid you (the campus Coastal Fund line supported student divers), name it here instead. --></li>
+<li><strong>Credits:</strong> listed among the students involved in the project’s 2024 reporting to California Sea Grant<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ul>
+</section>
+<section id="kelp-forest-surveys" class="level2">
+<h2 class="anchored" data-anchor-id="kelp-forest-surveys">Kelp Forest Surveys</h2>
+<p><strong>What the surveys are.</strong> Standardized transects repeated at fixed sites, year after year, by divers using identical methods. Four sampling methods run at each site, all of them visual and all of them on scuba: fish are counted along belt transects, while invertebrates and macroalgae are recorded on transects that overlap those but are laid out separately. Sites are surveyed annually in summer or early fall, typically two to four inside a given protected area and two to four outside it, which is what makes an inside and outside comparison possible at all.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>The value is entirely in the repetition. A single year’s numbers say very little, and two decades of them say how a reef is changing and whether a boundary on a map is making a difference.</p>
+<p><strong>My part.</strong> Diving the surveys and recording the data, with the identification work that goes with it, plus small boat operations and gear logistics for island trips. Back on land, data entry and the checking that follows, reconciling dive logs against sheets and validating species codes before anything reached a database.</p>
+<p><strong>The season, in numbers.</strong> Sixty eight scientific dives across twenty days in the water between June and October 2024, at twenty one sites spread over four islands and the Santa Barbara coast: Anacapa and Santa Cruz carried most of it, with shorter trips to Santa Rosa and San Miguel. Three or four dives a day was normal and five was the ceiling, at a median depth of ten meters and a median bottom time of forty four minutes, which comes to about forty nine hours underwater over the season.</p>
+<!-- ONE BLANK LEFT ON THIS PAGE.
+
+     PHOTOGRAPHS. This is the only project page with nothing but a hero,
+        and it is the one page where you already have the pictures: your own
+        photography section is full of kelp forest work. Three that would
+        carry this section are a diver on a transect tape, a fish count in
+        progress, and the boat or gear between dives. Copy them into
+        images/research/ and uncomment.
+
+<div class="figure-grid photo-grid">
+
+<figure>
+  <a href="images/research/pisco_transect.jpg" data-fancybox="kelp-figs">
+    <img src="images/research/pisco_transect.jpg" alt="Diver running a transect tape through a kelp forest">
+  </a>
+  <figcaption><span class="fig-label">The transect.</span> CAPTION</figcaption>
+</figure>
+
+<figure>
+  <a href="images/research/pisco_count.jpg" data-fancybox="kelp-figs">
+    <img src="images/research/pisco_count.jpg" alt="Diver counting fish along a belt transect">
+  </a>
+  <figcaption><span class="fig-label">Counting.</span> CAPTION</figcaption>
+</figure>
+
+</div>
+-->
+</section>
+<section id="nearshore-fisheries-monitoring" class="level2">
+<h2 class="anchored" data-anchor-id="nearshore-fisheries-monitoring">Nearshore Fisheries Monitoring</h2>
+<p>The California Collaborative Fisheries Research Program samples with hook and line rather than with divers, working from sportfishing vessels with volunteer anglers, and catches, measures and releases nearshore fish inside marine protected areas and at matched reference sites. It reaches fish and depths a diver transect does not, which is why the two programs sit next to each other here.</p>
+<p><strong>My part was small, and worth saying plainly.</strong> One survey cruise, and five to ten otolith dissections in the laboratory from fish collected on program trips. Otoliths are the ear stones that lay down growth rings, so a dissection turns a length measurement into an age, which is what a stock assessment needs and what a catch and release survey cannot get on its own.</p>
+</section>
+<section id="where-the-data-goes" class="level2">
+<h2 class="anchored" data-anchor-id="where-the-data-goes">Where the Data Goes</h2>
+<p>Both programs are long-term monitoring rather than discrete projects, and nothing collected on a survey day belongs to the diver who collected it. What happens to it instead is the point.</p>
+<p>Survey records are checked, standardized across the four institutions that dive this program, and published openly in the California Ocean Protection Council Data Repository, with a mirror in the Ocean Biodiversity Information System. Those records are what network-scale evaluations are built from, including a recent assessment of biological effectiveness across the whole 1,350 kilometer span of California’s marine protected area network. Both are linked at the top of this page. The reason a season of counting fish is worth doing is sitting at the far end of that chain.</p>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>Caselle Lab at the University of California, Santa Barbara, the Partnership for Interdisciplinary Studies of Coastal Oceans, the California Collaborative Fisheries Research Program and its volunteer anglers and boat captains, and Channel Islands staff for logistics and access.</p>
+<div class="gallery-footer">
+<p><a class="read-more" href="research.html">Back to Research</a> <a class="btn btn-primary" href="contact.html">Contact</a></p>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The Partnership for Interdisciplinary Studies of Coastal Oceans is a long-term kelp forest monitoring program administered from the University of California campuses at Santa Cruz and Santa Barbara, surveying rocky reefs across California since 1999 and focusing on marine protected areas since 2007. <a href="https://www.piscoweb.org/" class="uri">https://www.piscoweb.org/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The California Collaborative Fisheries Research Program is a community-based monitoring program run with volunteer anglers, boat captains and researchers at six California universities, including the University of California, Santa Barbara. It uses standardized hook and line surveys to catch, identify, measure, tag and release fish inside marine protected areas and at paired reference sites open to fishing. <a href="https://www.ccfrp.org/" class="uri">https://www.ccfrp.org/</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>California Sea Grant project R/MPA-49A, <em>Monitoring and Evaluation of Kelp Forest Ecosystems in the Marine Life Protection Act Marine Protected Area Network</em>, led by Mark Carr with the Santa Barbara component led by Jennifer Caselle. Project page: <a href="https://caseagrant.ucsd.edu/our-work/research-projects/monitoring-and-evaluation-kelp-forest-ecosystems-mlpa-marine-protected" class="uri">https://caseagrant.ucsd.edu/our-work/research-projects/monitoring-and-evaluation-kelp-forest-ecosystems-mlpa-marine-protected</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Survey design, sampling methods and timing as described in the metadata for the published dataset, cited in full at the top of this page. <a href="https://obis.org/dataset/a6155d3d-48b8-4778-83aa-776b459a75d1" class="uri">https://obis.org/dataset/a6155d3d-48b8-4778-83aa-776b459a75d1</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/jadenorli\.github\.io\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© 2026 Jaden Orli</div>   
+    <div class="nav-footer-right">Built with Quarto</div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="scripts/site.js"></script>
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -13,7 +13,7 @@ execute:
 
 <!-- Page banner with slideshow background -->
 <div class="page-banner" role="img" aria-label="Photography banner slideshow">
-  <div class="hero-slideshow" id="photo-hero">
+  <div class="hero-slideshow" id="photo-hero" data-delay="3500">
   
   <a href="images/banners/photography_1.jpg" data-fancybox="photo-hero" class="active">
     <img src="images/banners/photography_1.jpg" alt="School of Barracuda">
@@ -36,37 +36,16 @@ execute:
   <div class="page-banner-inner" markdown="1">
   
 # Photography {.page-banner-title}
-<p class="page-banner-subtitle">textures • motion • atmosphere</p>
+<p class="page-banner-subtitle">wildlife • portraits • microscopy</p>
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('photo-hero');
-  if (!el) return;
-
-  const slides = Array.from(el.querySelectorAll('a'));
-  let i = 0;
-
-  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
-  function next(){ i = (i + 1) % slides.length; show(i); }
-
-  // Start on first slide
-  show(0);
-
-  // Respect reduced motion
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;
-
-  // Auto-rotate
-  const delay = 3500; // ms per slide
-  let timer = setInterval(next, delay);
-
-  // Pause on hover so visitors can click/inspect
-  el.addEventListener('mouseenter', () => clearInterval(timer));
-  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
-});
-</script>
+<!-- REMOVED: the inline slideshow script block.
+     scripts/site.js initialises every .hero-slideshow on the site, so this
+     page-level copy was a second timer toggling the same "active" class as
+     site.js's. Two timers on one slideshow is why the fade advanced
+     unevenly, and the mouseenter pause only ever cleared one of them.
+     Per-slide speed is now carried by data-delay on the element itself. -->
 
 ```{r setup-utf8, include=FALSE}
 # Prefer a UTF-8 locale (silent if not available)
@@ -79,7 +58,6 @@ knitr::knit_hooks$set(output = function(x, options) {
   enc2utf8(x)
 })
 ```
-
 
 
 ```{r, results='asis'}
@@ -111,7 +89,7 @@ Marine Photography
 
 <div class="gallery-summary">
 <div class="gallery-blurb">
-I spend as much time as I can behind the lens underwater; it’s where I feel like the world slows down enough to really see the details. Light behaves differently in water: it bends around scales and cliffs, dissolves into plankton clouds, and pulls strong shapes into soft gradients. I try to capture wildlife in moments of motion or character, whether it’s a curious fish leaning into the dome port or a manta ray suspended in blue water. These places are both ecosystems and atmospheres: reefs become sculptures, schools of fish become choreography. Diving is part fieldwork, part art practice for me, and these images document the way ocean life feels when you’re inside it instead of looking at it.
+Most of this is from diving in the tropics: the Great Barrier Reef, Komodo, Raja Ampat, the Philippines, Thailand, Revillagigedo, and Protea Banks. I shoot both ends of the scale and not much in between. Wide for the animals that come to you, like grey reef sharks, oceanic mantas, humpbacks, and the occasional sand tiger cruising a wall. Macro for the ones that stay put, like leaf scorpionfish, ghost pipefish, mantis shrimp, and whatever is sitting in the sand pretending to be sand. The reef animals are usually easier subjects than the big ones, because they have already decided you are not worth reacting to, which means you can take your time and get the light right. The big animals give you one pass, maybe two, and you either had the camera ready or you did not.
 </div>
 
 <p class="gallery-summary-actions">
@@ -137,7 +115,7 @@ Terrestrial Photography
 
 <div class="gallery-summary">
 <div class="gallery-blurb">
-On land, my camera becomes a tool for noticing transitions. Capturing where wild spaces touch human ones, and where weather remakes a familiar place in minutes. I’m interested in atmosphere more than scenery: the weight of fog in a canyon, reflections in a window, tracks in sand that show where someone or something just was. The desert and coastline especially feel alive with geometry and story, and I love how light strips everything down to form. Many of these photos are from long hikes, research trips, or road-side pauses when the scene demanded to be documented. Rather than big vistas, I look for the textures and quiet arrangements that tell you what it was like to stand there.
+Two things dominate this gallery: African wildlife and European cities. The wildlife is mostly from Kenya and Botswana, in the Maasai Mara, Amboseli, and the Okavango Delta, where the work is largely about waiting and about light that only lasts twenty minutes at either end of the day. The cities are Venice, Cinque Terre, Budapest, Paris, and a long stretch of Switzerland, where I am usually photographing shape and weather rather than landmarks, and where the interesting frame is often the one behind you. The rest is Thailand, the Philippines, and a handful of days closer to home in California. Different subjects entirely, but the same instinct behind all of them, which is to photograph something in the moment before it rearranges itself into something ordinary.
 </div>
 
 <p class="gallery-summary-actions">
@@ -150,7 +128,11 @@ On land, my camera becomes a tool for noticing transitions. Capturing where wild
 
 
 <div class="gallery-section">
-<div class="gallery-mini-hero gallery-mini-hero--coral">
+<div class="gallery-mini-hero">
+<img class="gallery-mini-hero-video"
+     src="images/banners/portraits_1.jpg"
+     alt=""
+     decoding="async">
 <div class="gallery-mini-hero-overlay">
 <a class="gallery-mini-hero-title" href="photography-portraits.html">
 Portraits
@@ -160,7 +142,7 @@ Portraits
 
 <div class="gallery-summary">
 <div class="gallery-blurb">
-I take portraits mostly of friends, labmates, and people met outdoors, often in the middle of doing something that makes them feel like themselves. I love when a portrait captures a real exchange rather than a pose: laughter between waves, someone thinking through a task, a glance that says more than words. The environment becomes part of the portrait too—cliffs, boats, and labs all showing the context of who they are. These images are memories of shared moments as much as photographs. To me, portraits are tiny stories about connection, and I hope each one keeps a little of the energy from when it was made.
+A lot of this is graduation photos, taken around UCSB in May 2025 for friends who were finishing at the same time I was. Those are posed, and posed on purpose, because that is what the picture is for. The point was to make something people would actually want, in the places where they had spent four years. The rest of the gallery is looser: days out at Bishop, the Gaviota wind caves, the Douglas Family Preserve, Coal Oil Point, and a handful from Capri, Dubrovnik, Kaua'i, and the Okavango. The same faces turn up over and over across both kinds, which is the honest summary of who I was around. I am not a portrait photographer by training, but I keep taking them, and I am glad to have this many from a year when everyone was still in one place.
 </div>
 
 <p class="gallery-summary-actions">
@@ -185,7 +167,7 @@ Microscopy
 
 <div class="gallery-summary">
 <div class="gallery-blurb">
-Much of my scientific work involves organisms too small to see with the naked eye, parasites, larvae, and tiny crustaceans with entire worlds of structure hidden in their bodies. Through a microscope, biology becomes sculpture and pattern; a copepod’s limbs look like architecture and microbial textures can feel like distant landscapes. I enjoy capturing the points where science documentation slips into art, where the goal isn’t just to “show” a specimen, but to celebrate how bizarre and beautiful life really is. The microscope lets me explore new ways of seeing the animals I study every day, especially those that shape ecosystems from the shadows. These images blend research with curiosity, turning data into discovery.
+This is almost entirely nudibranchs and sea slugs, shot in Santa Barbara and Mo'orea. Opalescent nudibranchs, *Dendrodoris*, *Elysia*, blue ring sea hares, and a few things I am still not certain about. There are also fire worms, brooding anemones, *Cladonema* jellyfish, and the parasitic copepod I ended up describing in a paper. Under a scope these animals stop being specks and turn into something structured and frankly ridiculous. A nudibranch's cerata look engineered. A copepod that reads as an orange dot by eye has legs, eyespots, and egg sacs, and spends its whole adult life on a crab's eggs pretending to be one of them. Most of these were shot while I was supposed to be doing something else, which is usually when the good ones happen.
 </div>
 
 <p class="gallery-summary-actions">

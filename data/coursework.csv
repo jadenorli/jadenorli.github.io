@@ -1,0 +1,69 @@
+term,season,year,code,title,units,area,level,note
+Spring 2019,Spring,2019,AP Biology,Biology,0,advanced placement,pre-college,"Year-long class, exam scored 5"
+Spring 2019,Spring,2019,AP Calculus AB,Calculus AB,0,advanced placement,pre-college,"Year-long class, exam scored 5"
+Spring 2019,Spring,2019,AP English Language,English Language,0,advanced placement,pre-college,"Year-long class, exam scored 4"
+Spring 2019,Spring,2019,AP Physics 1,Physics 1,0,advanced placement,pre-college,"Year-long class, exam scored 4"
+Spring 2020,Spring,2020,AP Chemistry,Chemistry,0,advanced placement,pre-college,"Year-long class, exam scored 4"
+Spring 2020,Spring,2020,AP English Literature,English Literature,0,advanced placement,pre-college,"Year-long class, exam scored 4"
+Spring 2020,Spring,2020,AP Environmental Science,Environmental Science,0,advanced placement,pre-college,"Year-long class, exam scored 5"
+Spring 2020,Spring,2020,AP Physics 2,Physics 2,0,advanced placement,pre-college,"Year-long class, exam scored 4"
+Spring 2020,Spring,2020,AP Psychology,Psychology,0,advanced placement,pre-college,"Year-long class, exam scored 5"
+Spring 2020,Spring,2020,AP Statistics,Statistics,0,advanced placement,pre-college,"Year-long class, exam scored 5"
+Summer 2019,Summer,2019,INT 93P,Presentation Techniques in Research,4,general education,lower division,
+Summer 2019,Summer,2019,INT 93R,Introduction to Research Techniques,4,general education,lower division,
+Fall 2021,Fall,2021,BIOL CS 10,Biology Colloqium,2,marine and ecology,lower division,
+Fall 2021,Fall,2021,BIOL CS 12,CCS Introduction to Biology 1,1,marine and ecology,lower division,
+Fall 2021,Fall,2021,CHEM 1A,General Chemistry 1,3,chemistry and molecular,lower division,
+Fall 2021,Fall,2021,CHEM 1AL,General Chemistry 1 Lab,2,chemistry and molecular,lower division,
+Fall 2021,Fall,2021,EARTH 4,Introduction to Oceanography,4,marine and ecology,lower division,
+Fall 2021,Fall,2021,EEMB 190,EEMB Colloqium,1,marine and ecology,upper division,
+Fall 2021,Fall,2021,EEMB 194T,Parasitology (Kuris Lab Meeting),2,marine and ecology,upper division,
+Fall 2021,Fall,2021,MCDB 1A,Introduction to Biology 1,4,chemistry and molecular,lower division,
+Winter 2022,Winter,2022,BIOL CS 20,CCS Introduction to Biology 2,5,marine and ecology,lower division,
+Winter 2022,Winter,2022,CHEM 1B,General Chemistry 2,3,chemistry and molecular,lower division,
+Winter 2022,Winter,2022,CHEM 1BL,General Chemistry 2 Lab,2,chemistry and molecular,lower division,
+Winter 2022,Winter,2022,EEMB W 146,Biometry,4,quantitative and spatial,upper division,
+Winter 2022,Winter,2022,EEMB 194T,Parasitology (Kuris Lab Meeting),2,marine and ecology,upper division,
+Spring 2022,Spring,2022,BIOL CS 30,CCS Introduction to Biology 3,5,marine and ecology,lower division,
+Spring 2022,Spring,2022,CH ST 1B,Introduction to Chicano/a Studies,4,general education,lower division,
+Spring 2022,Spring,2022,CHEM 1C,General Chemistry 3,3,chemistry and molecular,lower division,
+Spring 2022,Spring,2022,CHEM 1CL,General Chemistry 3 Lab,2,chemistry and molecular,lower division,
+Spring 2022,Spring,2022,EEMB 199,Independent Studies (Kuris Lab),2,independent research,upper division,Third quarter in the Kuris Lab
+Spring 2022,Spring,2022,EEMB 198,Independent Studies (Kuris Lab),2,independent research,upper division,
+Fall 2022,Fall,2022,CHEM 109A,Organic Chemistry 1,4,chemistry and molecular,upper division,
+Fall 2022,Fall,2022,EEMB 179,Ecological Modeling,4,quantitative and spatial,upper division,
+Fall 2022,Fall,2022,MCDB 101A,Molecular Genetics 1,4,chemistry and molecular,upper division,
+Fall 2022,Fall,2022,EEMB 199,Independent Studies (Kuris Lab),4,independent research,upper division,
+Winter 2023,Winter,2023,EEMB 142B,Proecesses in Oceans,4,marine and ecology,upper division,
+Winter 2023,Winter,2023,EEMB 247,Quantitative Methods in Biology,3,quantitative and spatial,graduate,
+Winter 2023,Winter,2023,EEMB 595R,R Seminar,2,marine and ecology,graduate,
+Winter 2023,Winter,2023,EEMB 199,Independent Studies (Kuris Lab),2,independent research,upper division,
+Spring 2023,Spring,2023,MATH 3B,Calculus 2,4,quantitative and spatial,lower division,
+Spring 2023,Spring,2023,MCDB 110,Principles of Biochemistry,4,chemistry and molecular,upper division,
+Spring 2023,Spring,2023,EARTH 182B,Marine Biogeochemistry,4,marine and ecology,upper division,The course behind the Earth 182B Group authorship on Wu et al. 2025
+Spring 2023,Spring,2023,EARTH 199,Independent Studies (Valentine Lab),2,independent research,upper division,
+Spring 2023,Spring,2023,EEMB 199,Independent Studies (Kuris Lab),2,independent research,upper division,
+Spring 2023,Spring,2023,EEMB 595T,Parasitology (Kuris Lab Meeting),3,marine and ecology,graduate,
+Fall 2023,Fall,2023,ANTH EAP 105,Culinary History of Italy,5,study abroad,upper division,
+Fall 2023,Fall,2023,ARTH EAP 113,Genius Renaissance Art,5,study abroad,upper division,
+Fall 2023,Fall,2023,COMM EAP 104,Made in Italy,5,study abroad,upper division,
+Fall 2023,Fall,2023,ITAL EAP 55,Exploring Florence,6,study abroad,lower division,
+Winter 2024,Winter,2024,BIOL CS 101,Model and Experiments (CCS Grad),2,marine and ecology,upper division,
+Winter 2024,Winter,2024,EEMB 150A,Microbial Diversity 1,4,marine and ecology,upper division,
+Winter 2024,Winter,2024,EEMB 242,Marine Ecology and Conservation,4,marine and ecology,graduate,
+Winter 2024,Winter,2024,MATH 4A,Linear Algebra,4,quantitative and spatial,lower division,
+Winter 2024,Winter,2024,EEMB 194R,R Seminar,2,marine and ecology,upper division,
+Winter 2024,Winter,2024,EEMB 183,Teaching Assistance (EEMB 179 LA),2,marine and ecology,upper division,Taught the course I had taken in Fall 2022
+Winter 2024,Winter,2024,EEMB 199,Independent Studies (Kuris Lab),2,independent research,upper division,
+Spring 2024,Spring,2024,PHIL 4,Introduction to Ethics,4,general education,lower division,
+Spring 2024,Spring,2024,EEMB 192,Special Topics (bioinformatics),2,marine and ecology,upper division,
+Spring 2024,Spring,2024,EARTH 199,Independent Studies (Valentine Lab),2,independent research,upper division,
+Summer 2024,Summer,2024,COMM W 146,Understanding and Detecting Human Deception,4,general education,upper division,
+Summer 2024,Summer,2024,HIST W 2A,World History,5,general education,lower division,
+Fall 2024,Fall,2024,EEMB 106,Biology of Fishes,4,marine and ecology,upper division,
+Fall 2024,Fall,2024,EEMB 194TE,Theoretical Ecology and Evolution,2,marine and ecology,upper division,
+Fall 2024,Fall,2024,EDS 223,Geospatial Analysis and Remote Sensing,4,quantitative and spatial,graduate,
+Winter 2025,Winter,2025,ESM 263,Geographic Information Systems,4,quantitative and spatial,graduate,
+Winter 2025,Winter,2025,ESM 260,Applied Marine Ecology,4,marine and ecology,graduate,
+Spring 2025,Spring,2025,ESM 232,Environmental Modeling,4,quantitative and spatial,graduate,
+Spring 2025,Spring,2025,ESM 441,Environmental Media Production,3,marine and ecology,graduate,

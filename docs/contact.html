@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -60,10 +59,17 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Contact">
+<meta property="og:description" content="I am always glad to talk science, collaboration, photography, or fieldwork. If any of it overlaps with what you are working on, send me a note.">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="Contact">
+<meta name="twitter:description" content="I am always glad to talk science, collaboration, photography, or fieldwork. If any of it overlaps with what you are working on, send me a note.">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -135,90 +141,106 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<!-- Banner with slideshow background -->
 <div class="page-banner" role="img" aria-label="Contact banner slideshow">
 <div id="contact-hero" class="hero-slideshow">
-<a href="images/banners/contact_1.jpg" data-fancybox="contact-hero" class="active"> <img src="images/banners/contact_1.jpg" alt="Safari"> </a> <a href="images/banners/contact_2.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_2.jpg" alt="Wilmington"> </a> <a href="images/banners/contact_3.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_3.jpg" alt="Graduation"> </a> <a href="images/banners/contact_4.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_4.jpg" alt="Videography"> </a> <a href="images/banners/contact_5.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_5.jpg" alt="Boat time"> </a>
+<p><a href="images/banners/contact_1.jpg" data-fancybox="contact-hero" class="active"> <img src="images/banners/contact_1.jpg" alt="Safari"> </a> <a href="images/banners/contact_2.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_2.jpg" alt="Wilmington"> </a> <a href="images/banners/contact_3.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_3.jpg" alt="Graduation"> </a> <a href="images/banners/contact_4.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_4.jpg" alt="Videography"> </a> <a href="images/banners/contact_5.jpg" data-fancybox="contact-hero"> <img src="images/banners/contact_5.jpg" alt="Boat time"> </a></p>
 </div>
 <div class="page-banner-overlay">
 
 </div>
-<section id="contact" class="level1 page-banner-title page-banner-inner" data-markdown="1">
-<h1 class="page-banner-title">Contact</h1>
+<div class="page-banner-inner">
+<h1 class="page-banner-title">
+Contact
+</h1>
 <p class="page-banner-subtitle">
 get in touch • collaborate • say hello
 </p>
-</section>
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('contact-hero');
-  if (!el) return;
-  const slides = Array.from(el.querySelectorAll('a'));
-  let i = 0;
-  function show(n) {
-    slides.forEach((s, idx) => s.classList.toggle('active', idx === n));
-  }
-  show(0);
-  const delay = 3500;
-  let timer = setInterval(next, delay);
-  function next() { i = (i + 1) % slides.length; show(i); }
-  el.addEventListener('mouseenter', () => clearInterval(timer));
-  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
-});
-</script>
-<!-- Intro line -->
+</div>
 <p class="contact-intro">
-I’m always happy to talk science, collaboration, photography, or fieldwork — don’t hesitate to reach out.
+I am always glad to talk science, collaboration, photography, or fieldwork. If any of it overlaps with what you are working on, send me a note.
 </p>
-<!-- Contact panel -->
 <div id="contact" class="section-band">
 <section id="reach-me" class="level2 band-inner">
 <h2 class="anchored" data-anchor-id="reach-me">Reach Me</h2>
-<div class="stacked-cards">
-<div class="card" role="region" aria-labelledby="contact-direct-title">
+<div class="grid grid-two">
+<div class="card contact-primary" role="region" aria-labelledby="contact-direct-title">
 <h3 id="contact-direct-title" class="anchored">
-Direct
+Email
 </h3>
-<ul class="contact-list">
+<a class="contact-email" href="mailto:jadenorli@gmail.com">jadenorli@gmail.com</a>
+<p class="contact-actions">
+<a class="btn btn-primary" href="mailto:jadenorli@gmail.com">Start an email</a>
+</p>
+<ul class="contact-meta">
 <li>
-<strong>Email:</strong> <a href="mailto:jadenorli@gmail.com">jadenorli@gmail.com</a>
+Staff Research Associate, Ocean Recoveries Lab
 </li>
 <li>
-<strong>Phone:</strong> <a href="tel:+3368290234">(336) 829-0234</a>
+Marine Science Institute, University of California, Santa Barbara
+</li>
+<li>
+Santa Barbara, California, and often along the California coast
 </li>
 </ul>
-<details class="details-panel">
-<summary>
-Mailing
-</summary>
-<div class="detail-stack">
-<div class="detail-block" data-markdown="1">
-<strong>Location</strong><br>
-Santa Barbara, CA (often traveling along the California coast)
 </div>
-<div class="detail-block" data-markdown="1">
-<strong>Affiliation</strong><br>
-UCSB · College of Creative Studies (Biology) · Marine Science Institute
-</div>
-</div>
-</details>
-</div>
-<div class="card" role="region" aria-labelledby="contact-links-title">
+<div class="card contact-elsewhere" role="region" aria-labelledby="contact-links-title">
 <h3 id="contact-links-title" class="anchored">
-Links
+Elsewhere
 </h3>
-<p class="links">
-<a class="read-more" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener">LinkedIn</a> <a class="read-more" href="https://github.com/jadenorli" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a> <a class="read-more" href="files/jaden_2026_resume.pdf" target="_blank" rel="noopener" aria-label="Resume PDF">Resume (PDF)</a>
+<ul class="link-rows">
+<li>
+<a class="link-row" href="https://www.linkedin.com/in/jadenorli" target="_blank" rel="noopener"> <i class="bi bi-linkedin" aria-hidden="true"></i> <span class="link-row-text"> <span class="link-row-name">LinkedIn</span> <span class="link-row-what">Background and current position</span> </span> </a>
+</li>
+<li>
+<a class="link-row" href="https://github.com/jadenorli" target="_blank" rel="noopener"> <i class="bi bi-github" aria-hidden="true"></i> <span class="link-row-text"> <span class="link-row-name">GitHub</span> <span class="link-row-what">Code for my analyses and for this site</span> </span> </a>
+</li>
+<li>
+<a class="link-row" href="https://instagram.com/jadenorli" target="_blank" rel="noopener"> <i class="bi bi-instagram" aria-hidden="true"></i> <span class="link-row-text"> <span class="link-row-name">Instagram</span> <span class="link-row-what">Underwater and field photography</span> </span> </a>
+</li>
+<li>
+<a class="link-row" href="files/jaden_2026_resume.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> <span class="link-row-text"> <span class="link-row-name">Resume</span> <span class="link-row-what">Full record of positions and publications, PDF</span> </span> </a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div class="contact-topics" role="region" aria-labelledby="contact-topics-title">
+<div class="accent-bar">
+
+</div>
+<div class="cta-block">
+<h3 id="contact-topics-title" class="anchored">
+What to Reach Out About
+</h3>
+<div class="cta-grid">
+<div class="cta-card">
+<h4 class="anchored">
+Research and Data
+</h4>
+<p>
+Collaborations, analyses, and requests for data or code
+</p>
+</div>
+<div class="cta-card">
+<h4 class="anchored">
+Photography and Video
+</h4>
+<p>
+Licensing, prints, and commissioned field imagery
+</p>
+</div>
+<div class="cta-card">
+<h4 class="anchored">
+Fieldwork and Diving
+</h4>
+<p>
+Scientific diving, survey work, and student questions
 </p>
 </div>
 </div>
-<!-- /.stacked-cards -->
-</section>
 </div>
-<!-- CTA coral banner -->
-<div class="coral-banner" role="region" aria-label="Quick actions">
-<p>Prefer email? Click to start a message: <a class="btn btn-primary" href="mailto:jadenorli@gmail.com" style="margin-left:.5rem">Email Me</a></p>
 </div>
 
 
@@ -379,11 +401,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
-  });
-</script>
+<script src="scripts/site.js"></script>
 
 
 

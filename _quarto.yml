@@ -1,25 +1,42 @@
+# =============================================================================
+# _quarto.yml: the single configuration file for the whole website
+#
+# Anything set here applies to EVERY page, unless that page's own YAML header
+# (the block between --- lines at the top of a .qmd) overrides it.
+#
+# The three companion files this one points at:
+#   styles.css - every visual rule on the site, in numbered sections
+#   scripts/site.js - every behavior: lightboxes, slideshows, footnote band
+#   scripts/ - R scripts that generate page content before a render
+#
+# Rendering writes into docs/, which is what GitHub Pages serves. 
+# Nothing in docs/ should ever be edited by hand: the next render overwrites it.
+# =============================================================================
+
 project:
   type: website
-  output-dir: docs 
+  output-dir: docs #rendered .html files and copied assets are written into docs/; GitHub Pages is set to serve from docs/, so this folder IS the live site
 resources:
-  - images/**
-  - artwork/**
-  - videos/**
-  - files/**
-  - fancybox/**
-  - lightbox/**
+  - images/** #photographs, banners, logos, research figures, and share card
+  - artwork/** #painting scans used by art.qmd and research.qmd
+  - videos/** #banner loops and the nicothoid microscopy clips
+  - files/**  #resume, publication PDFs, and the SONGS annual report
+  - scripts/site.js #the shared JavaScript, injected below by include-after-body
+  - embeds/** #standalone HTML embedded in pages by iframe
+ 
 website:
-  title: "jadenorli"
-  description: "marine ecology • fisheries • spatial modeling • photography"
+  title: "jadenorli" #site name
+  description: "marine ecologist, scientific diver, and nature photographer"
   site-url: "https://jadenorli.github.io/"
   favicon: images/jaden_icon_light.png
   navbar:
-    background: light
-    logo: images/jaden_icon_dark.png
-    title: false
-    left:
-      - text: "About"
-        href: about.qmd
+    background: light #bootstrap navbar color scheme
+    pinned: true #always keep the navbar visible while scrolling
+    logo: images/jaden_icon_dark.png #image shown at the far left of the navbar; clicking it goes to index.html
+    title: false #suppress the text site title in the navbar so only the logo shows
+    left: #links on the left side of the navbar, in order
+      - text: "About"      
+        href: about.qmd        
       - text: "Research"
         href: research.qmd
       - text: "Photography"
@@ -28,7 +45,7 @@ website:
         href: art.qmd
       - text: "Contact"
         href: contact.qmd
-    right:
+    right: #icon-only links on the right side of the navbar
       - icon: linkedin
         href: https://www.linkedin.com/in/jadenorli
       - icon: github
@@ -36,31 +53,35 @@ website:
       - icon: instagram
         href: https://instagram.com/jadenorli
   page-footer:
-    left: "© 2026 Jaden Orli"
-    right: "Built with Quarto"
+    left: "© 2026 Jaden Orli" #bottom-left text on every page
+    right: "Built with Quarto" #bottom-right text on every page
+
+
+# -----------------------------------------------------------------------------
+# FORMAT: default rendering options for every HTML page
+# -----------------------------------------------------------------------------
 format:
   html:
     theme: default
-    css: styles.css
-    toc: true
-    toc-location: right
+    css: styles.css #the site's one global stylesheet, loaded on every page
+    toc: false
+    toc-location: right #when a page DOES turn the TOC on, put it in the right margin (styles.css section 13 makes it sticky)
     smooth-scroll: true
-    link-external-newwindow: true
+    link-external-newwindow: true #markdown links to other domains open in a new tab
     page-layout: full
-    code-copy: true
-    anchor-sections: true
-    grid:
-      body-width: 1000px
-      sidebar-width: 0px
-      margin-width: 0px
-    include-in-header:
+    anchor-sections: true #adds a small link icon on hover next to every heading so a section can be linked to directly
+    open-graph: true
+    twitter-card:
+      card-style: summary_large_image #the full-width image card, not the thumbnail
+    image: images/og-cover.jpg
+    grid: #Quarto's 3-column page grid (sidebar | body | margin)
+      body-width: 1000px #main content column max width
+      sidebar-width: 0px #no left sidebar anywhere on the site
+      margin-width: 0px #no right margin column
+      include-in-header:
       text: |
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     include-after-body:
       text: |
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
-          });
-        </script>
+        <script src="scripts/site.js"></script>

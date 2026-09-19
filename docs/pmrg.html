@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jadenorli - Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach</title>
+<title>Pacific Manta Research Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -60,10 +59,17 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Pacific Manta Research Group">
+<meta property="og:description" content="Every oceanic manta carries a pattern of spots on its underside, and that pattern does not change over the animal’s life.">
+<meta property="og:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta property="og:site-name" content="jadenorli">
+<meta name="twitter:title" content="Pacific Manta Research Group">
+<meta name="twitter:description" content="Every oceanic manta carries a pattern of spots on its underside, and that pattern does not change over the animal’s life.">
+<meta name="twitter:image" content="https://jadenorli.github.io/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -137,11 +143,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link" data-scroll-target="#quick-facts">Quick Facts</a></li>
   <li><a href="#background-and-questions" id="toc-background-and-questions" class="nav-link" data-scroll-target="#background-and-questions">Background and Questions</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#results-preview" id="toc-results-preview" class="nav-link" data-scroll-target="#results-preview">Results (preview)</a></li>
-  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">How to Contribute</a></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#what-makes-a-photograph-usable" id="toc-what-makes-a-photograph-usable" class="nav-link" data-scroll-target="#what-makes-a-photograph-usable">What Makes a Photograph Usable</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
   </ul>
 </nav>
     </div>
@@ -150,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pacific Manta Research Group — Citizen-Science Photo-ID and Outreach</h1>
+<h1 class="title">Pacific Manta Research Group: Citizen Science Photo Identification and Outreach</h1>
 </div>
 
 
@@ -165,88 +169,105 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- Hero slideshow (sitewide styles already in style.css) -->
-<div id="pmrg-hero" class="hero-slideshow" aria-label="PMRG manta slideshow">
-<p><a href="../../images/research/pmrg_1.jpg" data-fancybox="pmrg-hero" class="active"> <img src="../../images/research/pmrg_1.jpg" alt="Oceanic manta underside — photo-ID view"> </a> <a href="../../images/research/pmrg_2.jpg" data-fancybox="pmrg-hero"> <img src="../../images/research/pmrg_2.jpg" alt="Revillagigedo Archipelago dive site"> </a> <a href="../../images/research/pmrg_3.jpg" data-fancybox="pmrg-hero"> <img src="../../images/research/pmrg_3.jpg" alt="Photo-ID guidance &amp; site materials"> </a> <a href="../../images/research/pmrg_4.jpg" data-fancybox="pmrg-hero"> <img src="../../images/research/pmrg_4.jpg" alt="Contributor materials and submission flow"> </a></p>
+<!-- Hero slideshow. Styles from section 17 of styles.css, timer from
+     scripts/site.js, which initialises every .hero-slideshow on the site.
+     Per-slide speed is carried by data-delay on the element itself. -->
+<div id="pmrg-hero" class="hero-slideshow" data-delay="3200" aria-label="Pacific Manta Research Group manta slideshow">
+<p><a href="images/research/pmrg_1.jpg" data-fancybox="pmrg-hero" class="active"> <img src="images/research/pmrg_1.jpg" alt="Oceanic manta underside, the view used for photo identification"> </a> <a href="images/research/pmrg_2.jpg" data-fancybox="pmrg-hero"> <img src="images/research/pmrg_2.jpg" alt="Revillagigedo Archipelago dive site"> </a> <a href="images/research/pmrg_3.jpg" data-fancybox="pmrg-hero"> <img src="images/research/pmrg_3.jpg" alt="Photo identification guidance and site materials"> </a> <a href="images/research/pmrg_4.jpg" data-fancybox="pmrg-hero"> <img src="images/research/pmrg_4.jpg" alt="Contributor materials and submission flow"> </a></p>
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('pmrg-hero');
-  if (!el) return;
-  const slides = Array.from(el.querySelectorAll('a'));
-  let i = 0;
-  function show(n){ slides.forEach((s, idx) => s.classList.toggle('active', idx === n)); }
-  function next(){ i = (i + 1) % slides.length; show(i); }
-  show(0);
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;
-  const delay = 3200;
-  let timer = setInterval(next, delay);
-  el.addEventListener('mouseenter', () => clearInterval(timer));
-  el.addEventListener('mouseleave', () => { timer = setInterval(next, delay); });
-});
-</script>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>The Pacific Manta Research Group (PMRG) studies <strong>oceanic mantas of the Eastern Pacific</strong>, with a focus on the <strong>Revillagigedo Archipelago</strong> and collaborations in the <strong>Gulf of California</strong> and <strong>Bahía de Banderas</strong>. The program blends <strong>citizen-science photo submissions</strong> with researcher-led tagging and field work to track individuals, demography, movement, and injury/scar histories.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>I contribute on the <strong>communication and tooling</strong> side—helping design the <strong>public website</strong> and <strong>photo-ID submission pathway</strong> so divers can send usable ventral-ID images with consistent metadata (date, site, photographer).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Every oceanic manta carries a pattern of spots on its underside, and that pattern does not change over the animal’s life. Photograph it well enough and you have identified an individual, not a species: the same animal can be recognized years later, at another site, by another diver who has never seen it before.</p>
+<p>That turns every diver with a camera into a potential data point. The Pacific Manta Research Group studies oceanic mantas of the Eastern Pacific, focused on the Revillagigedo Archipelago with collaborations in the Gulf of California and Bahía de Banderas, and it combines images submitted by divers with researcher-led tagging and field work to follow individuals, demography, movement and injury histories.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The catch is that most photographs are not usable. A picture that shows the animal but not its underside, or shows the underside at an angle, or arrives with no date or site attached, cannot enter a catalog. My work was on that gap: the public website and the submission pathway, so that what a diver sends is something the catalog can actually accept.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<div class="cite-card">
+<p class="cite-label">
+The Program
+</p>
+<div class="cite-entry">
+<p class="cite-kind">
+Have photographs to send?
+</p>
+<p class="cite-body">
+Submissions from divers are the bulk of what the catalog is built from. The guidance page carries the folder and filename conventions, the contributor agreement and the upload options.
+</p>
+<p class="cite-links">
+<a class="cite-chip" href="https://pacificmantaresearchgroup.org/submit-photos/" target="_blank" rel="noopener"><i class="bi bi-camera" aria-hidden="true"></i>Submit Photos</a> <a class="cite-chip" href="https://pacificmantaresearchgroup.org/about/" target="_blank" rel="noopener"><i class="bi bi-info-circle" aria-hidden="true"></i>About the Program</a>
+</p>
+</div>
+</div>
 </section>
 <section id="quick-facts" class="level2">
 <h2 class="anchored" data-anchor-id="quick-facts">Quick Facts</h2>
 <ul>
-<li><strong>Role:</strong> Web/UX &amp; photo-ID support (PMRG)<br>
-</li>
-<li><strong>When:</strong> 2021 – 2024<br>
-</li>
-<li><strong>Skills:</strong> content design, contributor guides, photo-ID catalog support, metadata standards, outreach</li>
+<li><strong>Role:</strong> Website and photo identification support, Pacific Manta Research Group</li>
+<li><strong>When:</strong> 2021 to 2024</li>
+<li><strong>Where:</strong> Revillagigedo Archipelago, with collaborations in the Gulf of California and Bahía de Banderas</li>
+<li><strong>Skills:</strong> content design, contributor guides, photo identification catalog support, metadata standards, outreach</li>
 </ul>
 </section>
 <section id="background-and-questions" class="level2">
 <h2 class="anchored" data-anchor-id="background-and-questions">Background and Questions</h2>
 <ul>
-<li>How can we <strong>scale high-quality, diver-submitted images</strong> into an ID catalog with reliable <strong>individual re-sighting</strong>?<br>
-</li>
-<li>Which <strong>regions and seasons</strong> yield most re-sightings around Revillagigedo, and what can <strong>injury/scar</strong> records tell us about threats?</li>
+<li>How can high quality, diver-submitted images be scaled into a catalog that supports reliable re-sighting of individual animals?</li>
+<li>Which regions and seasons yield the most re-sightings around Revillagigedo, and what can injury and scar records say about the threats those animals face?</li>
 </ul>
 </section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<ul>
-<li><strong>Photo-ID pipeline:</strong> contributor instructions that prioritize <strong>ventral markings</strong>, pelvic fins (sexing), and high-contrast exposure; support for <strong>small-batch forms</strong> and <strong>bulk transfers</strong> with folder/filename conventions.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><br>
-</li>
-<li><strong>Data hygiene:</strong> enforce <strong>date/time/location</strong> metadata; avoid on-image timestamps; retain EXIF when possible.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><br>
-</li>
-<li><strong>Outreach materials:</strong> boat-friendly Photo-ID guidance, FAQ, and visual examples to reduce unusable submissions.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
-</ul>
+<section id="what-makes-a-photograph-usable" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-a-photograph-usable">What Makes a Photograph Usable</h2>
+<p>The whole pipeline rests on one thing: whether an image can be matched against a catalog. Four requirements do most of the work, and each one fails in a predictable way.</p>
+<div class="table-card">
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requirement</th>
+<th>Why it matters</th>
+<th>How it usually fails</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The underside, square on</td>
+<td>The spot pattern is the identity</td>
+<td>Shot from the side or above, so the pattern is foreshortened</td>
+</tr>
+<tr class="even">
+<td>Pelvic fins in frame</td>
+<td>They give the animal’s sex</td>
+<td>Cropped out to fill the frame with the body</td>
+</tr>
+<tr class="odd">
+<td>Contrast on the pattern</td>
+<td>A matcher has to see spot edges</td>
+<td>Backlit, or a black morph shot without flash</td>
+</tr>
+<tr class="even">
+<td>Date, site and photographer</td>
+<td>An image without them is a picture, not a record</td>
+<td>No metadata, or a timestamp burned into the image itself</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Where the guidance lives.</strong> Contributor instructions are written to be read on a boat, not at a desk: the shot to aim for, worked visual examples of good and unusable frames, and a questions page for everything else. Submissions come in by small batch form or bulk transfer, with set folder and filename conventions so an image arrives already labeled.</p>
+<p><strong>Data hygiene.</strong> Date, time and location are required. Timestamps burned into the image are discouraged, because they sit on top of the animal and cannot be corrected later, while the camera’s embedded metadata is retained wherever possible and carries the same information without damaging the photograph.</p>
+<p><strong>Black morphs need flash.</strong> A dark animal photographed on available light comes back as a silhouette, and a silhouette has no spot pattern. Close range with flash is the difference between a record and a nice picture. Video helps too: a turning animal that never presents its underside squarely in a still can often be reconstructed from a few frames.</p>
 </section>
-<section id="results-preview" class="level2">
-<h2 class="anchored" data-anchor-id="results-preview">Results (preview)</h2>
-<ul>
-<li>Increased intake of <strong>ID-quality ventral images</strong> and cleaner <strong>metadata</strong> across recent trips.<br>
-</li>
-<li>Building re-sighting threads and injury notes for individuals as catalog grows (summaries forthcoming).</li>
-</ul>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p>This was contribution to a long-running program rather than a project of mine, and the catalog, the re-sighting histories and anything drawn from them belong to the Pacific Manta Research Group. Both links above go to the live pages.</p>
 </section>
-<section id="how-to-contribute" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-contribute">How to Contribute</h2>
-<ul>
-<li><strong>Submit your Photos:</strong> follow the folder/filename pattern and send via the form or transfer service.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a><br>
-</li>
-<li>Ideal shots: <strong>clear ventral side</strong>, include <strong>pelvic fins</strong>; use <strong>flash/close-range</strong> for black morphs; video can help stitch turning sequences.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></li>
-</ul>
-</section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<ul>
-<li><strong>About PMRG</strong> — mission, regions, and team.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a><br>
-</li>
-<li><strong>Submit Photos</strong> — step-by-step instructions, agreement, and upload options.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
-</ul>
-</section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>PMRG team &amp; collaborators; participating dive boats and photographers who contribute critical images.</p>
-<hr>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>The Pacific Manta Research Group team and its collaborators, and the participating dive boats and photographers whose images the catalog is built from.</p>
+<div class="gallery-footer">
+<p><a class="read-more" href="research.html">Back to Research</a> <a class="btn btn-primary" href="contact.html">Contact</a></p>
+</div>
 
 
 </section>
@@ -255,15 +276,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Pacific Manta Research Group — <em>About</em>. <a href="https://pacificmantaresearchgroup.org/about/" class="uri">https://pacificmantaresearchgroup.org/about/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Pacific Manta Research Group — <em>About</em>. <a href="https://pacificmantaresearchgroup.org/about/" class="uri">https://pacificmantaresearchgroup.org/about/</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Pacific Manta Research Group — <em>About</em>. <a href="https://pacificmantaresearchgroup.org/about/" class="uri">https://pacificmantaresearchgroup.org/about/</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Pacific Manta Research Group — <em>Submit Photos</em> (contributor guidance, metadata, upload options). <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Pacific Manta Research Group, <em>About</em>. <a href="https://pacificmantaresearchgroup.org/about/" class="uri">https://pacificmantaresearchgroup.org/about/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Pacific Manta Research Group, <em>Submit Photos</em>: contributor guidance, metadata and upload options. <a href="https://pacificmantaresearchgroup.org/submit-photos/" class="uri">https://pacificmantaresearchgroup.org/submit-photos/</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -421,11 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.Fancybox) Fancybox.bind("[data-fancybox]", {});
-  });
-</script>
+<script src="scripts/site.js"></script>
 
 
 

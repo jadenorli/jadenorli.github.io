@@ -1,11 +1,6 @@
 ---
 title: ""
 pagetitle: "About"
-page-classes: hide-title
-format:
-  html:
-    page-layout: full
-    toc: false
 ---
 
 <div class="page-banner" role="img" aria-label="Underwater banner video">
@@ -19,9 +14,9 @@ format:
   </div>
 </div>
 
-I’m **Jaden Orli**, a marine ecologist from **UCSB’s College of Creative Studies (Biology)**. I work at the seam of **field programs**, **population models**, and **public-facing communication** so decisions land with both **policymakers and communities**.
+I’m **Jaden Orli**, a marine ecologist trained in biology at the **College of Creative Studies, University of California, Santa Barbara**. I work where **field programs**, **population models**, and **public-facing communication** meet, so that decisions land with both **policymakers and communities**.
 
-<div class="section-band section-professional" id="professional">
+<div class="section-band" id="professional">
   <div class="band-inner">
 
 ## Professional
@@ -31,84 +26,76 @@ I’m **Jaden Orli**, a marine ecologist from **UCSB’s College of Creative Stu
 ::: {.card}
 ### Fieldwork
 <div class="metrics">
-  <span class="pill">~400 dives</span>
-  <span class="pill">~100 scientific</span>
-  <span class="pill">AAUS 60 ft</span>
+  <span class="pill">~ 450 Dives</span>
+  <span class="pill">~ 100 Scientific</span>
+  <span class="pill">Certified to 60 Feet</span>
   <span class="pill">Seine Surveys</span>
-  <span class="pill">Small-boat ops</span>
+  <span class="pill">Small-Boat Operations</span>
 </div>
 
-AAUS scientific diver in **kelp forests**; in **salt marsh** I lead/assist **seining and trap-based surveys**. Comfortable with tide windows, low-viz, and team logistics.
+I dive kelp forests as a scientific diver certified by the **American Academy of Underwater Sciences (AAUS)**, and in **salt marsh** I lead and assist **seining and trap-based surveys**. I’m comfortable with tide windows, low visibility, and team logistics.
 
 <details class="details-panel" markdown="1">
 <summary>More Field Details</summary>
 
 <div class="detail-stack">
 
-<div class="detail-block detail-accent" markdown="1">
-#### Current Program
-**SONGS Mitigation Monitoring Program** *(Lab Technician, 2025 – present)*  
-Intensive salt-marsh surveys for **fish and invertebrates** using **seines/traps**; careful **QA/QC** in the lab; gear maintenance and field safety; coordination with project scientists on long-term restoration monitoring.
+<div class="detail-block" markdown="1">
+#### Recent Program
+**San Onofre Nuclear Generating Station Mitigation Monitoring Program** *(Laboratory Technician, 2025 to 2026)*  
+Intensive salt-marsh surveys for **fish and invertebrates** using **seines and traps**, careful **quality assurance and quality control** in the laboratory, gear maintenance and field safety, and coordination with project scientists on long-term restoration monitoring.
 </div>
 
 <div class="detail-block" markdown="1">
 #### Rocky Intertidal
-**Kuris Lab and National Park Service (NPS):** transect surveys; species ID; tide-window planning; data entry and QA.
+**Kuris Lab and the National Park Service:** transect surveys, species identification, tide-window planning, and data entry with quality assurance.
 </div>
 
 <div class="detail-block" markdown="1">
 #### Kelp and Coastal Programs
-- **PISCO / Caselle Lab:** underwater benthic and fish surveys (Northern Channel Islands)  
-- **CCFRP:** hook-and-line surveys with volunteer anglers  
-- **SB Coastal LTER:** kelp deployments/retrievals and site monitoring
+- **Partnership for Interdisciplinary Studies of Coastal Oceans (PISCO), Caselle Lab:** underwater benthic and fish surveys in the Northern Channel Islands  
+- **California Collaborative Fisheries Research Program (CCFRP):** hook-and-line surveys with volunteer anglers  
+- **Santa Barbara Coastal Long Term Ecological Research (SBC LTER):** kelp deployments and retrievals, and site monitoring
 </div>
 
 <div class="detail-block" markdown="1">
 #### Diving and Safety
-Rescue, Nitrox, **AAUS (60 ft)**, Reef Check certification; night/low-viz/strong-current experience; task-loaded work (slates, cameras, etc).
+Rescue and Nitrox certifications, **American Academy of Underwater Sciences (AAUS) certification to 60 feet**, and Reef Check certification. Experience with night dives, low visibility, and strong current, and with task-loaded work carrying slates, cameras, and other equipment.
 </div>
 
-</div><!-- /.detail-stack -->
+</div>
 </details>
 :::
 
 ::: {.card}
 ### Modeling and Code
 <div class="metrics">
-  <span class="pill">Stage-structured</span>
-  <span class="pill">Slot limits × MPAs</span>
-  <span class="pill">Sobol + GLUE</span>
-  <span class="pill">R + Quarto</span>
-  <span class="pill">GIS / leaflet</span>
+  <span class="pill">Stage-Structured</span>
+  <span class="pill">Slot Limits and MPAs</span>
+  <span class="pill">Sensitivity and Uncertainty</span>
+  <span class="pill">Geospatial Mapping</span>
 </div>
 
-Two-sex, **stage-structured** lobster model; **VBGF** growth; size–fecundity; fishing applied **after projection** and only **outside MPAs**; scenario sweeps over **slot width × MPA coverage**.
+A two-sex, **stage-structured** lobster model with **von Bertalanffy** growth and a size-to-fecundity relationship. Fishing is applied **after projection** and only **outside marine protected areas (MPAs)**, with scenario sweeps across **slot width and marine protected area coverage**.
 
 <details class="details-panel" markdown="1">
 <summary>More Modeling Details</summary>
 
 <div class="detail-stack">
 
-<div class="detail-block detail-accent" markdown="1">
+<div class="detail-block" markdown="1">
 #### Framework
-Female-first stage matrix; optional male coupling; **exponential natural mortality**; quarterly `dt = 0.25`. Clean harvest accounting via post-projection survival in non-MPA cells → harvest = raw − fished trajectories.
+A female-first stage matrix with optional male coupling, **exponential natural mortality**, and quarterly time steps of `dt = 0.25`. Harvest is accounted for cleanly through post-projection survival in cells outside marine protected areas, so that harvest is the difference between the raw and the fished trajectories.
 </div>
 
 <div class="detail-block" markdown="1">
 #### Uncertainty and Robustness
-- **Sobol (Salt)** global sensitivity to rank leverage parameters  
-- **GLUE** ensembles to show plausible ranges, not just single fits  
-- Reproducible **Quarto** reports; tidy pipelines; consistent figure styling
+- **Sobol global sensitivity analysis**, run with the Salt package, to rank which parameters carry the most leverage  
+- **Generalized Likelihood Uncertainty Estimation** ensembles, to show plausible ranges rather than a single fit  
+- Reproducible **Quarto** reports, tidy pipelines, and consistent figure styling
 </div>
 
-<div class="detail-block" markdown="1">
-#### Geospatial and Other Projects
-- **ArcGIS Pro / sf / terra / leaflet/tmap** for decision-ready maps  
-- Spatial analyses: **IMTA aquaculture suitability** (U.S. West Coast EEZ); **Houston blackout** recovery patterns (equity lens)  
-- Prior research: **Valentine Lab** (microbial hydrocarbon cycling; Bash + Bridges-2 PSC); **Novex Innovations** (sterile cell culture, SOP training)
 </div>
-
-</div><!-- /.detail-stack -->
 </details>
 :::
 
@@ -120,32 +107,32 @@ Female-first stage matrix; optional male coupling; **exponential natural mortali
   <span class="pill">Citizen Science</span>
 </div>
 
-Outputs for **agencies, fishers, educators, and the public** — short explainers, interactive layers, and figures that surface uncertainty honestly.
+Outputs for **agencies, fishers, educators, and the public**: short explainers, interactive layers, and figures that surface uncertainty honestly.
 
 <details class="details-panel" markdown="1">
 <summary>More Engagement Details</summary>
 
 <div class="detail-stack">
 
-<div class="detail-block detail-accent" markdown="1">
+<div class="detail-block" markdown="1">
 #### Policy-Ready Outputs
-Metrics aligned with decisions: biomass, spawning output, size structure, yield, stability; transparent assumptions. Plain-language scenarios—what changing **slot width** or **MPA coverage** means for effort and outcome.
+Metrics aligned with decisions: biomass, spawning output, size structure, yield, and stability, with transparent assumptions throughout. Plain-language scenarios showing what changing **slot width** or **marine protected area coverage** means for effort and outcome.
 </div>
 
 <div class="detail-block" markdown="1">
 #### Community-Facing Communication
-- **Science videography** (60–120s): method explainers, field segments, and transparent communication with the public  
-- **Pacific Manta Research Group:** citizen-science **photo-ID submission** site and diver education materials
+- **Science videography**, 60 to 120 seconds: method explainers, field segments, and transparent communication with the public  
+- **Pacific Manta Research Group:** a citizen-science **photo identification submission** site and diver education materials
 </div>
 
 <div class="detail-block" markdown="1">
 #### Leadership and Media
-- **Kuris Lab** project lead: fieldwork, student mentorship, conference talks (ESA, EEMB URS), **first-author manuscript in review**  
-- **Environmental Media Production** (Assoc. Producer): filmed/edited a nonprofit climate program promo; on-location directing with a **Canon EOS C70**  
+- **Kuris Lab** project lead: fieldwork, student mentorship, conference talks at the Ecological Society of America and at the Ecology, Evolution, and Marine Biology Undergraduate Research Symposium, and a **first-author manuscript in review**  
+- **Environmental Media Production**, as Associate Producer: filmed and edited a promotional piece for a nonprofit climate program, and directed on location with a **Canon EOS C70**  
 - Aquarium **Docent** experience translating conservation for the public
 </div>
 
-</div><!-- /.detail-stack -->
+</div>
 </details>
 
 :::
@@ -159,143 +146,9 @@ Metrics aligned with decisions: biomass, spawning output, size structure, yield,
   </div>
 </div>
 
-<!-- ========= PERSONAL ========= -->
-<div class="section-band section-personal" id="personal">
-  <div class="band-inner">
-
-## Personal
-
-::: {.stacked-cards}
-
-::: {.card}
-### Photography
-<div class="metrics">
-  <span class="pill">Texture and Pattern</span>
-  <span class="pill">Motion and Mood</span>
-  <span class="pill">Wildlife and Coastlines</span>
-</div>
-
-My photography lingers on details most people walk past — a kelp frond twisting in surge, coral polyps half-open, an alley washed in morning light. I look for **textures, moods, and small dramas** rather than single “perfect” shots. Marine photography becomes an exercise in noticing: subtle gradients in light, shadow, and texture that later make their way into my figures and color palettes.
-
-<details class="details-panel" markdown="1">
-<summary>More on Photography</summary>
-
-<div class="detail-stack">
-
-<div class="detail-block" markdown="1">
-**Themes** — kelp forest canopies, coral lattices, sand ripples, tidepool reflections, wreckage, and the geometry of fish schools.  
-</div>
-
-<div class="detail-block" markdown="1">
-**Style** — high-contrast natural light, low-viz dives, and compositions that suggest movement or story — a shark’s turn, a crab emerging, a harbor just after rain.  
-</div>
-
-<div class="detail-block" markdown="1">
-[See Photography →](photography.html)
-</div>
-
-</div><!-- /.detail-stack -->
-</details>
-:::
-
-::: {.card}
-### Painting 
-<div class="metrics">
-  <span class="pill">Wildlife Portraits</span>
-  <span class="pill">Coastal Landscapes</span>
-  <span class="pill">Mixed Media</span>
-</div>
-
-I paint to capture **place, memory, and personality** — a bay I swam in, a dog who wouldn’t sit still, a fish frozen mid-leap. Some works are observational; others are imagined worlds built from layers of field impressions.
-
-<details class="details-panel" markdown="1">
-<summary>More on Painting</summary>
-
-<div class="detail-stack">
-
-<div class="detail-block" markdown="1">
-**Mediums** — oil paint and mixed media  
-</div>
-
-<div class="detail-block" markdown="1">
-**Subjects** — coastal bays, trout streams, personal places, and animals with a story to tell — sometimes literal, sometimes metaphorical.  
-</div>
-
-<div class="detail-block" markdown="1">
-**Why it matters** — painting slows me down and lets me notice how light, pattern, and atmosphere really work. Those habits feed directly back into my figure design and scientific visualization.  
-</div>
-
-<div class="detail-block" markdown="1">
-[See art →](art.html)
-</div>
-
-</div><!-- /.detail-stack -->
-</details>
-:::
-
-
-::: {.card}
-### Trails, Diving, and  Travel
-<div class="metrics">
-  <span class="pill">Coastal Hikes</span>
-  <span class="pill">Night / Low-viz</span>
-  <span class="pill">Working Harbors</span>
-</div>
-
-Most weekends I’m on a coastal trail or underwater; travel tends to follow coastlines and working harbors.
-
-<details class="details-panel" markdown="1">
-<summary>More on Trails and Travel</summary>
-
-<div class="detail-stack">
-
-<div class="detail-block" markdown="1">
-**Hiking** — coastal bluffs, estuary loops, and any trail that ends at a tidepool (with a pocket notebook for quick sketches).
-</div>
-
-<div class="detail-block" markdown="1">
-**Diving** — kelp holdfasts, night dives, and low-viz marsh entries teach repeatable habits — useful in both field and code.
-</div>
-
-<div class="detail-block" markdown="1">
-**Travel** — I gravitate to places where ecology, fisheries, and community sit close together — great training for policy conversations later.
-</div>
-
-</div><!-- /.detail-stack -->
-</details>
-:::
-
-::: {.card}
-### What I Value
-<div class="metrics">
-  <span class="pill">Clarity</span>
-  <span class="pill">Reproducibility</span>
-  <span class="pill">Field Reality</span>
-</div>
-
-Clarity over cleverness; field reality over assumptions; teams that surface uncertainty rather than hide it.
-
-<details class="details-panel" markdown="1">
-<summary>More on Values</summary>
-
-<div class="detail-stack">
-
-<div class="detail-block" markdown="1">
-- **Make it legible:** for managers, fishers, and the public  
-- **Respect the process:** document assumptions, keep pipelines reproducible  
-- **Stay curious:** bring field notes, photos, and sketches back into the model
-</div>
-
-</div><!-- /.detail-stack -->
-</details>
-:::
-:::
-
-  </div>
-</div>
 
 <!-- ========= DIVING ========= -->
-<div class="section-band section-diving" id="diving">
+<div class="section-band" id="diving">
   <div class="band-inner">
 
 ## Diving
@@ -319,6 +172,7 @@ library(leaflet)
 library(htmltools)
 library(htmlwidgets)
 library(lubridate)
+library(tidyr)
 library(jsonlite)
 
 # ── Data ───────────────────────────────────────────────────────────────────────
@@ -335,13 +189,26 @@ dives <- read_csv("data/dive_log.csv", show_col_types = FALSE) %>%
                           file.path(photo_dir, file), NA_character_)
   ) %>%
   filter(!is.na(lat), !is.na(lon)) %>%
-  filter(category %in% c("scientific", "recreational", "training"))
+  filter(category %in% c("scientific", "recreational", "training")) %>%
+  mutate(
+    # A dive can belong to more than one category: the PISCO training dives in
+    # the 2024 season were scientific work AND training. `category` stays
+    # single-valued because the map's layer groups are built from it, and
+    # `tags` carries the full set, semicolon separated.
+    tags = ifelse(is.na(tags) | !nzchar(tags), category, tags)
+  )
+
+# TRUE when a dive carries the given tag, whether or not it is that dive's
+# primary category. Counts and layer membership both run through this, so a
+# cross-listed dive appears under both buttons rather than being forced to pick.
+has_tag <- function(d, tag) grepl(tag, d$tags, fixed = TRUE)
 
 # ── Palette ────────────────────────────────────────────────────────────────────
 cat_colors <- c(
   scientific   = "#4D6C77",
   recreational = "#D1796B",
-  training     = "#A3C3BD"
+  training  = "#A3C3BD",
+  "advanced placement"  = "#7A8B99"
 )
 pal <- colorFactor(unname(cat_colors), levels = names(cat_colors))
 
@@ -405,11 +272,46 @@ yr_min    <- min(dives$year, na.rm = TRUE)
 yr_max    <- max(dives$year, na.rm = TRUE)
 
 # ── Per-category counts for button labels ──────────────────────────────────────
-n_sci <- sum(dives$category == "scientific")
-n_rec <- sum(dives$category == "recreational")
-n_tra <- sum(dives$category == "training")
+n_sci <- sum(has_tag(dives, "scientific"))
+n_rec <- sum(has_tag(dives, "recreational"))
+n_tra <- sum(has_tag(dives, "training"))
 
-# ── Custom cluster icons — one per category color ──────────────────────────────
+# ── Dives by program, grouped under their category ─────────────────────────────
+# Straight from the program column in the dive log, so this never goes stale:
+# add a program to the CSV and it appears under the right button on the next
+# render. capacity separates paid work from volunteering, which program alone
+# cannot say.
+prog_by_cat <- dives %>%
+  filter(!is.na(program), nzchar(program)) %>%
+  tidyr::separate_rows(tags, sep = ";") %>%
+  rename(cat_tag = tags) %>%
+  count(cat_tag, program, sort = TRUE)
+
+n_paid <- sum(dives$capacity == "employed",  na.rm = TRUE)
+n_vol  <- sum(dives$capacity == "volunteer", na.rm = TRUE)
+
+# One <details> disclosure per category, holding that category's programs.
+# Returns NULL when a category has no programs, and NULL entries drop out of
+# the tag list, so recreational simply gets no dropdown.
+prog_details <- function(cat) {
+  rows <- prog_by_cat %>% filter(cat_tag == cat) %>% arrange(desc(n))
+  if (nrow(rows) == 0) return(NULL)
+  tags$details(class = "dm-prog",
+    tags$summary(sprintf("Programs (%d)", nrow(rows))),
+    tags$ul(class = "dm-prog-list",
+      lapply(seq_len(nrow(rows)), function(i)
+        tags$li(
+          tags$span(class = "dm-prog-name", rows$program[i]),
+          tags$span(class = "dm-prog-n",    rows$n[i])
+        ))
+    ),
+    if (cat == "scientific")
+      tags$p(class = "dm-prog-note",
+             sprintf("%d paid, %d volunteer", n_paid, n_vol))
+  )
+}
+
+# ── Custom cluster icons, one per category color ──────────────────────────────
 make_cluster_fn <- function(hex) {
   JS(sprintf("function(cluster) {
     var n   = cluster.getChildCount();
@@ -445,8 +347,8 @@ all_groups <- as.vector(outer(as.character(years), categories,
                                FUN = function(y, c) paste0(y, "_", c)))
 
 # scrollWheelZoom = "center" enables scroll-zoom only when the cursor is near
-# the map center — prevents the map hijacking normal page scrolling
-m <- leaflet(width = "100%", height = "460px",
+# the map center. Prevents the map hijacking normal page scrolling
+m <- leaflet(width = "100%", height = "100%",
              options = leafletOptions(scrollWheelZoom = "center")) %>%
   addProviderTiles("Esri.WorldImagery",
                    options = providerTileOptions(opacity = 1)) %>%
@@ -455,9 +357,10 @@ m <- leaflet(width = "100%", height = "460px",
 
 for (yr in years) {
   for (cat in categories) {
-    sub     <- dives %>% filter(year == yr, category == cat)
+    keep    <- dives$year == yr & has_tag(dives, cat)
+    sub     <- dives[keep, ]
     if (nrow(sub) == 0) next
-    sub_pop <- popups[dives$year == yr & dives$category == cat]
+    sub_pop <- popups[keep]
     grp     <- paste0(yr, "_", cat)
 
     m <- m %>% addCircleMarkers(
@@ -600,19 +503,26 @@ stats_panel <- tags$div(class = "dm-stats-panel",
   )
 )
 
-# Category filter panel — counts shown on each button
+# Category filter panel, with counts shown on each button
+# Each category is a button (which filters the map) followed by its own
+# dropdown of programs. The button and the disclosure are siblings rather than
+# nested, because a <details> inside a <button> is invalid HTML and browsers
+# handle it unpredictably.
+cat_block <- function(cat, label, n, hex) {
+  tags$div(class = "dm-cat-block",
+    tags$button(class = "dm-cat-btn", `data-cat` = cat,
+      tags$span(class = "dm-cat-dot", style = sprintf("background:%s", hex)),
+      sprintf("%s (%d)", label, n)),
+    prog_details(cat)
+  )
+}
+
 cat_panel <- tags$div(class = "dm-filter-panel",
   tags$p(class = "dm-panel-head", "Filter by Type"),
   tags$div(class = "dm-cat-btns",
-    tags$button(class = "dm-cat-btn", `data-cat` = "scientific",
-      tags$span(class = "dm-cat-dot", style = "background:#4D6C77"),
-      sprintf("Scientific (%d)", n_sci)),
-    tags$button(class = "dm-cat-btn", `data-cat` = "recreational",
-      tags$span(class = "dm-cat-dot", style = "background:#D1796B"),
-      sprintf("Recreational (%d)", n_rec)),
-    tags$button(class = "dm-cat-btn", `data-cat` = "training",
-      tags$span(class = "dm-cat-dot", style = "background:#A3C3BD"),
-      sprintf("Training (%d)", n_tra))
+    cat_block("scientific",   "Scientific",   n_sci, "#4D6C77"),
+    cat_block("recreational", "Recreational", n_rec, "#D1796B"),
+    cat_block("training",     "Training",     n_tra, "#A3C3BD")
   )
 )
 
@@ -627,16 +537,28 @@ filter_panel <- tags$div(class = "dm-filter-panel",
   tags$button(id = "dm-yr-reset", onclick = "dmYrReset()", "Show All")
 )
 
-# ── Inline CSS — needed because browsable() renders inside an iframe ───────────
+# ── Inline CSS, needed because browsable() renders inside an iframe ───────────
 # The page's styles.css is not loaded inside the widget iframe, so all
 # dive-map styles must travel with the widget as a <style> tag.
 inline_css <- tags$style(HTML("
   *,*::before,*::after{box-sizing:border-box;}
   body{margin:0;font-family:'Inter',system-ui,sans-serif;}
 
-  .dive-map-layout{display:flex;gap:1rem;align-items:flex-start;width:100%;}
+  .dive-map-layout{display:flex;gap:1rem;align-items:stretch;width:100%;}
   .dive-map-sidebar{display:flex;flex-direction:column;gap:.75rem;flex:0 0 190px;min-width:0;}
-  .dive-map-main{flex:1 1 0;min-width:0;}
+  .dive-map-main{
+    flex:1 1 0;min-width:0;position:relative;min-height:460px;
+  }
+  /* align-items:stretch makes this column as tall as the sidebar, whatever the
+     sidebar ends up being. The widget is then pinned to all four edges of it,
+     so the map matches the filters instead of sitting at a fixed height with
+     white space beneath. min-height is the floor for the case where the
+     sidebar is short. */
+  .dive-map-main .html-widget,
+  .dive-map-main .leaflet{
+    position:absolute !important;inset:0;
+    width:100% !important;height:100% !important;
+  }
 
   .dm-stats-panel,.dm-filter-panel{
     background:#fff;
@@ -689,18 +611,20 @@ inline_css <- tags$style(HTML("
   #dm-yr-reset:hover{background:#4D6C77;color:#fff;}
 
   .dive-map-main .leaflet-container{
-    height:540px;border-radius:14px;
+    height:100% !important;border-radius:14px;
     border:1px solid #e5e7eb;box-shadow:0 6px 22px rgba(0,0,0,.06);overflow:hidden;
   }
-  @media (max-width:900px){.dive-map-main .leaflet-container{height:440px;}}
   @media (max-width:760px){
     .dive-map-layout{flex-direction:column;}
     .dive-map-sidebar{flex:none;width:100%;flex-direction:row;flex-wrap:wrap;}
     .dm-stats-panel,.dm-filter-panel{flex:1 1 200px;}
-    .dive-map-main{width:100%;min-height:380px;}
+    .dive-map-main{width:100%;min-height:380px;height:380px;}
     .dive-map-main .leaflet-container{height:380px !important;}
   }
-  @media (max-width:600px){.dive-map-main .leaflet-container{height:360px;}}
+  @media (max-width:600px){
+    .dive-map-main{height:360px;min-height:360px;}
+    .dive-map-main .leaflet-container{height:360px !important;}
+  }
 
   .dive-map-main .leaflet-popup-content-wrapper{
     padding:0 !important;border-radius:12px !important;overflow:hidden;
@@ -734,6 +658,39 @@ inline_css <- tags$style(HTML("
   .dp-cat-recreational{background:#f5e4e2;color:#D1796B;}
   .dp-cat-training{background:#e4efed;color:#688D8D;}
   .dp-caption{margin:4px 0 0;font-size:.73rem;color:#43535B;font-style:italic;}
+  .dm-cat-block{display:flex;flex-direction:column;gap:.25rem;}
+
+  .dm-prog{margin:0 0 .1rem;}
+  .dm-prog summary{
+    list-style:none;cursor:pointer;
+    padding:.15rem .2rem .15rem 1.45rem;
+    font-size:.64rem;letter-spacing:.05em;text-transform:uppercase;
+    color:#688D8D;font-weight:700;position:relative;
+  }
+  .dm-prog summary::-webkit-details-marker{display:none;}
+  .dm-prog summary::before{
+    content:'';position:absolute;left:.55rem;top:.42rem;
+    width:.32rem;height:.32rem;
+    border-right:1.5px solid #688D8D;border-bottom:1.5px solid #688D8D;
+    transform:rotate(45deg);transition:transform .18s ease;
+  }
+  .dm-prog[open] summary::before{transform:rotate(-135deg);top:.5rem;}
+  .dm-prog > ul{margin-left:1.45rem;}
+
+  .dm-prog-list{list-style:none;margin:0;padding:0;}
+  .dm-prog-list li{
+    display:flex;justify-content:space-between;gap:.5rem;
+    padding:.3rem 0;font-size:.72rem;color:#43535B;
+    border-top:1px solid #f1f3f5;
+  }
+  .dm-prog-list li:first-child{border-top:0;}
+  .dm-prog-n{font-weight:700;color:#4D6C77;}
+  .dm-prog-note{
+    margin:.4rem 0 0 1.45rem;padding-top:.35rem;border-top:1px solid #f1f3f5;
+    font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;
+    color:#9ca3af;
+  }
+
   .dm-cluster-wrap{background:transparent !important;border:none !important;}
   .dm-cluster-bubble{
     border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;
@@ -767,16 +724,844 @@ browsable(
 </div> 
 </div>
 
+<!-- ========= TIMELINE ========= -->
+<div class="section-band" id="timeline">
+  <div class="band-inner">
+
+## Timeline
+
+From an aquarium volunteer at fifteen to coral reefs and fisheries models: every role I've held, colored by the world it belongs to. Hover any bar for details.
+
+<div class="jtl-card">
+<div class="jtl-wrap">
+<p class="jtl-cap"><strong>Each color is a different world I worked in</strong>, and they overlap and double back more than you might expect. Click any group on the left to show or hide it.</p>
+<div class="jtl-chart"></div>
+</div>
+</div>
+
+<script>
+(function(){
+  var SEC={scicomm:["Science Communication and Outreach","#D1796B"],industry:["Industry","#C08A3E"],academia:["Academia","#3E6E86"],nonprofit:["Nonprofit and Citizen Science","#5E8D7E"],regulatory:["Regulatory and Mitigation","#6D6A9C"]};
+  var ORDER=["scicomm","industry","academia","nonprofit","regulatory"];
+  var E=[
+    ["scicomm","Greensboro Science Center","Greensboro Science Center","Aquarium Docent",2018.08,2021.67,"February 2018 to August 2021",false],
+    ["scicomm","Ecological Modeling Course","Ecological Modeling Course","Undergraduate Teaching Assistant",2024.00,2024.25,"January 2024 to March 2024",false],
+    ["scicomm","Environmental Media Production","Environmental Media Production","Associate Producer",2025.17,2025.33,"March 2025 to April 2025",false],
+    ["industry","Novex Innovations","Novex Innovations","Laboratory Technician, stem-cell research and development",2020.67,2021.67,"August 2020 to August 2021",false],
+    ["academia","Floge Lab","Floge Marine Microbial Ecology Lab","Research Intern",2020.00,2020.25,"January 2020 to March 2020",false],
+    ["academia","Kuris Parasite Ecology Lab","Kuris Parasite Ecology Lab","Project Lead, first-author paper",2021.67,2026.25,"September 2021 to March 2026",false],
+    ["academia","Valentine Lab","Valentine Lab","Research Intern, sediment coring cruise and bioinformatics training",2023.00,2025.67,"January 2023 to August 2025",false],
+    ["academia","Santa Barbara Coastal LTER","Santa Barbara Coastal Long Term Ecological Research","Scientific Diver",2023.17,2024.42,"March 2023 to May 2024",false],
+    ["academia","Caselle Lab","Partnership for Interdisciplinary Studies of Coastal Oceans (Caselle Lab)","Scientific Diver",2024.42,2024.83,"June 2024 to October 2024",false],
+    ["academia","Ocean Recoveries Lab","Stier Ocean Recoveries Lab","Staff Research Associate, current role",2024.67,2026.68,"September 2024 to present",true],
+    ["nonprofit","Pacific Manta Research Group (PMRG)","Pacific Manta Research Group","Research Intern and Web Designer",2021.92,2024.00,"December 2021 to January 2024",false],
+    ["nonprofit","Reef Check California","Reef Check California","Intern and Scientific Diver",2022.42,2023.25,"June 2022 to April 2023",false],
+    ["regulatory","SONGS Mitigation Monitoring Program","San Onofre Nuclear Generating Station Mitigation Monitoring Program","Laboratory Assistant",2025.67,2026.00,"August 2025 to January 2026",false]
+  ];
+  var MS=[[2020.42,"Graduated High School (Reagan High School)",1,false],[2022.17,"Scientific Diver Certification (AAUS)",2,false],[2025.42,"Finished Undergraduate Degree (UCSB)",1,false],[2025.95,"First Publications",3,true]];
+  var FUT=null; 
+  // T1 and RIGHT_PAD together decide how many pixels a year is worth: the
+  // track is the chart width less the legend gutter and the right pad, divided
+  // by T1 minus T0. Both were trimmed to widen the years by about a tenth,
+  // T1 from 2027.5 and RIGHT_PAD from 150. The pad is only there to stop the
+  // track running to the chart edge, not to reserve room for the names beside
+  // the last bars, which are allowed to use the full chart width and are
+  // checked against it in placeLabels.
+  var T0=2018.0,T1=2027.2,NOW=2026.68,LABEL_W=225,PILL_M=20,RIGHT_PAD=95,RIBBON_H=145,ROW_H=24,ROW_GAP=5,LANE_GAP=16,LANES_TOP=RIBBON_H+8,AXIS_H=28;
+  // Strip below the year axis for the undergraduate caption, which used to
+  // sit inside the shaded band and is now a caption under the chart.
+  var CAP_H=30;
+  // How close an outside name may come to a vertical rule before it counts as
+  // running into it. A rule is 2px wide, so 12 leaves five clear pixels on
+  // either side. It was 6, which was enough to keep the letters off the rule
+  // arithmetically but left them close enough to read as touching.
+  var NOW_CLEAR=12;
+  function msTop(t){return t===3?12:(t===2?54:96);}
+  // Which sectors are currently drawn. The left-hand legend toggles these.
+  // Declared out here rather than inside render() so that a resize redraw,
+  // which calls render() again, keeps whatever filter is showing.
+  var ACTIVE={}; ORDER.forEach(function(k){ACTIVE[k]=true;});
+  // Floor on lane height. Every pill is a fixed 52px tall (see .jtl-lane in
+  // §24) and a one-row lane is only 24px, so without a floor the pill for a
+  // short lane would overlap its neighbour. It also doubles as the height a
+  // lane collapses to when switched off: not zero, because the pill has to
+  // stay on screen or there is no way to switch it back on.
+  var MIN_LANE_H=56;
+  // Mix a hex colour toward white (tint) or toward black (shade). Used to build
+  // each pill's off-state fill and text colour from its sector colour, so the
+  // five palette entries in SEC stay the single source of truth.
+  function mix(hex,amt,toward){
+    var r=parseInt(hex.substr(1,2),16),g=parseInt(hex.substr(3,2),16),b=parseInt(hex.substr(5,2),16);
+    r=Math.round(r+(toward-r)*amt); g=Math.round(g+(toward-g)*amt); b=Math.round(b+(toward-b)*amt);
+    return "rgb("+r+","+g+","+b+")";
+  }
+  function tint(hex,amt){return mix(hex,amt,255);}
+  function shade(hex,amt){return mix(hex,amt,0);}
+  // Everything that makes a legend entry look like a pill. This used to live in
+  // §24 of styles.css. It sits here now because the three colours already had
+  // to be computed in this file from SEC, and splitting one control's
+  // appearance across two files means neither is the source of truth. The
+  // per-pill values (position, size, the three colours) are merged over this
+  // base where each pill is built.
+  var PILL={
+    position:"absolute",
+    height:"52px",                  // identical for all five, so the one-line
+                                    // names centre in the same box as the
+                                    // two-line ones instead of shrinking
+    display:"flex",
+    alignItems:"center",            // centres one or two lines vertically
+    justifyContent:"center",        // centres the line box horizontally
+    textAlign:"center",             // centres the second line under the first
+    boxSizing:"border-box",         // width below is the outer width
+    padding:"6px 14px",
+    borderStyle:"solid",
+    borderWidth:"1.5px",
+    borderRadius:"999px",           // capsule ends; on a wrapped label this
+                                    // reads as a lozenge, which is intended
+    fontSize:"13px",
+    fontWeight:"600",
+    lineHeight:"1.25",
+    transform:"translateY(-50%)",   // the pill is positioned at its lane's
+                                    // midpoint and this centres it there
+    cursor:"pointer",
+    userSelect:"none",              // a fast double click toggles twice rather
+    WebkitUserSelect:"none",        // than selecting the label text
+    transition:"background .15s ease, color .15s ease, box-shadow .15s ease"
+  };
+  var wrap=document.querySelector(".jtl-wrap"); if(!wrap) return;
+  var chart=wrap.querySelector(".jtl-chart");
+  var tip=document.createElement("div"); tip.className="jtl-tip"; wrap.appendChild(tip);
+  // ── Measuring, packing, and label placement ─────────────────────────────
+  // A bar carries its name inside it when the bar is wide enough and beside it
+  // when it is not. The previous version decided that one bar at a time, after
+  // the rows had already been packed, by comparing the name against the raw
+  // distance to the neighbouring bar. When neither side had room it picked the
+  // larger of the two gaps and drew the name there anyway. That is how
+  // "Ecological Modeling Course" came to sit on top of the Greensboro Science
+  // Center bar: both gaps were too small, and the one to its left was the
+  // bigger of the two.
+  //
+  // The three functions below replace that. Names are measured first, the
+  // packer is told to reserve the room an outside name will need, and the two
+  // run as a short loop: pack, place the names, and if a name still has
+  // nowhere to sit, reserve room for it and pack again. A bar drops to a new
+  // row only when it genuinely cannot share one, so rows that already read
+  // well are left alone. Santa Barbara Coastal Long Term Ecological Research
+  // with its name to the left and Caselle Lab with its name to the right stay
+  // exactly where they are.
+  var OUT_GAP=7,                    // matches margin-left and margin-right on
+                                    // .jtl-out and .jtl-out-left in §24 of
+                                    // styles.css
+      OUT_CLEAR=12,                 // clear space demanded between an outside
+                                    // name and whatever lies beyond it, so the
+                                    // two never touch
+      IN_PAD=18;                    // the 9px of padding on each side of
+                                    // .jtl-in, which is what an inside name
+                                    // needs on top of the text itself
+
+  // Every name measured once per draw, in the same font the outside labels
+  // use, against a hidden span inside the chart so it inherits that font. The
+  // width goes on the item as _tw and everything downstream reads it from
+  // there, which is what lets the packer know about a name before the bar
+  // carrying it exists.
+  function measure(){
+    var m=document.createElement("span");
+    m.className="jtl-out";
+    m.style.position="absolute";    // .jtl-out is positioned against its bar,
+    m.style.left="0";               // and there is no bar yet, so the three
+    m.style.margin="0";             // positioning declarations are overridden
+    m.style.visibility="hidden";
+    chart.appendChild(m);
+    // Two pixels on top of the measurement. A browser lays text out on
+    // fractional pixels and rounds when it paints, so a name can render a
+    // shade wider than it measured, which is enough to close a gap that the
+    // arithmetic thought it had.
+    E.forEach(function(it){ m.textContent=it[1]; it._tw=Math.ceil(m.getBoundingClientRect().width)+2; });
+    chart.removeChild(m);
+  }
+
+  // One-off measurement for text that is not a bar name, in whatever class
+  // will end up carrying it. Same hidden-span trick as measure() above.
+  function textw(str,cls){
+    var m=document.createElement("span");
+    m.className=cls;
+    m.style.position="absolute"; m.style.left="0"; m.style.top="0";
+    m.style.margin="0"; m.style.visibility="hidden"; m.style.whiteSpace="nowrap";
+    chart.appendChild(m);
+    m.textContent=str;
+    var w=Math.ceil(m.getBoundingClientRect().width);
+    chart.removeChild(m);
+    return w;
+  }
+
+  // Rows are packed on pixel extents rather than on years, because a name is
+  // measured in pixels and the whole point is to pack around it. An item with
+  // _res set has claimed room for an outside name on that side, and that room
+  // is part of its extent.
+  function pack(items,x){
+    var s=items.slice().sort(function(a,b){return a[4]-b[4];});
+    var rows=[];
+    for(var i=0;i<s.length;i++){
+      var it=s[i];
+      var L=x(it[4])-(it._res===2?OUT_GAP+it._tw:0);
+      var R=x(it[5])+(it._res===1?OUT_GAP+it._tw:0);
+      var placed=false;
+      for(var r=0;r<rows.length;r++){
+        if(rows[r]<=L+0.5){        // half a pixel of tolerance, so two bars
+                                    // that meet exactly, as the Long Term
+                                    // Ecological Research and Caselle Lab
+                                    // entries do, still share a row
+          it._row=r; rows[r]=R; placed=true; break;
+        }
+      }
+      if(!placed){ it._row=rows.length; rows.push(R); }
+    }
+    return {items:s,n:rows.length};
+  }
+
+  // Walks each row left to right and gives every name a home: 0 inside the
+  // bar, 1 to its right, 2 to its left. Returns true if any item had to claim
+  // reserved room, which tells render() to pack once more.
+  function placeLabels(lane,x,W,nx){
+    // A name may not straddle the vertical "now" rule. Before this, two of
+    // them did: the rule ran through the word "Media" in Environmental Media
+    // Production and through "Mitigation" in Mitigation Monitoring Program.
+    // Bars are allowed to cross it, because a job that is still running should
+    // read as still running; it is only the text that has to keep clear.
+    function hitsNow(a,b){ return a<nx+NOW_CLEAR && b>nx-NOW_CLEAR; }
+    var changed=false, byRow={};
+    lane.items.forEach(function(it){ (byRow[it._row]=byRow[it._row]||[]).push(it); });
+    Object.keys(byRow).forEach(function(r){
+      var arr=byRow[r].sort(function(a,b){return a[4]-b[4];});
+      var occ=LABEL_W;              // right edge of everything already placed
+                                    // on this row, names included; the track
+                                    // starts at LABEL_W so nothing sits before
+      for(var i=0;i<arr.length;i++){
+        var it=arr[i], bl=x(it[4]), br=x(it[5]);
+        if(it._tw+IN_PAD<=br-bl){ it._side=0; occ=br; continue; }
+        var need=it._tw+OUT_GAP+OUT_CLEAR;
+        var nextL=(i+1<arr.length)?x(arr[i+1][4]):W;
+        // Whether a side is usable at all, before asking whether the gap on
+        // that side is wide enough: the name has to stay inside the chart, or
+        // right of the legend gutter, and clear of the "now" rule.
+        var okR=(br+OUT_GAP+it._tw<=W)&&!hitsNow(br+OUT_GAP,br+OUT_GAP+it._tw);
+        var okL=(bl-OUT_GAP-it._tw>=LABEL_W)&&!hitsNow(bl-OUT_GAP-it._tw,bl-OUT_GAP);
+        var fitR=okR&&(nextL-br>=need);
+        var fitL=okL&&(bl-occ>=need);
+        // An item that already claimed a side keeps it, so the loop in
+        // render() settles instead of swinging the same name back and forth.
+        var first=(it._res===2)?2:1;
+        var got=0;
+        if(first===1){ got=fitR?1:(fitL?2:0); } else { got=fitL?2:(fitR?1:0); }
+        if(got===0){
+          // Neither side has room on this row. Claim the wider of the two and
+          // let the next pack push whatever is in the way down a row.
+          // Prefer a usable side over an unusable one, and only then the side
+          // with more room. A name that has to go somewhere still goes to the
+          // side that keeps it off the rule.
+          got=(okL&&(!okR||bl-occ>=nextL-br))?2:1;
+          if(it._res===0){ it._res=got; changed=true; }
+        }
+        it._side=got;
+        occ=(got===1)?br+OUT_GAP+it._tw:br;
+      }
+    });
+    return changed;
+  }
+  function render(){
+    var W=chart.clientWidth; if(W<40) return; chart.innerHTML="";
+    var trackW=Math.max(280,W-LABEL_W-RIGHT_PAD);
+    var x=function(y){return LABEL_W+((y-T0)/(T1-T0))*trackW;};
+    var nx=x(NOW);                  // needed by the packing loop below as well
+                                    // as by the "now" pill further down
+    measure();
+    // Reservations are cleared at the top of every draw rather than carried
+    // over, so a window that gets wider goes back to the compact arrangement
+    // instead of keeping rows it needed at a narrower size.
+    E.forEach(function(it){ it._res=0; });
+    var lanes;
+    for(var pass=0;pass<4;pass++){
+      lanes=ORDER.map(function(k){var p=pack(ACTIVE[k]?E.filter(function(e){return e[0]===k;}):[],x);p.key=k;return p;});
+      var changed=false;
+      lanes.forEach(function(l){ if(placeLabels(l,x,W,nx)) changed=true; });
+      if(!changed) break;
+                                    // Four passes is a ceiling, not a target.
+                                    // Each item can claim room only once per
+                                    // draw, so the loop settles after one or
+                                    // two rounds; the cap is there to make a
+                                    // runaway impossible rather than because
+                                    // it is expected to be reached.
+    }
+    // A switched-off lane packs to zero rows, and n*ROW_H+(n-1)*ROW_GAP would
+    // then be -5, so its natural height is clamped at zero before the floor is
+    // applied. _rowOff then re-centres the bars inside a lane that the floor
+    // made taller than its rows need, so bars and pill stay on the same line.
+    var y=LANES_TOP; lanes.forEach(function(l){
+      var rowsH=ACTIVE[l.key]?Math.max(0,l.n*ROW_H+(l.n-1)*ROW_GAP):0;
+      l._top=y; l._h=Math.max(MIN_LANE_H,rowsH); l._rowOff=(l._h-rowsH)/2;
+      y+=l._h+LANE_GAP;
+    });
+    var lb=y-LANE_GAP, axisTop=lb+10; chart.style.height=(axisTop+AXIS_H+CAP_H)+"px";
+    function el(c,s,t){var d=document.createElement("div");d.className=c;if(s)Object.assign(d.style,s);if(t!=null)d.textContent=t;chart.appendChild(d);return d;}
+
+    // Draws a vertical rule from top to bot at px, in as many pieces as it
+    // takes to avoid every box handed to it. A box is any run of text the rule
+    // would otherwise cross: a milestone caption, or a bar name that had
+    // nowhere else to go. A reference line interrupted where it meets a label
+    // still reads as one line, which is the convention a printed map uses for
+    // a gridline crossing a place name.
+    function vrule(cls,px,top,bot,boxes){
+      var gaps=[];
+      boxes.forEach(function(b){
+        if(px>b.l-NOW_CLEAR && px<b.r+NOW_CLEAR){ gaps.push([b.t-3,b.b+3]); }
+      });
+      gaps.sort(function(p,q){return p[0]-q[0];});
+      var segTop=top;
+      gaps.forEach(function(g){
+        if(g[0]>segTop){ el(cls,{left:px+"px",top:segTop+"px",height:(g[0]-segTop)+"px"}); }
+        segTop=Math.max(segTop,g[1]);
+                                    // max rather than assignment, so two boxes
+                                    // that overlap produce one break instead
+                                    // of a negative-height segment
+      });
+      if(bot>segTop){ el(cls,{left:px+"px",top:segTop+"px",height:(bot-segTop)+"px"}); }
+    }
+    var uL=x(2021.67),uR=x(2025.42);
+    el("jtl-band jtl-band-ug",{left:uL+"px",top:RIBBON_H+"px",width:(uR-uL)+"px",height:(lb-RIBBON_H)+"px"});
+    var fL=x(NOW),fR=x(T1); el("jtl-band jtl-band-fu",{left:fL+"px",top:RIBBON_H+"px",width:(fR-fL)+"px",height:(lb-RIBBON_H)+"px"});
+    for(var yr=2019;yr<=2027;yr++){el("jtl-gl",{left:x(yr)+"px",top:RIBBON_H+"px",height:(lb-RIBBON_H)+"px"});}
+    var baseY=RIBBON_H-12;
+
+    // ── Milestones ─────────────────────────────────────────────────────────
+    // Captions are drawn first and their boxes recorded, then the stems are
+    // drawn around them. A stem that starts at the top level has to fall past
+    // the two levels below it, and if a caption is sitting there it used to
+    // run straight through the words: the First Publications stem crossed
+    // "Finished Undergraduate Degree (UCSB)" one level down. The stem now
+    // breaks around any caption in its path, the same way the "now" rule
+    // breaks around a bar name.
+    //
+    // A caption is centred on its date by a CSS transform and capped at 150px,
+    // so its box is measured from the rendered element rather than assumed:
+    // a long caption wraps to two lines and is taller than a short one.
+    var msBox=MS.map(function(m){
+      var mx=x(m[0]),ly=msTop(m[2]);
+      var lab=el("jtl-mslabel",{left:mx+"px",top:ly+"px",maxWidth:"150px"},m[1]);
+      if(m[3])lab.style.color="#8A5E12";
+      var r=lab.getBoundingClientRect();
+      return {l:mx-r.width/2, r:mx+r.width/2, t:ly, b:ly+r.height};
+    });
+    MS.forEach(function(m,i){
+      // The stem starts below its own caption. The old fixed 30px assumed a
+      // caption of at most two lines; a long one at a large text size runs to
+      // three, and the stem then began inside its own words. Measured bottom
+      // plus a little air, floored at the old value so short captions look
+      // exactly as they did.
+      var mx=x(m[0]),st=Math.max(msTop(m[2])+30,msBox[i].b+8);
+      vrule("jtl-stem",mx,st,Math.max(st+2,baseY),msBox.filter(function(b,j){return j!==i;}));
+      if(m[3]){el("jtl-star",{left:mx+"px",top:baseY+"px"},"★");}
+      else{el("jtl-msdot",{left:mx+"px",top:baseY+"px"});}
+    });
+    if(FUT){ el("jtl-fut",{left:x(FUT[0])+"px",top:msTop(2)+"px"},FUT[1]+" \u2197"); }
+    // The "now" pill used to sit at the top of the lane area, where it landed
+    // on top of whatever bar happened to be running. It now sits up in the
+    // milestone caption band, on the same line as a milestone label, with its
+    // rule starting underneath it. Pick the lowest of the three caption levels
+    // that has no milestone label within 95px, so the pill never collides with
+    // one at a narrow window width.
+    var nlv=1;                      // nx was computed at the top of render()
+    for(var lv=1;lv<=3;lv++){
+      var clash=false;
+      for(var mi=0;mi<MS.length;mi++){ if(MS[mi][2]===lv && Math.abs(x(MS[mi][0])-nx)<95){clash=true;break;} }
+      if(!clash){nlv=lv;break;}
+    }
+    var ntop=msTop(nlv);
+    el("jtl-nowtag",{left:nx+"px",top:ntop+"px"},"now");
+
+    // ── The "now" rule ─────────────────────────────────────────────────────
+    // placeLabels keeps bar names off the rule wherever it can, but at a
+    // cramped window width a name can end up with no usable side: too long to
+    // fit between its bar and the legend gutter on the left, and crossing the
+    // rule on the right. Those names, and any milestone caption in the way,
+    // become boxes the rule breaks around.
+    var boxes=msBox.slice();
+    lanes.forEach(function(l){
+      l.items.forEach(function(it){
+        if(it._side===0) return;    // a name inside its bar is never on a rule
+        var bl=x(it[4]),br=x(it[5]);
+        var t=l._top+l._rowOff+it._row*(ROW_H+ROW_GAP);
+        boxes.push({
+          l:(it._side===1)?br+OUT_GAP:bl-OUT_GAP-it._tw,
+          r:(it._side===1)?br+OUT_GAP+it._tw:bl-OUT_GAP,
+          t:t, b:t+ROW_H
+        });
+      });
+    });
+    vrule("jtl-now",nx,ntop+26,lb,boxes);
+    lanes.forEach(function(l){
+      var sec=SEC[l.key];
+      // The lane label doubles as the legend and as the filter control for its
+      // sector. Vertical centring is now done by a CSS transform rather than by
+      // subtracting half a guessed label height, because the label is taller
+      // than it was and wraps to two lines for the longer sector names.
+      var off=!ACTIVE[l.key];
+      // The pill carries its sector colour itself, so the separate square
+      // swatch that used to sit beside the text is gone. On means a solid fill
+      // in the sector colour with white text; off means a pale tint of the same
+      // colour with a dark shade of it for text. The border is the sector
+      // colour in both states, which is what keeps an off pill legible as
+      // belonging to that sector rather than just looking greyed out.
+      // left and width are set here rather than in the stylesheet because both
+      // derive from LABEL_W, and a gutter width and the thing centred inside it
+      // should not be defined two files apart. PILL_M is the margin on each
+      // side, so all five pills are identical in size and share one axis.
+      var lab=el("jtl-lane"+(off?" jtl-off":""),Object.assign({},PILL,{
+        top:(l._top+l._h/2)+"px",
+        left:PILL_M+"px",
+        width:(LABEL_W-2*PILL_M)+"px",
+        borderColor:sec[1],
+        background:off?tint(sec[1],.88):sec[1],
+        color:off?shade(sec[1],.40):"#fff",
+        fontWeight:off?"500":"600"
+      }),sec[0]);
+      // Hover and focus are handled here rather than by :hover and
+      // :focus-visible, for the same single-source reason as PILL above.
+      lab.addEventListener("mouseenter",function(){lab.style.boxShadow="0 3px 10px rgba(20,32,42,.18)";});
+      lab.addEventListener("mouseleave",function(){lab.style.boxShadow="";});
+      lab.addEventListener("focus",function(){lab.style.outline="2px solid #D1796B";lab.style.outlineOffset="3px";});
+      lab.addEventListener("blur",function(){lab.style.outline="";});
+      lab.setAttribute("role","button");
+      lab.setAttribute("tabindex","0");
+      lab.setAttribute("aria-pressed",off?"false":"true");
+      lab.setAttribute("aria-label",(off?"Show ":"Hide ")+sec[0]);
+      var toggle=function(){ACTIVE[l.key]=!ACTIVE[l.key];render();};
+      lab.addEventListener("click",toggle);
+      // Enter and Space are what a real <button> responds to; this is a div
+      // carrying role="button", so the behaviour has to be supplied by hand.
+      lab.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();toggle();}});
+      l.items.forEach(function(it){
+        var left=x(it[4]),w=Math.max(7,x(it[5])-left);
+        var bar=document.createElement("div");bar.className="jtl-bar"+(it[7]?" jtl-cur":"");
+        Object.assign(bar.style,{left:left+"px",top:(l._top+l._rowOff+it._row*(ROW_H+ROW_GAP))+"px",width:w+"px",background:sec[1]});
+        chart.appendChild(bar);
+        // _side was settled by placeLabels above, so nothing is decided here.
+        if(it._side===0){
+          var inr=document.createElement("span");inr.className="jtl-in";inr.textContent=it[1];bar.appendChild(inr);
+        }else{
+          var o=document.createElement("span");o.textContent=it[1];
+          o.className=(it._side===2)?"jtl-out-left":"jtl-out";
+          bar.appendChild(o);
+        }
+        bar.addEventListener("mouseenter",function(){tip.innerHTML="<b>"+it[2]+"</b>"+it[3]+"<br><i>"+it[6]+"</i>";tip.style.opacity="1";var bx=bar.offsetLeft,by=bar.offsetTop+chart.offsetTop;tip.style.left=Math.max(0,Math.min(bx,wrap.clientWidth-250))+"px";tip.style.top=(by-tip.offsetHeight-8)+"px";});
+        bar.addEventListener("mouseleave",function(){tip.style.opacity="0";});
+      });
+    });
+    for(var t=2018;t<=2027;t++){el("jtl-tick",{left:x(t)+"px",top:axisTop+"px"},t);}
+
+    // ── The undergraduate caption ──────────────────────────────────────────
+    // This used to sit inside the shaded band, along its bottom edge, where
+    // the gridlines and the bottom lane of bars ran through it. It is a
+    // caption for the band rather than an object inside the chart, so it now
+    // sits below the year axis: a short bracket spanning the same years, and
+    // the words centred under it.
+    //
+    // Both pieces are styled inline rather than from §24 of styles.css. The
+    // bracket is a shape that exists only here and has no other user, and the
+    // caption only needs two declarations on top of .jtl-blabel, so adding
+    // two class names to the stylesheet would mean opening two files to move
+    // one caption.
+    var capY=axisTop+AXIS_H;
+    el("",{position:"absolute",left:uL+"px",top:capY+"px",width:(uR-uL)+"px",height:"2px",borderRadius:"2px",background:"rgba(62,110,134,.35)"});
+    // Centred on the band, then pulled back inside the chart if the band is
+    // narrow enough at this width that centring would push the words past
+    // either edge. transform does the centring, so the clamp works on the
+    // centre point rather than on the left edge.
+    var capW=textw("University of California, Santa Barbara","jtl-blabel");
+    var capX=Math.min(Math.max((uL+uR)/2,LABEL_W+capW/2),W-capW/2);
+    el("jtl-blabel",{left:capX+"px",top:(capY+8)+"px",transform:"translateX(-50%)"},"University of California, Santa Barbara");
+  }
+  render();
+  // Everything above is measured, and on a cold load the first measurement can
+  // happen while Inter is still downloading, against whatever fallback face the
+  // browser is showing. Text then reflows a shade wider when the real font
+  // lands, which is enough to close a gap the arithmetic thought it had. One
+  // redraw once the fonts report ready fixes that, and costs nothing on a warm
+  // load because the promise is already settled.
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(render); }
+  if(window.ResizeObserver){var last=0;new ResizeObserver(function(){var w=chart.clientWidth;if(Math.abs(w-last)>4){last=w;render();}}).observe(chart);}
+  window.addEventListener("resize",render);
+})();
+</script>
+
+  </div>
+</div>
+
+<!-- ========= COURSEWORK ========= -->
+<div class="section-band" id="coursework">
+  <div class="band-inner">
+
+## Coursework
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "asis"}
+
+cw <- read.csv("data/coursework.csv", stringsAsFactors = FALSE,
+               na.strings = c("NA", ""), fileEncoding = "UTF-8-BOM")
+
+# An academic year runs fall to summer, so a winter, spring or summer term
+# belongs to the year that began the previous fall. Without this, Fall 2021 and
+# Spring 2022 would land in different rows despite being one year of study.
+# as.integer matters: ifelse can return a double here, and sprintf("%d", ...)
+# rejects doubles outright rather than rounding them.
+cw$ay <- as.integer(ifelse(cw$season == "Fall", cw$year, cw$year - 1L))
+
+SEASONS <- c("Fall", "Winter", "Spring", "Summer")
+
+# One color per subject area. The palette lives here rather than in the
+# stylesheet because the area names come out of the CSV, and a second copy of
+# that list in section 29 would drift. Every value of the area column needs a
+# key: a missing one is a subscript-out-of-bounds error at render, not a
+# missing color at display.
+pal <- c("marine and ecology"       = "#3E6E86",
+         "independent research"     = "#D1796B",
+         "quantitative and spatial" = "#6D6A9C",
+         "chemistry and molecular"  = "#5E8D7E",
+         "study abroad"             = "#C08A3E",
+         "general education"        = "#8C8C86",
+         "advanced placement"       = "#7A8B99")
+
+stopifnot(all(cw$area %in% names(pal)))   # Fail loudly here rather than 80%
+                                          # through the render with a backtrace.
+
+esc <- function(x) {
+  x <- gsub("&", "&amp;", x, fixed = TRUE); x <- gsub("<", "&lt;", x, fixed = TRUE)
+  x <- gsub(">", "&gt;", x, fixed = TRUE);  x <- gsub('"', "&quot;", x, fixed = TRUE)
+  gsub("'", "&#39;", x, fixed = TRUE)
+}
+slug <- function(x) gsub("[^a-z0-9]+", "-", tolower(x))
+
+# Mix a hex colour toward white, for the tinted chip fills. strtoi, not strtoint.
+tint <- function(hex, amt) {
+  r <- strtoi(substr(hex, 2, 3), 16L)
+  g <- strtoi(substr(hex, 4, 5), 16L)
+  b <- strtoi(substr(hex, 6, 7), 16L)
+  sprintf("rgb(%d,%d,%d)", round(r + (255 - r) * amt),
+                           round(g + (255 - g) * amt),
+                           round(b + (255 - b) * amt))
+}
+
+is_ap <- cw$area == "advanced placement"
+
+# UCSB accepted 48 quarter units for the Advanced Placement exams, recorded on
+# the transcript as one transfer block covering Spring 2019 to Spring 2020 with
+# no per-exam split. The AP rows in the CSV therefore carry zero units, and the
+# figure lives here as the one number the transcript actually states. Splitting
+# 48 across ten classes would mean inventing a breakdown that does not exist.
+AP_UNITS <- 48
+
+# ── Headline numbers ──────────────────────────────────────────────────────────
+# Advanced Placement is held apart from the course count and the unit total.
+# Those are high school classes, and folding them in would inflate both figures
+# and stop them matching the transcript.
+o <- character(0)
+o <- c(o, '<p class="cw-summary">',
+  sprintf('<span><strong>%d</strong> undergraduate courses</span>', sum(!is_ap)),
+  sprintf('<span><strong>%s</strong> units, plus <strong>%d</strong> accepted from Advanced Placement</span>',
+          format(sum(cw$units[!is_ap])), AP_UNITS),
+  sprintf('<span><strong>%d</strong> graduate courses (taken as an undergraduate)</span>',
+          sum(cw$level == "graduate")),
+  sprintf('<span><strong>%d</strong> quarters of independent research</span>',
+          sum(cw$area == "independent research")),
+  '</p>')
+
+# ── Controls ──────────────────────────────────────────────────────────────────
+o <- c(o, '<div class="cw-filters">')
+for (a in names(pal)) {
+  n <- sum(cw$area == a); if (n == 0) next
+  o <- c(o, sprintf(paste0('<button type="button" class="cw-pill is-on" ',
+      'data-area="%s" style="--c:%s;--t:%s" aria-pressed="true">%s ',
+      '<span class="cw-count">%d</span></button>'),
+      slug(a), pal[[a]], tint(pal[[a]], .88), esc(a), n))
+}
+o <- c(o, paste0('<button type="button" class="cw-expand" ',
+                 'aria-expanded="false">Expand All</button>'))
+o <- c(o, '</div>')
+
+# ── The calendar ──────────────────────────────────────────────────────────────
+# Each academic year is its own grid row element rather than one grid spanning
+# the whole table. Every row shares the same column template so columns still
+# line up, and hiding a year when a filter empties it is then one element
+# rather than five. Every line is flush left: four leading spaces inside a raw
+# HTML block is an indented code block to pandoc, which would render the whole
+# calendar as a grey code box.
+o <- c(o, '<div class="cw-grid">')
+o <- c(o, '<div class="cw-row cw-head">', '<div class="cw-yr"></div>')
+for (s in SEASONS) o <- c(o, sprintf('<div class="cw-colhead">%s</div>', s))
+o <- c(o, '</div>')
+
+# Running total of UC units, carried across the whole loop rather than reset per
+# year, so the figure under each year label is units to date. The AP rows add
+# nothing to it, which is correct: that credit transferred in as a block. It
+# also ignores the subject filters, because a total that moved when you clicked
+# a pill would be reporting something else.
+cum <- 0
+
+for (y in sort(unique(cw$ay))) {
+  cum <- cum + sum(cw$units[cw$ay == y])
+  o <- c(o, '<div class="cw-row">', '<div class="cw-yr">',
+            sprintf('<span class="cw-yr-label">%d-%d</span>', y, y + 1L),
+            sprintf('<span class="cw-yr-cum">%s units</span>', format(cum)),
+            '</div>')
+  for (s in SEASONS) {
+    rows <- cw[cw$ay == y & cw$season == s, ]
+
+    if (nrow(rows) == 0) {
+      o <- c(o, '<div class="cw-cell cw-none">',
+                '<span class="cw-empty" aria-hidden="true"></span>', '</div>')
+      next
+    }
+
+    # Collapsed view: one bar per course, in the order taken. The bars carry the
+    # same cw-<area> class as the chips so one filter rule reaches both.
+    bars <- character(0)
+    for (i in seq_len(nrow(rows))) {
+      r <- rows[i, ]
+      bars <- c(bars, sprintf(
+        '<span class="cw-bar cw-%s" style="--c:%s"></span>',
+        slug(r$area), pal[[r$area]]))
+    }
+
+    # A quarter of AP classes has no UC units to tally, and "0 units" under it
+    # would read as a failure rather than as credit recorded elsewhere.
+    qu <- sum(rows$units)
+
+    # The grid item is a div wrapping the <details>, not the <details> itself.
+    # Chrome will not stretch a <details> grid item: measured on the page, four
+    # details cells sat at 119.88px inside a 137.875px track while the div cells
+    # beside them filled it. So the empty quarters, which are divs, stood taller
+    # than the full ones no matter what set the track. A div outside and the
+    # details inside makes every cell in the row the same kind of box.
+    o <- c(o, '<div class="cw-cell">', '<details class="cw-inner">',
+      '<summary class="cw-sum">',
+      sprintf('<span class="cw-bars">%s</span>', paste(bars, collapse = "")),
+      sprintf('<span class="cw-qtotal">%s</span>',
+              if (qu > 0) paste(format(qu), "units") else "AP Year"),
+      '</summary>', '<div class="cw-open">')
+
+    for (i in seq_len(nrow(rows))) {
+      r <- rows[i, ]
+      grad <- if (r$level == "graduate") " cw-grad" else ""
+      note <- if (!is.na(r$note) && nzchar(r$note))
+                sprintf('<span class="cw-note">%s</span>', esc(r$note)) else ""
+      o <- c(o, sprintf(paste0('<span class="cw-course cw-%s%s" ',
+          'style="--c:%s;--t:%s" title="%s units"><span class="cw-code">%s</span>',
+          '<span class="cw-title">%s</span>%s</span>'),
+          slug(r$area), grad, pal[[r$area]], tint(pal[[r$area]], .9),
+          esc(r$units), esc(r$code), esc(r$title), note))
+    }
+    o <- c(o, '</div>', '</details>', '</div>')
+  }
+  o <- c(o, '</div>')
+}
+o <- c(o, '</div>')
+
+cat('<div class="cw">\n'); cat(paste(o, collapse = "\n")); cat('\n</div>\n')
+```
+
+<p class="cw-key">Each bar is one course, coloured by subject. Hollow bars are Advanced Placement, which transferred in as credit rather than being taken at the university. Click a quarter to open it. A ring on a course marks graduate level.</p>
+
+<script>
+/* Subject filter and expand-all. Inline rather than in scripts/site.js for the
+   same reason the timeline's script is: this is one page's widget, and site.js
+   is for behaviour that repeats across the site. Opening and closing a quarter
+   needs no script at all; <details> does that natively. */
+(function () {
+  var root = document.querySelector('#coursework .cw');
+  if (!root) return;
+
+  function refresh() {
+    /* A quarter with nothing left after filtering goes VACANT rather than
+       hidden: the cell keeps its place in the grid and renders as the empty
+       teal block, the same as a quarter that never had any courses in it.
+
+       This used to set d.hidden, which takes the cell out of the grid
+       altogether, and every quarter after it in that year then slid one column
+       to the left. Switching off study abroad emptied Fall 2023-2024 and moved
+       Winter's courses into the Fall column, which is a worse outcome than the
+       blank cell the hiding was meant to avoid. A calendar's columns have to
+       keep meaning what they say. */
+    root.querySelectorAll('details.cw-inner').forEach(function (d) {
+      var any = Array.prototype.some.call(
+        d.querySelectorAll('.cw-course'), function (c) { return !c.hidden; });
+      d.classList.toggle('cw-vacant', !any);
+      d.setAttribute('aria-hidden', any ? 'false' : 'true');
+    });
+    /* A year with no quarters left still hides outright. Each year is its own
+       grid, so removing a whole row cannot shift anything sideways. */
+    root.querySelectorAll('.cw-row:not(.cw-head)').forEach(function (r) {
+      var any = Array.prototype.some.call(
+        r.querySelectorAll('details.cw-inner'),
+        function (d) { return !d.classList.contains('cw-vacant'); });
+      r.hidden = !any;
+    });
+  }
+
+  root.querySelectorAll('.cw-pill').forEach(function (p) {
+    p.addEventListener('click', function () {
+      var on = p.classList.toggle('is-on');
+      p.setAttribute('aria-pressed', on ? 'true' : 'false');
+      /* Hides the chip and its bar in one pass: both carry cw-<area>. */
+      root.querySelectorAll('.cw-' + p.dataset.area).forEach(function (el) {
+        if (el.classList.contains('cw-course') || el.classList.contains('cw-bar')) {
+          el.hidden = !on;
+        }
+      });
+      refresh();
+    });
+  });
+
+  var expand = root.querySelector('.cw-expand');
+  if (expand) {
+    expand.addEventListener('click', function () {
+      var open = expand.getAttribute('aria-expanded') !== 'true';
+      root.querySelectorAll('details.cw-inner').forEach(function (d) {
+        d.open = open;
+      });
+      expand.setAttribute('aria-expanded', open ? 'true' : 'false');
+      expand.textContent = open ? 'Collapse all' : 'Expand All';
+    });
+  }
+})();
+</script>
+
+  </div>
+</div>
+
+<!-- ========= PERSONAL ========= -->
+<div class="section-band" id="personal">
+  <div class="band-inner">
+
+## Personal
+
+::: {.stacked-cards}
+
+::: {.card}
+### Photography
+<div class="metrics">
+  <span class="pill">Underwater</span>
+  <span class="pill">Microscopy</span>
+  <span class="pill">Coast and Portraits</span>
+</div>
+
+Most of my photography happens either on a dive or down a microscope. The range is wider than it sounds: the same interest in structure that makes a kelp canopy worth shooting is what makes a copepod worth shooting, just at a different working distance.
+
+<details class="details-panel" markdown="1">
+<summary>More on Photography</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Underwater:** kelp forest canopies, reef structure, and the animals that hold still long enough on a low-visibility dive.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Microscopy:** copepods, parasites, and the fine anatomy behind the figures in my papers. Several of these started as working images and turned out to be worth printing.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Above water:** coastlines, working harbors, and portraits of the people doing the work.  
+</div>
+
+<div class="detail-block" markdown="1">
+[See Photography →](photography.html)
+</div>
+
+</div><!-- /.detail-stack -->
+</details>
+:::
+
+::: {.card}
+### Painting
+<div class="metrics">
+  <span class="pill">Wildlife Portraits</span>
+  <span class="pill">Coastal Landscapes</span>
+  <span class="pill">Mixed Media</span>
+</div>
+
+I paint in oil and mixed media, mostly places I have been in the water and animals I have spent time around. It is the only part of my practice with no data in it, which is most of the appeal.
+
+<details class="details-panel" markdown="1">
+<summary>More on Painting</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Subjects:** coastal bays, trout streams, places I know well, and animals with a story attached, sometimes literal and sometimes not.  
+</div>
+
+<div class="detail-block" markdown="1">
+**How it works:** some paintings are observational and some are assembled from field impressions months after the fact. The assembled ones usually turn out better.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Why it matters:** painting is slow in a way that fieldwork and code are not, and it is where I actually learned how light, pattern, and atmosphere behave. That reading carries straight into figure design.  
+</div>
+
+<div class="detail-block" markdown="1">
+[See Art →](art.html)
+</div>
+
+</div>
+</details>
+:::
+
+::: {.card}
+### Trails, Diving, and Travel
+<div class="metrics">
+  <span class="pill">Coastal Hikes</span>
+  <span class="pill">Night and Low Visibility</span>
+  <span class="pill">Working Harbors</span>
+</div>
+
+Most weekends I’m on a coastal trail or underwater, and travel tends to follow coastlines and working harbors rather than cities.
+
+<details class="details-panel" markdown="1">
+<summary>More on Trails and Travel</summary>
+
+<div class="detail-stack">
+
+<div class="detail-block" markdown="1">
+**Hiking:** coastal bluffs, estuary loops, and any trail that ends at a tidepool. A pocket notebook usually comes along for sketches.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Diving:** roughly three quarters of my logged dives are recreational rather than scientific, and the habits transfer in both directions. Kelp holdfasts, night entries, and low-visibility marsh work all reward the same discipline.  
+</div>
+
+<div class="detail-block" markdown="1">
+**Travel:** I gravitate to places where ecology, fisheries, and community sit close together. It is good preparation for the conversations that fisheries work eventually turns into.  
+</div>
+
+</div>
+</details>
+:::
+:::
+
+  </div>
+</div>
 
 <!-- ========= HONORS & AWARDS ========= -->
 <div class="coral-banner" markdown="1">
 
 ## Honors and Awards
 
-Regent Scholar • **Coastal Fund** Major Grants • Best Student Presentation (Int'l Conf. on Copepoda) • Best Student Poster (Southern Academy of Parasitologists) • Honorable Mention (WSN) • Published Manuscripts
+**Degree** • Bachelor of Arts in Biology with High Honors, College of Creative Studies, University of California, Santa Barbara
+
+**Scholarships and Grants** • Regents Scholar, University of California, Santa Barbara • Coastal Fund Major Grants
+
+**Conference Awards** • Best Student Presentation, International Conference on Copepoda • Best Student Poster, Southern Academy of Parasitologists • Honorable Mention, Western Society of Naturalists
 </div>
 
 <div class="gallery-footer">
+  <a class="read-more" href="#">Back to Top</a>
   <a class="btn btn-primary" href="contact.html">Contact</a>
-  <a class="read-more" href="#">Back to top</a>
 </div>
